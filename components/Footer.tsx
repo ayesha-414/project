@@ -1,0 +1,148 @@
+"use client";
+
+import Link from "next/link";
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
+
+export default function Footer() {
+  return (
+    <footer className="footer-gradient text-white">
+      <div className="max-w-7xl mx-auto px-4 py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* About */}
+          <div>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center">
+                <span className="text-[#1c3879] font-bold text-xl">PSG</span>
+              </div>
+              <div>
+                <h6 className="font-semibold">PSG COLLEGE OF TECHNOLOGY</h6>
+                <p className="text-white/70 text-xs">Government Aided Autonomous Institution</p>
+              </div>
+            </div>
+            <p className="text-white/80 text-sm leading-relaxed">
+              PSG College of Technology, established in the year 1951 by PSG & Sons Charities, Coimbatore, 
+              is one of the premier institutions of the country.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h5 className="text-lg font-semibold mb-6">Quick Links</h5>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/" className="text-white/80 hover:text-white transition-colors text-sm">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/#about" className="text-white/80 hover:text-white transition-colors text-sm">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/#programmes" className="text-white/80 hover:text-white transition-colors text-sm">
+                  Programmes
+                </Link>
+              </li>
+              <li>
+                <Link href="/#schedule" className="text-white/80 hover:text-white transition-colors text-sm">
+                  Schedule
+                </Link>
+              </li>
+              <li>
+                <Link href="/apply" className="text-white/80 hover:text-white transition-colors text-sm">
+                  Apply Now
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Programmes */}
+          <div>
+            <h5 className="text-lg font-semibold mb-6">Programmes</h5>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/science" className="text-white/80 hover:text-white transition-colors text-sm">
+                  B.Sc Applied Science
+                </Link>
+              </li>
+              <li>
+                <Link href="/csd" className="text-white/80 hover:text-white transition-colors text-sm">
+                  B.Sc Computer Systems & Design
+                </Link>
+              </li>
+              <li>
+                <Link href="/math" className="text-white/80 hover:text-white transition-colors text-sm">
+                  M.Sc Applied Mathematics
+                </Link>
+              </li>
+              <li>
+                <Link href="/stdc" className="text-white/80 hover:text-white transition-colors text-sm">
+                  5 Year Integrated M.Sc
+                </Link>
+              </li>
+              <li>
+                <Link href="/fdm" className="text-white/80 hover:text-white transition-colors text-sm">
+                  M.Sc Fashion Design & Merchandising
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div id="contact">
+            <h5 className="text-lg font-semibold mb-6">Contact Us</h5>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
+                <span className="text-white/80 text-sm">
+                  PSG College of Technology<br />
+                  Peelamedu, Coimbatore - 641004<br />
+                  Tamil Nadu, India
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="w-5 h-5 text-[#e8505b] flex-shrink-0" />
+                <span className="text-white/80 text-sm">+91-422-2572177</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail className="w-5 h-5 text-[#e8505b] flex-shrink-0" />
+                <span className="text-white/80 text-sm">principal@psgtech.ac.in</span>
+              </li>
+            </ul>
+
+            {/* Social Links */}
+            <div className="flex items-center gap-4 mt-6">
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#e8505b] transition-colors">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#e8505b] transition-colors">
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#e8505b] transition-colors">
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#e8505b] transition-colors">
+                <Youtube className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 py-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-white/70 text-sm">
+              © 2025 PSG College of Technology. All Rights Reserved.
+            </p>
+            <p className="text-white/70 text-sm">
+              Designed & Developed by Department of Applied Mathematics and Computational Sciences
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}

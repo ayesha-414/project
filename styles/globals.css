@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* Light mode variables */
+:root {
+  --background: #f5f5e6;        /* soft beige */
+  --foreground: #1a1a1a;        /* dark text */
+  --primary: #4CAF50;           /* green primary */
+  --secondary: #C8E6C9;         /* light green accent */
+  --accent: #8BC34A;            /* medium green */
+  --muted: #e0e0d1;             /* muted beige */
+  --border: #d6d6c2;
+  --radius: 0.625rem;
+}
+
+/* Dark mode variables */
+.dark {
+  --background: #1a1a1a;        /* dark background */
+  --foreground: #f5f5e6;        /* light text */
+  --primary: #388E3C;           /* dark green */
+  --secondary: #689f38;         /* dark green accent */
+  --accent: #81C784;            /* medium green */
+  --muted: #333333;             /* dark muted background */
+  --border: #555543;
+}
+
+/* Tailwind theme mapping */
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --radius-md: var(--radius);
+}
+
+/* Base styles */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Hero overlay fix */
+.hero-overlay {
+  /* Semi-transparent green gradient for hero */
+  background: linear-gradient(
+    rgba(76, 175, 80, 0.6),  /* green tint */
+    rgba(139, 195, 74, 0.6)  /* lighter green tint */
+  );
+}
