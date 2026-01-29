@@ -334,7 +334,7 @@
 /* Semester cards */
 .semester-card {
   background: linear-gradient(to bottom right, #064089, #0A61C9);
-  color: #ffffff;
+  color: #f1f0f0;
   border-radius: 0.75rem;
   padding: 1.5rem;
 }
