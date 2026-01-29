@@ -5,62 +5,64 @@
 
 /* Light mode variables */
 :root {
-  --background: #f5f5dc;        /* beige background */
-  --foreground: #1a3d1a;        /* dark green text */
-  --card: #ffffff;               /* white cards */
-  --card-foreground: #1a3d1a;    
+  /* Palette: #F1F7F9 (Lightest), #749DC8 (Light Blue), #0A61C9 (Mid Blue), #064089 (Dark Blue), #07326A (Navy) */
+  
+  --background: #F1F7F9;        /* Lightest Blue/White */
+  --foreground: #07326A;        /* Navy Text */
+  --card: #ffffff;              /* White cards for contrast on light bg */
+  --card-foreground: #07326A;   
   --popover: #ffffff;
-  --popover-foreground: #1a3d1a;
-  --primary: #2e7d32;           /* green buttons */
+  --popover-foreground: #07326A;
+  --primary: #0A61C9;           /* Mid Blue (Primary Buttons) */
   --primary-foreground: #ffffff;
-  --secondary: #a5d6a7;         /* light green accent */
-  --secondary-foreground: #1a3d1a;
-  --muted: #e0e0c0;             /* soft beige */
-  --muted-foreground: #1a3d1a;
-  --accent: #4caf50;            /* medium green */
+  --secondary: #749DC8;         /* Light Blue (Secondary Actions) */
+  --secondary-foreground: #07326A;
+  --muted: #749DC8;             /* Using Light Blue for muted areas */
+  --muted-foreground: #064089;
+  --accent: #064089;            /* Dark Blue Accent */
   --accent-foreground: #ffffff;
-  --destructive: #d32f2f;
+  --destructive: #d32f2f;       /* Keep red for errors */
   --destructive-foreground: #ffffff;
-  --border: #dcdcbc;
+  --border: #749DC8;            /* Light Blue Borders */
   --input: #ffffff;
-  --ring: #2e7d32;
+  --ring: #0A61C9;
   --radius: 0.5rem;
 }
 
 /* Dark mode variables */
 .dark {
-  --background: #1a3d1a;        /* dark green background */
-  --foreground: #f5f5dc;        /* beige text */
-  --card: #2b4d2b;              /* dark green card */
-  --card-foreground: #f5f5dc;
-  --popover: #2b4d2b;
-  --popover-foreground: #f5f5dc;
-  --primary: #66bb6a;           /* lighter green for buttons */
-  --primary-foreground: #ffffff;
-  --secondary: #81c784;         /* secondary green */
+  --background: #07326A;        /* Navy Background */
+  --foreground: #F1F7F9;        /* Lightest Text */
+  --card: #064089;              /* Dark Blue Card */
+  --card-foreground: #F1F7F9;
+  --popover: #064089;
+  --popover-foreground: #F1F7F9;
+  --primary: #749DC8;           /* Light Blue for buttons on dark bg */
+  --primary-foreground: #07326A;
+  --secondary: #0A61C9;         /* Mid Blue */
   --secondary-foreground: #ffffff;
-  --muted: #335533;             /* muted dark green */
-  --muted-foreground: #f5f5dc;
-  --accent: #4caf50;
+  --muted: #064089;             
+  --muted-foreground: #749DC8;
+  --accent: #0A61C9;
   --accent-foreground: #ffffff;
   --destructive: #d32f2f;
   --destructive-foreground: #ffffff;
-  --border: #3e5e3e;
-  --input: #335533;
-  --ring: #66bb6a;
-  --chart-1: #66bb6a;
-  --chart-2: #81c784;
-  --chart-3: #4caf50;
-  --chart-4: #2e7d32;
-  --chart-5: #a5d6a7;
-  --sidebar: #1b3d1b;
-  --sidebar-foreground: #f5f5dc;
-  --sidebar-primary: #66bb6a;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #4caf50;
+  --border: #0A61C9;            /* Mid Blue Borders */
+  --input: #064089;
+  --ring: #749DC8;
+  --chart-1: #749DC8;
+  --chart-2: #0A61C9;
+  --chart-3: #064089;
+  --chart-4: #07326A;
+  --chart-5: #F1F7F9;
+  --sidebar: #064089;
+  --sidebar-foreground: #F1F7F9;
+  --sidebar-primary: #749DC8;
+  --sidebar-primary-foreground: #07326A;
+  --sidebar-accent: #0A61C9;
   --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #3e5e3e;
-  --sidebar-ring: #66bb6a;
+  --sidebar-border: #0A61C9;
+  --sidebar-ring: #749DC8;
 }
 
 /* Tailwind theme mapping */
@@ -109,7 +111,7 @@
 @layer base {
   * {
     border-color: var(--border);
-    outline-color: rgba(46,125,50,.5);
+    outline-color: rgba(10, 97, 201, 0.5); /* #0A61C9 with opacity */
   }
 
   body {
@@ -131,7 +133,7 @@
   gap: 0.5rem;
 }
 .btn-primary:hover {
-  background-color: #1b5e20;
+  background-color: #064089; /* Dark Blue on hover */
 }
 
 .btn-secondary {
@@ -146,7 +148,8 @@
   gap: 0.5rem;
 }
 .btn-secondary:hover {
-  background-color: #66bb6a;
+  background-color: #0A61C9; /* Mid Blue on hover */
+  color: #ffffff;
 }
 
 .btn-outline {
@@ -176,7 +179,7 @@
 
 /* Cards */
 .card-shadow {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(7, 50, 106, 0.1); /* Navy shadow */
 }
 
 .program-card,
@@ -190,20 +193,20 @@
 }
 .program-card:hover {
   transform: translateY(-0.5rem);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 40px rgba(10, 97, 201, 0.2); /* Blue shadow */
 }
 
-/* Gradient backgrounds */
+/* Gradient backgrounds - Updated to Blue Palette */
 .gradient-bg {
-  background: linear-gradient(135deg, #2e7d32 0%, #81c784 100%);
+  background: linear-gradient(135deg, #064089 0%, #0A61C9 100%);
 }
 .gradient-overlay {
-  background: linear-gradient(to right, rgba(46,125,50,0.9), rgba(165,214,167,0.8));
+  background: linear-gradient(to right, rgba(7, 50, 106, 0.9), rgba(10, 97, 201, 0.8));
 }
 
 /* Navigation */
 .nav-link {
-  color: rgba(26,61,26,0.9);
+  color: rgba(7, 50, 106, 0.9); /* Navy */
   padding: 0.5rem 1rem;
   transition: color 0.2s;
 }
@@ -228,18 +231,20 @@
   color: var(--primary-foreground);
 }
 .tab-btn-inactive {
-  background-color: var(--muted);
-  color: var(--foreground);
+  background-color: #F1F7F9;
+  color: #07326A;
+  border: 1px solid #749DC8;
 }
 .tab-btn-inactive:hover {
-  background-color: #dcdcbc;
+  background-color: #749DC8;
+  color: #ffffff;
 }
 
 /* Hero overlay */
 .hero-overlay {
   background: linear-gradient(
-    rgba(46,125,50,0.7),
-    rgba(245,245,220,0.7)
+    rgba(7, 50, 106, 0.7),
+    rgba(241, 247, 249, 0.7)
   );
 }
 
@@ -259,7 +264,7 @@
 
 /* Important dates sidebar */
 .important-dates {
-  background: linear-gradient(to bottom right, #2e7d32, #81c784);
+  background: linear-gradient(to bottom right, #064089, #0A61C9);
   color: #ffffff;
   border-radius: 1rem;
   padding: 2rem;
@@ -267,7 +272,7 @@
 
 /* Footer */
 .footer-gradient {
-  background: linear-gradient(180deg, #2e7d32 0%, #81c784 100%);
+  background: linear-gradient(180deg, #07326A 0%, #064089 100%);
 }
 
 /* Scroll animations */
@@ -320,7 +325,7 @@
   align-items: flex-start;
   gap: 1rem;
   padding: 1rem 0;
-  border-bottom: 1px solid #dcdcbc;
+  border-bottom: 1px solid #749DC8;
 }
 .schedule-item:last-child {
   border-bottom: none;
@@ -328,7 +333,7 @@
 
 /* Semester cards */
 .semester-card {
-  background: linear-gradient(to bottom right, #2e7d32, #81c784);
+  background: linear-gradient(to bottom right, #064089, #0A61C9);
   color: #ffffff;
   border-radius: 0.75rem;
   padding: 1.5rem;
@@ -342,6 +347,7 @@
   z-index: 50;
   transition: transform 0.3s;
 }
+
 /* Program Card Carousel Animation */
 .carousel-container {
   display: flex;
@@ -375,6 +381,7 @@
   opacity: 1;
   z-index: 10;
 }
+
 /* magic-card.css */
 @keyframes rotate-bg {
   from { transform: rotate(0deg); }
@@ -400,7 +407,8 @@
   position: absolute;
   width: 150px;
   height: 140%;
-  background: linear-gradient(180deg, #1bb76e, #3b82f6);
+  /* Updated gradient: Light Blue to Navy */
+  background: linear-gradient(180deg, #749DC8, #07326A); 
   animation: rotate-bg 4s linear infinite;
   transition: all 0.2s linear;
 }
@@ -410,7 +418,8 @@
   position: absolute;
   inset: 4px;
   border-radius: 16px;
-  background-color: #07182E; /* Card bg */
+  /* Darkest Navy for Card Background */
+  background-color: #07326A; 
 }
 
 .magic-card:hover::before {
@@ -441,5 +450,5 @@
 
 .magic-card-content p {
   font-size: 0.9rem;
-  color: #ddd;
+  color: #F1F7F9; /* Lightest text */
 }
