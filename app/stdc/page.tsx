@@ -69,202 +69,486 @@ export default function STDCPage() {
         "Personality And Character Development"
       ],
       "Semester 3": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Probability, Stochastic Processes and Statistics",
+        "Database Management System",
+        "Transform Techniques",
+        "Design and Analysis of Algorithms",
+        "Microprocessor and Embedded Systems",
+        "Design and Analysis of Algorithms Lab",
+        "Embedded Systems Lab",
+        "RDBMS Lab"
       ],
       "Semester 4": [
+        "Accounting and Financial Management",
+        "Computer Networks",
+        "Operations Research",
         "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Software Engineering Techniques",
+        "Computer Networks Lab",
+        "Unix System Prograaming Lab",
+        "Web Development Lab"
       ],
       "Semester 5": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Big Data and Modern Databases",
+        "Java Programming",
+        "Machine Learning",
+        "Theory Of Computing",
+        "Professional Elective I",
+        "Big Data and Modern Databases Lab",
+        "Java Programming Lab",
+        "Machine Learning Lab"
       ],
       "Semester 6": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Cloud Computing",
+        "Artificial Intelligence",
+        "Distributed Computing",
+        "Software Patterns",
+        "Professional Elective II",
+        "Cloud Computing Lab",
+        "Artificial Intelligence Lab",
+        "Mobile Application Development Lab"
       ],
       "Semester 7": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Project Work I - Duration of 6 months"
       ],
       "Semester 8": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Principles Of Compiler Design",
+        "Data Mining",
+        "Data Mining",
+        "Software Project Management",
+        "Professional Elective III",
+        "Open Elective I",
+        "Compiler Design Lab",
+        "Data Mining and Visualization Lab",
+        "Capstone Project Lab"
       ],
       "Semester 9": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Digital Image Processing and Computer Vision",
+        "Information Retrieval",
+        "Deep Learning",
+        "Professional Elective IV",
+        "Open Elective II",
+        "Digital Image Processing and Computer Vision Lab",
+        "Information Retrieval Lab",
+        "Deep Learning Lab"
       ],
       "Semester 10": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Project Work II - Duration of 6 months"
       ],
+      "List of Electives":[
+        "Software Metrics",
+        "Parallel Programming",
+        "Data Compression",
+        "Computer Graphics",
+        "Principles of Programming Languages",
+        "Agile Software Development",
+        "Social Network Analysis",
+        "Predictive Analysis",
+        "Security In Computing",
+        "Advanced Systems Programming",
+        "Statistical Learning",
+        "Applied Graph Theory",
+        "Wireless Netwroks",
+        "Network Forensics",
+        "Reinforcement Learning",
+        "Principles of Management and Behavioral Science",
+        "Entrepreneurship",
+        "Environmental Science and Green Computing",
+        "Mathematical Modelling",
+        "Computational Finance",
+        "Ethical Hacking",
+        "Natural Language Processing",
+        "Internet of Things",
+        "Virtual and Augumented Reality",
+        "Computer Forensics",
+        "Advanced Algorithms"
+      ]
     },
 
     tcs: {
       "Semester 1": [
-        "Discrete Structures",
-        "Mathematical Logic",
-        "Linear Algebra"
+        "Calculus and Its Applications",
+        "English for Professional Skills",
+        "Applied Physics",
+        "Digital Electronics",
+        "Problem Solving and C Programming",
+        "Applied Physics and Digital Electronics Lab",
+        "C Programming Lab",
+        "Mathematics Laboratory",
+        "Personality And Character Development"
       ],
       "Semester 2": [
-        "Theory of Computation",
-        "Design & Analysis of Algorithms"
+        "Discrete Structures",
+        "Abstract Algebra",
+        "Data Structures and Algorithms",
+        "Object Oriented Programming",
+        "Transforms and Its Applications",
+        "Data Structures Lab",
+        "Object Oriented Programming Lab",
+        "Python Programming",
+        "Personality And Character Development"
       ],
       "Semester 3": [
-        "Compiler Design",
-        "Cryptography"
+        "Probability And Statistics",
+        "Linear Algebra",
+        "Graph Theory",
+        "Advanced Data Structures",
+        "Computer Organization And Assembly Language Programming",
+        "Statistical Computing And R Programming Lab",
+        "Advanced Data Structures Lab",
+        "Scientific Computing Lab"
       ],
       "Semester 4": [
+        "Stochastic Processes",
+        "Computer Networks",
+        "Optimization Techniques",
         "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Database Management System",
+        "Computer Networks Lab",
+        "Operating Systems Lab",
+        "RDBMS Lab"
       ],
       "Semester 5": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Theory Of Computing",
+        "Computational Number Theory And Cryptography",
+        "Machine Learning",
+        "Design And Analysis Of Algorithms",
+        "Professional Elective - I",
+        "Machine Learning Lab",
+        "Design And Analysis Of Algorithms Lab",
+        "Java Programming Lab"
       ],
       "Semester 6": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Cloud Computing",
+        "Artificial Intelligence",
+        "Software Engineering",
+        "Principles Of Compiler Design",
+        "Professional Elective – II",
+        "Cloud Computing Lab",
+        "Compiler Design Lab",
+        "Software Patterns Lab"
       ],
       "Semester 7": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Project Work 1 – Industry / Research Project - Duration of 6 months"
       ],
       "Semester 8": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Game Theory",
+        "Advanced Algorithms",
+        "Data Mining",
+        "Professional Elective III",
+        "Open Elective I",
+        "Functional Programming Lab",
+        "Data Mining and Visualization Lab",
+        "Research Specialization Lab"
       ],
       "Semester 9": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Security In Computing",
+        "Digital Image Processing and Computer Vision",
+        "Information Retrieval",
+        "Professional Elective IV",
+        "Open Elective II",
+        "Security In Computing Lab",
+        "Digital Image Processing and Computer Vision Lab",
+        "Information Retrieval Lab"
       ],
       "Semester 10": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Project Work 1 – Industry / Research Project - Duration of 6 months"
       ],
+      "List of Electives":[
+        "Mathematical Analysis",
+        "Social Network Analysis",
+        "Computer Graphics",
+        "Random Graphs",
+        "Data Compression",
+        "Advanced Operating Systems",
+        "Probabilistic Graphical Models",
+        "Big Data And Modern Database Systems",
+        "Functional Analysis",
+        "Epidemic Modles",
+        "Computational Complexity Theory",
+        "Network Science",
+        "Mathematical Modelling",
+        "Exact Algorithms For Hard Problems",
+        "Wireless Networks",
+        "Statistical Learning",
+        "Large Scale Machine Learning",
+        "Security Modelling And Analysis",
+        "Parallel and Distributed Computing",
+        "Deep Learning",
+        "Reinforcement Learning",
+        "Quantum Computing",
+        "Computational Geometry",
+        "Computational Finance",
+        "Natural Language Processing",
+        "Logic for Computer Science",
+        "Internet Of Things",
+        "Digital Topology",
+        "Computer Forensics",
+        "Virtual and Augumented Reality",
+        "Mobile Technology",
+        "Environmental Science And Green Computing",
+        "Accounting and Financial Management",
+        "Principles Of Management And Behavioral Sciences",
+        "Entrepreneurship"
+      ]
     },
 
     ds: {
       "Semester 1": [
-        "Python Programming",
-        "Statistics for Data Science",
-        "Linear Algebra"
+        "Calculus And Its Applications",
+        "Basics Of Computational Biology",
+        "Digital Electronics",
+        "Problem Solving & C Programming",
+        "English For Professional Skills",
+        "Mathematical Foundations Lab",
+        "C Programming Lab",
+        "Digital Electronics Lab",
+        "Personality And Character Development"
       ],
       "Semester 2": [
-        "Machine Learning",
-        "Data Visualization",
-        "Database Systems"
+        "Discrete Structures",
+        "Abstract Algebra",
+        "Data Structures and Algorithms",
+        "Object Oriented Programming",
+        "Theory Of Probability",
+        "Object Computing Lab",
+        "Data Structures Lab",
+        "Python Programming Lab",
+        "Personality And Character Development"
       ],
       "Semester 3": [
-        "Deep Learning",
-        "Big Data Analytics",
-        "Natural Language Processing"
+        "Applied Statistics",
+        "Linear Algebra",
+        "Graph Theory",
+        "Advanced Data Structures",
+        "Computer Organization And Assembly Language Programming",
+        "Applied Statistics And R Programming Lab",
+        "Advanced Data Structures Lab",
+        "Scientific Computing Lab"
       ],
       "Semester 4": [
+        "Optimization Techniques",
+        "Database Management System",
+        "Predictive Analytics",
         "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
-      ],
+        "Transforms And Its Applications",
+        "Data Analytics & Visualisation Lab",
+        "RDBMS Lab",
+        "Operating Systems Lab"
+              ],
       "Semester 5": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
-      ],
+        "Design And Analysis Of Algorithms",
+        "Stochastic Models",
+        "Computer Networks",
+        "Machine Learning",
+        "Professional Elective-I",
+        "Design And Analysis Of Algorithms Lab",
+        "Machine Learning Lab",
+        "Java Programming Lab"
+              ],
       "Semester 6": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Cloud Computing",
+        "Deep Learning",
+        "Big Data &Modern Database Systems",
+        "Artificial Intelligence",
+        "Professional Elective –II",
+        "Cloud Computing Lab",
+        "Big Data & Modern Database Systems Lab",
+        "Deep Learning Lab"
       ],
       "Semester 7": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Project Work I - Duration of 6 months"
       ],
       "Semester 8": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Reinforcement Learning",
+        "Natural Language Processing",
+        "Deployable Aspects of Machine Learning",
+        "Professional Elective-III",
+        "Open Elective-I",
+        "Reinforcement Learning Lab",
+        "Deployable Aspects of Machine Learning Lab",
+        "Capstone Project"
       ],
       "Semester 9": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Data Privacy And Security",
+        "Data Mining",
+        "Information Retrieval",
+        "Professional Elective – IV (Self Study)",
+        "Open Elective-II",
+        "Information Retrieval Lab",
+        "Data Privacy And Security Lab",
+        "Data Mining Lab"
       ],
       "Semester 10": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Project Work II - Duration of 6 months"
       ],
+    
+    "List of Electives":[
+      "Data Compression",
+      "Statiscal Learning",
+      "Digital Image Processing and Computer Vision",
+      "Multimedia Analytics",
+      "Computational Neuroscience",
+      "Adversarial Machine Learning",
+      "Marketing Analytics",
+      "Computer Graphics",
+      "Algorithms For Bioinformatics",
+      "Mathematical Modelling",
+      "Software Engineering",
+      "Applied Graph Algorithms",
+      "Game Theory",
+      "Social Network Data Analytics",
+      "Network Science",
+      "Parallel and Distributed Computing",
+      "Large Scale Machine Learning",
+      "Wireless Networks",
+      "Survival Analytics",
+      "Randomized Algorithms",
+      "Probabilistic Graphical Models",
+      "Topological Data Analysis",
+      "Random Graphs",
+      "Computational Finance",
+      "Computational Geometry",
+      "Principles Of Management And Behavioural Sciences",
+      "Entrepreneurship",
+      "Information And Coding Theory",
+      "Accounting And Financial Management",
+      "Environmental Science And Green Computing",
+      "Functional Analysis",
+      "Advanced Optimization Techniques",
+      "Internet Of Things",
+      "Mobile Technology",
+      "Virtual and Augumented Reality",
+      "Ethical Hacking",
+      "Computer Forensics",
+      "Advanced Algorithms"
+    ]
     },
-
     cs: {
       "Semester 1": [
-        "Computer Fundamentals",
-        "Digital Systems",
-        "Programming in C"
+        "Calculus And Its Applications",
+        "Basics Of Computational Biology",
+        "Digital Electronics",
+        "Problem Solving & C Programming",
+        "English For Professional Skills",
+        "Mathematical Foundations Lab",
+        "C Programming Lab",
+        "Digital Electronics Lab",
+        "Personality And Character Development"
       ],
       "Semester 2": [
-        "Operating Systems",
-        "Network Security",
-        "Cryptography"
-      ],
+        "Discrete Structures",
+        "Algebra And Number Theory",
+        "Data Structures and Algorithms",
+        "Object Oriented Programming",
+        "Computer Architecture",
+        "Data Structures Lab",
+        "Object Computing Lab",
+        "Python Programming Lab",
+        "Personality And Character Development"
+              ],
       "Semester 3": [
-        "Cyber Forensics",
-        "Ethical Hacking",
-        "Cloud Security"
+        "Probability, Stochastic Processes and Statistics",
+        "Linear Algebra",
+        "Microcontrollers And Embedded Systems",
+        "Database Management System",
+        "Design And Analysis Of Algorithms",
+        "Embedded Systems Lab",
+        "Design And Analysis Of Algorithms Lab",
+        "RDBMS Lab"
       ],
       "Semester 4": [
-        "Cyber Forensics",
-        "Ethical Hacking",
-        "Cloud Security"
+        "Optimization Techniques",
+        "Computer Networks",
+        "Cryptography",
+        "Operating Systems",
+        "Hardware Security",
+        "Computer Networks Lab",
+        "Java Programming Lab",
+        "Operating Systems Lab"
       ],
       "Semester 5": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Network Security",
+        "Cryptanalysis",
+        "Machine Learning",
+        "Software Security and Exploitation",
+        "Professional Elective I",
+        "Software Security and Exploitation Lab",
+        "Machine Learning Lab",
+        "Ethical Hacking & Malware Analysis Lab"
       ],
       "Semester 6": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Cloud Security",
+        "Principles Of Compiler Design",
+        "Data Mining",
+        "Secure Coding",
+        "Professional Elective II",
+        "Cloud Security Lab",
+        "Data Mining And Visualization Lab",
+        "Web Engineering Lab"
       ],
       "Semester 7": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Project Work I - Duration of 6 months"
       ],
       "Semester 8": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Digital Image Processing and Computer Vision",
+        "Computer Forensics",
+        "Data Privacy",
+        "Professional Elective III",
+        "Open Elective I",
+        "Digital Image Processing and Vision Lab",
+        "Computer Forensics Lab",
+        "Security Capstone Lab"
       ],
       "Semester 9": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Threat Hunting",
+        "Blockchain Technology",
+        "Mobile Security",
+        "Professional Elective IV",
+        "Open Elective II",
+        "Threat Hunting Lab",
+        "Mobile Security Lab",
+        "Memory Forensics Lab"
       ],
       "Semester 10": [
-        "Operating Systems",
-        "Database Management Systems",
-        "Computer Networks"
+        "Project Work II - Duration of 6 months"
       ],
+      "List of Electives":[
+        "Information And Coding Theory",
+        "Quantum Computing",
+        "Post Quantum Cryptography",
+        "Active Defense Using Deception",
+        "Security Modeling And Analysis",
+        "Computer Graphics",
+        "Artificial Intelligence",
+        "Social Network Analysis",
+        "Applied Graph Theory",
+        "Multimedia Security",
+        "Identity And Access Management",
+        "Internet Of Things",
+        "Data Compression",
+        "Big Data And Modern Database Systems",
+        "Biometric Security",
+        "Game Theory",
+        "Deep Learning",
+        "Natural Language Processing",
+        "Reinforcement Learning",
+        "Distributed Computing",
+        "Software Patterns",
+        "Virtual And Augmented Reality",
+        "Essentials Of Cyber Physical System Security",
+        "Principles Of Management",
+        "Environmental Science And Green Computing",
+        "Computational Finance",
+        "Entrepreneurship",
+        "Statistical Learning",
+        "Mathematical Modelling",
+        "Adversarial Machine Learning",
+        "Network Science",
+        "Information Retrieval",
+        "Ethics and Cyber Law",
+        "Advanced Algorithms"
+      ]
     },
   };
   const alumniSpeaks = [
@@ -448,10 +732,7 @@ export default function STDCPage() {
                       <div>
                         <h4 className="text-lg font-bold text-[#1c3879] mb-3">About the Department</h4>
                         <p className="text-gray-600 leading-relaxed">
-                          The <strong>Department of Applied Mathematics and Computational Sciences</strong> comprises of 
-                          dedicated faculty members who are undoubtedly the assets worthy of mention. The department is 
-                          known for its discipline and for the importance it gives to the overall development of students 
-                          in grooming them towards becoming good software professionals, research scientists and data analysts.
+                          The Department of Applied Mathematics and Computational Sciences comprises of dedicated faculty members who are undoubtedly the assets worthy of mention. The department is known for its discipline and for the importance it gives to the overall development of students in grooming them towards becoming good software professionals, research scientists and data analysts. The department has its own library with the latest books, national and international journals and magazines. The computer centre is well equipped with the most recent hardware and software. The department has vibrant research culture to keep in touch with the ever-growing technologies. The faculty members participate regularly in refresher courses and symposia conducted by top-notch Universities, Research Institutions and Professional Bodies like Association for Computing Machinery, IEEE. The department organizes technical symposia at national and international levels at regular intervals. Apart from stressing consistent and good academic performance, the department encourages participation in co-curricular and extracurricular activities to bring out the latent talents in its students. The students are provided with ample opportunities to improve their organizational skills and group dynamics.
                         </p>
                       </div>
 
@@ -462,38 +743,28 @@ export default function STDCPage() {
                           <div className="bg-[#1c3879]/5 rounded-xl p-4">
                             <h5 className="font-bold text-[#1c3879] mb-2">M.Sc. Software Systems</h5>
                             <p className="text-gray-600 text-sm">
-                              Started in the year 1997 for the first time in the country and well received by leading software 
-                              industries across the globe. The programme has been designed to meet the challenging needs of the 
-                              industry, by ensuring a good understanding of the software design process and to develop resilient 
-                              applications using state-of-the art technologies.
+                              was started in the year 1997 for the first time in the country and well received by leading software industries across the globe. The programme has been designed to meet the challenging needs of the industry, by ensuring a good understanding of the software design process and to develop resilient applications using state-of-the art technologies. The programme has been renamed as Software Systems since 2014.
                             </p>
                           </div>
 
                           <div className="bg-[#e8505b]/5 rounded-xl p-4">
                             <h5 className="font-bold text-[#e8505b] mb-2">M.Sc. Theoretical Computer Science</h5>
                             <p className="text-gray-600 text-sm">
-                              Yet another innovative programme introduced in 2007. Any industry grows only if it has a strong 
-                              R&D division. In order that Research be fruitful, the R&D Team should have persons with strong 
-                              theoretical background. M.Sc Theoretical Computer Science has been designed to augment human 
-                              resources for the R&D divisions of software industries.
+                              is yet another innovative programme introduced in 2007. Any industry grows only if it has a strong R&D division. In order that Research be fruitful, the R&D Team should have persons with strong theoretical background. “It is the theory that describes what can be observed”, said Albert Einstein. M.Sc Theoretical Computer Science has been designed to augment human resources for the R&D divisions of software industries.
                             </p>
                           </div>
 
                           <div className="bg-[#2e7d32]/5 rounded-xl p-4">
                             <h5 className="font-bold text-[#2e7d32] mb-2">M.Sc Data Science</h5>
                             <p className="text-gray-600 text-sm">
-                              Started in the year 2015, the first of its kind in India. The curriculum of the programme is well 
-                              designed to provide rigorous training on the scalable techniques for big data analysis, machine 
-                              learning, optimization techniques, and artificial intelligence.
+                              Increasing demand in processing and handling the plethora of data, the Department of AM&CS started an innovative five year integrated M.Sc Data Science programme in the year 2015, the first of its kind in India. The curriculum of the programme is well designed to provide rigorous training on the scalable techniques for big data analysis, machine learning, optimization techniques, and artificial intelligence. This programme will equip the students to provide holistic experience encompassing technical and leadership skills which are vital for successfully creating value through analytics and AI in any domain. The graduates from this programme are in huge demand by the industry with an excellent placement record.
                             </p>
                           </div>
 
                           <div className="bg-[#ff9800]/5 rounded-xl p-4">
                             <h5 className="font-bold text-[#ff9800] mb-2">M.Sc. Cyber Security</h5>
                             <p className="text-gray-600 text-sm">
-                              The first of its kind in India aims to prepare students with the technical knowledge and skills 
-                              needed to protect and defend computer systems and networks. It has a strong and wide technical 
-                              base and internship programs which are the most critical aspects to a good cyber security education.
+                             As the drive towards digital transformation continues to ceaselessly gather momentum, they also significantly raise cyber security risks and threat levels. Business is evolving itself at the pace of algorithmic speeds and digital risks are constantly challenging even the most financially robust companies. With the huge skills gap of cyber security workforce globally, there is an urgent need to modernize Cyber security education to include vital skills. The five year integrated M.Sc. Cyber Security programme, the first of its kind in India aims to prepare students with the technical knowledge and skills needed to protect and defend computer systems and networks. The programme has a strong and wide technical base and internship programs which are the most critical aspects to a good cyber security education.
                             </p>
                           </div>
                         </div>
