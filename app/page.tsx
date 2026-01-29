@@ -142,66 +142,100 @@ export default function Home() {
       <Hero />
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white">
+      {/* About Section with Video on Right */}
+      <section id="about" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            {/* About Text */}
+            <div className="space-y-6">
               <h2 className="section-title">About Us</h2>
-              <p className="text-black-600 leading-relaxed mb-6">
+              <p className="text-gray-700 leading-relaxed">
                 PSG College of Technology, established in the year 1951 by PSG & Sons&apos; Charities, Coimbatore, 
                 is one of the premier institutions of the country and is an excellent centre for advanced studies 
                 and research in several areas of Science and Engineering.
               </p>
-              <p className="text-black-600 leading-relaxed mb-6">
+              <p className="text-gray-700 leading-relaxed">
                 The college has excellent infrastructure, well-equipped laboratories and highly qualified and 
                 experienced faculty. The college has signed MoU with research organizations and industries 
                 across the globe to promote technology development, training of students, curriculum updating 
                 and development of state-of-the-art centres.
               </p>
             </div>
-            <div className="grid grid-cols-1 gap-6">
-              <div className="bg-gradient-to-br from-[#1c3879] to-[#0f2557] text-white rounded-2xl p-6 flex items-start gap-4">
-                <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Award className="w-7 h-7" />
-                </div>
-                <div>
-                  <h5 className="font-bold text-lg mb-2">Leverage the Legacy</h5>
-                  <p className="text-white/80 text-sm">
-                    Be a part of the great legacy of PSG & Sons&apos; Charities Trust, who are the epitome of 
-                    commitment and social cause serving the society and educating youth for almost 100 years, 
-                    resonating the great words of its founder &quot;Let there be charity, so that others can share 
-                    my family&apos;s prosperity&quot;.
-                  </p>
-                </div>
-              </div>
-              <div className="bg-gradient-to-br from-[#e8505b] to-[#d43f4a] text-white rounded-2xl p-6 flex items-start gap-4">
-                <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <BookOpen className="w-7 h-7" />
-                </div>
-                <div>
-                  <h5 className="font-bold text-lg mb-2">Science Programmes</h5>
-                  <p className="text-white/80 text-sm">
-                    Explore the field of Science and state-of-the-art topics along with revised curriculum 
-                    to meet the latest corporate and research demands under the guidance of expert mentors 
-                    and faculty.
-                  </p>
+
+            {/* Clickable Video */}
+            <a
+              href="https://youtu.be/zAgE_ElMaRA?si=WXq4XucGrlyFuRmN"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-300"
+            >
+              <img
+                src="https://img.youtube.com/vi/zAgE_ElMaRA/hqdefault.jpg"
+                alt="PSG College Video"
+                className="w-full h-full object-cover"
+              />
+              {/* Overlay Play Button */}
+              <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-8 w-8 text-red-600"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M4 2v20l18-10L4 2z" />
+                  </svg>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-[#1c3879] to-[#0f2557] text-white rounded-2xl p-6 flex items-start gap-4">
-                <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <GraduationCap className="w-7 h-7" />
-                </div>
-                <div>
-                  <h5 className="font-bold text-lg mb-2">Acquire Knowledge</h5>
-                  <p className="text-white/80 text-sm">
-                    Learn and acquire knowledge from a collaborative and dynamic study environment.
-                  </p>
-                </div>
+            </a>
+          </div>
+
+          {/* Feature Cards below About */}
+          <div className="grid md:grid-cols-3 gap-6 mt-12">
+            <div className="bg-gradient-to-br from-[#1c3879] to-[#0f2557] text-white rounded-2xl p-6 flex items-start gap-4 shadow-lg hover:scale-105 transition-transform duration-300">
+              <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Award className="w-7 h-7" />
+              </div>
+              <div>
+                <h5 className="font-bold text-lg mb-2">Leverage the Legacy</h5>
+                <p className="text-white/80 text-sm">
+                  Be a part of the great legacy of PSG & Sons&apos; Charities Trust, who are the epitome of 
+                  commitment and social cause serving the society and educating youth for almost 100 years, 
+                  resonating the great words of its founder &quot;Let there be charity, so that others can share 
+                  my family&apos;s prosperity&quot;.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-[#e8505b] to-[#d43f4a] text-white rounded-2xl p-6 flex items-start gap-4 shadow-lg hover:scale-105 transition-transform duration-300">
+              <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                <BookOpen className="w-7 h-7" />
+              </div>
+              <div>
+                <h5 className="font-bold text-lg mb-2">Science Programmes</h5>
+                <p className="text-white/80 text-sm">
+                  Explore the field of Science and state-of-the-art topics along with revised curriculum 
+                  to meet the latest corporate and research demands under the guidance of expert mentors 
+                  and faculty.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-[#1c3879] to-[#0f2557] text-white rounded-2xl p-6 flex items-start gap-4 shadow-lg hover:scale-105 transition-transform duration-300">
+              <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                <GraduationCap className="w-7 h-7" />
+              </div>
+              <div>
+                <h5 className="font-bold text-lg mb-2">Acquire Knowledge</h5>
+                <p className="text-white/80 text-sm">
+                  Learn and acquire knowledge from a collaborative and dynamic study environment.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* Programmes Section */}
       <section id="programmes" className="py-20 bg-gray-50">

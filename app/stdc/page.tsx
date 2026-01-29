@@ -4,12 +4,15 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 import { Home, ChevronRight, BookOpen, FileText, CheckCircle, Users, Award, Calendar, CreditCard, ArrowRight, Play } from "lucide-react";
 type ProgramKey = "ss" | "tcs" | "ds" | "cs";
 
 export default function STDCPage() {
   const [activeTab, setActiveTab] = useState("overview");
   const [activeProgram, setActiveProgram] = useState<ProgramKey>("ss");
+  const [alumniIndex, setAlumniIndex] = useState(0);
+
 
 
   const programs: { id: ProgramKey; name: string }[] = [
@@ -30,21 +33,77 @@ export default function STDCPage() {
     { name: "Raghavan S", position: "Aviation Management", organization: "Indian Navy" },
     { name: "R.K.Karthikeyan", position: "IPS", organization: "Ministry of Home Affairs, India" },
   ];
+  const nextAlumni = () => {
+    setAlumniIndex((prev) => (prev + 1) % notableAlumni.length);
+  };
+
+  const prevAlumni = () => {
+    setAlumniIndex((prev) =>
+      prev === 0 ? notableAlumni.length - 1 : prev - 1
+    );
+  };
+
   const curriculum: Record<ProgramKey, Record<string, string[]>> = {
 
     ss: {
       "Semester 1": [
-        "Programming in C",
-        "Discrete Mathematics",
-        "Engineering Mathematics",
-        "Digital Logic"
+        "Calculus and Its Applications",
+        "English for Professional Skills",
+        "Applied Physics",
+        "Digital Electronics",
+        "Problem Solving and C Programming",
+        "Mathematical Foundations Lab",
+        "C Programming Lab",
+        "Applied Physics and Digital Electronics Lab",
+        "Personality And Character Development"
       ],
       "Semester 2": [
-        "Data Structures",
-        "OOPS using C++",
-        "Probability & Statistics"
+        "Discrete Structures",
+        "Linear Algebra",
+        "Data Structures and Algorithms",
+        "Object Oriented Programming",
+        "Computer Organization",
+        "Data Structures Lab",
+        "Object Computing Lab",
+        "Python Programming Lab",
+        "Personality And Character Development"
       ],
       "Semester 3": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 4": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 5": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 6": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 7": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 8": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 9": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 10": [
         "Operating Systems",
         "Database Management Systems",
         "Computer Networks"
@@ -65,6 +124,41 @@ export default function STDCPage() {
         "Compiler Design",
         "Cryptography"
       ],
+      "Semester 4": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 5": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 6": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 7": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 8": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 9": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 10": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
     },
 
     ds: {
@@ -82,6 +176,41 @@ export default function STDCPage() {
         "Deep Learning",
         "Big Data Analytics",
         "Natural Language Processing"
+      ],
+      "Semester 4": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 5": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 6": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 7": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 8": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 9": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 10": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
       ],
     },
 
@@ -101,8 +230,135 @@ export default function STDCPage() {
         "Ethical Hacking",
         "Cloud Security"
       ],
+      "Semester 4": [
+        "Cyber Forensics",
+        "Ethical Hacking",
+        "Cloud Security"
+      ],
+      "Semester 5": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 6": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 7": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 8": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 9": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
+      "Semester 10": [
+        "Operating Systems",
+        "Database Management Systems",
+        "Computer Networks"
+      ],
     },
   };
+  const alumniSpeaks = [
+    {
+      name: "Andal Priya Darshini J",
+      role: "Senior Software Engineer, Apple, USA",
+      program: "M.Sc Theoretical Computer Science (2007-2012)",
+      comment:
+        "Looking back on my journey within the program, it's evident that it was a period of profound transformation. I gained invaluable knowledge and skills, but more importantly, I developed a deep-seated passion for continual growth and positive impact.",
+      img: "/placeholder.svg",
+    },
+    {
+      name: "Sai Pujitha Guthi",
+      role: "Senior Software Engineer, Netflix, Seattle, USA",
+      program: "M.Sc Software Engineering (2009-2014)",
+      comment:
+        "Reflecting back on the impact of M.Sc Software engineering on my career, I was consistently impressed by the program's commitment to staying abreast of technological advancements.",
+      img: "/placeholder.svg",
+    },
+    {
+      name: "Rishab R Bafna",
+      role: "Vice President, JP Morgan Chase & Co, USA",
+      program: "M.Sc TCS (2012-2017)",
+      comment:
+        "As a proud alumnus of PSG Tech’s M.Sc. TCS program, I can confidently say that the courses offer a strong foundation for a successful tech career.",
+      img: "/placeholder.svg",
+    },
+    {
+      name: "Niranjana R",
+      role: "Data & Applied Scientist, Microsoft, Hyderabad",
+      program: "M.Sc TCS (2015-2020)",
+      comment:
+        "The course gave me immense opportunities to learn the right skills and connect with the right people.",
+      img: "/placeholder.svg",
+    },
+  ];
+  const achievementCategories = ["All", "Entrepreneurs", "PhD Holders", "Higher Studies", "Events", "Sports & Culturals"];
+
+  const [activeAchievement, setActiveAchievement] = useState("All");
+
+  const achievements = [
+    {
+      name: "Karunya Sampath",
+      role: "Founder & CEO, Payoda Technology Inc., Coimbatore",
+      img: "/placeholder.svg",
+      category: "Entrepreneurs",
+    },
+    {
+      name: "Vidya Devarajan",
+      role: "Director, Kovan Labs",
+      img: "/placeholder.svg",
+      category: "Entrepreneurs",
+    },
+    {
+      name: "Senthil Natarajan",
+      role: "Managing Director, Pazha Mudir Nilayam",
+      img: "/placeholder.svg",
+      category: "Entrepreneurs",
+    },
+    {
+      name: "Kuberan Marimuthu",
+      role: "CEO, Cypherd Wallet, USA",
+      img: "/placeholder.svg",
+      category: "Entrepreneurs",
+    },
+
+    {
+      name: "Dr Arun Kumar",
+      role: "PhD – Stanford University",
+      img: "/placeholder.svg",
+      category: "PhD Holders",
+    },
+
+    {
+      name: "Meera Devi",
+      role: "MS Computer Science – Germany",
+      img: "/placeholder.svg",
+      category: "Higher Studies",
+    },
+
+    {
+      name: "Tech Symposium",
+      role: "National Level Event Winners",
+      img: "/placeholder.svg",
+      category: "Events",
+    },
+
+    {
+      name: "Athletics Team",
+      role: "Inter College Champions",
+      img: "/placeholder.svg",
+      category: "Sports & Culturals",
+    },
+  ];
 
   return (
     <main>
@@ -360,65 +616,84 @@ export default function STDCPage() {
                   )}
 
                   {activeTab === "alumni" && (
-                    <div className="space-y-6">
-                      <div className="mt-8">
-                        <h4 className="text-xl font-bold text-[#1c3879] mb-6">Notable Alumni</h4>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                          {notableAlumni.map((alum, idx) => (
-                            <div key={idx} className="bg-white border rounded-xl p-4 text-center hover:shadow-lg transition-shadow">
-                              <div className="w-16 h-16 bg-[#1c3879]/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                                <span className="text-[#1c3879] font-bold text-xl">
-                                  {alum.name.charAt(0)}
-                                </span>
+                    <div className="space-y-10">
+
+                      {/* Alumni Speaks */}
+                      <div>
+                        <h4 className="text-xl font-bold text-[#1c3879] mb-6">Alumni Speaks</h4>
+
+                        <div className="space-y-6">
+                          {alumniSpeaks.map((a, i) => (
+                            <div key={i} className="bg-gray-50 rounded-xl p-6 flex gap-4">
+
+                              <Image
+                                src={a.img}
+                                alt={a.name}
+                                width={80}
+                                height={80}
+                                className="rounded-full"
+                              />
+
+                              <div>
+                                <h5 className="font-bold text-[#1c3879]">{a.name}</h5>
+                                <p className="text-sm text-[#e8505b]">{a.role}</p>
+                                <p className="text-xs text-gray-500 mb-2">{a.program}</p>
+
+                                <p className="text-sm text-gray-600 leading-relaxed">
+                                  {a.comment}
+                                </p>
                               </div>
-                              <h5 className="font-bold text-[#1a1a2e] text-sm">{alum.name}</h5>
-                              <p className="text-[#e8505b] text-xs font-medium">{alum.position}</p>
-                              <p className="text-gray-500 text-xs mt-1">{alum.organization}</p>
                             </div>
                           ))}
                         </div>
                       </div>
+
                     </div>
                   )}
 
                   {activeTab === "achievements" && (
-                    <div className="space-y-6">
-                      <div className="bg-[#1c3879]/5 rounded-xl p-6">
-                        <h4 className="text-lg font-bold text-[#1c3879] mb-3">Top Recruiters</h4>
-                        <p className="text-gray-600 leading-relaxed mb-4">
-                          Our alumni are placed in top companies across the globe including:
-                        </p>
-                        <div className="flex flex-wrap gap-3">
-                          {["Microsoft", "Google", "Meta", "Amazon", "Goldman Sachs", "Morgan Stanley", "JPMorgan", 
-                            "Deloitte", "TCS", "Infosys", "Wipro", "Cognizant", "HCL", "IBM"].map((company, idx) => (
-                            <span key={idx} className="bg-white px-4 py-2 rounded-full text-sm text-[#1c3879] font-medium border">
-                              {company}
-                            </span>
-                          ))}
-                        </div>
+                    <div className="space-y-8">
+
+                      <p className="text-center font-semibold text-[#7b2ff7]">Filter by:</p>
+
+                      <div className="flex flex-wrap gap-3 justify-center">
+                        {achievementCategories.map((cat, i) => (
+                          <button
+                            key={i}
+                            onClick={() => setActiveAchievement(cat)}
+                            className={`px-6 py-2 border rounded-md text-sm font-medium transition ${
+                              activeAchievement === cat
+                                ? "bg-blue-700 text-white"
+                                : "border-blue-600 text-blue-600 hover:bg-blue-50"
+                            }`}
+                          >
+                            {cat}
+                          </button>
+                        ))}
                       </div>
 
-                      <div className="bg-[#e8505b]/5 rounded-xl p-6">
-                        <h4 className="text-lg font-bold text-[#e8505b] mb-3">Facilities</h4>
-                        <ul className="space-y-2 text-gray-600">
-                          <li className="flex items-start gap-2">
-                            <span className="w-2 h-2 bg-[#e8505b] rounded-full mt-2 flex-shrink-0"></span>
-                            Well-equipped computer labs with latest hardware and software
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="w-2 h-2 bg-[#e8505b] rounded-full mt-2 flex-shrink-0"></span>
-                            Library with national and international journals
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="w-2 h-2 bg-[#e8505b] rounded-full mt-2 flex-shrink-0"></span>
-                            Regular technical symposia at national and international levels
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="w-2 h-2 bg-[#e8505b] rounded-full mt-2 flex-shrink-0"></span>
-                            Industry interactions and guest lectures
-                          </li>
-                        </ul>
+                      <div className="grid md:grid-cols-4 gap-6">
+                        {(activeAchievement === "All"
+                          ? achievements
+                          : achievements.filter(a => a.category === activeAchievement)
+                        ).map((a, i) => (
+                          <div key={i} className="bg-white rounded-xl shadow p-5 text-center">
+
+                            <Image
+                              src={a.img}
+                              alt={a.name}
+                              width={120}
+                              height={120}
+                              className="rounded-full mx-auto mb-4"
+                            />
+
+                            <h4 className="font-bold text-purple-700">{a.name}</h4>
+
+                            <p className="text-sm text-gray-600 mt-2">{a.role}</p>
+                          </div>
+                        ))}
                       </div>
+
                     </div>
                   )}
                 </div>
@@ -427,6 +702,49 @@ export default function STDCPage() {
 
             {/* Sidebar */}
             <div className="space-y-6">
+              {/* Notable Alumni Card */}
+              <div className="bg-white rounded-2xl card-shadow p-6 text-center">
+
+                <h4 className="text-xl font-bold text-[#1c3879] mb-4">
+                  🎓 Notable Alumni
+                </h4>
+
+                <div className="relative bg-[#1c3879]/10 rounded-xl p-6 mb-4">
+
+                  <button
+                    onClick={prevAlumni}
+                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-[#1c3879] text-white w-8 h-8 rounded-full"
+                  >
+                    ‹
+                  </button>
+
+                  <button
+                    onClick={nextAlumni}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#1c3879] text-white w-8 h-8 rounded-full"
+                  >
+                    ›
+                  </button>
+
+                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-3">
+                    <span className="text-[#1c3879] font-bold text-xl">
+                      {notableAlumni[alumniIndex].name.charAt(0)}
+                    </span>
+                  </div>
+
+                  <h5 className="font-bold text-[#1c3879]">
+                    {notableAlumni[alumniIndex].name}
+                  </h5>
+
+                  <p className="text-sm font-medium text-[#e8505b]">
+                    {notableAlumni[alumniIndex].position}
+                  </p>
+
+                  <p className="text-xs text-gray-500">
+                    {notableAlumni[alumniIndex].organization}
+                  </p>
+                </div>
+              </div>
+
               <div className="important-dates">
                 <h4 className="text-xl font-bold mb-6">Important Dates</h4>
                 <ul className="space-y-4">

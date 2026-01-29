@@ -43,7 +43,7 @@ export default function Hero() {
       <div className="absolute inset-0 hero-overlay z-10"></div>
 
       {/* Content */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 py-32 text-center fade-section is-visible">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 py-32 text-center animate-fadeInUp">
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-4">
           B.Sc & M.Sc Programmes
         </h1>
@@ -63,11 +63,11 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link href="/apply" className="btn-secondary text-lg px-8 py-4">
-            Apply Now
+          <Link href="/apply" className="btn-glow px-10 py-4 text-lg">
+            <span>Apply Now</span>
           </Link>
 
-          <Link href="/#programmes" className="btn-outline text-lg px-8 py-4">
+          <Link href="/#programmes" className="btn-glow px-10 py-4 text-l">
             Explore Programmes
           </Link>
         </div>

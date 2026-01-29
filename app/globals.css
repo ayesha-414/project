@@ -342,3 +342,104 @@
   z-index: 50;
   transition: transform 0.3s;
 }
+/* Program Card Carousel Animation */
+.carousel-container {
+  display: flex;
+  gap: 2rem;
+  perspective: 1500px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 2rem 0;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.program-card {
+  scroll-snap-align: center;
+  transition: transform 0.5s, opacity 0.5s;
+  transform-origin: center center;
+}
+
+.program-card:nth-child(n) {
+  transform: rotateY(-30deg) scale(0.8);
+  opacity: 0.5;
+}
+
+.program-card:focus,
+.program-card:hover,
+.program-card.active {
+  transform: rotateY(0deg) scale(1);
+  opacity: 1;
+  z-index: 10;
+}
+/* magic-card.css */
+@keyframes rotate-bg {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.magic-card {
+  position: relative;
+  width: 300px;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.magic-card::before {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 140%;
+  background: linear-gradient(180deg, #1bb76e, #3b82f6);
+  animation: rotate-bg 4s linear infinite;
+  transition: all 0.2s linear;
+}
+
+.magic-card::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 16px;
+  background-color: #07182E; /* Card bg */
+}
+
+.magic-card:hover::before {
+  width: 160px;
+  filter: brightness(1.3);
+}
+
+.magic-card-content {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  padding: 20px;
+}
+
+.magic-card-content img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 16px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.magic-card-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.magic-card-content p {
+  font-size: 0.9rem;
+  color: #ddd;
+}
