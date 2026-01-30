@@ -590,6 +590,7 @@ export default function STDCPage() {
   const [activeAchievement, setActiveAchievement] = useState("All");
 
   const achievements = [
+  // -------------------- Entrepreneurs --------------------
     {
       name: "Karunya Sampath",
       role: "Founder & CEO, Payoda Technology Inc., Coimbatore",
@@ -604,7 +605,7 @@ export default function STDCPage() {
     },
     {
       name: "Senthil Natarajan",
-      role: "Managing Director, Pazha Mudir Nilayam",
+      role: "Managing Director, Kovai Pazha Mudir Nilayam, Coimbatore",
       img: "/placeholder.svg",
       category: "Entrepreneurs",
     },
@@ -614,31 +615,269 @@ export default function STDCPage() {
       img: "/placeholder.svg",
       category: "Entrepreneurs",
     },
+    {
+      name: "B. Ramprasath",
+      role: "Co-Founder and CTO, Foxsense Innovations, Coimbatore",
+      img: "/placeholder.svg",
+      category: "Entrepreneurs",
+    },
+    {
+      name: "Rukaiya Dahodwala",
+      role: "Honest Mocha Entrepreneur, Redmond, Washington, USA",
+      img: "/placeholder.svg",
+      category: "Entrepreneurs",
+    },
+    {
+      name: "Sethuraman T.A",
+      role: "Co-Founder and CEO, Jungroo Learning, Bengaluru",
+      img: "/placeholder.svg",
+      category: "Entrepreneurs",
+    },
+    {
+      name: "Cibe Hariharan",
+      role: "Co-Founder and CEO, Jungroo Learning, Bengaluru",
+      img: "/placeholder.svg",
+      category: "Entrepreneurs",
+    },
 
+    // -------------------- PhD Holders --------------------
     {
       name: "Dr Arun Kumar",
       role: "PhD – Stanford University",
       img: "/placeholder.svg",
       category: "PhD Holders",
     },
+    {
+      name: "Dr. Aditi Mukherjee",
+      role: "Research Scientist at Peraton Labs",
+      img: "/placeholder.svg",
+      category: "PhD Holders",
+    },
+    {
+      name: "Dr. Sridhar Venkatesan",
+      role: "Associate Professor, University of Florida",
+      img: "/placeholder.svg",
+      category: "PhD Holders",
+    },
+    {
+      name: "Dr. Akshaya Mani",
+      role: "Applied Researcher",
+      img: "/placeholder.svg",
+      category: "PhD Holders",
+    },
+    {
+      name: "Dr. Yashwanth Ramamurthi",
+      role: "International Institute of Information Technology, Bangalore",
+      img: "/placeholder.svg",
+      category: "PhD Holders",
+    },
+    {
+      name: "Dr. Rathin Jeyeram",
+      role: "Learning Planet Institute, Université Paris Cité",
+      img: "/placeholder.svg",
+      category: "PhD Holders",
+    },
 
+    // -------------------- Higher Studies --------------------
     {
       name: "Meera Devi",
       role: "MS Computer Science – Germany",
       img: "/placeholder.svg",
       category: "Higher Studies",
     },
+    {
+      name: "Vaishali Surianarayanan",
+      role: "Senior PhD candidate (Fully Funded) in Computer Science at UCSB",
+      img: "/placeholder.svg",
+      category: "Higher Studies",
+    },
+    {
+      name: "Pavithra Elumalai",
+      role: "PhD Scholar, University of Göttingen and University of Tübingen",
+      img: "/placeholder.svg",
+      category: "Higher Studies",
+    },
+    {
+      name: "Surya Prasath",
+      role: "Pursuing MS in Data Science, University of Maryland, USA",
+      img: "/placeholder.svg",
+      category: "Higher Studies",
+    },
+    {
+      name: "Naman Bhargava",
+      role: "MSc Data Science, Michigan University",
+      img: "/placeholder.svg",
+      category: "Higher Studies",
+    },
+    {
+      name: "Ashwatha E S",
+      role: "MSc Software Engineering, Northeastern University, Boston",
+      img: "/placeholder.svg",
+      category: "Higher Studies",
+    },
+    {
+      name: "Charan K R",
+      role: "MSc Computer Science, New York University",
+      img: "/placeholder.svg",
+      category: "Higher Studies",
+    },
+    {
+      name: "Gowtham R",
+      role: "MSc Computer Science, Trinity College, Ireland",
+      img: "/placeholder.svg",
+      category: "Higher Studies",
+    },
+    {
+      name: "Lakshminarayanan Ravi",
+      role: "Pursuing MS in Computer Science Engineering, Northeastern University, USA",
+      img: "/placeholder.svg",
+      category: "Higher Studies",
+    },
+    {
+      name: "Saket Vempaty",
+      role: "Research Scholar at IIIT Hyderabad",
+      img: "/placeholder.svg",
+      category: "Higher Studies",
+    },
+    {
+      name: "N. Krishna",
+      role: "Pursuing M.Sc Mathematics, Simon Fraser University, Canada",
+      img: "/placeholder.svg",
+      category: "Higher Studies",
+    },
 
+    // -------------------- Events --------------------
     {
       name: "Tech Symposium",
       role: "National Level Event Winners",
       img: "/placeholder.svg",
       category: "Events",
     },
+    {
+      name: "MSc Cyber Security",
+      role: "TN Police Hackethon 2022, Bagged Third Prize",
+      img: "/placeholder.svg",
+      category: "Events",
+    },
+    {
+      name: "MSc Cyber Security",
+      role: "National Level Embedded Security CTF 2022, Top 20 among 500 teams",
+      img: "/placeholder.svg",
+      category: "Events",
+    },
+    {
+      name: "MSc Cyber Security",
+      role: "GIT X 2022, Best Innovation Prize",
+      img: "/placeholder.svg",
+      category: "Events",
+    },
+    {
+      name: "MSc Cyber Security",
+      role: "Caterpillar Hackethon 2021 and 2022, Finalists",
+      img: "/placeholder.svg",
+      category: "Events",
+    },
+    {
+      name: "M.Sc Software Systems",
+      role: "Cookr Food Tech Hackethon 2024, Winners",
+      img: "/placeholder.svg",
+      category: "Events",
+    },
+    {
+      name: "Tamjid L",
+      role: "Decoding 2022, First Prize",
+      img: "/placeholder.svg",
+      category: "Events",
+    },
+    {
+      name: "Mahizha N.S",
+      role: "Manas Codeathon 2023, Runner-Up",
+      img: "/placeholder.svg",
+      category: "Events",
+    },
+    {
+      name: "MSc Data Science",
+      role: "Bosch University Hackethon 2024, Winners",
+      img: "/placeholder.svg",
+      category: "Events",
+    },
+    {
+      name: "MSc Data Science",
+      role: "Paper Presentation in 9th National Conference on Computer Vision Pattern Recognition Image Processing Graphics NCVPRIPG 2024 at IIST",
+      img: "/placeholder.svg",
+      category: "Events",
+    },
+    {
+      name: "MSc Data Science",
+      role: "Societe Generale Global Solutions Hackethon 2023, Finalists",
+      img: "/placeholder.svg",
+      category: "Events",
+    },
+    {
+      name: "M.Sc Data Science",
+      role: "Smart India Hackethon 2022, First Prize Rs.1,00,000",
+      img: "/placeholder.svg",
+      category: "Events",
+    },
+    {
+      name: "Varun Vaibhav A.S",
+      role: "IIIT Hackethon on Healthcare 2023",
+      img: "/placeholder.svg",
+      category: "Events",
+    },
+    {
+      name: "Mukund Elumalai",
+      role: "KLA Hackethon 2020, Cash Prize Rs.34,000",
+      img: "/placeholder.svg",
+      category: "Events",
+    },
+    {
+      name: "Kirushikesh DB",
+      role: "Filed a Patent on NLP during the Internship at IBM Research",
+      img: "/placeholder.svg",
+      category: "Events",
+    },
+    {
+      name: "M.Sc Theoretical Computer Science",
+      role: "Societe Generale Group Hackethon, Runner-up",
+      img: "/placeholder.svg",
+      category: "Events",
+    },
 
+    // -------------------- Sports & Culturals --------------------
     {
       name: "Athletics Team",
       role: "Inter College Champions",
+      img: "/placeholder.svg",
+      category: "Sports & Culturals",
+    },
+    {
+      name: "Karthick Ravi",
+      role: "Badminton State Rank Holder",
+      img: "/placeholder.svg",
+      category: "Sports & Culturals",
+    },
+    {
+      name: "Charankumar P",
+      role: "Guinness World Record holder ‘Football Touches with Alternating Feet in one minute’",
+      img: "/placeholder.svg",
+      category: "Sports & Culturals",
+    },
+    {
+      name: "Sai Karthik",
+      role: "Petrichor 23 Techno Cultural Feast, IIT Palakkad - Breaking Band, 2nd Position",
+      img: "/placeholder.svg",
+      category: "Sports & Culturals",
+    },
+    {
+      name: "Alagu Prakalya",
+      role: "AI Tamilnadu Kalambagam - Talk on ‘Building GPT models of Tamil’",
+      img: "/placeholder.svg",
+      category: "Sports & Culturals",
+    },
+    {
+      name: "Lalit Kishore",
+      role: "Tamilnadu Archery Championship, Gold Medallist",
       img: "/placeholder.svg",
       category: "Sports & Culturals",
     },
