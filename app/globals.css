@@ -206,7 +206,7 @@
 
 /* Navigation */
 .nav-link {
-  color: rgba(7, 50, 106, 0.9); /* Navy */
+  color: rgba(244, 244, 244, 0.9); /* Navy */
   padding: 0.5rem 1rem;
   transition: color 0.2s;
 }
@@ -334,7 +334,7 @@
 /* Semester cards */
 .semester-card {
   background: linear-gradient(to bottom right, #064089, #0A61C9);
-  color: #f1f0f0;
+  color: #fffefe;
   border-radius: 0.75rem;
   padding: 1.5rem;
 }

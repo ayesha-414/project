@@ -52,22 +52,22 @@ export default function Hero() {
           Admission
         </h2>
 
-        <div className="inline-block bg-[#e8505b] px-8 py-3 rounded-full mt-4 mb-8">
-          <span className="text-4xl md:text-5xl lg:text-7xl font-bold text-white">
+        <div className="inline-block px-8 py-3 rounded-full mt-4 mb-8">
+          <span className="text-4xl md:text-5xl lg:text-7xl font-bold text-blue">
             2026
           </span>
         </div>
 
-        <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+        {/* <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10">
           Join one of India&apos;s premier institutions for science education.
-        </p>
+        </p> */}
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link href="/apply" className="btn-glow px-10 py-4 text-lg">
+          <Link href="/apply" className="btn-glow px-10 py-4 text-lg bg-blue-100 rounded-full">
             <span>Apply Now</span>
           </Link>
 
-          <Link href="/#programmes" className="btn-glow px-10 py-4 text-l">
+          <Link href="/#programmes" className="btn-glow px-10 py-4 text-l bg-blue-100 rounded-half">
             Explore Programmes
           </Link>
         </div>

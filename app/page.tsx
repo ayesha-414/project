@@ -39,6 +39,13 @@ export default function Home() {
       icon: "cyber",
     },
     {
+      title: "M.Sc Computational Finance.*",
+      subtitle: "",
+      description:"to be filled",
+      href: "/finance",
+      icon: "finance",
+    },
+    {
       title: "M.Sc Fashion Design & Merchandising",
       subtitle: "",
       description: "M.Sc Fashion Design & Merchandising was started in the year 2015. The curriculum is designed to prepare graduates with a solid understanding and expertise required to enter professional practice in the challenging and competitive fashion industry.",
