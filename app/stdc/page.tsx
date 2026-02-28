@@ -29,31 +29,31 @@ export default function STDCPage() {
     name: "Dr. Pravin Shankar", 
     position: "Data Science Director", 
     organization: "Meta/WhatsApp USA",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Pravin" 
+    image: "/image/notable_alumini_img/pravin_shankar.png" 
   },
   { 
     name: "Harini Seshadri", 
     position: "Executive Director", 
     organization: "Morgan Stanley, Bengaluru",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Harini"
+    image: "/image/notable_alumini_img/harini.jpeg"
   },
   { 
     name: "Kasiviswanathan M", 
     position: "Executive Director", 
     organization: "JPMorgan Chase & Co, USA",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Kasiviswanathan"
+    image: "/image/notable_alumini_img/kasiviswanathan.jpeg"
   },
   { 
     name: "Dr. Parameswaran R", 
     position: "Research Scientist", 
     organization: "Meta, San Francisco",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Parameswaran"
+    image: "/image/notable_alumini_img/parameswaran.jpeg"
   },
   { 
     name: "Gowri Sekar", 
     position: "Managing Director", 
     organization: "Goldman Sachs, Bengaluru",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Gowri"
+    image: "/image/notable_alumini_img/gowrisekar.jpeg"
   },
   { 
     name: "Laks Srini", 
@@ -62,16 +62,16 @@ export default function STDCPage() {
     image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Laks"
   },
   { 
-    name: "Raghavan S", 
+    name: "Raghavan Sivakumar S", 
     position: "Aviation Management", 
     organization: "Indian Navy",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Raghavan"
+    image: "/image/notable_alumini_img/ragavan_sivakumar.jpeg"
   },
   { 
     name: "R.K. Karthikeyan", 
     position: "IPS", 
     organization: "Ministry of Home Affairs, India",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Karthikeyan"
+    image: "/image/notable_alumini_img/RK.Karthikeyan.png"
   },
 ];
   const nextAlumni = () => {
