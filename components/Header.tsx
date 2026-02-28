@@ -45,17 +45,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3">
-              {/* <div className="w-14 h-14 bg-[#1c3879] rounded-full flex items-center justify-center overflow-hidden p-1">
-                <Image
-                  src="/images/logo.jpeg"
-                  alt="PSG College of Technology Logo"
-                  width={48}
-                  height={48}
-                  className="object-cover"
-                />
-              </div> */}
-
-               <div className="w-14 h-14 bg-[#1c3879]  flex items-center justify-center overflow-hidden p-1 rounded-lg">
+               <div className="w-14 h-14 bg-[#1c3879] flex items-center justify-center overflow-hidden p-1 rounded-lg">
                 <Image
                   src={LOGO_URL || "/placeholder.svg"}
                   alt="PSG College of Technology Logo"
@@ -102,6 +92,8 @@ export default function Header() {
                 </div>
               </div>
 
+              {/* Added Gallery Link Here */}
+              <Link href="/gallery" className="nav-link">Gallery</Link>
               <Link href="/#schedule" className="nav-link">Schedule</Link>
               <Link href="/#contact" className="nav-link">Contact</Link>
             </nav>
@@ -140,7 +132,6 @@ export default function Header() {
                     height={40}
                     className="object-contain"
                   />
-
                 </div>
                 <div>
                   <h6 className="text-white font-semibold text-sm">PSG COLLEGE OF TECHNOLOGY</h6>
@@ -189,6 +180,10 @@ export default function Header() {
                 )}
               </div>
 
+              {/* Added Gallery Link Here */}
+              <Link href="/gallery" className="block text-white text-lg py-2" onClick={() => setIsMobileMenuOpen(false)}>
+                Gallery
+              </Link>
               <Link href="/#schedule" className="block text-white text-lg py-2" onClick={() => setIsMobileMenuOpen(false)}>
                 Schedule
               </Link>
