@@ -20,48 +20,56 @@ const alumniData: Alumni[] = [
     designation: "Data Science Director",
     company: "Meta/WhatsApp USA",
     category: "PhD Holders",
+    image: "/alumni/pravin-shankar.jpg", // Update with your actual file names
   },
   {
     name: "Harini Seshadri",
     designation: "Executive Director",
     company: "Morgan Stanley, Bengaluru",
     category: "Higher Studies",
+    image: "/alumni/harini-seshadri.jpg",
   },
   {
     name: "Kasiviswanathan M",
     designation: "Executive Director",
     company: "JPMorgan Chase & Co, USA",
     category: "Entrepreneurs",
+    image: "/alumni/kasiviswanathan.jpg",
   },
   {
     name: "Dr. Parameswaran R",
     designation: "Research Scientist",
     company: "Meta, San Francisco",
     category: "PhD Holders",
+    image: "/alumni/parameswaran.jpg",
   },
   {
     name: "Gowri Sekar",
     designation: "Managing Director",
     company: "Goldman Sachs, Bengaluru",
     category: "Higher Studies",
+    image: "/alumni/gowri-sekar.jpg",
   },
   {
     name: "Laks Srini",
     designation: "Co Founder & CTO",
     company: "Zerodown, USA",
     category: "Entrepreneurs",
+    image: "/alumni/laks-srini.jpg",
   },
   {
     name: "Raghavan S",
     designation: "Aviation Management",
     company: "Indian Navy",
     category: "Events",
+    image: "/alumni/raghavan.jpg",
   },
   {
     name: "R.K. Karthikeyan",
     designation: "IPS",
     company: "Ministry of Home Affairs, India",
     category: "Events",
+    image: "/alumni/karthikeyan.jpg",
   },
 ]
 
@@ -122,9 +130,25 @@ export default function NotableAlumni() {
                   ${index === 0 ? "bg-white/10 scale-100" : "bg-white/5 scale-[0.98] opacity-70"}
                 `}
               >
-                {/* Avatar */}
+                {/* Avatar / Image Section Updated Here */}
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white font-bold text-lg">
+                  {alumni.image ? (
+                    <img
+                      src={alumni.image}
+                      alt={`${alumni.name} profile`}
+                      className="w-12 h-12 rounded-full object-cover border-2 border-amber-400/20 shadow-sm"
+                      onError={(e) => {
+                        // Fallback to initials if the image link is broken
+                        e.currentTarget.style.display = 'none';
+                        e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                      }}
+                    />
+                  ) : null}
+                  
+                  {/* Fallback Initials (Hidden by default if image exists) */}
+                  <div 
+                    className={`w-12 h-12 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white font-bold text-lg ${alumni.image ? 'hidden' : ''}`}
+                  >
                     {alumni.name
                       .split(" ")
                       .map((n) => n[0])

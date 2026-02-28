@@ -67,7 +67,7 @@ export default function Hero() {
             <span>Apply Now</span>
           </Link>
 
-          <Link href="/#programmes" className="btn-glow px-10 py-4 text-l bg-blue-100 rounded-half">
+          <Link href="/#programmes" className="btn-glow px-10 py-4 text-l bg-blue-100 rounded-full">
             Explore Programmes
           </Link>
         </div>
