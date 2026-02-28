@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Header from "@/components/Header";
+
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
@@ -24,15 +25,55 @@ export default function STDCPage() {
 
 
   const notableAlumni = [
-    { name: "Dr. Pravin Shankar", position: "Data Science Director", organization: "Meta/WhatsApp USA" },
-    { name: "Harini Seshadri", position: "Executive Director", organization: "Morgan Stanley, Bengaluru" },
-    { name: "Kasiviswanathan M", position: "Executive Director", organization: "JPMorgan Chase & Co, USA" },
-    { name: "Dr.Parameswaran R", position: "Research Scientist", organization: "Meta, San Francisco" },
-    { name: "Gowri Sekar", position: "Managing Director", organization: "Goldman Sachs, Bengaluru" },
-    { name: "Laks Srini", position: "Co Founder & CTO", organization: "Zerodown, USA" },
-    { name: "Raghavan S", position: "Aviation Management", organization: "Indian Navy" },
-    { name: "R.K.Karthikeyan", position: "IPS", organization: "Ministry of Home Affairs, India" },
-  ];
+  { 
+    name: "Dr. Pravin Shankar", 
+    position: "Data Science Director", 
+    organization: "Meta/WhatsApp USA",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Pravin" 
+  },
+  { 
+    name: "Harini Seshadri", 
+    position: "Executive Director", 
+    organization: "Morgan Stanley, Bengaluru",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Harini"
+  },
+  { 
+    name: "Kasiviswanathan M", 
+    position: "Executive Director", 
+    organization: "JPMorgan Chase & Co, USA",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Kasiviswanathan"
+  },
+  { 
+    name: "Dr. Parameswaran R", 
+    position: "Research Scientist", 
+    organization: "Meta, San Francisco",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Parameswaran"
+  },
+  { 
+    name: "Gowri Sekar", 
+    position: "Managing Director", 
+    organization: "Goldman Sachs, Bengaluru",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Gowri"
+  },
+  { 
+    name: "Laks Srini", 
+    position: "Co Founder & CTO", 
+    organization: "Zerodown, USA",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Laks"
+  },
+  { 
+    name: "Raghavan S", 
+    position: "Aviation Management", 
+    organization: "Indian Navy",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Raghavan"
+  },
+  { 
+    name: "R.K. Karthikeyan", 
+    position: "IPS", 
+    organization: "Ministry of Home Affairs, India",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Karthikeyan"
+  },
+];
   const nextAlumni = () => {
     setAlumniIndex((prev) => (prev + 1) % notableAlumni.length);
   };
@@ -1235,11 +1276,19 @@ export default function STDCPage() {
                     ›
                   </button>
 
-                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-3">
+                  <div className="w-16 h-16 bg-white rounded-full overflow-hidden flex items-center justify-center mx-auto mb-3 border-2 border-white shadow-sm">
+                  {notableAlumni[alumniIndex].image ? (
+                    <img 
+                      src={notableAlumni[alumniIndex].image} 
+                      alt={notableAlumni[alumniIndex].name} 
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
                     <span className="text-[#1c3879] font-bold text-xl">
                       {notableAlumni[alumniIndex].name.charAt(0)}
                     </span>
-                  </div>
+                  )}
+                </div>
 
                   <h5 className="font-bold text-[#1c3879]">
                     {notableAlumni[alumniIndex].name}

@@ -7,6 +7,7 @@ import ProgramCard from "@/components/ProgramCard";
 import ScheduleCard from "@/components/ScheduleCard";
 import Link from "next/link";
 import { Award, BookOpen, GraduationCap, Users, ArrowRight } from "lucide-react";
+import NotableAlumni from "@/components/NotableAlumni";
 
 export default function Home() {
   const integratedPrograms = [
@@ -318,6 +319,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
 
       {/* Schedule Section */}
       <section id="schedule" className="py-20 bg-white">
