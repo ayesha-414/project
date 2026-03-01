@@ -61,16 +61,20 @@ export default function Hero() {
         {/* <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10">
           Join one of India&apos;s premier institutions for science education.
         </p> */}
+        
+        <div className="flex gap-6 justify-center">
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link href="/apply" className="btn-glow px-10 py-4 text-lg bg-blue-100 rounded-full">
-            <span>Apply Now</span>
+          <Link href="/apply" className="neon-btn">
+            APPLY NOW <span className="neon-arrow">›</span>
           </Link>
 
-          <Link href="/#programmes" className="btn-glow px-10 py-4 text-l bg-blue-100 rounded-half">
-            Explore Programmes
+          <Link href="/#programmes" className="neon-btn">
+            EXPLORE <span className="neon-arrow">›</span>
           </Link>
+
         </div>
+
+
       </div>
     </section>
   );
