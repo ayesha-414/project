@@ -55,7 +55,7 @@ export default function Header() {
                 />
               </div> 
               <div className="hidden md:block">
-                <h6 className="text-white font-semibold text-sm">PSG COLLEGE OF TECHNOLOGY</h6>
+                <h6 className="text-white font-semibold text-md">PSG COLLEGE OF TECHNOLOGY</h6>
                 <p className="text-white/70 text-xs">Government Aided Autonomous Institution</p>
                 <p className="text-white/70 text-xs">Affiliated to Anna University</p>
               </div>
