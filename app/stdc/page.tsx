@@ -28,15 +28,56 @@ export default function STDCPage() {
   ];
 
   const notableAlumni = [
-    { name: "Dr. Pravin Shankar",    position: "Data Science Director",   organization: "Meta/WhatsApp USA",               image: "/image/notable_alumini_img/pravin_shankar.png" },
-    { name: "Harini Seshadri",       position: "Executive Director",      organization: "Morgan Stanley, Bengaluru",        image: "/image/notable_alumini_img/harini.jpeg" },
-    { name: "Kasiviswanathan M",     position: "Executive Director",      organization: "JPMorgan Chase & Co, USA",         image: "/image/notable_alumini_img/kasiviswanathan.jpeg" },
-    { name: "Dr. Parameswaran R",    position: "Research Scientist",      organization: "Meta, San Francisco",              image: "/image/notable_alumini_img/parameswaran.jpeg" },
-    { name: "Gowri Sekar",           position: "Managing Director",       organization: "Goldman Sachs, Bengaluru",         image: "/image/notable_alumini_img/gowrisekar.jpeg" },
-    { name: "Laks Srini",            position: "Co Founder & CTO",        organization: "Zerodown, USA",                    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Laks" },
-    { name: "Raghavan Sivakumar S",  position: "Aviation Management",     organization: "Indian Navy",                      image: "/image/notable_alumini_img/ragavan_sivakumar.jpeg" },
-    { name: "R.K. Karthikeyan",      position: "IPS",                     organization: "Ministry of Home Affairs, India",  image: "/image/notable_alumini_img/RK.Karthikeyan.png" },
-  ];
+  {
+    name: "Dr. Pravin Shankar",
+    position: "Data Science Director",
+    organization: "Meta/WhatsApp USA",
+    image: "/notable_alumini_img/pravin_shankar.png",
+  },
+  {
+    name: "Harini Seshadri",
+    position: "Executive Director",
+    organization: "Morgan Stanley, Bengaluru",
+    image: "/notable_alumini_img/harini.jpeg",
+  },
+  {
+    name: "Kasiviswanathan M",
+    position: "Executive Director",
+    organization: "JPMorgan Chase & Co, USA",
+    image: "/notable_alumini_img/kasiviswanathan.jpeg",
+  },
+  {
+    name: "Dr. Parameswaran R",
+    position: "Research Scientist",
+    organization: "Meta, San Francisco",
+    image: "/notable_alumini_img/parameswaran.jpeg",
+  },
+  {
+    name: "Gowri Sekar",
+    position: "Managing Director",
+    organization: "Goldman Sachs, Bengaluru",
+    image: "/notable_alumini_img/gowrisekar.jpeg",
+  },
+  {
+    name: "Laks Srini",
+    position: "Co Founder & CTO",
+    organization: "Zerodown, USA",
+    image: "/notable_alumini_img/pravin_shankar.png", // or any placeholder you want
+  },
+  {
+    name: "Raghavan Sivakumar S",
+    position: "Aviation Management",
+    organization: "Indian Navy",
+    image: "/notable_alumini_img/ragavan_sivakumar.jpeg",
+  },
+  {
+    name: "R.K. Karthikeyan",
+    position: "IPS",
+    organization: "Ministry of Home Affairs, India",
+    image: "/notable_alumini_img/RK.Karthikeyan.png",
+  },
+];
+
 
   const nextAlumni = () => setAlumniIndex((p) => (p + 1) % notableAlumni.length);
   const prevAlumni = () => setAlumniIndex((p) => (p === 0 ? notableAlumni.length - 1 : p - 1));

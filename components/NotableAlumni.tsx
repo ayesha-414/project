@@ -19,8 +19,7 @@ const alumniData: Alumni[] = [
     designation: "Data Science Director",
     company: "Meta/WhatsApp USA",
     category: "PhD Holders",
-    // Paste your image link here
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&auto=format&fit=crop"  },
+   },
   {
     name: "Harini Seshadri",
     designation: "Executive Director",
@@ -110,7 +109,7 @@ export default function NotableAlumni() {
           </button>
 
           {/* FIX: Simplified Image Logic */}
-          <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-gray-100 shadow-md bg-gray-200 flex items-center justify-center mb-4">
+          <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-gray-100 shadow-md bg-gray-200 flex items-center justify-center mb-4">
             {currentAlumni?.image ? (
               <img 
                 key={currentAlumni.image} // Force re-render on change
@@ -125,7 +124,7 @@ export default function NotableAlumni() {
             )}
           </div>
           {/* Image Section - Forced for Testing */}
-          <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-lg bg-gray-200 flex items-center justify-center mb-4">
+          <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-lg bg-gray-200 flex items-center justify-center mb-4">
             <img 
               src={currentAlumni.image} 
               alt={currentAlumni.name} 
