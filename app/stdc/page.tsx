@@ -140,7 +140,9 @@ export default function STDCPage() {
       "List of Electives": ["Information And Coding Theory","Quantum Computing","Post Quantum Cryptography","Active Defense Using Deception","Security Modeling And Analysis","Computer Graphics","Artificial Intelligence","Social Network Analysis","Applied Graph Theory","Multimedia Security","Identity And Access Management","Internet Of Things","Data Compression","Big Data And Modern Database Systems","Biometric Security","Game Theory","Deep Learning","Natural Language Processing","Reinforcement Learning","Distributed Computing","Software Patterns","Virtual And Augmented Reality","Essentials Of Cyber Physical System Security","Principles Of Management","Environmental Science And Green Computing","Computational Finance","Entrepreneurship","Statistical Learning","Mathematical Modelling","Adversarial Machine Learning","Network Science","Information Retrieval","Ethics and Cyber Law","Advanced Algorithms"],
     },
 
-    cf:{}
+    cf:{
+      "Semester 1": ["(eg)Calculus And Its Applications","Basics Of Computational Biology","Digital Electronics","Problem Solving & C Programming","English For Professional Skills","Mathematical Foundations Lab","C Programming Lab","Digital Electronics Lab","Personality And Character Development"],
+    }
   };
 
   const alumniSpeaks = [
