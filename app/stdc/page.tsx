@@ -10,7 +10,9 @@ import {
   Users, Award, Calendar, CreditCard, ArrowRight, Play,
 } from "lucide-react";
 
-type ProgramKey = "ss" | "tcs" | "ds" | "cs";
+
+type ProgramKey = "ss" | "tcs" | "ds" | "cs"|"cf";
+
 
 export default function STDCPage() {
   const [activeTab, setActiveTab]         = useState("overview");
@@ -25,6 +27,8 @@ export default function STDCPage() {
     { id: "tcs", name: "Theoretical Computer Science" },
     { id: "ds",  name: "Data Science" },
     { id: "cs",  name: "Cyber Security" },
+    { id: "cf"  ,  name: "Computational Finanace"}
+
   ];
 
   const notableAlumni = [
@@ -62,7 +66,7 @@ export default function STDCPage() {
     name: "Laks Srini",
     position: "Co Founder & CTO",
     organization: "Zerodown, USA",
-    image: "/notable_alumini_img/pravin_shankar.png", // or any placeholder you want
+    image: "", // or any placeholder you want
   },
   {
     name: "Raghavan Sivakumar S",
@@ -135,6 +139,8 @@ export default function STDCPage() {
       "Semester 10": ["Project Work II - Duration of 6 months"],
       "List of Electives": ["Information And Coding Theory","Quantum Computing","Post Quantum Cryptography","Active Defense Using Deception","Security Modeling And Analysis","Computer Graphics","Artificial Intelligence","Social Network Analysis","Applied Graph Theory","Multimedia Security","Identity And Access Management","Internet Of Things","Data Compression","Big Data And Modern Database Systems","Biometric Security","Game Theory","Deep Learning","Natural Language Processing","Reinforcement Learning","Distributed Computing","Software Patterns","Virtual And Augmented Reality","Essentials Of Cyber Physical System Security","Principles Of Management","Environmental Science And Green Computing","Computational Finance","Entrepreneurship","Statistical Learning","Mathematical Modelling","Adversarial Machine Learning","Network Science","Information Retrieval","Ethics and Cyber Law","Advanced Algorithms"],
     },
+
+    cf:{}
   };
 
   const alumniSpeaks = [
@@ -197,12 +203,7 @@ export default function STDCPage() {
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">Programme Details</span>
               </div>
-              <div className="mt-8">
-                <button className="flex items-center gap-2 bg-[#e8505b] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#d43f4a] transition-all hover:scale-105">
-                  <Play className="w-5 h-5" />
-                  LISTEN TO OUR ALUMNI
-                </button>
-              </div>
+              
             </div>
 
             <div className="relative">
@@ -210,7 +211,7 @@ export default function STDCPage() {
                 <div className="aspect-video rounded-2xl overflow-hidden">
                   <iframe
                     className="w-full h-full"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    src="https://www.youtube.com/embed/UHYVJFjMuy4"
                     title="PSG Program Video"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -303,6 +304,7 @@ export default function STDCPage() {
                             { color: "#e8505b", label: "M.Sc. Theoretical Computer Science", desc: "is yet another innovative programme introduced in 2007. Designed to augment human resources for the R&D divisions of software industries, it merges Mathematics and Computer Science." },
                             { color: "#15803d", label: "M.Sc Data Science", desc: "started in 2015, the first of its kind in India. Provides rigorous training on scalable techniques for big data analysis, machine learning, optimization, and artificial intelligence." },
                             { color: "#b45309", label: "M.Sc. Cyber Security", desc: "The first of its kind in India, prepares students with the technical knowledge and skills needed to protect and defend computer systems and networks with strong internship programs." },
+                            { color: "#b45309", label: "M.Sc. Computational Finance", desc: "The first of its kind in India, prepares students with the technical knowledge and skills needed to protect and defend computer systems and networks with strong internship programs." },
                           ].map((item, i) => (
                             <div key={i} className={innerBlock}>
                               <h5 className="font-bold mb-2" style={{ color: item.color }}>{item.label}</h5>

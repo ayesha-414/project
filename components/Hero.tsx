@@ -6,8 +6,8 @@ import { useEffect, useState } from "react";
 
 const HERO_IMAGES = [
   "/image/background.jpg",
-  "https://images.unsplash.com/photo-1562774053-701939374585",
-  "https://images.unsplash.com/photo-1541339907198-e08756dedf3f",
+  "https://thecollegesphere.com/wp-content/uploads/2025/09/P.S.G-college.Collegesphere-1024x683.webp",
+  "https://pbs.twimg.com/media/GW8J8kcWcAAWg0J.jpg",
 ];
 
 type Particle = { id: number; x: number; size: number; delay: number; duration: number };
