@@ -10,11 +10,9 @@ import {
   Users, Award, Calendar, CreditCard, ArrowRight, Play,
 } from "lucide-react";
 
-<<<<<<< Updated upstream
+
 type ProgramKey = "ss" | "tcs" | "ds" | "cs"|"cf";
-=======
-type ProgramKey = "ss" | "tcs" | "ds" | "cs" | "cf";
->>>>>>> Stashed changes
+
 
 export default function STDCPage() {
   const [activeTab, setActiveTab]         = useState("overview");
@@ -29,11 +27,8 @@ export default function STDCPage() {
     { id: "tcs", name: "Theoretical Computer Science" },
     { id: "ds",  name: "Data Science" },
     { id: "cs",  name: "Cyber Security" },
-<<<<<<< Updated upstream
     { id: "cf"  ,  name: "Computational Finanace"}
-=======
-    { id: "cf",  name: "Computational Finance" },
->>>>>>> Stashed changes
+
   ];
 
   const notableAlumni = [
@@ -144,23 +139,8 @@ export default function STDCPage() {
       "Semester 10": ["Project Work II - Duration of 6 months"],
       "List of Electives": ["Information And Coding Theory","Quantum Computing","Post Quantum Cryptography","Active Defense Using Deception","Security Modeling And Analysis","Computer Graphics","Artificial Intelligence","Social Network Analysis","Applied Graph Theory","Multimedia Security","Identity And Access Management","Internet Of Things","Data Compression","Big Data And Modern Database Systems","Biometric Security","Game Theory","Deep Learning","Natural Language Processing","Reinforcement Learning","Distributed Computing","Software Patterns","Virtual And Augmented Reality","Essentials Of Cyber Physical System Security","Principles Of Management","Environmental Science And Green Computing","Computational Finance","Entrepreneurship","Statistical Learning","Mathematical Modelling","Adversarial Machine Learning","Network Science","Information Retrieval","Ethics and Cyber Law","Advanced Algorithms"],
     },
-<<<<<<< Updated upstream
+
     cf:{}
-=======
-    cf: {
-      "Semester 1": ["Calculus And Its Applications","Basics Of Computational Biology","Digital Electronics","Problem Solving & C Programming","English For Professional Skills","Mathematical Foundations Lab","C Programming Lab","Digital Electronics Lab","Personality And Character Development"],
-      "Semester 2": ["Discrete Structures","Algebra And Number Theory","Data Structures and Algorithms","Object Oriented Programming","Computer Architecture","Data Structures Lab","Object Computing Lab","Python Programming Lab","Personality And Character Development"],
-      "Semester 3": ["Probability, Stochastic Processes and Statistics","Linear Algebra","Microcontrollers And Embedded Systems","Database Management System","Design And Analysis Of Algorithms","Embedded Systems Lab","Design And Analysis Of Algorithms Lab","RDBMS Lab"],
-      "Semester 4": ["Optimization Techniques","Computer Networks","Cryptography","Operating Systems","Hardware Security","Computer Networks Lab","Java Programming Lab","Operating Systems Lab"],
-      "Semester 5": ["Network Security","Cryptanalysis","Machine Learning","Software Security and Exploitation","Professional Elective I","Software Security and Exploitation Lab","Machine Learning Lab","Ethical Hacking & Malware Analysis Lab"],
-      "Semester 6": ["Cloud Security","Principles Of Compiler Design","Data Mining","Secure Coding","Professional Elective II","Cloud Security Lab","Data Mining And Visualization Lab","Web Engineering Lab"],
-      "Semester 7": ["Project Work I - Duration of 6 months"],
-      "Semester 8": ["Digital Image Processing and Computer Vision","Computer Forensics","Data Privacy","Professional Elective III","Open Elective I","Digital Image Processing and Vision Lab","Computer Forensics Lab","Security Capstone Lab"],
-      "Semester 9": ["Threat Hunting","Blockchain Technology","Mobile Security","Professional Elective IV","Open Elective II","Threat Hunting Lab","Mobile Security Lab","Memory Forensics Lab"],
-      "Semester 10": ["Project Work II - Duration of 6 months"],
-      "List of Electives": ["Information And Coding Theory","Quantum Computing","Post Quantum Cryptography","Active Defense Using Deception","Security Modeling And Analysis","Computer Graphics","Artificial Intelligence","Social Network Analysis","Applied Graph Theory","Multimedia Security","Identity And Access Management","Internet Of Things","Data Compression","Big Data And Modern Database Systems","Biometric Security","Game Theory","Deep Learning","Natural Language Processing","Reinforcement Learning","Distributed Computing","Software Patterns","Virtual And Augmented Reality","Essentials Of Cyber Physical System Security","Principles Of Management","Environmental Science And Green Computing","Computational Finance","Entrepreneurship","Statistical Learning","Mathematical Modelling","Adversarial Machine Learning","Network Science","Information Retrieval","Ethics and Cyber Law","Advanced Algorithms"],
-    },
->>>>>>> Stashed changes
   };
 
   const alumniSpeaks = [
