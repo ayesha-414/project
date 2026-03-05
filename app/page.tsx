@@ -44,8 +44,8 @@ export default function Home() {
     },
     {
       title: "M.Sc Computational Finance.*",
-      description: "to be filled",
-      href: "/finance",
+      description: "To equip students with advanced quantitative, analytical, and computational skills by integrating rigorous mathematical and statistical modelling with contemporary computational methods—such as empirical analysis, artificial intelligence, and automation for solving complex financial problems. It prepares graduates for careers or research in quantitative finance while promoting ethical, practical, and innovative applications in modern financial systems.",
+      href: "/stdc",
       icon: "finance",
     },
     {
