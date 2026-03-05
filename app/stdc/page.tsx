@@ -10,7 +10,9 @@ import {
   Users, Award, Calendar, CreditCard, ArrowRight, Play,
 } from "lucide-react";
 
+
 type ProgramKey = "ss" | "tcs" | "ds" | "cs"|"cf";
+
 
 export default function STDCPage() {
   const [activeTab, setActiveTab]         = useState("overview");
@@ -26,6 +28,7 @@ export default function STDCPage() {
     { id: "ds",  name: "Data Science" },
     { id: "cs",  name: "Cyber Security" },
     { id: "cf"  ,  name: "Computational Finanace"}
+
   ];
 
   const notableAlumni = [
@@ -136,7 +139,10 @@ export default function STDCPage() {
       "Semester 10": ["Project Work II - Duration of 6 months"],
       "List of Electives": ["Information And Coding Theory","Quantum Computing","Post Quantum Cryptography","Active Defense Using Deception","Security Modeling And Analysis","Computer Graphics","Artificial Intelligence","Social Network Analysis","Applied Graph Theory","Multimedia Security","Identity And Access Management","Internet Of Things","Data Compression","Big Data And Modern Database Systems","Biometric Security","Game Theory","Deep Learning","Natural Language Processing","Reinforcement Learning","Distributed Computing","Software Patterns","Virtual And Augmented Reality","Essentials Of Cyber Physical System Security","Principles Of Management","Environmental Science And Green Computing","Computational Finance","Entrepreneurship","Statistical Learning","Mathematical Modelling","Adversarial Machine Learning","Network Science","Information Retrieval","Ethics and Cyber Law","Advanced Algorithms"],
     },
-    cf:{}
+
+    cf:{
+      "Semester 1": ["(eg)Calculus And Its Applications","Basics Of Computational Biology","Digital Electronics","Problem Solving & C Programming","English For Professional Skills","Mathematical Foundations Lab","C Programming Lab","Digital Electronics Lab","Personality And Character Development"],
+    }
   };
 
   const alumniSpeaks = [
@@ -300,6 +306,7 @@ export default function STDCPage() {
                             { color: "#e8505b", label: "M.Sc. Theoretical Computer Science", desc: "is yet another innovative programme introduced in 2007. Designed to augment human resources for the R&D divisions of software industries, it merges Mathematics and Computer Science." },
                             { color: "#15803d", label: "M.Sc Data Science", desc: "started in 2015, the first of its kind in India. Provides rigorous training on scalable techniques for big data analysis, machine learning, optimization, and artificial intelligence." },
                             { color: "#b45309", label: "M.Sc. Cyber Security", desc: "The first of its kind in India, prepares students with the technical knowledge and skills needed to protect and defend computer systems and networks with strong internship programs." },
+                            { color: "#b45309", label: "M.Sc. Computational Finance", desc: "The first of its kind in India, prepares students with the technical knowledge and skills needed to protect and defend computer systems and networks with strong internship programs." },
                           ].map((item, i) => (
                             <div key={i} className={innerBlock}>
                               <h5 className="font-bold mb-2" style={{ color: item.color }}>{item.label}</h5>

@@ -84,7 +84,7 @@ export default function Home() {
 
   const schedules = [
     {
-      title: "M.Sc (SS/TCS/DS/CS)",
+      title: "M.Sc (SS/TCS/DS/CS/CF)",
       subtitle: "5 Year Integrated Programmes",
       items: [
         { title: "Application closing", date: "23 MAY 2026" },
@@ -143,6 +143,7 @@ export default function Home() {
     { title: "M.Sc Theoretical Computer Science",   subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "/apply" },
     { title: "M.Sc Data Science",                   subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "/apply" },
     { title: "M.Sc Cyber Security",                 subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "/apply" },
+    { title: "M.Sc Computational Finance",          subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "/apply" },
     { title: "M.Sc Fashion Design & Merchandising", subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "/apply" },
   ];
 

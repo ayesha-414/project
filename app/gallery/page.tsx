@@ -34,6 +34,24 @@ const galleryImages = [
 
   { id: 14, src: "/image/campus-14.jpg", title: "Graduation Day" },
 
+  { id: 15, src: "/image/1.JPG", title: "Graduation Day" },
+
+  { id: 16, src: "/image/2.JPG", title: "Graduation Day" },
+
+  { id: 17, src: "/image/3.JPG", title: "Graduation Day" },
+  { id: 18, src: "/image/4.JPG", title: "Graduation Day" },
+   { id: 19, src: "/image/7.JPG", title: "Graduation Day" },
+ { id: 20, src: "/image/image.png", title: "Graduation Day" },
+  { id: 21, src: "/image/IMG_0670.JPG", title: "Graduation Day" },
+ { id: 22, src: "/image/IMG_2312.JPG", title: "Graduation Day" },
+ { id: 23, src: "/image/IMG_4372.png", title: "Graduation Day" },
+ { id: 24, src: "/image/IMG_9555.JPG", title: "Graduation Day" },
+ { id: 25, src: "/image/IMG_9833.JPG", title: "Graduation Day" },
+ { id: 26, src: "/image/img3.jpeg", title: "Graduation Day" },
+
+ { id: 27, src: "/image/IMG_0680.JPG", title: "Graduation Day" },
+ { id: 28, src: "/image/img6.jpeg", title: "Graduation Day" },
+ { id: 29, src: "/image/img7.jpeg", title: "Graduation Day" },
 ];
 
 export default function GalleryPage() {
