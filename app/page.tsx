@@ -47,6 +47,7 @@ export default function Home() {
       description: "To equip students with advanced quantitative, analytical, and computational skills by integrating rigorous mathematical and statistical modelling with contemporary computational methods—such as empirical analysis, artificial intelligence, and automation for solving complex financial problems. It prepares graduates for careers or research in quantitative finance while promoting ethical, practical, and innovative applications in modern financial systems.",
       href: "/stdc",
       icon: "finance",
+      note: "Subject to approval"
     },
     {
       title: "M.Sc Fashion Design & Merchandising",
@@ -54,6 +55,7 @@ export default function Home() {
         "M.Sc Fashion Design & Merchandising was started in the year 2015. The curriculum is designed to prepare graduates with a solid understanding and expertise required to enter professional practice in the challenging fashion industry.",
       href: "/fdm",
       icon: "fashion",
+
     },
   ];
 
@@ -272,18 +274,19 @@ export default function Home() {
               5 Year M.Sc Integrated Programmes
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {integratedPrograms.map((p, i) => (
-                <ProgramCard
-                  key={i}
-                  title={p.title}
-                  subtitle=""
-                  description={p.description}
-                  href={p.href}
-                  type="integrated"
-                  icon={p.icon}
-                />
-              ))}
-            </div>
+            {integratedPrograms.map((p, i) => (
+              <ProgramCard
+                key={i}
+                title={p.title}
+                subtitle=""
+                description={p.description}
+                href={p.href}
+                type="integrated"
+                icon={p.icon}
+                note={p.note} // <-- ADD THIS LINE
+              />
+            ))}
+          </div>
           </div>
 
           {/* 3-year */}

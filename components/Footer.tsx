@@ -11,9 +11,13 @@ export default function Footer() {
           {/* About */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center">
-                <span className="text-[#1c3879] font-bold text-xl">PSG</span>
-              </div>
+              <img
+              src="/image/logo.jpeg"
+              alt="PSG Logo"
+              width={56}
+              height={56}
+              className="rounded-full bg-white p-1"
+            />
               <div>
                 <h6 className="font-semibold">PSG COLLEGE OF TECHNOLOGY</h6>
                 <p className="text-white/70 text-xs">Government Aided Autonomous Institution</p>
@@ -94,21 +98,73 @@ export default function Footer() {
             <h5 className="text-lg font-semibold mb-6">Contact Us</h5>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
-                <span className="text-white/80 text-sm">
-                  PSG College of Technology<br />
-                  Peelamedu, Coimbatore - 641004<br />
-                  Tamil Nadu, India
-                </span>
+                <MapPin className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-1" />
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=PSG+College+of+Technology+Coimbatore"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-white/80 text-sm hover:text-white transition-colors"
+                >
+                  PSG College of Technology, <br />
+                  Postbox No: 1611<br />
+                  Peelamedu,Avinashi road<br />
+                  Coimbatore - 641 004
+                </a>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-[#e8505b] flex-shrink-0" />
-                <span className="text-white/80 text-sm">+91-422-2572177</span>
-              </li>
+              <Phone className="w-5 h-5 text-[#e8505b] flex-shrink-0" />
+              <a 
+                href="tel:+91 422 257 2177" 
+                className="text-white/80 text-sm hover:text-white transition-colors"
+              >
+                +91 422 257 2177
+              </a>
+            </li>
+             <li className="flex items-center gap-3">
+              <Phone className="w-5 h-5 text-[#e8505b] flex-shrink-0" />
+              <a 
+                href="tel:+914222572477" 
+                className="text-white/80 text-sm hover:text-white transition-colors"
+              >
+                +91 422 257 2477
+              </a>
+            </li>
+            <li className="flex items-center gap-3">
+              <Phone className="w-5 h-5 text-[#e8505b] flex-shrink-0" />
+              <a 
+                href="tel:+914224344777" 
+                className="text-white/80 text-sm hover:text-white transition-colors"
+              >
+                +91 422 434 4777
+              </a>
+            </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-[#e8505b] flex-shrink-0" />
-                <span className="text-white/80 text-sm">principal@psgtech.ac.in</span>
-              </li>
+              <Mail className="w-5 h-5 text-[#e8505b] flex-shrink-0" />
+              <a 
+                href="mailto:principal@psgtech.ac.in" 
+                className="text-white/80 text-sm hover:text-white transition-colors"
+              >
+                admission.amcs@psgtech.ac.in
+              </a>
+            </li>
+            <li className="flex items-center gap-3">
+              <Mail className="w-5 h-5 text-[#e8505b] flex-shrink-0" />
+              <a 
+                href="mailto:principal@psgtech.ac.in" 
+                className="text-white/80 text-sm hover:text-white transition-colors"
+              >
+                admission.afd@psgtech.ac.in
+              </a>
+            </li>
+            <li className="flex items-center gap-3">
+              <Mail className="w-5 h-5 text-[#e8505b] flex-shrink-0" />
+              <a 
+                href="mailto:principal@psgtech.ac.in" 
+                className="text-white/80 text-sm hover:text-white transition-colors"
+              >
+                admission.apsc@psgtech.ac.in
+              </a>
+            </li>
             </ul>
 
             {/* Social Links */}

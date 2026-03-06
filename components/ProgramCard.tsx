@@ -11,21 +11,23 @@ interface ProgramCardProps {
   href: string;
   type: "integrated" | "undergraduate" | "postgraduate";
   icon?: string;
+  note?: string | undefined;
 }
 
+
+
 const imageMap: Record<string, string> = {
-  software: "/image/software-system.jpg", 
-  theory: "/image/theoretical-computer-science.png", 
-  data: "/image/data-science.jpg", 
+  software: "/image/software-system.jpg",
+  theory: "/image/theoretical-computer-science.png",
+  data: "/image/data-science.jpg",
   cyber: "/image/cyber-security.png",
-  finanace:"https://th.bing.com/th/id/OIP.xM5r7dmn53jAHTkKLQ94vwHaEl?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" ,
-  fashion: "/image/fashion-design.png", 
-  science: "/image/science.png", 
-  math: "/image/math.png", 
+  finance: "/image/cf.png",
+  fashion: "/image/fashion-design.png",
   computer: "/image/csd.png",
+  science: "/image/science.png",   
 };
 
-export default function ProgramCard({ title, subtitle, description, href, type, icon = "science" }: ProgramCardProps) {
+export default function ProgramCard({ title, subtitle, description, href, type, icon = "science" ,note}: ProgramCardProps) {
   const typeColors = {
     integrated: "from-[#1c3879] to-[#0f2557]",
     undergraduate: "from-[#1c3879] to-[#0f2557]",
@@ -38,18 +40,19 @@ export default function ProgramCard({ title, subtitle, description, href, type, 
     postgraduate: "POSTGRADUATE PROGRAMME",
   };
 
-  const imageSrc = imageMap[icon] || imageMap.science;
+  const imageSrc = imageMap[icon] || "/image/science.png";
 
   return (
     <div className="program-card group h-full flex flex-col">
       {/* Image Section */}
       <div className="relative h-48 overflow-hidden ">
         <Image
-          src={imageSrc || "/placeholder.svg"}
-          alt={title}
-          fill
-          className="object-cover group-hover:scale-110 transition-transform duration-500"
-        />
+        src={imageSrc ?? "/image/science.png"}
+        alt={title}
+        fill
+        className="object-cover group-hover:scale-110 transition-transform duration-500"
+      />
+
         <div className={`absolute inset-0 bg-gradient-to-t ${typeColors[type]} opacity-20`}></div>
         <div className="absolute top-4 right-4">
           <span className="text-xs font-semibold bg-white/90 text-gray-800 px-3 py-1 rounded-full">
@@ -72,6 +75,12 @@ export default function ProgramCard({ title, subtitle, description, href, type, 
         <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-1">
           {description}
         </p>
+        {note && (
+        <p className="text-xs text-gray-500 mb-4 ">
+          <span className="text-red-600 font-bold">*</span> {note}
+        </p>
+      )}
+
         <Link
           href={href}
           className="inline-flex items-center gap-2 text-[#1c3879] font-semibold hover:text-[#e8505b] transition-colors group/link"
