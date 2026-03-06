@@ -133,13 +133,13 @@ export default function CSDPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 gradient-bg">
-        <div className="absolute inset-0 hero-overlay"></div>
+      <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#0f172a] via-[#1e3a8a] to-[#0ea5e9] overflow-hidden">
+        <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            B.Sc <span className="text-[#e8505b]">Computer Systems & Design</span>
+            B.Sc Computer Systems & Design
           </h1>
-          <p className="text-white/80 text-xl">Department of Applied Mathematics and Computational Sciences</p>
+          <p className="text-white/80 text-xl mb-6">Department of Applied Mathematics and Computational Sciences</p>
           
           <div className="flex items-center gap-2 mt-6 text-white/70">
             <Link href="/" className="flex items-center gap-1 hover:text-white transition-colors">
@@ -157,13 +157,13 @@ export default function CSDPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
-              <div className="bg-white rounded-2xl card-shadow overflow-hidden">
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl overflow-hidden">
                 <div className="p-6 border-b">
-                  <h2 className="text-2xl font-bold text-[#1a1a2e]">B.Sc Computer Systems & Design</h2>
-                  <p className="text-[#e8505b] font-medium">Three Year Undergraduate Programme</p>
+                  <h2 className="text-2xl font-bold text-[#1e3a8a]">B.Sc Computer Systems & Design</h2>
+                  <p className="text-2xl font-bold text-[#1e3a8a]">Three Year Undergraduate Programme</p>
                 </div>
 
-                <div className="flex flex-wrap gap-2 p-4 bg-gray-50 border-b">
+                <div className="flex flex-wrap gap-2 p-4 bg-[#f7faff] border-b border-[#dce8f5]">
                   {[
                     { id: "overview", label: "Overview", icon: BookOpen },
                     { id: "curriculum", label: "Curriculum", icon: FileText },
@@ -173,10 +173,10 @@ export default function CSDPage() {
                     <button
                       key={tab.id}
                       onClick={() => setActiveTab(tab.id)}
-                      className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${
+                      className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
                         activeTab === tab.id
-                          ? "bg-[#1c3879] text-white"
-                          : "bg-white text-gray-600 hover:bg-gray-100"
+                          ? "bg-gradient-to-r from-[#1e3a8a] to-[#0ea5e9] text-white shadow-md"
+                          : "bg-white text-[#395A7F] border border-[#a3cae9] hover:bg-[#e8f4ff]"
                       }`}
                     >
                       <tab.icon className="w-4 h-4" />
@@ -190,22 +190,15 @@ export default function CSDPage() {
                     <div className="space-y-6">
                       <div>
                         <h4 className="text-lg font-bold text-[#1c3879] mb-3">About the Department</h4>
-                        <p className="text-gray-600 leading-relaxed">
-                          The <strong>Department of Applied Mathematics and Computational Sciences</strong> comprises of 
-                          dedicated faculty members who are undoubtedly the assets worthy of mention. The department is 
-                          known for its discipline and for the importance it gives to the overall development of students 
-                          in grooming them towards becoming good software professionals, research scientists and data analysts.
+                        <p className="text-gray-600 leading-relaxed mb-4">
+                          The <strong>Department of Applied Mathematics and Computational Sciences</strong> comprises of dedicated faculty members who are undoubtedly the assets worthy of mention. The department is known for its discipline and for the importance it gives to the overall development of students in grooming them towards becoming good software professionals, research scientists and data analysts. The department has its own library with latest books, national and international journals and magazines. The computer centre is well equipped with the most recent hardware and software. To keep in touch with the ever - growing technology, the faculty members participate regularly in refresher courses and symposia conducted by top notch Universities, Research Institutions and Professional Bodies like Association for Computing Machinery. The department organizes technical symposia at national and international levels at regular intervals. Apart from stressing on consistent and good academic performance, the department encourages participation in co-curricular and extracurricular activities to bring out the latent talents in its students. The students are provided with ample opportunities to improve their organizational skills and group dynamics.
                         </p>
                       </div>
 
                       <div>
                         <h4 className="text-lg font-bold text-[#1c3879] mb-3">About the Programme</h4>
-                        <p className="text-gray-600 leading-relaxed">
-                          BSc Computer Systems and Design (erstwhile Computer Technology) started in the year 1985, equips 
-                          the students with necessary skills for a successful career in the field of computing as well as 
-                          to continue further higher studies in computer related disciplines. This programme emphasizes 
-                          development of programming skills, understanding system design tools and technologies for effective 
-                          problem solving.
+                        <p className="text-gray-600 leading-relaxed mb-4">
+                          BSc Computer Systems and Design (erstwhile Computer Technology) started in the year 1985, equips the students with necessary skills for a successful career in the field of computing as well as to continue further higher studies in computer related disciplines. This programme emphasizes development of programming skills, understanding system design tools and technologies for effective problem solving. 
                         </p>
                         <p className="text-gray-600 leading-relaxed mt-4">
                           The students will have the facilities for getting trained in well-equipped laboratories and on 
@@ -217,19 +210,19 @@ export default function CSDPage() {
                         <h4 className="text-lg font-bold text-[#1c3879] mb-3">Programme Features</h4>
                         <ul className="space-y-2 text-gray-600">
                           <li className="flex items-start gap-2">
-                            <span className="w-2 h-2 bg-[#e8505b] rounded-full mt-2 flex-shrink-0"></span>
+                            <span className="w-2 h-2 bg-[#1c3879] rounded-full mt-2 flex-shrink-0"></span>
                             Strong foundation in computing and programming
                           </li>
                           <li className="flex items-start gap-2">
-                            <span className="w-2 h-2 bg-[#e8505b] rounded-full mt-2 flex-shrink-0"></span>
+                            <span className="w-2 h-2 bg-[#1c3879] rounded-full mt-2 flex-shrink-0"></span>
                             Well-equipped laboratories with sophisticated computer systems
                           </li>
                           <li className="flex items-start gap-2">
-                            <span className="w-2 h-2 bg-[#e8505b] rounded-full mt-2 flex-shrink-0"></span>
+                            <span className="w-2 h-2 bg-[#1c3879] rounded-full mt-2 flex-shrink-0"></span>
                             System design tools and technologies for effective problem solving
                           </li>
                           <li className="flex items-start gap-2">
-                            <span className="w-2 h-2 bg-[#e8505b] rounded-full mt-2 flex-shrink-0"></span>
+                            <span className="w-2 h-2 bg-[#1c3879] rounded-full mt-2 flex-shrink-0"></span>
                             Strong industry connections for placements
                           </li>
                         </ul>

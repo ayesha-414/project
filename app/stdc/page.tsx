@@ -307,7 +307,7 @@ export default function STDCPage() {
                             { color: "#e8505b", label: "M.Sc. Theoretical Computer Science", desc: "is yet another innovative programme introduced in 2007. Designed to augment human resources for the R&D divisions of software industries, it merges Mathematics and Computer Science." },
                             { color: "#15803d", label: "M.Sc Data Science", desc: "started in 2015, the first of its kind in India. Provides rigorous training on scalable techniques for big data analysis, machine learning, optimization, and artificial intelligence." },
                             { color: "#b45309", label: "M.Sc. Cyber Security", desc: "The first of its kind in India, prepares students with the technical knowledge and skills needed to protect and defend computer systems and networks with strong internship programs." },
-                            { color: "#b45309", label: "M.Sc. Computational Finance", desc: "The first of its kind in India, prepares students with the technical knowledge and skills needed to protect and defend computer systems and networks with strong internship programs." },
+                            { color: "#391b63", label: "M.Sc. Computational Finance", desc: "The first of its kind in India, prepares students with the technical knowledge and skills needed to protect and defend computer systems and networks with strong internship programs." },
                           ].map((item, i) => (
                             <div key={i} className={innerBlock}>
                               <h5 className="font-bold mb-2" style={{ color: item.color }}>{item.label}</h5>
