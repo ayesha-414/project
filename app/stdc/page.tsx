@@ -9,6 +9,7 @@ import {
   Home, ChevronRight, BookOpen, FileText, CheckCircle,
   Users, Award, Calendar, CreditCard, ArrowRight, Play,
 } from "lucide-react";
+import { text } from "stream/consumers";
 
 
 type ProgramKey = "ss" | "tcs" | "ds" | "cs"|"cf";
@@ -541,16 +542,72 @@ export default function STDCPage() {
                 <p className="text-[#475569] text-sm leading-relaxed">
                   Application can be made only through online by entering all the particulars including marks along with
                   online payment by Net banking / Credit card / Debit card / UPI. One application is sufficient for all
-                  four programmes (SS / TCS / DS / CS) and preference of courses can be selected. All dates are subject
+                  four programmes (SS / TCS / DS / CS / CF) and preference of courses can be selected. All dates are subject
                   to change based on HSC examination results.
                 </p>
               </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        <div className="max-w-full mx-auto px-6 lg:px-10 mt-12">
+          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100">
+            <div className="mb-8">
+              <h2 className="text-[#1c3879] text-3xl md:text-4xl font-black uppercase tracking-tight">
+                Top Recruiters
+              </h2>
+              {/* Optional: Small accent line seen in many college layouts */}
+              <div className="w-20 h-1.5 bg-[#1c3879] mt-2 rounded-full"></div>
+            </div>
 
+            {/* This is where your image_8b7548.jpg goes */}
+            <div className="relative w-full">
+              <img 
+                src="/image/placement.jpg.png" 
+                alt="Top Recruiters" 
+                className="w-full h-auto object-contain"
+              />
             </div>
           </div>
         </div>
-      </section>
+        <section className="max-w-full mx-auto px-6 lg:px-10 mt-12 mb-16">
+      
+      {/* The White Card */}
+      <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100">
+        
+        {/* Title matches Top Recruiters exactly */}
+        <div className="mb-8">
+          <h2 className="text-[#1c3879] text-3xl md:text-4xl font-black uppercase tracking-tight">
+            Facilities
+          </h2>
+          <div className="w-20 h-1.5 bg-[#1c3879] mt-2 rounded-full"></div>
+        </div>
 
+        {/* CENTRAL FIX: 
+          1. Added 'max-w-4xl' and 'mx-auto' to shrink the video width.
+          2. This forces the height to decrease while staying centered.
+        */}
+        <div className="max-w-5xl mx-auto">
+          <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-md border border-gray-100">
+            <iframe
+              src="https://www.youtube.com/embed/34uCuXp51I0?autoplay=0&rel=0"
+              title="Facilities Video"
+              className="absolute top-0 left-0 w-full h-full border-0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+
+        <p className="text-gray-500 mt-6 font-medium italic text-center">
+          Applied Mathematics and Computational Sciences Laboratories
+        </p>
+      </div>
+    </section>
+
+      </section>
+      
       <Footer />
     </main>
   );
