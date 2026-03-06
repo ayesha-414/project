@@ -8,6 +8,18 @@ import { Home, ChevronRight, BookOpen, FileText, CheckCircle, Users, Calendar, C
 
 export default function CSDPage() {
   const [activeTab, setActiveTab] = useState("overview");
+  const [alumniIndex, setAlumniIndex] = useState(0);
+  const nextAlumni = () => {
+    setAlumniIndex((prev) =>
+      prev === notableAlumni.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevAlumni = () => {
+    setAlumniIndex((prev) =>
+      prev === 0 ? notableAlumni.length - 1 : prev - 1
+    );
+  };
 
   const curriculum = {
     "Semester 1": [
@@ -69,63 +81,128 @@ export default function CSDPage() {
       "Open Elective I",
       "Project Work",
     ],
-  };
-
-  const electives = [
-    "Web Services", "Open Source Software", "Artificial Intelligence", "Data Mining",
+    "Electives": [
+      "Web Services", "Open Source Software", "Artificial Intelligence", "Data Mining",
     "Natural Language Processing", "Deep Learning", "Graph Theory", "Software Patterns",
     "Modern Database Management Systems", "Embedded System And Design", "Information Retrieval",
     "Virtual And Augmented Reality", "Digital Image Processing And Computer Vision",
     "Cryptography", "Multimedia Systems", "Numerical Analysis", "Cyber Security",
     "Entrepreneurship", "Human Computer Interface Design", "Internet of Things",
     "Environmental Science And Green Computing", "Agile Software Development",
-  ];
+    ]
+
+  };
+
+  // const electives = [
+  //   "Web Services", "Open Source Software", "Artificial Intelligence", "Data Mining",
+  //   "Natural Language Processing", "Deep Learning", "Graph Theory", "Software Patterns",
+  //   "Modern Database Management Systems", "Embedded System And Design", "Information Retrieval",
+  //   "Virtual And Augmented Reality", "Digital Image Processing And Computer Vision",
+  //   "Cryptography", "Multimedia Systems", "Numerical Analysis", "Cyber Security",
+  //   "Entrepreneurship", "Human Computer Interface Design", "Internet of Things",
+  //   "Environmental Science And Green Computing", "Agile Software Development",
+  // ];
 
   const alumni = [
     {
       name: "M. Vignesh",
       position: "Senior Program Manager, Microsoft Corporation, Tokyo, Japan",
       batch: "BSc CT (2007-2010)",
-      testimonial: "Despite being a 3-year course, the BSc CT syllabus was designed to be on par with other Engineering courses. It provided us with a strong foundation in various aspects of the IT industry, including OS, Database, Coding, Software Engineering, and Web Designing.",
+      testimonial: "Despite being a 3-year course, the BSc CT syllabus was designed to be on par with other Engineering courses. It provided us with a strong foundation in various aspects of the IT industry, including OS, Database, Coding, Software Engineering, and Web Designing. The program also helped us build essential soft skills to stay relevant. The course and PSG Tech played a crucial role in shaping both my personal and professional life.",
+      image: "/csd_alumni/B4.jpg"
     },
     {
       name: "Aghilan Thillainathan",
       position: "Senior Software Engineer, Intuit, Bengaluru",
       batch: "BSc CSD (2008-2011)",
-      testimonial: "B.Sc CT course at PSG College of Technology nurtured me for what I am today. I would always be grateful to PSG for giving me a multi-dimensional learning by providing the apt mix of academics, project exposure, attitude and leadership.",
+      testimonial: "B.Sc CT course at PSG College of Technology nurtured me for what I am today. I would always be grateful to PSG for giving me a multi-dimensional learning by providing the apt mix of academics, project exposure, attitude and leadership. I am very thankful to my teachers for their guidance, support and the immense knowledge that they shared with me over the course of three years.",
+      image: "/csd_alumni/B3.jpg"
     },
     {
       name: "Harshini S",
       position: "Human Resources Business Partner, Amazon Development Centre, Coimbatore",
       batch: "BSc CSD (2009-2012)",
-      testimonial: "I joined B.Sc Computer Technology in 2009, the program really inculcate me with lot of practical applications courses. I was able to enhance my programming language skills during the course.",
+      testimonial: "I joined B.Sc Computer Technology in 2009, the program really inculcate me with lot of practical applications courses. I was able to enhance my programming language skills during the course. I graduated in 2012 and joined MBA at PSG IM and specialized in HR. During the program i gained immense experience by doing internship and various projects. I really thank PSG Institutions and the faculty members for helping me shape my carrier!!",
+      image: "/csd_alumni/B2.jpg"
     },
     {
       name: "Kundan M",
       position: "Technical Analyst, Morgan Stanley",
       batch: "BSc CSD (2018-2021)",
-      testimonial: "My decision to pursue a Bachelor's in Computer Systems and Design at PSG College of Technology proved to be a transformative one. The program's blend of theoretical knowledge and practical application fostered a deep understanding of computer systems and design principles.",
+      testimonial: "My decision to pursue a Bachelor's in Computer Systems and Design at PSG College of Technology proved to be a transformative one. The program's blend of theoretical knowledge and practical application fostered a deep understanding of computer systems and design principles. PSG's well-equipped labs and industry-standard software provided valuable hands-on experience, preparing me for the challenges of the real world. The exceptional faculty at PSG not only imparted knowledge but also instilled a passion for innovation and problem-solving.  These skills now empower me to excel in my role as a Technical Analyst at Morgan Stanley.",
+      image: "/csd_alumni/b12.jpg"
     },
     {
       name: "Santhosh R",
       position: "Associate Software Engineer, Caterpillar Inc., Chennai",
       batch: "BSc CSD (2018-2021)",
-      testimonial: "As a proud graduate of the BSc CSD program, I can attest that the invaluable foundation provided by BSc CSD program has been very helpful for my career at Caterpillar Inc.",
+      testimonial: "As a proud graduate of the BSc CSD program, I can attest that the invaluable foundation provided by BSc CSD program has been very helpful for my career at Caterpillar Inc. CSD programs commitment to high standards of education, coupled with its supportive faculty members who serve as guiding lights, equipped me with the skills and knowledge needed to excel in the ever-evolving tech landscape. I wish you all to join us in embracing innovation and excellence at PSG, where every step leads to boundless opportunities in the tech world!",
+      image: "/csd_alumni/santosh.jpeg"
     },
     {
       name: "Ranganayaki E M",
       position: "Software Engineer, Bank of America",
       batch: "BSc CSD (2017 - 2020)",
-      testimonial: "The three years I spent being a part of this beautifully crafted program is not just about learning but experiencing the true essence of problem solving. This program laid a very strong foundation, shaping me to face the world with confidence and skills.",
+      testimonial: "The three years I spent being a part of this beautifully crafted program is not just about learning but experiencing the true essence of problem solving. This program laid a very strong foundation, shaping me to face the world with confidence and skills. Extremely talented faculties continuously helped me in moulding myself into a better person in every possible aspect. Their encouragement and support combined with the competitive spirit of my fellow classmates kept my desire to learn always high. I would always be grateful for all the amazing opportunities and platforms I got to explore and experiment my own abilities, improvise and exhibit them.",
+      image: "/csd_alumni/b14.jpg"
+    },
+    {
+      name: "Shreenidhiy D",
+      position: "Project Engineer, Wipro Limited, Bengaluru",
+      batch: "BSc CSD (2016-2019)",
+      testimonial: "Its always been a privilege to be connected to this institution. The curriculum and the teaching methodology adopted by the professors shaped me into who I'm which helped me to build a strong foundation in my career. Three years have given me a lot of memories which I will embrace forever.",
+      image: "/csd_alumni/B8.jpg"
+    },
+    {
+      name: "Vishnubalaji R K",
+      position: "Associate Engineer, Caterpillar India Engineering Solutions Pvt. Ltd., Chennai",
+      batch: "BSc CSD (2016 - 2019)",
+      testimonial: "It was an incredibly enriching journey that not only equipped me with valuable knowledge and skills but also helped me grow personally and professionally. Whether it's delving into theoretical concepts or applying hands-on practical skills, every aspect of the curriculum has been thoughtfully designed to prepare us for real-world challenges. From the stimulating coursework to the insightful discussions with professors and peers, every moment has left a lasting impression. I'm grateful for the foundation it provided me as I navigated my career path, and I'm excited to see how your own journey unfolds in this dynamic field.",
+      image: "/csd_alumni/b11.jpg"
+    },
+    {
+      name: "Mirrudu Bashini Sakthivel",
+      position: "Software Engineer, Caterpillar Inc ",
+      batch: "BSc CSD (2016 - 2019)",
+      testimonial: "During my three years at PSG Tech pursuing BSc CSD, every aspect of my college life has contributed significantly to my personal and professional growth. The academic challenges pushed me to expand my knowledge and critical thinking skills, while the practical projects allowed me to apply theoretical concepts in real-world scenarios. Moreover, the supportive faculty members and collaborative peers fostered an environment of learning and innovation, encouraging me to explore new ideas and pursue my passions. Beyond academics, PSG Tech fostered a vibrant campus culture enriched with extracurricular activities, leadership opportunities, and networking events, all of which played a pivotal role in shaping my holistic development.",
+      image: "/csd_alumni/b13.jpg"
+    },
+    {
+      name: "Alagu V RA",
+      position: "Associate Analyst, Deloitte USI, Hyderabad",
+      batch: "BSc CSD (2020-2023)",
+      testimonial: "To have studied in PSG College of Technology is a world class experience. BSc CSD encompasses all the recent trends of IT and CS. It has laid a strong foundation for my career. The college has everything a student could want, distinguished faculty members, alumni, and a great infrastructure. These factors have helped me develop into the finest version of myself.",
+      image: "/csd_alumni/B5.jpg"
     },
   ];
 
   const notableAlumni = [
-    { name: "Vijayakkrishnan TN", position: "Head of Solutions & Presales", organization: "Tata Consultancy Services, Coimbatore" },
-    { name: "Chitrakala Vijayakumar", position: "Manager-Cloud Automation Delivery", organization: "Capgemini Technology Services, Bengaluru" },
-    { name: "P. Lakshmi Narayanan", position: "Lead Consultant", organization: "HCL Software, Bengaluru" },
-    { name: "Prashanth Sathu", position: "Deputy General Manager", organization: "HCL Tech Frisco Texas, USA" },
-    { name: "Kishore Kumar Jagannathan", position: "Azure Cloud Engineering Consultant", organization: "National Australia Bank, Melbourne, Australia" },
+    { 
+      name: "Vijayakkrishnan TN",
+      position: "Head of Solutions & Presales", 
+      organization: "Tata Consultancy Services, Coimbatore" ,
+      image: "/notable_alumini_img/sriram.png"
+    },
+    { name: "Chitrakala Vijayakumar", 
+      position: "Manager-Cloud Automation Delivery", 
+      organization: "Capgemini Technology Services, Bengaluru", 
+      image: "/notable_alumini_img/sriram.png"
+    },
+    { name: "P. Lakshmi Narayanan", 
+      position: "Lead Consultant", 
+      organization: "HCL Software, Bengaluru" ,
+      image: "/notable_alumini_img/sriram.png"
+    },
+    { name: "Prashanth Sathu", 
+      position: "Deputy General Manager", 
+      organization: "HCL Tech Frisco Texas, USA", 
+      image: "/notable_alumini_img/sriram.png"
+    },
+    { name: "Kishore Kumar Jagannathan", 
+      position: "Azure Cloud Engineering Consultant", 
+      organization: "National Australia Bank, Melbourne, Australia", 
+      image: "/notable_alumini_img/sriram.png"
+    },
   ];
 
   return (
@@ -234,12 +311,12 @@ export default function CSDPage() {
                     <div className="space-y-6">
                       <div className="grid md:grid-cols-2 gap-4">
                         {Object.entries(curriculum).map(([semester, subjects]) => (
-                          <div key={semester} className="semester-card">
+                          <div key={semester} className="bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-5 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
                             <h4 className="font-bold text-lg mb-4">{semester}</h4>
                             <ul className="space-y-2">
                               {subjects.map((subject, idx) => (
-                                <li key={idx} className="text-white/90 text-sm flex items-start gap-2">
-                                  <span className="w-1.5 h-1.5 bg-[#e8505b] rounded-full mt-2 flex-shrink-0"></span>
+                                <li key={idx} className="text-[#334155] text-sm flex items-start gap-2">
+                                  <span className="w-1.5 h-1.5 bg-[#0ea5e9] rounded-full mt-1.5 flex-shrink-0"></span>
                                   {subject}
                                 </li>
                               ))}
@@ -248,7 +325,7 @@ export default function CSDPage() {
                         ))}
                       </div>
 
-                      <div className="bg-gray-50 rounded-xl p-6 mt-8">
+                      {/* <div className="bg-gray-50 rounded-xl p-6 mt-8">
                         <h4 className="font-bold text-lg text-[#1c3879] mb-4">List of Electives</h4>
                         <div className="flex flex-wrap gap-2">
                           {electives.map((elective, idx) => (
@@ -257,7 +334,7 @@ export default function CSDPage() {
                             </span>
                           ))}
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   )}
 
@@ -272,8 +349,8 @@ export default function CSDPage() {
                         </p>
                       </div>
 
-                      <div className="bg-[#e8505b]/5 rounded-xl p-6">
-                        <h4 className="text-lg font-bold text-[#e8505b] mb-3">Selection Process</h4>
+                      <div className="bg-[#1c3879]/5 rounded-xl p-6">
+                        <h4 className="text-lg font-bold text-[#1c3879] mb-3">Selection Process</h4>
                         <p className="text-gray-600 leading-relaxed">
                           Shortlisted candidates with good academic record in Higher Secondary examination (based on Math and 
                           Physics HSC marks) will be called for counselling in the campus to identify the commitment of the 
@@ -290,12 +367,14 @@ export default function CSDPage() {
                   {activeTab === "alumni" && (
                     <div className="space-y-6">
                       {alumni.map((alum, idx) => (
-                        <div key={idx} className="bg-gray-50 rounded-xl p-6">
+                        <div key={idx} className="program-card">
                           <div className="flex items-start gap-4">
-                            <div className="w-14 h-14 bg-[#e8505b] rounded-full flex items-center justify-center flex-shrink-0">
-                              <span className="text-white font-bold text-lg">
-                                {alum.name.charAt(0)}
-                              </span>
+                            <div className="w-14 h-14 bg-[#1c3879] rounded-full flex items-center justify-center flex-shrink-0">
+                              <img
+                                    src={alum.image}
+                                    alt={alum.name}
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
                             <div>
                               <h5 className="font-bold text-[#1a1a2e]">{alum.name}</h5>
@@ -333,6 +412,48 @@ export default function CSDPage() {
             </div>
 
             {/* Sidebar */}
+            <div className="space-y-6">
+              <div className="bg-white rounded-2xl shadow-md border border-[#dce8f5] p-6 text-center">
+                <h4 className="text-xl font-bold text-[#1e3a8a] mb-4">🎓 Notable Alumni</h4>
+                <div className="relative bg-[#f0f6ff] rounded-xl p-6">
+                  <button
+                    onClick={prevAlumni}
+                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-[#1e3a8a] text-white w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold hover:bg-[#395A7F] transition-colors"
+                  >
+                    ‹
+                  </button>
+                  <button
+                    onClick={nextAlumni}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#1e3a8a] text-white w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold hover:bg-[#395A7F] transition-colors"
+                  >
+                    ›
+                  </button>
+
+                  <div className="w-20 h-20 bg-white rounded-full overflow-hidden flex items-center justify-center mx-auto mb-3 border-2 border-[#a3cae9] shadow">
+                    <img
+                      src={notableAlumni[alumniIndex].image}
+                      alt={notableAlumni[alumniIndex].name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h5 className="font-bold text-[#1e3a8a]">{notableAlumni[alumniIndex].name}</h5>
+                  <p className="text-sm font-medium text-[#e8505b] mt-1">{notableAlumni[alumniIndex].position}</p>
+                  <p className="text-xs text-[#64748b] mt-0.5">{notableAlumni[alumniIndex].organization}</p>
+                </div>
+
+                {/* Dots */}
+                <div className="flex justify-center gap-1.5 mt-3">
+                  {notableAlumni.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => setAlumniIndex(i)}
+                      className={`w-2 h-2 rounded-full transition-all ${i === alumniIndex ? "bg-[#1e3a8a] w-4" : "bg-[#a3cae9]"}`}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+      
             <div className="space-y-6">
               <div className="important-dates">
                 <h4 className="text-xl font-bold mb-6">Important Dates</h4>
