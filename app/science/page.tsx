@@ -136,24 +136,7 @@ export default function SciencePage() {
     ]
   };
 
-  // const electives = [
-  //   "Numerical Methods", "Graph Theory", "Discrete Mathematics", "Optimization Techniques",
-  //   "Stochastic Processes", "Machine Learning", "Artificial Intelligence", "Cyber Security",
-  //   "Cloud Computing", "Laser Physics and Applications", "Semiconductor Physics and Devices",
-  //   "Heat and Thermodynamics", "Characterization Techniques in Material Science",
-  //   "Linear Integrated Circuits", "Nanomaterials and Applications", "Plasma Physics and Applications",
-  //   "Crystal Growth Techniques", "Ceramics and Composites", "Polymer Chemistry",
-  //   "Corrosion Science and Engineering", "Applied Electrochemistry", "Chemistry of Nanomaterials",
-  //   "Pharmaceutical Chemistry", "Textile Chemistry and Textile Chemical Processing",
-  //   "Industrial Chemistry", "Biochemistry", "Instrumental Methods of Chemical Analysis",
-  //   "Green Chemistry", "Food Chemistry", "Chemistry of Industrially Important Materials",
-  //   "Python Programming", "Design and Analysis of Algorithms", "Mathematical Finance",
-  //   "Web Designing", "Mobile Application Development", "Object Oriented Programming",
-  //   "Astronomy and Cosmology", "Problem Solving in Physics", "Environmental Science",
-  //   "Bioinorganic Chemistry", "Surface Finishing and Coating Technology",
-  //   "Chemical Sensors and Biosensors", "Composite Materials", "Environmental Chemistry",
-  //   "English and Soft Skills for Employability", "English for Competitive Examinations",
-  // ];
+
 
   const alumni = [
     {
@@ -228,13 +211,7 @@ export default function SciencePage() {
     },
   ];
 
-  // const notableAlumni = [
-  //   { name: "Sriram G", position: "Scientific Officer C", organization: "Ion Accelerator Development Division, Bhabha Atomic Research Center, Trombay, Mumbai" },
-  //   { name: "T M Parambveer Shringa", position: "Lieutenant", organization: "Indian Army" },
-  //   { name: "Raghav Sah", position: "SRF", organization: "TIFR, Hyderabad" },
-  //   { name: "Mruthyunjeyan S", position: "M.Sc(Tech) Engineering Physics", organization: "NIT Warangal" },
-  //   { name: "Yazhini V", position: "PhD Scholar", organization: "Institute for Infrastructure and Environment, School of Engineering, The University of Edinburgh" },
-  // ];
+ 
 
   return (
     <main className="bg-[#f4f7fb] min-h-screen">
@@ -250,7 +227,7 @@ export default function SciencePage() {
           {/* Left Content */}
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
-              B.Sc <span className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">Applied Science Programmes </span>
+              B.Sc <span className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">Applied Science{" "} <span className="text-[#7dd3fc]">Programmes</span></span>
               
             </h1>
 
@@ -283,7 +260,7 @@ export default function SciencePage() {
             <div className="lg:col-span-2">
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl overflow-hidden">
                 <div className="p-6 border-b">
-                  <h2 className="text-4xl font-bold text-[#1e3a8a] ">B.Sc Applied Science</h2>
+                  <h2 className="text-4xl font-bold text-[#1e3a8a]">B.Sc Applied Science</h2>
                   <p className="text-xl font-bold text-[#1e3a8a]">Three Year Undergraduate Programme - Government Aided Programme</p>
                 </div>
                 
@@ -298,7 +275,7 @@ export default function SciencePage() {
                     <button
                       key={tab.id}
                       onClick={() => setActiveTab(tab.id)}
-                      className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xl font-semibold transition-all ${
+                      className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
                         activeTab === tab.id
                           ? "bg-gradient-to-r from-[#1e3a8a] to-[#0ea5e9] text-white shadow-md"
                           : "bg-white text-[#395A7F] border border-[#a3cae9] hover:bg-[#e8f4ff]"
@@ -315,21 +292,21 @@ export default function SciencePage() {
                   {activeTab === "overview" && (
                     <div className="space-y-6">
                       <div>
-                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Department</h4>
+                        <h4 className="text-lg font-bold text-[#1c3879] mb-3">About the Department</h4>
                         <p className="text-gray-900 leading-relaxed text-xl">
                           The <strong>Department of Applied Science</strong> accomplishes its vision of “Producing alumni who will build and uphold the reputation of the department as a premier teaching and research establishment and attract young talents through their own endeavour” with the help of a team of dynamic and versatile faculty members. The department has been offering the BSc Applied Science programme since 1971, and PhD programmes since 1977. The innovative teaching methodologies adopted by the faculty members and the laboratory / research facilities provided by the department are aimed to make a positive impact on the students. The curriculum is built and updated based on National / Global scientific and technological growth. The department engages in interactions with other Institutes / Organizations and Industries through various outreach programs. The outcome of these interactions apparently infiltrates into the teaching learning process, thus providing quality higher education on par with International standards. This in turn helps our undergrads to certainly find a position in the national and international research Institutes and Industries as well. The various in house co-curricular and extracurricular activities helps our students to appreciate the spirit of team work and to build organizational and leadership qualities.
                         </p>
                       </div>
 
                       <div>
-                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Programme</h4>
-                        <p className="text-gray-900 leading-relaxed mb-4 text-xl ">
+                        <h4 className="text-lg font-bold text-[#1c3879] mb-3">About the Programme</h4>
+                        <p className="text-gray-900 leading-relaxed mb-4 text-xl">
                           The B.Sc. Applied Science Programme which is currently a Government aided programme, commenced in the year 1971 and PSG College of Technology is the pioneer in running this programme. It has a unique structure in the sense that it gives the students a broad based science background. They may however specialize in one of the basic sciences namely Physics, Chemistry or Mathematics with adequate computer programming skills. This helps to prepare the students for any analytically oriented profession, while at the same time enabling them to take up post-graduate studies in Physical, Chemical, Mathematical and computational sciences. Subsequently they could pursue research in the leading institutions and national R & D laboratories. Besides the regular theory and laboratory subjects, students are offered elective subjects in emerging areas of study. They are also exposed to engineering practices and research methodologies by means of a project that has to be completed in the final semester. This would enable them to engage in life-long learning and thereby make them versatile practitioners or researchers in their chosen fields
                         </p>
                       </div>
 
                       <div>
-                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">Scope for Placement and Higher Studies</h4>
+                        <h4 className="text-lg font-bold text-[#1c3879] mb-3">Scope for Placement and Higher Studies</h4>
                         <p className="text-gray-900 leading-relaxed mb-4 text-xl">
                           The curriculum and syllabi are updated once in three years to reflect the latest advancements in 
                           the field of Science, Engineering and Technology. This helps our students to get placed in reputed 
@@ -342,9 +319,9 @@ export default function SciencePage() {
                       </div>
 
                       <div className="bg-[#1c3879]/5 rounded-xl p-6">
-                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">Fees Structure</h4>
-                        <p className="text-gray-900 text-xl">
-                          Approximately <strong className="text-[#e8505b] text-xl">Rs. 20,000</strong> (Twenty thousand) per annum
+                        <h4 className="text-lg font-bold text-[#1c3879] mb-3">Fees Structure</h4>
+                        <p className="text-gray-900">
+                          Approximately <strong className="text-[#e8505b]">Rs. 20,000</strong> (Twenty thousand) per annum
                         </p>
                       </div>
                     </div>
@@ -354,8 +331,8 @@ export default function SciencePage() {
                     <div className="space-y-8">
                       <div className="grid md:grid-cols-2 gap-4">
                         {Object.entries(curriculum).map(([semester, subjects]) => (
-                          <div key={semester} className="bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-5 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
-                            <h4 className="font-bold text-2xl mb-4">{semester}</h4>
+                          <div key={semester} className="text-2xl bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-5 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+                            <h4 className="font-bold text-xl mb-4">{semester}</h4>
                             <ul className="space-y-2">
                               {subjects.map((subject, idx) => (
                                 <li key={idx} className="text-[#334155] text-lg flex items-start gap-2">
@@ -373,8 +350,8 @@ export default function SciencePage() {
                   {activeTab === "selection" && (
                     <div className="space-y-6">
                       <div className="bg-[#1c3879]/5 rounded-xl p-6">
-                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">Eligibility</h4>
-                        <p className="text-gray-900 leading-relaxed text-xl">
+                        <h4 className="text-xl font-bold text-[#1c3879] mb-3">Eligibility</h4>
+                        <p className="text-gray-900 leading-relaxed text-lg">
                           A pass in Higher Secondary examination of the (10+2) curriculum prescribed by the appropriate 
                           authority of the Government of Tamil Nadu with Mathematics, Physics and Chemistry as the subjects 
                           of study or any other exam recognized as equivalent. Only Indian Nationals are eligible to apply.
@@ -382,11 +359,11 @@ export default function SciencePage() {
                       </div>
 
                       <div className="bg-[#1c3879]/5 rounded-xl p-6">
-                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">Selection Process</h4>
-                        <p className="text-gray-900 leading-relaxed text-xl">
+                        <h4 className="text-xl font-bold text-[#1c3879] mb-3">Selection Process</h4>
+                        <p className="text-gray-900 leading-relaxed text-lg">
                           Based on ranking, as per the aggregate percentage of marks obtained in Mathematics, Physics and Chemistry of the plus two examinations, the candidate will be called for counselling cum admission and will be intimated through the applicants' registered e-mail.
                         </p>
-                        <p className="text-gray-900 leading-relaxed text-xl">
+                        <p className="text-gray-900 leading-relaxed text-lg">
                           However, call for counselling does not confer any right of admission.
                         </p>
                       </div>
@@ -399,7 +376,7 @@ export default function SciencePage() {
                         {alumni.map((alum, idx) => (
                           <div key={idx} className="program-card">
                             <div className="flex items-start gap-4">
-                              <div className="w-14 h-14 bg-[#1c3879] rounded-full flex items-center justify-center flex-shrink-0">
+                              <div className="w-24 h-24 bg-[#1c3879] rounded-full flex items-center justify-center flex-shrink-0">
                                 <img
                                     src={alum.image}
                                     alt={alum.name}
@@ -407,9 +384,9 @@ export default function SciencePage() {
                                 />
                               </div>
                               <div>
-                                <h5 className="font-bold text-[#1a1a2e] text-2xl">{alum.name}</h5>
+                                <h5 className="text-2xl font-bold text-[#1a1a2e]">{alum.name}</h5>
                                 <p className="text-[#1c3879] text-base font-medium">{alum.position}</p>
-                                <p className="text-[#e8505b] text-base">{alum.batch}</p>
+                                <p className="text-[#e8505b] text-xs">{alum.batch}</p>
                                 <p className="text-gray-900 text-lg mt-3 leading-relaxed">
                                   {alum.testimonial}
                                 </p>
@@ -468,7 +445,7 @@ export default function SciencePage() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h5 className="font-bold text-[#1e3a8a] text-xl">{notableAlumni[alumniIndex].name}</h5>
+                  <h5 className="text-xl font-bold text-[#1e3a8a]">{notableAlumni[alumniIndex].name}</h5>
                   <p className="text-base font-medium text-[#e8505b] mt-1">{notableAlumni[alumniIndex].position}</p>
                   <p className="text-sm text-[#64748b] mt-0.5">{notableAlumni[alumniIndex].organization}</p>
                 </div>
@@ -487,34 +464,34 @@ export default function SciencePage() {
               
               {/* Important Dates */}
               <div className="bg-gradient-to-br from-[#1e3a8a] to-[#0ea5e9] text-white rounded-3xl p-6 shadow-xl">
-                <h4 className="text-xl font-bold mb-6">Important Dates</h4>
+                <h4 className="text-2xl font-bold mb-6">Important Dates</h4>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 font-bold text-lg">Last date for application submission</p>
-                      <p className="text-white font-bold text-lg">15th May 2025</p>
+                      <p className="text-white/70 text-xl">Last date for application submission</p>
+                      <p className="text-white font-bold">15th May 2025</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-lg">Notification of shortlisted candidates for Counselling cum Admission</p>
-                      <p className="text-white font-bold text-lg">17th May 2025</p>
+                      <p className="text-white/70 text-xl">Notification of shortlisted candidates for Counselling cum Admission</p>
+                      <p className="text-white font-bold">17th May 2025</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-lg">Counselling cum Admission</p>
-                      <p className="text-white font-bold text-lg">23rd May 2025</p>
+                      <p className="text-white/70 text-xl">Counselling cum Admission</p>
+                      <p className="text-white font-bold">23rd May 2025</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <CreditCard className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-lg">Cost of application</p>
-                      <p className="text-white font-bold text-lg">150 INR</p>
+                      <p className="text-white/70 text-xl">Cost of application</p>
+                      <p className="text-white font-bold">150 INR</p>
                     </div>
                   </li>
                 </ul>
@@ -526,7 +503,7 @@ export default function SciencePage() {
 
               {/* How to Apply */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6">
-                <h4 className="text-2xl font-bold text-[#1c3879] mb-4">How to apply?</h4>
+                <h4 className="text-xl font-bold text-[#1c3879] mb-4">How to apply?</h4>
                 <p className="text-gray-900 text-lg leading-relaxed">
                   Application can be made online by entering all the particulars including marks along with online 
                   payment through Net banking/Credit card/Debit card/UPI. All dates are subject to change based on 
