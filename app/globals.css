@@ -14,7 +14,7 @@
 
 :root {
   --background: #F0F3F5;
-  --foreground: #395A7F;
+  --foreground: #042a56;
   --card: rgba(255, 255, 255, 0.55);
   --card-foreground: #395A7F;
   --popover: rgba(255, 255, 255, 0.7);
@@ -928,9 +928,11 @@
   transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.5s;
   transform-origin: center center;
 }
-.program-card:nth-child(n) {
-  transform: rotateY(-30deg) scale(0.82);
-  opacity: 0.55;
+.program-card {
+  scroll-snap-align: center;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transform: none;
+  opacity: 1;
 }
 .program-card:focus,
 .program-card:hover,

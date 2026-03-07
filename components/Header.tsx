@@ -52,16 +52,16 @@ export default function Header() {
           <div className="flex items-center justify-between">
             
             {/* LEFT SECTION: Three Logos and Text */}
-            <Link href="/" className="flex items-center gap-4">
-              <div className="flex items-center gap-2 shrink-0">
-                <div className="w-12 h-12 bg-white flex items-center justify-center overflow-hidden p-1 rounded-lg shadow-sm">
+            <Link href="/" className="flex items-center gap-3">
+              <div className="flex items-center gap-1 shrink-0">
+                <div className="w-20 h-20  flex items-center justify-center overflow-hidden p-1 rounded-lg ">
                   <Image src={LOGO_PSG} alt="PSG Logo" width={44} height={44} className="object-contain" />
                 </div>
-                <div className="w-12 h-12 bg-white flex items-center justify-center overflow-hidden p-1 rounded-lg shadow-sm">
-                  <Image src={LOGO_COLLEGE} alt="College Logo" width={44} height={44} className="object-contain" />
+                <div className="w-20 h-20  flex items-center justify-center overflow-hidden p-1 rounded-lg ">
+                  <Image src={LOGO_COLLEGE} alt="College Logo" width={55} height={55} className="object-contain" />
                 </div>
-                <div className="w-12 h-12 bg-white flex items-center justify-center overflow-hidden p-1 rounded-lg shadow-sm">
-                  <Image src={LOGO_RIGHT} alt="3rd Logo" width={44} height={44} className="object-contain" />
+                <div className="w-16 h-16 bg-white flex items-center justify-center overflow-hidden p-1 rounded-lg ">
+                  <Image src={LOGO_RIGHT} alt="3rd Logo" width={55} height={55} className="object-contain" />
                 </div>
               </div>
 

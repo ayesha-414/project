@@ -185,12 +185,12 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
               <h2 className="section-title">About Us</h2>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-900 leading-relaxed text-xl">
                 PSG College of Technology, established in the year 1951 by PSG &amp; Sons&apos; Charities,
                 Coimbatore, is one of the premier institutions of the country and is an excellent centre
                 for advanced studies and research in several areas of Science and Engineering.
               </p>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-900 leading-relaxed text-xl">
                 The college has excellent infrastructure, well-equipped laboratories and highly qualified
                 and experienced faculty. The college has signed MoU with research organizations and
                 industries across the globe to promote technology development, training of students,

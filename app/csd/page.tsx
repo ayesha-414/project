@@ -181,27 +181,27 @@ export default function CSDPage() {
       name: "Vijayakkrishnan TN",
       position: "Head of Solutions & Presales", 
       organization: "Tata Consultancy Services, Coimbatore" ,
-      image: "/notable_alumini_img/sriram.png"
+      image: "/csd_alumni/B6.jpg"
     },
     { name: "Chitrakala Vijayakumar", 
       position: "Manager-Cloud Automation Delivery", 
       organization: "Capgemini Technology Services, Bengaluru", 
-      image: "/notable_alumini_img/sriram.png"
+      image: "/csd_alumni/B9.jpg"
     },
     { name: "P. Lakshmi Narayanan", 
       position: "Lead Consultant", 
       organization: "HCL Software, Bengaluru" ,
-      image: "/notable_alumini_img/sriram.png"
+      image: "/csd_alumni/b1.jpg"
     },
     { name: "Prashanth Sathu", 
       position: "Deputy General Manager", 
       organization: "HCL Tech Frisco Texas, USA", 
-      image: "/notable_alumini_img/sriram.png"
+      image: "/csd_alumni/B7.jpg"
     },
     { name: "Kishore Kumar Jagannathan", 
       position: "Azure Cloud Engineering Consultant", 
       organization: "National Australia Bank, Melbourne, Australia", 
-      image: "/notable_alumini_img/sriram.png"
+      image: "/csd_alumni/B10.jpg"
     },
   ];
 
@@ -216,7 +216,7 @@ export default function CSDPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             B.Sc Computer Systems & Design
           </h1>
-          <p className="text-white/80 text-xl mb-6">Department of Applied Mathematics and Computational Sciences</p>
+          <p className="text-white/90 text-2xl mb-6">Department of Applied Mathematics and Computational Sciences</p>
           
           <div className="flex items-center gap-2 mt-6 text-white/70">
             <Link href="/" className="flex items-center gap-1 hover:text-white transition-colors">
@@ -236,11 +236,11 @@ export default function CSDPage() {
             <div className="lg:col-span-2">
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl overflow-hidden">
                 <div className="p-6 border-b">
-                  <h2 className="text-2xl font-bold text-[#1e3a8a]">B.Sc Computer Systems & Design</h2>
-                  <p className="text-2xl font-bold text-[#1e3a8a]">Three Year Undergraduate Programme</p>
+                  <h2 className="text-4xl font-bold text-[#1e3a8a]">B.Sc Computer Systems & Design</h2>
+                  <p className="text-xl font-bold text-[#1e3a8a]">Three Year Undergraduate Programme</p>
                 </div>
 
-                <div className="flex flex-wrap gap-2 p-4 bg-[#f7faff] border-b border-[#dce8f5]">
+                <div className="flex flex-wrap gap-2 p-4 bg-[#f7faff] border-b border-[#dce8f5] ">
                   {[
                     { id: "overview", label: "Overview", icon: BookOpen },
                     { id: "curriculum", label: "Curriculum", icon: FileText },
@@ -250,7 +250,7 @@ export default function CSDPage() {
                     <button
                       key={tab.id}
                       onClick={() => setActiveTab(tab.id)}
-                      className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
+                      className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xl font-semibold transition-all ${
                         activeTab === tab.id
                           ? "bg-gradient-to-r from-[#1e3a8a] to-[#0ea5e9] text-white shadow-md"
                           : "bg-white text-[#395A7F] border border-[#a3cae9] hover:bg-[#e8f4ff]"
@@ -266,26 +266,26 @@ export default function CSDPage() {
                   {activeTab === "overview" && (
                     <div className="space-y-6">
                       <div>
-                        <h4 className="text-lg font-bold text-[#1c3879] mb-3">About the Department</h4>
-                        <p className="text-gray-600 leading-relaxed mb-4">
+                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Department</h4>
+                        <p className="text-gray-900 leading-relaxed mb-4 text-xl">
                           The <strong>Department of Applied Mathematics and Computational Sciences</strong> comprises of dedicated faculty members who are undoubtedly the assets worthy of mention. The department is known for its discipline and for the importance it gives to the overall development of students in grooming them towards becoming good software professionals, research scientists and data analysts. The department has its own library with latest books, national and international journals and magazines. The computer centre is well equipped with the most recent hardware and software. To keep in touch with the ever - growing technology, the faculty members participate regularly in refresher courses and symposia conducted by top notch Universities, Research Institutions and Professional Bodies like Association for Computing Machinery. The department organizes technical symposia at national and international levels at regular intervals. Apart from stressing on consistent and good academic performance, the department encourages participation in co-curricular and extracurricular activities to bring out the latent talents in its students. The students are provided with ample opportunities to improve their organizational skills and group dynamics.
                         </p>
                       </div>
 
                       <div>
-                        <h4 className="text-lg font-bold text-[#1c3879] mb-3">About the Programme</h4>
-                        <p className="text-gray-600 leading-relaxed mb-4">
+                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Programme</h4>
+                        <p className="text-gray-900 leading-relaxed mb-4 text-xl">
                           BSc Computer Systems and Design (erstwhile Computer Technology) started in the year 1985, equips the students with necessary skills for a successful career in the field of computing as well as to continue further higher studies in computer related disciplines. This programme emphasizes development of programming skills, understanding system design tools and technologies for effective problem solving. 
                         </p>
-                        <p className="text-gray-600 leading-relaxed mt-4">
+                        <p className="text-gray-900 leading-relaxed mt-4 text-xl">
                           The students will have the facilities for getting trained in well-equipped laboratories and on 
                           various sophisticated computer systems available in college.
                         </p>
                       </div>
 
                       <div className="bg-[#1c3879]/5 rounded-xl p-6">
-                        <h4 className="text-lg font-bold text-[#1c3879] mb-3">Programme Features</h4>
-                        <ul className="space-y-2 text-gray-600">
+                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">Programme Features</h4>
+                        <ul className="space-y-2 text-gray-900 text-xl">
                           <li className="flex items-start gap-2">
                             <span className="w-2 h-2 bg-[#1c3879] rounded-full mt-2 flex-shrink-0"></span>
                             Strong foundation in computing and programming
@@ -312,10 +312,10 @@ export default function CSDPage() {
                       <div className="grid md:grid-cols-2 gap-4">
                         {Object.entries(curriculum).map(([semester, subjects]) => (
                           <div key={semester} className="bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-5 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
-                            <h4 className="font-bold text-lg mb-4">{semester}</h4>
+                            <h4 className="font-bold text-2xl mb-4">{semester}</h4>
                             <ul className="space-y-2">
                               {subjects.map((subject, idx) => (
-                                <li key={idx} className="text-[#334155] text-sm flex items-start gap-2">
+                                <li key={idx} className="text-[#334155] text-lg flex items-start gap-2">
                                   <span className="w-1.5 h-1.5 bg-[#0ea5e9] rounded-full mt-1.5 flex-shrink-0"></span>
                                   {subject}
                                 </li>
@@ -329,7 +329,7 @@ export default function CSDPage() {
                         <h4 className="font-bold text-lg text-[#1c3879] mb-4">List of Electives</h4>
                         <div className="flex flex-wrap gap-2">
                           {electives.map((elective, idx) => (
-                            <span key={idx} className="bg-white px-3 py-1 rounded-full text-sm text-gray-600 border">
+                            <span key={idx} className="bg-white px-3 py-1 rounded-full text-sm text-gray-900 border">
                               {elective}
                             </span>
                           ))}
@@ -341,8 +341,8 @@ export default function CSDPage() {
                   {activeTab === "selection" && (
                     <div className="space-y-6">
                       <div className="bg-[#1c3879]/5 rounded-xl p-6">
-                        <h4 className="text-lg font-bold text-[#1c3879] mb-3">Eligibility</h4>
-                        <p className="text-gray-600 leading-relaxed">
+                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">Eligibility</h4>
+                        <p className="text-gray-900 leading-relaxed text-xl">
                           A good academic record in Higher Secondary examination of the (10+2) curriculum prescribed by the 
                           appropriate authority of the Government of Tamil Nadu or any other exam recognised as equivalent 
                           with Mathematics and Physics as two of the subjects of study. Only Indian Nationals are eligible to apply.
@@ -350,13 +350,13 @@ export default function CSDPage() {
                       </div>
 
                       <div className="bg-[#1c3879]/5 rounded-xl p-6">
-                        <h4 className="text-lg font-bold text-[#1c3879] mb-3">Selection Process</h4>
-                        <p className="text-gray-600 leading-relaxed">
+                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">Selection Process</h4>
+                        <p className="text-gray-900 leading-relaxed text-xl">
                           Shortlisted candidates with good academic record in Higher Secondary examination (based on Math and 
                           Physics HSC marks) will be called for counselling in the campus to identify the commitment of the 
                           applicant to study at PSG College of Technology.
                         </p>
-                        <p className="text-gray-600 leading-relaxed mt-3">
+                        <p className="text-gray-900 leading-relaxed mt-3 text-xl">
                           The schedule of the counselling will be intimated through the applicant&apos;s registered email. 
                           However, call for counselling does not confer any right of admission.
                         </p>
@@ -369,42 +369,24 @@ export default function CSDPage() {
                       {alumni.map((alum, idx) => (
                         <div key={idx} className="program-card">
                           <div className="flex items-start gap-4">
-                            <div className="w-14 h-14 bg-[#1c3879] rounded-full flex items-center justify-center flex-shrink-0">
+                            <div className="w-14 h-14 rounded-full  flex-shrink-0">
                               <img
-                                    src={alum.image}
-                                    alt={alum.name}
-                                    className="w-full h-full object-cover"
-                                />
+                                src={alum.image}
+                                alt={alum.name}
+                                className="w-full h-full object-cover"
+                              />
                             </div>
                             <div>
-                              <h5 className="font-bold text-[#1a1a2e]">{alum.name}</h5>
-                              <p className="text-[#1c3879] text-sm font-medium">{alum.position}</p>
-                              <p className="text-[#e8505b] text-xs">{alum.batch}</p>
-                              <p className="text-gray-600 text-sm mt-3 leading-relaxed">
+                              <h5 className="font-bold text-[#1a1a2e] text-2xl">{alum.name}</h5>
+                              <p className="text-[#1c3879] text-base font-medium">{alum.position}</p>
+                              <p className="text-[#e8505b] text-base">{alum.batch}</p>
+                              <p className="text-gray-900 text-lg mt-3 leading-relaxed">
                                 {alum.testimonial}
                               </p>
                             </div>
                           </div>
                         </div>
                       ))}
-
-                      <div className="mt-12">
-                        <h4 className="text-xl font-bold text-[#1c3879] mb-6">Notable Alumni</h4>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                          {notableAlumni.map((alum, idx) => (
-                            <div key={idx} className="bg-white border rounded-xl p-4 text-center">
-                              <div className="w-16 h-16 bg-[#e8505b]/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                                <span className="text-[#e8505b] font-bold text-xl">
-                                  {alum.name.charAt(0)}
-                                </span>
-                              </div>
-                              <h5 className="font-bold text-[#1a1a2e] text-sm">{alum.name}</h5>
-                              <p className="text-[#e8505b] text-xs font-medium">{alum.position}</p>
-                              <p className="text-gray-500 text-xs mt-1">{alum.organization}</p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
                     </div>
                   )}
                 </div>
@@ -414,7 +396,7 @@ export default function CSDPage() {
             {/* Sidebar */}
             <div className="space-y-6">
               <div className="bg-white rounded-2xl shadow-md border border-[#dce8f5] p-6 text-center">
-                <h4 className="text-xl font-bold text-[#1e3a8a] mb-4">🎓 Notable Alumni</h4>
+                <h4 className="text-2xl font-bold text-[#1e3a8a] mb-4">🎓 Notable Alumni</h4>
                 <div className="relative bg-[#f0f6ff] rounded-xl p-6">
                   <button
                     onClick={prevAlumni}
@@ -429,16 +411,16 @@ export default function CSDPage() {
                     ›
                   </button>
 
-                  <div className="w-20 h-20 bg-white rounded-full overflow-hidden flex items-center justify-center mx-auto mb-3 border-2 border-[#a3cae9] shadow">
+                  <div className="w-20 h-20 bg-white rounded-full  flex items-center justify-center mx-auto mb-3 border-2 border-[#a3cae9] shadow">
                     <img
                       src={notableAlumni[alumniIndex].image}
                       alt={notableAlumni[alumniIndex].name}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h5 className="font-bold text-[#1e3a8a]">{notableAlumni[alumniIndex].name}</h5>
-                  <p className="text-sm font-medium text-[#e8505b] mt-1">{notableAlumni[alumniIndex].position}</p>
-                  <p className="text-xs text-[#64748b] mt-0.5">{notableAlumni[alumniIndex].organization}</p>
+                  <h5 className="font-bold text-[#1e3a8a] text-xl ">{notableAlumni[alumniIndex].name}</h5>
+                  <p className="text-base font-medium text-[#e8505b] mt-1 ">{notableAlumni[alumniIndex].position}</p>
+                  <p className="text-sm text-[#64748b] mt-0.5">{notableAlumni[alumniIndex].organization}</p>
                 </div>
 
                 {/* Dots */}
@@ -452,64 +434,65 @@ export default function CSDPage() {
                   ))}
                 </div>
               </div>
+              <div className="space-y-6">
+                <div className="bg-gradient-to-br from-[#1e3a8a] to-[#0ea5e9] text-white  text-xl rounded-3xl p-6 shadow-xl">
+                  <h4 className="text-xl font-bold mb-6">Important Dates</h4>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-3">
+                      <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-white/70 text-base">Last date for application submission</p>
+                        <p className="text-white font-bold">23rd May 2025</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-white/70 text-base">Notification of shortlisted candidates for Counselling in the campus</p>
+                        <p className="text-white font-bold">26th May 2025</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-white/70 text-base">Counselling in the campus</p>
+                        <p className="text-white font-bold">29th - 30th May 2025</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-white/70 text-base">Notification of final selected candidates for admission</p>
+                        <p className="text-white font-bold">3rd June 2025</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-white/70 text-base">Last date for fee payment</p>
+                        <p className="text-white font-bold">10th June 2025</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CreditCard className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-white/70 text-base">Cost of application</p>
+                        <p className="text-white font-bold">500 INR</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <Link href="/apply" className="btn-secondary w-full justify-center mt-6">
+                    Apply Now
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+              </div>
             </div>
       
-            <div className="space-y-6">
-              <div className="important-dates">
-                <h4 className="text-xl font-bold mb-6">Important Dates</h4>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="text-white/70 text-sm">Last date for application submission</p>
-                      <p className="text-white font-bold">23rd May 2025</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="text-white/70 text-sm">Notification of shortlisted candidates for Counselling in the campus</p>
-                      <p className="text-white font-bold">26th May 2025</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="text-white/70 text-sm">Counselling in the campus</p>
-                      <p className="text-white font-bold">29th - 30th May 2025</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="text-white/70 text-sm">Notification of final selected candidates for admission</p>
-                      <p className="text-white font-bold">3rd June 2025</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="text-white/70 text-sm">Last date for fee payment</p>
-                      <p className="text-white font-bold">10th June 2025</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CreditCard className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="text-white/70 text-sm">Cost of application</p>
-                      <p className="text-white font-bold">500 INR</p>
-                    </div>
-                  </li>
-                </ul>
-                <Link href="/apply" className="btn-secondary w-full justify-center mt-6">
-                  Apply Now
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
+              
 
               <div className="bg-white rounded-2xl card-shadow p-6">
-                <h4 className="text-lg font-bold text-[#1c3879] mb-4">How to apply?</h4>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <h4 className="text-2xl font-bold text-[#1c3879] mb-4">How to apply?</h4>
+                <p className="text-gray-900 text-lg leading-relaxed">
                   Application can be made only through online by entering all the particulars including marks along with 
                   online payment by Net banking/Credit card/Debit card/UPI. All dates are subject to change based on HSC 
                   examination results.

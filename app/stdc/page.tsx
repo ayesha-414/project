@@ -194,9 +194,9 @@ export default function STDCPage() {
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
                 Five Year Integrated M.Sc{" "}
-                <span className="text-[#7dd3fc]">Programmes</span>
+                <span className="">Programmes</span>
               </h1>
-              <p className="text-white/80 text-xl">
+              <p className="text-white/80 text-2xl">
                 Department of Applied Mathematics and Computational Sciences
               </p>
               <div className="flex items-center gap-2 mt-6 text-white/70 text-sm">
@@ -242,7 +242,7 @@ export default function STDCPage() {
 
                 {/* Programme selector header */}
                 <div className="p-6 border-b border-[#dce8f5] bg-[#f0f6ff]">
-                  <h2 className="text-2xl font-bold text-[#1e3a8a]">
+                  <h2 className="text-4xl font-bold text-[#1e3a8a]">
                     Five Year Integrated M.Sc Programmes
                   </h2>
                   <div className="flex flex-wrap gap-2 mt-4">
@@ -250,7 +250,7 @@ export default function STDCPage() {
                       <button
                         key={p.id}
                         onClick={() => setActiveProgram(p.id)}
-                        className={`px-4 py-2 rounded-full text-sm font-semibold transition-all ${
+                        className={`px-4 py-2 rounded-full text-xl font-semibold transition-all ${
                           activeProgram === p.id
                             ? "bg-gradient-to-r from-[#1e3a8a] to-[#0ea5e9] text-white shadow-md"
                             : "bg-white text-[#395A7F] border border-[#a3cae9] hover:bg-[#e8f4ff]"
