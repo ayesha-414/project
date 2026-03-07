@@ -1,13 +1,26 @@
 "use client";
 
+import React, { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import ProgramCard from "@/components/ProgramCard";
 import ScheduleCard from "@/components/ScheduleCard";
 import Link from "next/link";
-import { Award, BookOpen, GraduationCap, ArrowRight } from "lucide-react";
-import NotableAlumni from "@/components/NotableAlumni";
+import { 
+  Award, 
+  BookOpen, 
+  GraduationCap, 
+  ArrowRight,
+  Send, 
+  Loader2, 
+  CheckCircle2 
+} from "lucide-react";
+import { motion } from "framer-motion";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+
+// Note: Ensure that this auth file exists in your lib folder, otherwise comment this out!
+//import { getAuthCookie, getTeamLeaderName } from "@/lib/auth";
 
 export default function Home() {
 
@@ -186,7 +199,7 @@ export default function Home() {
             <div className="space-y-6">
               <h2 className="section-title">About Us</h2>
               <p className="text-gray-900 leading-relaxed text-xl">
-                PSG College of Technology, established in the year 1951 by PSG &amp; Sons&apos; Charities,
+                PSG College of Technology, established in the year 1951 by PSG & Sons' Charities,
                 Coimbatore, is one of the premier institutions of the country and is an excellent centre
                 for advanced studies and research in several areas of Science and Engineering.
               </p>
@@ -224,7 +237,7 @@ export default function Home() {
             </a>
           </div>
 
-          {/* feature cards row — styles come from globals.css */}
+          {/* feature cards row */}
           <div className="grid md:grid-cols-3 gap-6">
             {featureCards.map((card, i) => (
               <div
@@ -232,18 +245,15 @@ export default function Home() {
                 className="glass-feat-card p-6 flex items-start gap-4"
                 style={{ animationDelay: card.delay }}
               >
-                {/* animated border lines */}
                 <span className="feat-line feat-line-top" />
                 <span className="feat-line feat-line-bottom" />
                 <span className="feat-line feat-line-left" />
                 <span className="feat-line feat-line-right" />
 
-                {/* icon orb */}
                 <div className="feat-icon-orb w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 relative z-10">
                   {card.icon}
                 </div>
 
-                {/* text */}
                 <div className="relative z-10">
                   <h5 className="font-bold text-lg mb-2 text-[#395A7F]">{card.title}</h5>
                   <p className="text-[#6E9FC1] text-sm leading-relaxed">{card.body}</p>
@@ -283,7 +293,7 @@ export default function Home() {
                 href={p.href}
                 type="integrated"
                 icon={p.icon}
-                note={p.note} // <-- ADD THIS LINE
+                note={p.note}
               />
             ))}
           </div>
@@ -346,8 +356,9 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {schedules.map((s, i) => (
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
+  {/* schedule.map starts here */}
+         {schedules.map((s, i) => (
               <ScheduleCard
                 key={i}
                 title={s.title}
@@ -368,8 +379,9 @@ export default function Home() {
             <h2 className="section-title">Click here to Apply</h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {applyPrograms.map((p, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+  {/* programmes.map starts here */}
+    {applyPrograms.map((p, i) => (
               <Link
                 key={i}
                 href={p.href}
@@ -393,7 +405,236 @@ export default function Home() {
         </div>
       </section>
 
+      <Contact />
+
       <Footer />
     </main>
+  );
+}
+
+/* ── Contact Form Component ────────────────────────────────────────────── */
+
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+
+export function Contact() {
+  const [mounted, setMounted] = React.useState(false);
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
+  const [isSuccess, setIsSuccess] = React.useState(false);
+  const [formData, setFormData] = React.useState({
+    email: "",
+    name: "",
+    message: "",
+  });
+  const [errors, setErrors] = React.useState<{
+    email?: string;
+    name?: string;
+    message?: string;
+  }>({});
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    if (errors[name as keyof typeof errors]) {
+      setErrors((prev) => ({ ...prev, [name]: undefined }));
+    }
+  };
+
+  const validateForm = () => {
+    const newErrors: typeof errors = {};
+
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Please enter a valid email";
+    }
+
+    if (!formData.name) {
+      newErrors.name = "Name is required";
+    }
+
+    if (!formData.message) {
+      newErrors.message = "Message is required";
+    } else if (formData.message.length < 10) {
+      newErrors.message = "Message must be at least 10 characters";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("http://127.0.0.1:5000/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+      
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setIsSuccess(true);
+        setFormData({
+          email: formData.email,
+          name: formData.name,
+          message: "",
+        });
+        setTimeout(() => setIsSuccess(false), 5000);
+      } else {
+        alert(data.message || "Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Contact form error:", error);
+      alert(
+        "Failed to send message. Please check your connection and try again.",
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  if (!mounted) return null;
+
+  return (
+    <section
+      id="contact"
+      className="py-20 bg-gradient-to-b from-muted/30 to-background"
+    >
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Contact Us
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Have questions? Send us a message and we'll get back to you soon
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
+          className="mb-12"
+        >
+          <Card className="p-6 md:p-8">
+            {isSuccess && (
+              <div className="mb-6 p-4 bg-green-500/10 border border-green-500/20 rounded-lg flex items-center gap-3">
+                <CheckCircle2 className="w-5 h-5 text-green-500" />
+                <p className="text-green-500 text-sm font-medium">
+                  Message sent successfully! We'll get back to you soon.
+                </p>
+              </div>
+            )}
+
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-foreground mb-2"
+                >
+                  Your Email *
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 bg-muted/50 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
+                  placeholder="your.email@example.com"
+                />
+                {errors.email && (
+                  <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+                )}
+              </div>
+
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-foreground mb-2"
+                >
+                  Your Name *
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 bg-muted/50 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
+                  placeholder="John Doe"
+                />
+                {errors.name && (
+                  <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+                )}
+              </div>
+
+              <div>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-foreground mb-2"
+                >
+                  Your Message *
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  rows={5}
+                  className="w-full px-4 py-3 bg-muted/50 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-foreground resize-none"
+                  placeholder="Type your message here..."
+                />
+                {errors.message && (
+                  <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+                )}
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full md:w-auto px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              >
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="w-5 h-5 animate-spin" />
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    <Send className="w-5 h-5" />
+                    Send Message
+                  </>
+                )}
+              </button>
+            </form>
+          </Card>
+        </motion.div>
+      </div>
+    </section>
   );
 }
