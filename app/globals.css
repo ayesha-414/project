@@ -991,3 +991,28 @@ button:hover {
 .hero-overlay {
   background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.05), transparent);
 }
+/* Running text */
+.ticker {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker span {
+  display: inline-block;
+  padding-left: 100%;
+  font-weight: 600;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  animation: tickerMove 18s linear infinite;
+}
+
+@keyframes tickerMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

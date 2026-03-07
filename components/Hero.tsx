@@ -9,6 +9,8 @@ const HERO_IMAGES = [
   "https://thecollegesphere.com/wp-content/uploads/2025/09/P.S.G-college.Collegesphere-1024x683.webp",
   "https://pbs.twimg.com/media/GW8J8kcWcAAWg0J.jpg",
 ];
+const LOGO_LEFT = "/image/psg_75_logo.webp";
+const LOGO_RIGHT = "/image/100_yr_logo.png";
 
 type Particle = { id: number; x: number; size: number; delay: number; duration: number };
 
@@ -38,6 +40,40 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Announcement Bar */}
+      <div className="absolute top-30 left-0 w-full z-40 bg-[#1c3879]/90 backdrop-blur-md border-b border-white/20 overflow-hidden">
+        <div className="whitespace-nowrap flex animate-[ticker_18s_linear_infinite] py-2">
+          <span className="text-white font-semibold tracking-wide text-sm px-8">
+            📢 Applications for B.Sc & M.Sc Programmes 2026 will close on 30 June 2026 – Apply Soon!
+          </span>
+          <span className="text-white font-semibold tracking-wide text-sm px-8">
+            📢 Applications for B.Sc & M.Sc Programmes 2026 will close on 30 June 2026 – Apply Soon!
+          </span>
+        </div>
+      </div>
+      {/* LEFT LOGO */}
+      <div className="absolute top-35 left-8 z-30 animate-[float_6s_ease-in-out_infinite]">
+        <Image
+          src="/image/psg_75_logo.webp"
+          alt="75 Years Logo"
+          width={90}
+          height={90}
+          className="object-contain drop-shadow-[0_0_20px_rgba(163,202,233,0.8)]"
+        />
+      </div>
+
+      {/* RIGHT LOGO */}
+      <div className="absolute top-35 right-8 z-30 animate-[float_6s_ease-in-out_infinite]">
+        <div className="p-4 rounded-2xl bg-white border border-white/30 shadow-[0_0_30px_rgba(163,202,233,0.4)]">
+          <Image
+            src="/image/100_yr_logo.png"
+            alt="100 Years Logo"
+            width={100}
+            height={100}
+            className="object-contain"
+          />
+        </div>
+      </div>
 
       {/* ── Scoped keyframes ─────────────────────────────────────────── */}
       <style>{`

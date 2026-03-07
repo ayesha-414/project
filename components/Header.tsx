@@ -10,10 +10,12 @@ const LOGO_PSG = "/image/logo.jpeg";
 const LOGO_COLLEGE = "/image/psg_75_logo.webp"; 
 const LOGO_RIGHT = "/image/100_yr_logo.png"; 
 
+
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [programsOpen, setProgramsOpen] = useState(false);
+  const [activeProgram, setActiveProgram] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,9 +46,10 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? "bg-[#1c3879] shadow-lg py-3" : "bg-transparent py-5"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-white/20 ${
+        isScrolled ? "bg-[#1c3879] shadow-lg py-3" : "bg-transparent py-5"
+      }`}
+      
       >
         <div className="max-w-full mx-auto px-6 lg:px-10">
           <div className="flex items-center justify-between">
@@ -55,14 +58,14 @@ export default function Header() {
             <Link href="/" className="flex items-center gap-3">
               <div className="flex items-center gap-1 shrink-0">
                 <div className="w-20 h-20  flex items-center justify-center overflow-hidden p-1 rounded-lg ">
-                  <Image src={LOGO_PSG} alt="PSG Logo" width={44} height={44} className="object-contain" />
+                  <Image src={LOGO_PSG} alt="PSG Logo" width={60} height={60} className="object-contain" />
                 </div>
-                <div className="w-20 h-20  flex items-center justify-center overflow-hidden p-1 rounded-lg ">
+                {/* <div className="w-20 h-20  flex items-center justify-center overflow-hidden p-1 rounded-lg ">
                   <Image src={LOGO_COLLEGE} alt="College Logo" width={55} height={55} className="object-contain" />
                 </div>
                 <div className="w-16 h-16 bg-white flex items-center justify-center overflow-hidden p-1 rounded-lg ">
                   <Image src={LOGO_RIGHT} alt="3rd Logo" width={55} height={55} className="object-contain" />
-                </div>
+                </div> */}
               </div>
 
               <div className="hidden xl:block border-l-2 border-white/40 pl-4">
@@ -83,15 +86,60 @@ export default function Header() {
                   Programmes Offered
                   <ChevronDown className="w-5 h-5 transition-transform group-hover:rotate-180" />
                 </button>
-                <div className="absolute top-full left-0 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-1 group-hover:translate-y-0">
+                <div className="absolute top-full left-0 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                  <div className="bg-white rounded-xl shadow-2xl p-5 min-w-[520px] border border-gray-100 ring-1 ring-black/5 flex">
+
+                    {/* LEFT SIDE – HEADINGS */}
+                    <div className="w-1/2 border-r pr-4">
+                      {programmes.map((category, idx) => (
+                        <div
+                          key={idx}
+                          onMouseEnter={() => setActiveProgram(idx)}
+                          className="group flex items-center justify-between px-3 py-3 rounded-lg cursor-pointer font-black uppercase tracking-widest text-[15px] text-gray-700 transition-all duration-200 hover:bg-blue-50 hover:text-[#1c3879] hover:scale-[1.03]"
+                        >
+                          <span>{category.name}</span>
+
+                          <span className="w-6 flex justify-end">
+                            <ArrowRight className="w-4 h-4 opacity-0 translate-x-[-6px] group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-[#1c3879]" />
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* RIGHT SIDE – COURSES */}
+                    <div className="w-1/2 pl-4">
+                      <ul className="space-y-2">
+                        {programmes[activeProgram].items.map((item, i) => (
+                          <li key={i}>
+                            <Link
+                              href={item.href}
+                              className="group flex items-center justify-between px-3 py-2 rounded-md text-gray-700 font-semibold text-[15px] cursor-pointer transition-all duration-200 hover:bg-blue-50 hover:text-[#1c3879]"
+                            >
+                              <span className="flex items-center gap-2">
+                                <span className="w-2 h-2 bg-[#1c3879] rounded-full"></span>
+                                {item.name}
+                              </span>
+
+                              <span className="w-5 flex justify-end">
+                                <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-all duration-200 text-[#1c3879]" />
+                              </span>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+                {/* <div className="absolute top-full left-0 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-1 group-hover:translate-y-0">
                   <div className="bg-white rounded-xl shadow-2xl p-5 min-w-[340px] border border-gray-100 ring-1 ring-black/5">
                     {programmes.map((category, idx) => (
                       <div key={idx} className="mb-5 last:mb-0">
-                        {/* Category Label */}
-                        <h6 className="text-[#1c3879] font-black text-[12px] uppercase tracking-widest mb-3 px-2 border-b-2 border-blue-50 pb-1">
+                        
+                        <h6 className="text-[#1c3879] font-black  uppercase tracking-widest mb-3 px-2 border-b-2 border-blue-50 pb-1 text-lg">
                           {category.name}
                         </h6>
-                        {/* Interactive Links */}
+                        
                         <div className="space-y-1">
                           {category.items.map((item, itemIdx) => (
                             <Link
@@ -107,7 +155,7 @@ export default function Header() {
                       </div>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <Link href="/gallery" className="nav-link text-[19px] font-bold text-white px-4 py-2 hover:text-blue-200 transition-all drop-shadow-sm">Gallery</Link>
@@ -131,6 +179,7 @@ export default function Header() {
             </div>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#A3CAE9] to-transparent opacity-70"></div>
       </header>
 
       {/* Mobile Menu */}
