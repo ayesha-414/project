@@ -147,10 +147,143 @@ export default function STDCPage() {
   };
 
   const alumniSpeaks = [
-    { name: "Andal Priya Darshini J", role: "Senior Software Engineer, Apple, USA", program: "M.Sc Theoretical Computer Science (2007-2012)", comment: "Looking back on my journey within the program, it's evident that it was a period of profound transformation. I gained invaluable knowledge and skills, but more importantly, I developed a deep-seated passion for continual growth and positive impact.", img: "/placeholder.svg" },
-    { name: "Sai Pujitha Guthi",      role: "Senior Software Engineer, Netflix, Seattle, USA", program: "M.Sc Software Engineering (2009-2014)", comment: "Reflecting back on the impact of M.Sc Software engineering on my career, I was consistently impressed by the program's commitment to staying abreast of technological advancements.", img: "/placeholder.svg" },
-    { name: "Rishab R Bafna",         role: "Vice President, JP Morgan Chase & Co, USA", program: "M.Sc TCS (2012-2017)", comment: "As a proud alumnus of PSG Tech's M.Sc. TCS program, I can confidently say that the courses offer a strong foundation for a successful tech career.", img: "/placeholder.svg" },
-    { name: "Niranjana R",            role: "Data & Applied Scientist, Microsoft, Hyderabad", program: "M.Sc TCS (2015-2020)", comment: "The course gave me immense opportunities to learn the right skills and connect with the right people.", img: "/placeholder.svg" },
+    { name: "Andal Priya Darshini J", role: "Senior Software Engineer, Apple, USA", program: "M.Sc Theoretical Computer Science (2007-2012)", comment: "Looking back on my journey within the program, it's evident that it was a period of profound transformation. I gained invaluable knowledge and skills, but more importantly, I developed a deep-seated passion for continual growth and positive impact. As part of the pioneering group in the M.Sc. in Theoretical Computer Science, we felt a sense of duty to pave the way for future students. This responsibility has since translated into a commitment to innovation and pushing boundaries in all aspects of our lives..", img: "/stdc_alumni/Andalpriyadharshini.jpg" },
+    { name: "Sai Pujitha Guthi",      role: "Senior Software Engineer, Netflix, Seattle, USA", program: "M.Sc Software Engineering (2009-2014)", comment: "Reflecting back on the impact of M.Sc Software engineering on my career, I was consistently impressed by the program's commitment to staying abreast of technological advancements, ensuring students are well-prepared for the industry. A standout aspect was the chance to engage in two immersive internships, providing invaluable real-world exposure. These experiences not only applied classroom knowledge but also cultivated essential practical skills pivotal for my career trajectory. Throughout the program, the faculty's steadfast support and mentorship were instrumental in my growth as a software engineer. Their guidance proved invaluable in navigating challenges and seizing opportunities. Furthermore, the alumni network has been a tremendous resource, offering ongoing support, mentorship, and networking opportunities. Connecting with accomplished alumni has been both inspiring and beneficial, providing valuable insights into career progression. I am profoundly grateful for the enriching experiences and skills gained through this program. It has undoubtedly equipped me with the tools needed to excel in the ever-evolving landscape of the tech-industry.", img: "/placeholder.svg" },
+    { name: "Rishab R Bafna",         role: "Vice President, JP Morgan Chase & Co, USA", program: "M.Sc Theoretical Computer Science (2012-2017)", comment: "As a proud alumnus of PSG Tech’s M.Sc. Theoretical Computer Science program, I can confidently say that the courses offer a strong foundation for a successful tech /research career. The integrated five-year structure provides a solid postgraduate degree, giving graduates an edge in placements. The program is well-regarded for its strong placement record, with many students securing roles in top companies. The course ensures students gain in-depth knowledge in emerging tech fields. The inclusion of industry internships further enhances practical exposure, making graduates industry-ready.", img: "/placeholder.svg" },
+    { name: "Niranjana R",            role: "Data & Applied Scientist, Microsoft, Hyderabad", program: "M.Sc Theoretical Computer Science (2015-2020)", comment: "The course gave me immense opportunities to learn the right skills and connect with the right people, be it researchers or industry professionals. The curriculum is carefully curated to provide the technical knowledge and foundation needed to tackle, adapt and grow in a rapidly evolving field like Data Science. The two internships gave me the perfect opportunity to explore both research and industry and helped me find my calling.", img: "/placeholder.svg" },
+    {
+      name:"Ramanathan P",
+      role:"Vice President, Goldman Sachs",
+      program:"M.Sc Software Engineering (2012-2017)",
+      comment:"The Msc Software Engineering program at PSG tech greatly helped me to lay a strong foundation in computer science. The key highlights of the course which help to stand out from others are the continuous adaption of curriculum catering to industry trend changes and 6-month internship providing unique early exposure to the industry. On top of all, the culture of pairing with cohorts for mini projects, organizing events, and developing a strong alumni network aids growth in all aspects and created memories that I will cherish forever.",
+      img:"",
+    },
+    {
+      name:"Arunkumar J D",
+      role:"Senior Software Engineer, Google, Bengaluru",
+      program:"M.Sc Theoretical Computer Science (2014-2019)",
+      comment:"The M.Sc TCS is a distinguished program that provides students with a strong foundation in computer science theory while nurturing their research aspirations. Its well-rounded curriculum balances academic rigor with practical application, making it an ideal choice for those planning to pursue careers in research or software engineering. Regularly updated to align with industry trends and technological advancements, the program ensures students remain ahead in the evolving tech landscape. With valuable internship opportunities, this course is a game-changer for those aiming to make a meaningful impact in the world of technology.",
+      img:"",
+    },
+    {
+      name:"Uday Lakshmi",
+      role:"Software Engineer, Google, Bengaluru",
+      program:"M.Sc Software Systems (2014-2019)",
+      comment:"The M.Sc. Software Systems (AMCS) program at PSG Tech provided me with a strong foundation in problem-solving and practical software development. The hands-on learning approach and exceptional faculty played a crucial role in shaping my career and helping me achieve my goals",
+      img:"",
+    },
+    {
+      name:"Monisha Pushpanathan",
+      role:"Senior Data Engineer, Amazon, Canada",
+      program:"M.Sc Software Engineering (2007-2012)",
+      comment:"The 5-year Integrated MSc (Software Engineering) program provided me with a strong foundation in Computer Science fundamentals while allowing me to explore electives of my interest, including Advanced Databases and Distributed Computing. The two six-month internships gave me hands-on industry experience, and the program’s dedicated placement initiative helped me secure interviews with top tech companies, ultimately leading to a full-time offer. Beyond academics, participating in co-curricular clubs enriched my college experience, and organizing the annual tech symposium, “Login,” helped me develop valuable leadership and strategic planning skills. This program played a critical role in shaping my technical expertise and professional growth.",
+      img:"",
+    },
+    {
+      name:"Karthik Ravi",
+      role:"Software Development Engineer, Amazon, Chennai",
+      program:"M.Sc Software Systems (2018-2023)",
+      comment:"The MSc Integrated program at PSG College of Technology offers an excellent course structure with well-trained faculty, ensuring a strong foundation in both theoretical and practical aspects. With at least three projects per semester, students gain hands-on experience that makes transitioning into corporate life seamless. The well-equipped labs and 24/7 open-bay access foster innovation, allowing students to experiment, build projects, and explore new technologies. The rigorous training and industry-aligned curriculum provide outstanding placement opportunities, instilling confidence to excel in the professional world.",
+      img:"",
+    },
+    {
+      name:"Pradeep Kumar S",
+      role:"Senior System Software Engineer, Nvidia, Bengaluru",
+      program:"M.Sc Theoretical Computer Science (2015-2020)",
+      comment:"The MSc TCS program is an excellent blend of mathematical and applied fundamentals, equipping students with the essential skills for a career in Computer Science. I am truly grateful for having pursued this course, as it provided me with the knowledge necessary for my current role. One of the standout features of the program is the 7th-semester internship, which offers students practical experience, allowing them to apply their learning and step out of their comfort zones.",
+      img:"",
+    },
+    {
+      name:"Aravindan Elango",
+      role:"Senior Engineering Manager, Adobe, Bengaluru",
+      program:"M.Sc Software Engineering (2007-2012)",
+      comment:"The MSc Software Engineering program at PSG Tech offers a unique blend of academic rigor and industry exposure, making graduates highly competitive in the software industry. With two six-month internships at leading tech companies, students gain invaluable hands-on experience, applying their knowledge to real-world challenges even before graduation. The curriculum is designed to foster strong technical expertise, problem-solving abilities, and teamwork, ensuring a smooth transition into professional roles. This program has consistently shaped skilled and industry-ready software engineers, making it an excellent choice for aspiring professionals.",
+      img:"",
+    },
+    {
+      name:"Varsha Parthasarathy",
+      role:"Data Scientist, Boeing, Bengaluru",
+      program:"M.Sc Data Science (2018-2023)",
+      comment:"As an alumnus of the five-year integrated M.Sc. Data Science program at PSG College of Technology, I can confidently say that this course played a pivotal part in my career. The program’s well-structured curriculum, hands-on learning approach, and strong industry exposure gave me a significant edge in job interviews and professional settings. One of the standout aspects of this course is its perfect blend of data science and computer science fundamentals.",
+      img:"",
+    },
+    {
+      name:"Karthik Baskar",
+      role:"Software Engineering Manager, KLA Tencor India, Chennai",
+      program:"M.Sc Software Engineering (2008-2013)",
+      comment:"The course strikes an ideal balance between establishing a solid foundation for students and equipping them with the necessary skills to be immediately effective in the workplace. The college and department offer essential infrastructure and outstanding faculty to ensure high quality education. It has been a privilege to have taken this course at PSG Tech.",
+      img:"",
+    },
+    {
+      name:"Mukund Elumalai",
+      role:"Senior Analyst(Research), KLA Tencor India, Chennai",
+      program:"M.Sc Data Science (2017-2022)",
+      comment:"The Data Science course offered by the AMCS department at PSG Tech is a complete package. It features an ever-adapting and robust curriculum, practical learning opportunities through two six-month internships, qualified and supportive faculty, well-structured lab programs with sufficient resources, and a strong alumni network. This program has shaped my future, and I highly recommend it to students seeking a holistic education.",
+      img:"",
+    },
+    {
+      name:"Gopinath Sundaram",
+      role:"Senior Engineering Manager, eBay, Washington, USA",
+      program:"M.Sc Software Engineering (2006-2011)",
+      comment:"MSc Software Engineering has been one of the best courses since its inception, helping to develop world-class talent who have become entrepreneurs, advisors, and engineers in numerous firms around the globe. The fundamentals taught in the course have been instrumental in my career to this point. The best part about the course and department is that they not only focus on academic classes but also help to develop well-rounded individuals who are ready to face the world. The two-semester internship is unique to this course and helps prepare students, establish connections, and gain exposure while studying. The set of courses, whose curriculum is regularly updated to meet industrial standards, has been shaping the future of multiple companies through the talents it has created.",
+      img:"",
+    },
+    {
+      name:"Dhanasree Rajamani",
+      role:"Staff Software Engineer, Palo Alto Networks, USA",
+      program:"M.Sc Software Engineering (2012-2017)",
+      comment:"The MSc Software Engineering program at PSG College of Technology truly helped me connect the dots between theoretical knowledge and practical application. Each course was paired with hands-on projects, allowing me to implement the concepts I learned in real-world scenarios. Additionally, the opportunity to complete 2 six-month internships provided invaluable industry exposure, helping me gain firsthand experience and a deeper understanding of the software engineering field. The course curriculum is highly relevant to current industry standards and technologies, ensuring I built a strong technical foundation that has been crucial in my career. Beyond the academic aspect, the program's rich network of alumni has been a tremendous asset. The guidance and support from this network have played a significant role in my success during my Master’s studies in the USA, helping me navigate challenges and seize opportunities in the field.",
+      img:"",
+    },
+    {
+      name:"Praveen Sivakumar",
+      role:"Software Development Engineer, Walmart Global Tech India, Bengaluru",
+      program:"M.Sc Theoretical Computer Science (2019-2024)",
+      comment:"M.Sc. Theoretical Computer Science is a rigorous programme that offers a perfect blend of mathematics and computer science courses. This programme has equipped me with strong fundamentals to effectively tackle any problem related to computer science.",
+      img:"",
+    },
+    {
+      name:"Shruthi NK",
+      role:"Technical Program Manager, Uber",
+      program:"M.Sc Software Engineering (2002-2007)",
+      comment:"The M.Sc. Integrated Software Systems course is a truly visionary program. The fundamentals and curriculum we studied 20 years ago still remain relevant today. The strong foundation it provided empowered me to reboot my career with confidence after a 7-year break. Everything about the course - its curriculum, structure, faculty, alumni network, and placements continues to be exceptional. It’s undoubtedly one of the most valuable experiences of my professional development.",
+      img:"",
+    },
+    {
+      name:"Reeni Mathew",
+      role:"Senior Principal Engineer, Arcesium",
+      program:"M.Sc Software Engineering (2007-2012)",
+      comment:"The M.Sc. Software Engineering course at PSG Tech went a long way in helping me strengthen my basics in all areas of Computer Science and Software Engineering. It was unique in the sense that it simultaneously laid emphasis on the core courses like Theoretical Computer Science and Mathematics as well as a plethora of electives. Such a format helps one become strong in the fundamentals as well as develop areas of interest in topics of one's interest. Hence I feel it is the best undergraduate course if one wishes to pursue higher (doctoral) studies in the field of Computer Science.",
+      img:"",
+    },
+    {
+      name:"Asvika M",
+      role:"SDET Intern, PhonePe, Bengaluru",
+      program:"M.Sc Cyber Security (2020-2025)",
+      comment:"The MSc Cybersecurity program at the Department of AMCS has been pivotal in developing both my technical skills and personal growth. The hands-on approach, with extensive lab sessions , projects and a 7th and 10th semester internship, bridges theory with real-world industry practices, preparing me for a successful career in cybersecurity. The faculty's guidance has been transformative, shaping me into a skilled cyber security professional and the individual I am today.",
+      img:"",
+    },
+    {
+      name:"Pugazhendhi M",
+      role:"Software Developer Intern, Unbound Security",
+      program:"M.Sc Cyber Security (2020-2025)",
+      comment:"Pursuing my MSc in Cybersecurity in the AMCS department, with its inspiring faculty, helped me foster my passion for cybersecurity. The hands-on learning and internships provided invaluable industry exposure.",
+      img:"",
+    },
+    {
+      name:"Vishvabala C S",
+      role:"Intern, KLA Tencor India, Chennai",
+      program:"M.Sc Cyber Security (2020-2025)",
+      comment:"The MSc Cybersecurity program offers a dynamic blend of theory and hands-on experience, equipping students with the skills to navigate real-world security challenges. As Bruce Schneier aptly said, 'Security is a process, not a product', and this program fosters a mindset of continuous learning and adaptability. With cybersecurity at the heart of today’s digital landscape, this course serves as a strong foundation for careers across the tech spectrum—from software development to data science and beyond.",
+      img:"",
+    },
+    {
+      name:"Meenakshi S Nair",
+      role:"QR Analyst JPMorgan Chase & Co, Mumbai",
+      program:"M.Sc Data Science (2020-2025)",
+      comment:"The MSc Integrated Data Science program has been an incredible journey, exceeding my expectations at every step. The department’s proactive approach, expert faculty, and hands-on labs have helped me build a strong foundation in both theory and practice. My internship experience further provided invaluable exposure to the corporate world, reinforcing the real-world relevance of the curriculum and equipping me with both technical expertise and essential soft skills. This program has truly boosted my confidence and prepared me for a future in Data Science.",
+      img:"",
+    },
   ];
 
   const achievementCategories = ["All","Entrepreneurs","PhD Holders","Higher Studies","Events","Sports & Culturals"];
@@ -161,18 +294,324 @@ export default function STDCPage() {
     { name: "Senthil Natarajan",      role: "Managing Director, Kovai Pazha Mudir Nilayam, Coimbatore",    img: "/placeholder.svg", category: "Entrepreneurs" },
     { name: "Kuberan Marimuthu",      role: "CEO, Cypherd Wallet, USA",                                    img: "/placeholder.svg", category: "Entrepreneurs" },
     { name: "B. Ramprasath",          role: "Co-Founder and CTO, Foxsense Innovations, Coimbatore",        img: "/placeholder.svg", category: "Entrepreneurs" },
-    { name: "Dr Arun Kumar",          role: "PhD – Stanford University",                                   img: "/placeholder.svg", category: "PhD Holders" },
-    { name: "Dr. Aditi Mukherjee",    role: "Research Scientist at Peraton Labs",                          img: "/placeholder.svg", category: "PhD Holders" },
-    { name: "Dr. Sridhar Venkatesan", role: "Associate Professor, University of Florida",                  img: "/placeholder.svg", category: "PhD Holders" },
-    { name: "Meera Devi",             role: "MS Computer Science – Germany",                               img: "/placeholder.svg", category: "Higher Studies" },
-    { name: "Vaishali Surianarayanan",role: "Senior PhD candidate (Fully Funded) in CS at UCSB",          img: "/placeholder.svg", category: "Higher Studies" },
-    { name: "Surya Prasath",          role: "Pursuing MS in Data Science, University of Maryland, USA",    img: "/placeholder.svg", category: "Higher Studies" },
-    { name: "Tech Symposium",         role: "National Level Event Winners",                                img: "/placeholder.svg", category: "Events" },
+    {
+      name:"Rukaiya Dahodwala",
+      role:"Honest Mocha Entrepreneur, Redmond, Washington, USA",
+      img:"",
+      category:"Entrepreneurs",
+    },
+    {
+      name:"Sethuraman T.A",
+      role:"Co-Founder and CEO, Jungroo Learning, Bengaluru",
+      img:"",
+      category:"Entrepreneurs",
+    },
+    {
+      name:"Cibe Hariharan",
+      role:"Co-Founder and CEO, Jungroo Learning, Bengaluru",
+      img:"",
+      category:"Entrepreneurs",
+    },
+    {
+      name:"Arvind Balasubramanian",
+      role:"Head of Product at Candela Software Labs",
+      img:"",
+      category:"Entrepreneurs",
+    },
+    //PhD Holders
+    {
+      name:"Dr. Aditi Mukherjee",
+      role:"Research Scientist at Peraton Labs",
+      img:"",
+      category:"PhD Holders",
+    },
+    {
+      name:"Dr. Sridhar Venkatesan",
+      role:"Associate Professor, University of Florida",
+      img:"",
+      category:"PhD Holders",
+    },
+    {
+      name:"Dr. Akshaya Mani",
+      role:"Applied Researcher",
+      img:"",
+      category:"PhD Holders",
+    },
+    {
+      name:"Dr. Yashwanth Ramamurthi",
+      role:"International Institute of Information Technology, Bangalore",
+      img:"",
+      category:"PhD Holders",
+    },
+    {
+      name:"Dr. Rathin Jeyeram",
+      role:"Learning Planet Institute, Université Paris Cité",
+      img:"",
+      category:"PhD Holders",
+    },
+    //Higher Studies
+    {
+      name:"Vaishali Surianarayanan",
+      role:"Senior PhD candidate (Fully Funded) in Computer Science at UCSB",
+      img:"",
+      category:"Higher Studies",
+    },
+    {
+      name:"Pavithra Elumalai",
+      role:"PhD Scholar University of Göttingen and University of Tübingen",
+      img:"",
+      category:"Higher Studies",
+    },
+    {
+      name:"Surya Prasath",
+      role:"Pursuing MS in Data Science, University of Maryland, USA",
+      img:"",
+      category:"Higher Studies",
+    },
+    {
+      name:"Naman Bhargava",
+      role:"MSc data science, Michigan university",
+      img:"",
+      category:"Higher Studies",
+    },
+    {
+      name:"Ashwatha E S",
+      role:"MSc software engineering, Northeastern University, Boston",
+      img:"",
+      category:"Higher Studies",
+    },
+    {
+      name:"Charan K R",
+      role:"MSc computer science, New York university",
+      img:"",
+      category:"Higher Studies",
+    },
+    {
+      name:"Gowtham R",
+      role:"MSc computer science, Trinity College, Ireland",
+      img:"",
+      category:"Higher Studies",
+    },
+    {
+      name:"Lakshminarayanan Ravi",
+      role:"Pursuing MS in Computer Science Engineering, Northeastern University, USA",
+      img:"",
+      category:"Higher Studies",
+    },
+    {
+      name:"Saket Vempaty",
+      role:"Reasearch scholar at IIIT Hyderabad",
+      img:"",
+      category:"Higher Studies",
+    },
+    {
+      name:"N. Krishna",
+      role:"Pursuing M.Sc Mathematics, Simon Fraser University, Canada",
+      img:"",
+      category:"Higher Studies",
+    },
+    {
+      name:"Sai Rakshith Somasundaram",
+      role:"Ashoka University, Haryana",
+      img:"",
+      category:"Higher Studies",
+    },
+    {
+      name:"Arjun Ashok",
+      role:"Mila - Quebec Artificial Intelligence Institute, Université de Montréal, Canada",
+      img:"",
+      category:"Higher Studies",
+    },
+    {
+      name:"Sanjay Seetharaman",
+      role:"The Institute of Mathematical Sciences,India",
+      img:"",
+      category:"Higher Studies",
+    },
+    {
+      name:"Kaushik Suresh",
+      role:"Eindhoven University of Technology ,Netherlands",
+      img:"",
+      category:"Higher Studies",
+    },
+    {
+      name:"Varun S",
+      role:"University of Southern Denmark",
+      img:"",
+      category:"Higher Studies",
+    },
+    {
+      name:"Krishnashree J B",
+      role:"TIFR-School of Technology and Computer Science",
+      img:"",
+      category:"Higher Studies",
+    },
+    //Events
     { name: "MSc Cyber Security",     role: "TN Police Hackathon 2022, Bagged Third Prize",                img: "/placeholder.svg", category: "Events" },
-    { name: "M.Sc Data Science",      role: "Smart India Hackathon 2022, First Prize Rs.1,00,000",         img: "/placeholder.svg", category: "Events" },
+    {
+      name:"MSc Cyber Security",
+      role:"National Level Embedded Security CTF 2022, Top 20 among 500 teams",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"MSc Cyber Security",
+      role:"GIT X 2022, Best Innovation Prize",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"MSc Cyber Security",
+      role:"Caterpillar Hackethon 2021 and 2022, Finalists",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"M.Sc Software Systems",
+      role:"Cookr Food Tech Hackethon 2024, Winners",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"Tamjid L",
+      role:"Decoding 2022, First Prize",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"Mahizha N.S",
+      role:"Manas Codeathon 2023, Runner-Up",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"MSc Data Science",
+      role:"Bosch University Hackethon 2024, Winners",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"MSc Data Science",
+      role:"Paper Presentation in 9th National Conference on Computer Vision Pattern Recognition Image Processing Graphics NCVPRIPG 2024 at IIST",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"MSc Data Science",
+      role:"Societe Generale Global Solutions Hackethon 2023, Finalists",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"M.Sc Data Science",
+      role:"Smart India Hackethon 2022, First Prize Rs.1,00,000",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"Varun Vaibhav A.S",
+      role:"IIIT Hackethon on Healthcare 2023",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"Mukund Elumalai",
+      role:"KLA Hackethon 2020, Cash Prize Rs.34,000",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"Kirushikesh DB",
+      role:"Filed a Patent on NLP during the Internship at IBM Research",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"M.Sc Theoretical Computer Science",
+      role:"Societe Generale Group Hackethon, Runner-up",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"Rashmi N S",
+      role:"Winner in HACK-A-THON 2024",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"Swetha Muralidharan",
+      role:"Runner-up in CATERPILLAR HACK-A-THON 2024",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"Roshini. R",
+      role:"Runner-up in VIRTUOSO – Ramanujan association of Mathematics",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"B. Dayanitha & Deshna Shree M",
+      role:"Winner in Error Exorcism (Coding Competition)",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"Varun S",
+      role:"Winner in Bosh FitFest GenAI Hackathon,Second runner-up in Data Science Student Championship by Machine Hack",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"Team Adengappa",
+      role:"Runner-up in DSPARK 2025, a National Level Hackathon under the theme “Accelerating Innovation with AI”",
+      img:"",
+      category:"Events",
+    },
+    {
+      name:"Team Hacki-Dynamos",
+      role:"Winner in Data Premier League",
+      img:"",
+      category:"Events",
+    },
+     {
+      name:"Harshan M V",
+      role:"Founder of youth run Model UN named Global Diplomatic Model United Nations",
+      img:"",
+      category:"Events",
+    },
+    //Sports & Culturals
     { name: "Karthick Ravi",          role: "Badminton State Rank Holder",                                 img: "/placeholder.svg", category: "Sports & Culturals" },
-    { name: "Charankumar P",          role: "Guinness World Record holder — Football Touches",             img: "/placeholder.svg", category: "Sports & Culturals" },
+    { name: "Charankumar P",          role: "Guinness World Record holder — Football Touches with Alternating Feet in one minute’",             img: "/placeholder.svg", category: "Sports & Culturals" },
+    {
+      name:"Sai Karthik",
+      role:"Petrichor 23 Techno Cultural Feast, IIT Palakkad - Breaking Band, 2nd Position",
+      img:"",
+      category:"Sports & Culturals",
+    },
+    {
+      name:"Alagu Prakalya",
+      role:"AI Tamilnadu Kalambagam - Talk on ‘Building GPT models of Tamil’",
+      img:"",
+      category:"Sports & Culturals",
+    },
     { name: "Lalit Kishore",          role: "Tamilnadu Archery Championship, Gold Medallist",              img: "/placeholder.svg", category: "Sports & Culturals" },
+    {
+      name:"Vishva Vaisnavi N",
+      role:"Won Dr. S. R. K. Prasad Memorial,Alumni Trophy for Hurdles conducted by CIT.",
+      img:"",
+      category:"Sports & Culturals",
+    },{
+      name:"Karthic Sreenivas A",
+      role:"Winner in Anna University Zonals 2024- Cricket & Anna University Interzonals 2024- Cricket ",
+      img:"",
+      category:"Sports & Culturals",
+    },{
+      name:"M.Sc. Data Science",
+      role:"Runner-up in 4x100 Relay",
+      img:"",
+      category:"Sports & Culturals",
+    },
   ];
 
   /* ── Helpers ──────────────────────────────────────────────────────────── */
@@ -250,7 +689,7 @@ export default function STDCPage() {
                       <button
                         key={p.id}
                         onClick={() => setActiveProgram(p.id)}
-                        className={`px-4 py-2 rounded-full text-xl font-semibold transition-all ${
+                        className={`px-4 py-2 rounded-full text-base font-semibold transition-all ${
                           activeProgram === p.id
                             ? "bg-gradient-to-r from-[#1e3a8a] to-[#0ea5e9] text-white shadow-md"
                             : "bg-white text-[#395A7F] border border-[#a3cae9] hover:bg-[#e8f4ff]"
@@ -274,7 +713,7 @@ export default function STDCPage() {
                     <button
                       key={tab.id}
                       onClick={() => setActiveTab(tab.id)}
-                      className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
+                      className={`flex items-center gap-2 px-4 py-2 rounded-lg text-base font-semibold transition-all ${
                         activeTab === tab.id
                           ? "bg-gradient-to-r from-[#1e3a8a] to-[#0ea5e9] text-white shadow-md"
                           : "bg-white text-[#395A7F] border border-[#a3cae9] hover:bg-[#e8f4ff]"
@@ -293,14 +732,14 @@ export default function STDCPage() {
                   {activeTab === "overview" && (
                     <div className="space-y-6">
                       <div>
-                        <h4 className="text-lg font-bold text-[#1e3a8a] mb-3">About the Department</h4>
-                        <p className="text-[#475569] leading-relaxed text-sm">
+                        <h4 className="text-xl font-bold text-[#1e3a8a] mb-3">About the Department</h4>
+                        <p className="text-[#475569] leading-relaxed text-lg">
                           The Department of Applied Mathematics and Computational Sciences comprises of dedicated faculty members who are undoubtedly the assets worthy of mention. The department is known for its discipline and for the importance it gives to the overall development of students in grooming them towards becoming good software professionals, research scientists and data analysts. The department has its own library with the latest books, national and international journals and magazines. The computer centre is well equipped with the most recent hardware and software. The department has vibrant research culture to keep in touch with the ever-growing technologies.
                         </p>
                       </div>
 
                       <div>
-                        <h4 className="text-lg font-bold text-[#1e3a8a] mb-3">About the Programmes</h4>
+                        <h4 className="text-xl font-bold text-[#1e3a8a] mb-3">About the Programmes</h4>
                         <div className="space-y-4">
                           {[
                             { color: "#1e3a8a", label: "M.Sc. Software Systems", desc: "was started in the year 1997 for the first time in the country and well received by leading software industries across the globe. The programme has been designed to meet the challenging needs of the industry. Renamed as Software Systems since 2014." },
@@ -310,16 +749,16 @@ export default function STDCPage() {
                             { color: "#391b63", label: "M.Sc. Computational Finance", desc: "The first of its kind in India, prepares students with the technical knowledge and skills needed to protect and defend computer systems and networks with strong internship programs." },
                           ].map((item, i) => (
                             <div key={i} className={innerBlock}>
-                              <h5 className="font-bold mb-2" style={{ color: item.color }}>{item.label}</h5>
-                              <p className="text-[#475569] text-sm leading-relaxed">{item.desc}</p>
+                              <h5 className="text-xl font-bold mb-2" style={{ color: item.color }}>{item.label}</h5>
+                              <p className="text-lg text-[#475569]  leading-relaxed">{item.desc}</p>
                             </div>
                           ))}
                         </div>
                       </div>
 
                       <div className={innerBlock}>
-                        <h4 className="text-lg font-bold text-[#1e3a8a] mb-3">Programme Highlights</h4>
-                        <ul className="space-y-2 text-[#475569] text-sm">
+                        <h4 className="text-xl font-bold text-[#1e3a8a] mb-3">Programme Highlights</h4>
+                        <ul className="space-y-2 text-[#475569] text-lg">
                           {[
                             "Two semesters (7th and 10th) rigorous internships in reputed industries and top-notch institutions",
                             "Unique feature for the success of the programmes",
@@ -339,23 +778,23 @@ export default function STDCPage() {
                   {activeTab === "curriculum" && (
                     <div className="space-y-8">
                       <div className={innerBlock}>
-                        <h4 className="text-lg font-bold text-[#1e3a8a] mb-2">Programme Structure</h4>
-                        <p className="text-[#475569] text-sm leading-relaxed">
+                        <h4 className="text-xl font-bold text-[#1e3a8a] mb-2">Programme Structure</h4>
+                        <p className="text-[#475569] text-lg leading-relaxed">
                           All four programmes follow a meticulously planned curriculum based on Choice Based Credit System, updated regularly to meet the challenging requirements of the industry.
                         </p>
                       </div>
 
                       <div>
-                        <h4 className="text-xl font-bold text-[#1e3a8a] mb-4">
+                        <h4 className="text-2xl font-bold text-[#1e3a8a] mb-4">
                           {programs.find((p) => p.id === activeProgram)?.name} – Semester Wise Curriculum
                         </h4>
                         <div className="grid md:grid-cols-2 gap-4">
                           {Object.entries(curriculum[activeProgram]).map(([semester, subjects]) => (
                             <div key={semester} className="bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-5 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
-                              <h5 className="font-bold text-[#1e3a8a] text-base mb-3">{semester}</h5>
+                              <h5 className="text-xl font-bold text-[#1e3a8a] text-base mb-3">{semester}</h5>
                               <ul className="space-y-1.5">
                                 {subjects.map((subject, idx) => (
-                                  <li key={idx} className="text-[#334155] text-sm flex items-start gap-2">
+                                  <li key={idx} className="text-[#334155] text-lg flex items-start gap-2">
                                     <span className="w-1.5 h-1.5 bg-[#0ea5e9] rounded-full mt-1.5 flex-shrink-0" />
                                     {subject}
                                   </li>
@@ -389,12 +828,12 @@ export default function STDCPage() {
                         },
                       ].map((block, i) => (
                         <div key={i} className={innerBlock}>
-                          <h4 className="text-lg font-bold mb-3" style={{ color: block.color }}>{block.title}</h4>
-                          <p className="text-[#475569] text-sm leading-relaxed">{block.body}</p>
+                          <h4 className="text-xl font-bold mb-3" style={{ color: block.color }}>{block.title}</h4>
+                          <p className="text-[#475569] text-lg leading-relaxed">{block.body}</p>
                           {block.bullets.length > 0 && (
                             <ul className="mt-3 space-y-1.5">
                               {block.bullets.map((b, bi) => (
-                                <li key={bi} className="flex items-start gap-2 text-[#475569] text-sm">
+                                <li key={bi} className="flex items-start gap-2 text-[#475569] text-lg">
                                   <span className="w-1.5 h-1.5 bg-[#e8505b] rounded-full mt-1.5 flex-shrink-0" />
                                   {b}
                                 </li>
@@ -412,12 +851,20 @@ export default function STDCPage() {
                       <h4 className="text-xl font-bold text-[#1e3a8a]">Alumni Speaks</h4>
                       {alumniSpeaks.map((a, i) => (
                         <div key={i} className={`${innerBlock} flex gap-4`}>
-                          <Image src={a.img} alt={a.name} width={72} height={72} className="rounded-full flex-shrink-0 border-2 border-[#a3cae9]" />
+                        <Image
+                        src={a.img}
+                        alt={a.name}
+                        width={90}
+                        height={90}
+                        className="w-[90px] h-[90px] object-cover rounded-md border-2 border-[#a3cae9]"
+                      />
+
+
                           <div>
-                            <h5 className="font-bold text-[#1e3a8a]">{a.name}</h5>
-                            <p className="text-sm font-medium text-[#e8505b]">{a.role}</p>
-                            <p className="text-xs text-[#94a3b8] mb-2">{a.program}</p>
-                            <p className="text-sm text-[#475569] leading-relaxed">{a.comment}</p>
+                            <h5 className="text-2xl font-bold text-[#1e3a8a]">{a.name}</h5>
+                            <p className="text-base font-medium text-[#e8505b]">{a.role}</p>
+                            <p className="text-sm text-[#94a3b8] mb-2">{a.program}</p>
+                            <p className="text-lg text-[#475569] leading-relaxed">{a.comment}</p>
                           </div>
                         </div>
                       ))}
@@ -450,8 +897,8 @@ export default function STDCPage() {
                         ).map((a, i) => (
                           <div key={i} className="bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-5 text-center hover:-translate-y-1 hover:shadow-md transition-all duration-300">
                             <Image src={a.img} alt={a.name} width={80} height={80} className="rounded-full mx-auto mb-3 border-2 border-[#a3cae9]" />
-                            <h4 className="font-bold text-[#1e3a8a] text-sm">{a.name}</h4>
-                            <p className="text-xs text-[#475569] mt-1 leading-relaxed">{a.role}</p>
+                            <h4 className="text-xl font-bold text-[#1e3a8a] text-sm">{a.name}</h4>
+                            <p className="text-base text-[#475569] mt-1 leading-relaxed">{a.role}</p>
                           </div>
                         ))}
                       </div>
@@ -467,7 +914,7 @@ export default function STDCPage() {
 
               {/* Notable Alumni */}
               <div className="bg-white rounded-2xl shadow-md border border-[#dce8f5] p-6 text-center">
-                <h4 className="text-xl font-bold text-[#1e3a8a] mb-4">🎓 Notable Alumni</h4>
+                <h4 className="text-2xl font-bold text-[#1e3a8a] mb-4">🎓 Notable Alumni</h4>
                 <div className="relative bg-[#f0f6ff] rounded-xl p-6">
                   <button
                     onClick={prevAlumni}
@@ -489,9 +936,9 @@ export default function STDCPage() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h5 className="font-bold text-[#1e3a8a]">{notableAlumni[alumniIndex].name}</h5>
-                  <p className="text-sm font-medium text-[#e8505b] mt-1">{notableAlumni[alumniIndex].position}</p>
-                  <p className="text-xs text-[#64748b] mt-0.5">{notableAlumni[alumniIndex].organization}</p>
+                  <h5 className="text-xl font-bold text-[#1e3a8a]">{notableAlumni[alumniIndex].name}</h5>
+                  <p className="text-base font-medium text-[#e8505b] mt-1">{notableAlumni[alumniIndex].position}</p>
+                  <p className="text-sm text-[#64748b] mt-0.5">{notableAlumni[alumniIndex].organization}</p>
                 </div>
 
                 {/* Dots */}
@@ -511,19 +958,19 @@ export default function STDCPage() {
                 <h4 className="text-xl font-bold mb-6">Important Dates</h4>
                 <ul className="space-y-4">
                   {[
-                    { label: "Last date for application submission",              date: "23rd May 2025",                     icon: Calendar   },
-                    { label: "Notification of shortlisted candidates",            date: "29th May 2025",                     icon: Calendar   },
-                    { label: "Entrance test",                                     date: "4th June 2025",                     icon: Calendar   },
-                    { label: "Counselling in the campus",                         date: "4th June Afternoon – 7th June 2025", icon: Calendar  },
-                    { label: "Notification of final selected candidates",          date: "10th June 2025",                    icon: Calendar   },
-                    { label: "Last date for fee payment",                         date: "16th June 2025",                    icon: Calendar   },
+                    { label: "Last date for application submission",              date: "23rd May 2026",                     icon: Calendar   },
+                    { label: "Notification of shortlisted candidates",            date: "29th May 2026",                     icon: Calendar   },
+                    { label: "Entrance test",                                     date: "4th June 2026",                     icon: Calendar   },
+                    { label: "Counselling in the campus",                         date: "4th June Afternoon – 7th June 2026", icon: Calendar  },
+                    { label: "Notification of final selected candidates",          date: "10th June 2026",                    icon: Calendar   },
+                    { label: "Last date for fee payment",                         date: "16th June 2026",                    icon: Calendar   },
                     { label: "Cost of application",                               date: "750 INR",                           icon: CreditCard },
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <item.icon className="w-5 h-5 text-[#7dd3fc] flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="text-white/75 text-sm">{item.label}</p>
-                        <p className="text-white font-bold text-sm">{item.date}</p>
+                        <p className="text-white/75 text-lg">{item.label}</p>
+                        <p className="text-white font-bold text-base">{item.date}</p>
                       </div>
                     </li>
                   ))}
@@ -538,8 +985,8 @@ export default function STDCPage() {
 
               {/* How to apply */}
               <div className="bg-white rounded-2xl shadow-md border border-[#dce8f5] p-6">
-                <h4 className="text-lg font-bold text-[#1e3a8a] mb-3">How to apply?</h4>
-                <p className="text-[#475569] text-sm leading-relaxed">
+                <h4 className="text-xl font-bold text-[#1e3a8a] mb-3">How to apply?</h4>
+                <p className="text-[#475569] text-lg leading-relaxed">
                   Application can be made only through online by entering all the particulars including marks along with
                   online payment by Net banking / Credit card / Debit card / UPI. One application is sufficient for all
                   four programmes (SS / TCS / DS / CS / CF) and preference of courses can be selected. All dates are subject
@@ -600,7 +1047,7 @@ export default function STDCPage() {
           </div>
         </div>
 
-        <p className="text-gray-500 mt-6 font-medium italic text-center">
+        <p className="text-gray-900 mt-6 font-medium italic text-center">
           Applied Mathematics and Computational Sciences Laboratories
         </p>
       </div>
