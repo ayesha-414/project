@@ -67,7 +67,7 @@ export default function STDCPage() {
     name: "Laks Srini",
     position: "Co Founder & CTO",
     organization: "Zerodown, USA",
-    image: "", // or any placeholder you want
+    image: "/notable_alumini_img/Laks_srini .jpeg",
   },
   {
     name: "Raghavan Sivakumar S",
