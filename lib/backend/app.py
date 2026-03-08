@@ -10,7 +10,11 @@ load_dotenv()
 
 app = Flask(__name__)
 # In your app.py, make sure you have this line updated with the actual Vercel URL:
-CORS(app, resources={r"/api/*": {"origins": "https://pearl-seven.vercel.app"}})
+CORS(app, resources={r"/api/*": {"origins": [
+    "https://project-pearl-seven.vercel.app", 
+    "https://project-mnz5yj5a6-prj2.vercel.app",
+    "https://pearl-seven.vercel.app"
+]}})
 @app.route('/api/contact', methods=['POST'])
 def contact_form():
     try:
