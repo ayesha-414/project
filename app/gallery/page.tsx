@@ -6,27 +6,27 @@ import Link from "next/link";
 import { ChevronLeft, X, ChevronRight, ChevronLeft as ArrowLeft } from "lucide-react";
 const galleryImages = [
 
-  { id: 1, src: "/image/campus-1.jpg", title: "PSG Tech Main Entrance" },
+  { id: 1, src: "/image/campus-1.jpg", title: "Graduation Day" },
 
-  { id: 2, src: "/image/campus-2.jpg", title: "The Iconic Bridge" },
+  { id: 2, src: "/image/campus-2.jpg", title: "Lab" },
 
-  { id: 3, src: "/image/campus-3.jpg.jpeg", title: "GRD Memorial Library" },
+  { id: 3, src: "/image/campus-3.jpg.jpeg", title: "Infinity Event" },
 
-  { id: 4, src: "/image/campus-4.jpg.jpeg", title: "Quadrangle Area" },
+  { id: 4, src: "/image/campus-4.jpg.jpeg", title: "Infinity Event" },
 
-  { id: 5, src: "/image/campus-5.jpg.jpeg", title: "High-Tech Laboratory" },
+  { id: 5, src: "/image/campus-5.jpg.jpeg", title: "Infinity Event" },
 
-  { id: 6, src: "/image/campus-6.jpg.jpeg", title: "Student Amenities Center" },
+  { id: 6, src: "/image/campus-6.jpg.jpeg", title: "Infinity Event" },
 
-  { id: 7, src: "/image/campus-7.jpg.jpeg", title: "Hostel Facilities" },
+  { id: 7, src: "/image/campus-7.jpg.jpeg", title: "Infinity Event" },
 
-  { id: 8, src: "/image/campus-8.jpg.jpeg", title: "Sports Complex" },
+  { id: 8, src: "/image/campus-8.jpg.jpeg", title: "Infinity Event" },
 
-  { id: 9, src: "/image/campus-9.jpg.jpeg", title: "PSG-CARE Building" },
+  { id: 9, src: "/image/campus-9.jpg.jpeg", title: "Infinity Event" },
 
-  { id: 10, src: "/image/campus-10.jpg.JPEG", title: "Department of Management Sciences" },
+  { id: 10, src: "/image/campus-10.jpg.JPEG", title: "Infinity Event" },
 
-  { id: 11, src: "/image/campus-11.jpg", title: "Textile Technology Dept" },
+  { id: 11, src: "/image/campus-11.jpg", title: "" },
 
   { id: 12, src: "/image/campus-12.jpg", title: "Campus Green Spaces" },
 
