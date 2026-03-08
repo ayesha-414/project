@@ -69,16 +69,16 @@ export default function Header() {
               </div>
 
               <div className="hidden xl:block border-l-2 border-white/40 pl-4">
-                <h6 className="text-white font-bold text-lg leading-tight tracking-tight uppercase">PSG College of Technology</h6>
-                <p className="text-white/90 text-[11px] font-medium uppercase tracking-wider">Government Aided Autonomous Institution</p>
-                <p className="text-white/90 text-[11px] font-medium uppercase tracking-wider">Affiliated to Anna University</p>
+                <h6 className="text-white font-bold text-xl leading-tight tracking-tight uppercase">PSG College of Technology</h6>
+                <p className="text-white/90 text-sm font-medium uppercase tracking-wider">Government Aided Autonomous Institution</p>
+                <p className="text-white/90 text-sm font-medium uppercase tracking-wider">Affiliated to Anna University</p>
               </div>
             </Link>
 
             {/* Desktop Navigation - Increased Text Size and Clarity */}
             <nav className="hidden lg:flex items-center gap-2 xl:gap-4">
-              <Link href="/" className="nav-link text-[19px] font-bold text-white px-4 py-2 hover:text-blue-200 transition-all drop-shadow-sm">Home</Link>
-              <Link href="/#about" className="nav-link text-[19px] font-bold text-white px-4 py-2 hover:text-blue-200 transition-all drop-shadow-sm">About</Link>
+              <Link href="/" className="nav-link text-[21px] font-bold text-white px-4 py-2 hover:text-blue-200 transition-all drop-shadow-sm">Home</Link>
+              <Link href="/#about" className="nav-link text-[21px] font-bold text-white px-4 py-2 hover:text-blue-200 transition-all drop-shadow-sm">About</Link>
               
               {/* FUNCTIONAL MENU SECTION */}
               <div className="relative group">
@@ -158,9 +158,9 @@ export default function Header() {
                 </div> */}
               </div>
 
-              <Link href="/gallery" className="nav-link text-[19px] font-bold text-white px-4 py-2 hover:text-blue-200 transition-all drop-shadow-sm">Gallery</Link>
-              <Link href="/#schedule" className="nav-link text-[19px] font-bold text-white px-4 py-2 hover:text-blue-200 transition-all drop-shadow-sm">Schedule</Link>
-              <Link href="/#contact" className="nav-link text-[19px] font-bold text-white px-4 py-2 hover:text-blue-200 transition-all drop-shadow-sm">Contact</Link>
+              <Link href="/gallery" className="nav-link text-[21px] font-bold text-white px-4 py-2 hover:text-blue-200 transition-all drop-shadow-sm">Gallery</Link>
+              <Link href="/#schedule" className="nav-link text-[21px] font-bold text-white px-4 py-2 hover:text-blue-200 transition-all drop-shadow-sm">Schedule</Link>
+              <Link href="/#contact" className="nav-link text-[21px] font-bold text-white px-4 py-2 hover:text-blue-200 transition-all drop-shadow-sm">Contact</Link>
             </nav>
 
             {/* RIGHT SECTION: Apply Button */}

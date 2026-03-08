@@ -55,7 +55,7 @@ export default function ProgramCard({ title, subtitle, description, href, type, 
 
         <div className={`absolute inset-0 bg-gradient-to-t ${typeColors[type]} opacity-20`}></div>
         <div className="absolute top-4 right-4">
-          <span className="text-xs font-semibold bg-white/90 text-gray-800 px-3 py-1 rounded-full">
+          <span className="text-sm font-semibold bg-white/90 text-gray-800 px-3 py-1 rounded-full">
             {typeLabels[type]}
           </span>
         </div>
@@ -63,7 +63,7 @@ export default function ProgramCard({ title, subtitle, description, href, type, 
       
       {/* Content Section */}
       <div className={`bg-gradient-to-br ${typeColors[type]} p-6 text-white`}>
-        <h3 className="text-xl font-bold mb-2 group-hover:text-white/90 transition-colors">
+        <h3 className="text-2xl font-bold mb-2 group-hover:text-white/90 transition-colors">
           {title}
         </h3>
         {subtitle && (
@@ -72,18 +72,18 @@ export default function ProgramCard({ title, subtitle, description, href, type, 
       </div>
       
       <div className="p-6 flex-1 flex flex-col">
-        <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-1">
+        <p className="text-gray-900 text-xl leading-relaxed mb-6 flex-1">
           {description}
         </p>
         {note && (
-        <p className="text-xs text-gray-500 mb-4 ">
+        <p className="text-lg text-gray-500 mb-4 ">
           <span className="text-red-600 font-bold">*</span> {note}
         </p>
       )}
 
         <Link
           href={href}
-          className="inline-flex items-center gap-2 text-[#1c3879] font-semibold hover:text-[#e8505b] transition-colors group/link"
+          className="inline-flex items-center gap-2 text-[#1c3879] font-semibold hover:text-[#e8505b] text-lg transition-colors group/link"
         >
           Read More Details
           <svg 

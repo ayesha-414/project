@@ -255,8 +255,8 @@ export default function Home() {
                 </div>
 
                 <div className="relative z-10">
-                  <h5 className="font-bold text-lg mb-2 text-[#395A7F]">{card.title}</h5>
-                  <p className="text-[#6E9FC1] text-sm leading-relaxed">{card.body}</p>
+                  <h5 className="font-bold text-3xl mb-2 text-[#395A7F]">{card.title}</h5>
+                  <p className="text-black text-lg leading-relaxed">{card.body}</p>
                 </div>
               </div>
             ))}
@@ -270,20 +270,20 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
 
           <div className="text-center mb-12">
-            <h2 className="section-title">
+            <h2 className="section-title ">
               Applications are invited for the following Science Programmes
             </h2>
           </div>
 
           {/* 5-year */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold text-[#395A7F] mb-8 flex items-center gap-3">
+            <h3 className="text-3xl font-bold text-[#395A7F] mb-8 flex items-center gap-3">
               <div className="w-10 h-10 bg-[#395A7F] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold">5</span>
               </div>
               5 Year M.Sc Integrated Programmes
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 gap-35">
             {integratedPrograms.map((p, i) => (
               <ProgramCard
                 key={i}
@@ -307,7 +307,7 @@ export default function Home() {
               </div>
               3 Year B.Sc Programmes
             </h3>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-35">
               {bscPrograms.map((p, i) => (
                 <ProgramCard
                   key={i}
@@ -330,7 +330,7 @@ export default function Home() {
               </div>
               2 Year M.Sc Programme
             </h3>
-            <div className="max-w-xl">
+            <div className="grid md:grid-cols-2 gap-35">
               <ProgramCard
                 title={mscProgram.title}
                 subtitle=""
@@ -351,7 +351,7 @@ export default function Home() {
 
           <div className="text-center mb-12">
             <h2 className="section-title">Scheduled Dates and Events</h2>
-            <p className="text-gray-600">
+            <p className="text-gray-900">
               All dates and events are subject to change based on HSC exams results
             </p>
           </div>
@@ -390,11 +390,11 @@ export default function Home() {
                 <div className="w-14 h-14 bg-[#395A7F]/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#395A7F] transition-colors">
                   <GraduationCap className="w-7 h-7 text-[#395A7F] group-hover:text-white transition-colors" />
                 </div>
-                <h5 className="font-bold text-[#1a1a2e] mb-2 group-hover:text-[#395A7F] transition-colors">
+                <h5 className="font-bold text-[#1a1a2e] mb-2 group-hover:text-[#395A7F] transition-colors text-xl">
                   {p.title}
                 </h5>
-                <p className="text-[#6E9FC1] text-xs font-semibold mb-4">{p.subtitle}</p>
-                <div className="flex items-center gap-2 text-[#395A7F] font-semibold text-sm">
+                <p className="text-[#6E9FC1] text-base font-semibold mb-4">{p.subtitle}</p>
+                <div className="flex items-center gap-2 text-[#395A7F] font-semibold text-lg">
                   Apply Now
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>

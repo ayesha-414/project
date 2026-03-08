@@ -40,19 +40,21 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Announcement Bar */}
       <div className="absolute top-30 left-0 w-full z-40 bg-[#1c3879]/90 backdrop-blur-md border-b border-white/20 overflow-hidden">
-        <div className="whitespace-nowrap flex animate-[ticker_18s_linear_infinite] py-2">
-          <span className="text-white font-semibold tracking-wide text-sm px-8">
-            📢 Applications for B.Sc & M.Sc Programmes 2026 will close on 30 June 2026 – Apply Soon!
-          </span>
-          <span className="text-white font-semibold tracking-wide text-sm px-8">
-            📢 Applications for B.Sc & M.Sc Programmes 2026 will close on 30 June 2026 – Apply Soon!
-          </span>
+          
+        <div className="flex whitespace-nowrap animate-[ticker_20s_linear_infinite]">
+            
+          <div className="flex items-center gap-12 py-2 px-6 text-white font-semibold text-lg tracking-wide">
+            <span>📢 Applications for B.Sc & M.Sc Programmes 2026 will close on <span className="text-[#A3CAE9] font-bold">30 June 2026</span> – Apply Soon!</span>
+            <span>📢 Applications for B.Sc & M.Sc Programmes 2026 will close on <span className="text-[#A3CAE9] font-bold">30 June 2026</span> – Apply Soon!</span>
+            <span>📢 Applications for B.Sc & M.Sc Programmes 2026 will close on <span className="text-[#A3CAE9] font-bold">30 June 2026</span> – Apply Soon!</span>
+          </div>
+
         </div>
+
       </div>
       {/* LEFT LOGO */}
-      <div className="absolute top-35 left-8 z-30 animate-[float_6s_ease-in-out_infinite]">
+      <div className="absolute top-45 left-8 z-30 animate-[float_6s_ease-in-out_infinite]">
         <Image
           src="/image/psg_75_logo.webp"
           alt="75 Years Logo"
@@ -63,7 +65,7 @@ export default function Hero() {
       </div>
 
       {/* RIGHT LOGO */}
-      <div className="absolute top-35 right-8 z-30 animate-[float_6s_ease-in-out_infinite]">
+      <div className="absolute top-45 right-8 z-30 animate-[float_6s_ease-in-out_infinite]">
         <div className="p-4 rounded-2xl bg-white border border-white/30 shadow-[0_0_30px_rgba(163,202,233,0.4)]">
           <Image
             src="/image/100_yr_logo.png"
@@ -259,7 +261,7 @@ export default function Hero() {
 
       {/* ── Main content ─────────────────────────────────────────────── */}
       <div
-        className="relative z-20 max-w-5xl mx-auto px-6 text-center"
+        className="relative z-20 max-w-5xl mx-auto px-6 text-center top-22"
         style={{ opacity: loaded ? 1 : 0, transition: "opacity 0.7s ease" }}
       >
 
@@ -273,25 +275,24 @@ export default function Hero() {
         >
         </div>
 
-        {/* main heading */}
         <h1
-          className="font-black text-white leading-none tracking-tight mb-2"
+          className="font-semibold text-white leading-[1.1]  mb-3 tracking-tight"
           style={{
             fontSize: "clamp(2.2rem,5.5vw,4.8rem)",
             textShadow: "0 2px 48px rgba(57,90,127,.45)",
             animation: "h-up 0.8s 0.35s ease both",
+            wordSpacing: "3px"
           }}
         >
-          B.Sc &amp; M.Sc Programmes
+          B.Sc &amp; M.Sc PROGRAMMES
         </h1>
 
         {/* sub heading */}
+
         <h2
-          className="font-extrabold tracking-widest mb-3"
+          className="font-semibold text-[#edf1f4]  mb-3 tracking-tight"
           style={{
             fontSize: "clamp(1.9rem,3.9vw,3.0rem)",
-            color: "#edf1f4",
-            letterSpacing: "0.14em",
             animation: "h-up 0.8s 0.5s ease both",
           }}
         >
@@ -346,6 +347,8 @@ export default function Hero() {
             transformOrigin: "top",
           }} />
         </div>
+        {/* Announcement Bar */}
+        
 
       </div>
     </section>
