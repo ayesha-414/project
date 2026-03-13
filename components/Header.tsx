@@ -83,7 +83,7 @@ export default function Header() {
               {/* FUNCTIONAL MENU SECTION */}
               <div className="relative group">
                 <button className="nav-link flex items-center gap-1 text-[19px] font-bold text-white px-4 py-2 hover:text-blue-200 transition-all drop-shadow-sm">
-                  Programmes Offered
+                  Programmes
                   <ChevronDown className="w-5 h-5 transition-transform group-hover:rotate-180" />
                 </button>
                 <div className="absolute top-full left-0 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">

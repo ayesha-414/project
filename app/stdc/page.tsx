@@ -424,19 +424,19 @@ export default function STDCPage() {
     {
       name:"Arjun Ashok",
       role:"Mila - Quebec Artificial Intelligence Institute, Université de Montréal, Canada",
-      img:"",
+      img:"/stdc_achievements/arjun_ashok.png",
       category:"Higher Studies",
     },
     {
       name:"Sanjay Seetharaman",
       role:"The Institute of Mathematical Sciences,India",
-      img:"",
+      img:"/stdc_achievements/sanjay_seetharaman.png",
       category:"Higher Studies",
     },
     {
       name:"Kaushik Suresh",
       role:"Eindhoven University of Technology ,Netherlands",
-      img:"",
+      img:"/stdc_achievements/kaushik_suresh.png",
       category:"Higher Studies",
     },
     {
@@ -879,39 +879,58 @@ export default function STDCPage() {
                     </div>
                   )}
 
-                  {/* ── ACHIEVEMENTS ── */}
-                  {activeTab === "achievements" && (
-                    <div className="space-y-6">
-                      <div className="flex flex-wrap gap-2 justify-center">
-                        {achievementCategories.map((cat, i) => (
-                          <button
-                            key={i}
-                            onClick={() => setActiveAchievement(cat)}
-                            className={`px-5 py-2 rounded-full text-sm font-semibold border transition-all ${
-                              activeAchievement === cat
-                                ? "bg-[#1e3a8a] text-white border-[#1e3a8a]"
-                                : "bg-white text-[#395A7F] border-[#a3cae9] hover:bg-[#e8f4ff]"
-                            }`}
-                          >
-                            {cat}
-                          </button>
-                        ))}
-                      </div>
+                  {/*  ── Achievements Section ────────────────────────────────────────────── */ }
+{activeTab === "achievements" && (
+  <div className="space-y-6">
+    {/* Category Filter Buttons */}
+    <div className="flex flex-wrap gap-2 justify-center">
+      {achievementCategories.map((cat, i) => (
+        <button
+          key={i}
+          onClick={() => setActiveAchievement(cat)}
+          className={`px-5 py-2 rounded-full text-sm font-semibold border transition-all ${
+            activeAchievement === cat
+              ? "bg-[#1e3a8a] text-white border-[#1e3a8a]"
+              : "bg-white text-[#395A7F] border-[#a3cae9] hover:bg-[#e8f4ff]"
+          }`}
+        >
+          {cat}
+        </button>
+      ))}
+    </div>
 
-                      <div className="grid md:grid-cols-3 gap-4">
-                        {(activeAchievement === "All"
-                          ? achievements
-                          : achievements.filter((a) => a.category === activeAchievement)
-                        ).map((a, i) => (
-                          <div key={i} className="bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-5 text-center hover:-translate-y-1 hover:shadow-md transition-all duration-300">
-                            <Image src={a.img} alt={a.name} width={80} height={80} className="rounded-full mx-auto mb-3 border-2 border-[#a3cae9]" />
-                            <h4 className="text-xl font-bold text-[#1e3a8a] text-sm">{a.name}</h4>
-                            <p className="text-base text-[#475569] mt-1 leading-relaxed">{a.role}</p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+    {/* Achievements Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {(activeAchievement === "All"
+        ? achievements
+        : achievements.filter((a) => a.category === activeAchievement)
+      ).map((a, i) => (
+        <div 
+          key={i} 
+          className="bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-6 text-center hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col items-center"
+        >
+          {/* FIXED SIZE IMAGE CONTAINER */}
+          <div className="relative w-32 h-32 mb-4">
+            <Image
+              src={a.img}
+              alt={a.name}
+              fill
+              sizes="128px"
+              className="object-cover rounded-full border-2 border-[#a3cae9]"
+            />
+          </div>
+
+          <h4 className="text-lg font-bold text-[#1e3a8a] leading-tight">
+            {a.name}
+          </h4>
+          <p className="text-sm text-[#475569] mt-2 leading-relaxed">
+            {a.role}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
 
                 </div>
               </div>
@@ -937,7 +956,7 @@ export default function STDCPage() {
                     ›
                   </button>
 
-                  <div className="w-20 h-20 bg-white rounded-full overflow-hidden flex items-center justify-center mx-auto mb-3 border-2 border-[#a3cae9] shadow">
+                  <div className="w-24 h-24 bg-white rounded-full  flex items-center justify-center mx-auto mb-3 ">
                     <img
                       src={notableAlumni[alumniIndex].image}
                       alt={notableAlumni[alumniIndex].name}
@@ -1017,13 +1036,15 @@ export default function STDCPage() {
             </div>
 
             {/* This is where your image_8b7548.jpg goes */}
-            <div className="relative w-250 flex justify-center items-center">
+           <div className="w-full flex justify-center items-center py-8">
+            <div className="max-w-[1000px] w-full px-4"> {/* Optional: Limits max width so it's not huge */}
               <img 
                 src="/toprecruiters.png" 
                 alt="Top Recruiters" 
-                className="w-full h-auto object-contain"
+                className="mx-auto h-auto object-contain"
               />
             </div>
+          </div>
           </div>
         </div>
         <section className="max-w-full mx-auto px-6 lg:px-10 mt-12 mb-16">

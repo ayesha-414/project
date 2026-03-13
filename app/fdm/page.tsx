@@ -291,8 +291,36 @@ const objectives = [
                     <div className="space-y-6">
                       <div>
                         <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Department</h4>
-                        <p className=" text-xl text-gray-900 leading-relaxed">
-                          The <strong>Department of Apparel and Fashion Design </strong>offers a five year integrated M.Sc. Fashion Design & Merchandising Programme, a first of its kind at the university level. Over the past 10 years, it has sustained to build a resource of versatile graduates who can face the challenges of the dynamic fashion industry by applying design concepts creatively and conscientiously. The department offers many prospects to envisage creative thinking, design thinking, problem solving and research, thereby building students competency in providing design solutions. The main objective of the department is to enable a holistic development of future professionals to contribute the steering growth of the fashion, apparel production and retail industry. By offering a comprehensive vision, the department plays an integral role in shaping the students to become socially responsible citizens. </p>
+                       <div className="space-y-6">
+  {/* Block 1: The Intro Paragraph (This part is now safe) */}
+  <p className="text-xl text-gray-900 leading-relaxed">
+    The <strong>Department of Apparel and Fashion Design </strong>offers a five year 
+    integrated M.Sc. Fashion Design & Merchandising Programme, a first of its kind 
+    at the university level. Over the past 10 years, it has sustained to build a 
+    resource of versatile graduates who can face the challenges of the dynamic 
+    fashion industry by applying design concepts creatively and conscientiously. 
+    The department offers many prospects to envisage creative thinking, design thinking, 
+    problem solving and research, thereby building students competency in providing 
+    design solutions. The main objective of the department is to enable a holistic 
+    development of future professionals to contribute the steering growth of the fashion, 
+    apparel production and retail industry. By offering a comprehensive vision, the 
+    department plays an integral role in shaping the students to become socially 
+    responsible citizens.
+  </p>
+
+  {/* Block 2: The Objectives (Moved OUTSIDE of the <p> tag) */}
+  <div className="mt-10">
+    <div className="grid gap-4">
+      {objectives.map((obj, index) => (
+        <div key={index} className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors">
+          <CheckCircle className="w-6 h-6 text-[#1c3879] mt-1 flex-shrink-0" />
+          {/* Note: Use a <span> or another <p> here, but never a <div> if inside a <p> */}
+          <p className="text-gray-900">{obj}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
                       </div>
 
                       <div>

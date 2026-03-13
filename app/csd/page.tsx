@@ -365,30 +365,42 @@ export default function CSDPage() {
                   )}
 
                   {activeTab === "alumni" && (
-                    <div className="space-y-6">
-                      {alumni.map((alum, idx) => (
-                        <div key={idx} className="program-card">
-                          <div className="flex items-start gap-4">
-                            <div className="w-14 h-14 rounded-full  flex-shrink-0">
-                              <img
-                                src={alum.image}
-                                alt={alum.name}
-                                className="w-full h-full object-cover"
-                              />
-                            </div>
-                            <div>
-                              <h5 className="font-bold text-[#1a1a2e] text-2xl">{alum.name}</h5>
-                              <p className="text-[#1c3879] text-base font-medium">{alum.position}</p>
-                              <p className="text-[#e8505b] text-base">{alum.batch}</p>
-                              <p className="text-gray-900 text-lg mt-3 leading-relaxed">
-                                {alum.testimonial}
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
+  <div className="space-y-6">
+    {alumni.map((alum, idx) => (
+      <div key={idx} className="program-card">
+        {/* Flex container ensures image and text stay side-by-side */}
+        <div className="flex items-start gap-6">
+          
+          {/* Image Wrapper - Removed the w-14 restriction to allow 90px size */}
+          <div className="flex-shrink-0">
+            <img
+              src={alum.image}
+              alt={alum.name}
+              className="w-[90px] h-[90px] object-cover rounded-md border-2 border-[#a3cae9]"
+            />
+          </div>
+
+          {/* Text Content Container */}
+          <div className="flex-1">
+            <h5 className="font-bold text-[#1a1a2e] text-2xl">
+              {alum.name}
+            </h5>
+            <p className="text-[#1c3879] text-base font-medium">
+              {alum.position}
+            </p>
+            <p className="text-[#e8505b] text-base">
+              {alum.batch}
+            </p>
+            <p className="text-gray-900 text-lg mt-3 leading-relaxed">
+              {alum.testimonial}
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    ))}
+  </div>
+)}
                 </div>
               </div>
             </div>

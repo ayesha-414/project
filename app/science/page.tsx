@@ -371,51 +371,42 @@ export default function SciencePage() {
                   )}
 
                   {activeTab === "alumni" && (
-                    <div className="space-y-6">
-                      <div className="space-y-6">
-                        {alumni.map((alum, idx) => (
-                          <div key={idx} className="program-card">
-                            <div className="flex items-start gap-4">
-                              <div className="w-24 h-24 bg-[#1c3879] rounded-full flex items-center justify-center flex-shrink-0">
-                                <img
-                                    src={alum.image}
-                                    alt={alum.name}
-                                    className="w-full h-full object-cover"
-                                />
-                              </div>
-                              <div>
-                                <h5 className="text-2xl font-bold text-[#1a1a2e]">{alum.name}</h5>
-                                <p className="text-[#1c3879] text-base font-medium">{alum.position}</p>
-                                <p className="text-[#e8505b] text-xs">{alum.batch}</p>
-                                <p className="text-gray-900 text-lg mt-3 leading-relaxed">
-                                  {alum.testimonial}
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
+  <div className="space-y-6">
+    {alumni.map((alum, idx) => (
+      <div key={idx} className="program-card">
+        {/* Flex container ensures image and text stay side-by-side */}
+        <div className="flex items-start gap-6">
+          
+          {/* Image Wrapper - Removed the w-14 restriction to allow 90px size */}
+          <div className="flex-shrink-0">
+            <img
+              src={alum.image}
+              alt={alum.name}
+              className="w-[90px] h-[90px] object-cover rounded-md border-2 border-[#a3cae9]"
+            />
+          </div>
 
-                      {/* Notable Alumni
-                      <div className="mt-12">
-                        <h4 className="text-xl font-bold text-[#1c3879] mb-6">Notable Alumni</h4>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                          {notableAlumni.map((alum, idx) => (
-                            <div key={idx} className="bg-white border rounded-xl p-4 text-center">
-                              <div className="w-16 h-16 bg-[#1c3879]/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                                <span className="text-[#1c3879] font-bold text-xl">
-                                  {alum.name.charAt(0)}
-                                </span>
-                              </div>
-                              <h5 className="font-bold text-[#1a1a2e] text-sm">{alum.name}</h5>
-                              <p className="text-[#e8505b] text-xs font-medium">{alum.position}</p>
-                              <p className="text-gray-500 text-xs mt-1">{alum.organization}</p>
-                            </div>
-                          ))}
-                        </div>
-                      </div> */}
-                    </div>
-                  )}
+          {/* Text Content Container */}
+          <div className="flex-1">
+            <h5 className="font-bold text-[#1a1a2e] text-2xl">
+              {alum.name}
+            </h5>
+            <p className="text-[#1c3879] text-base font-medium">
+              {alum.position}
+            </p>
+            <p className="text-[#e8505b] text-base">
+              {alum.batch}
+            </p>
+            <p className="text-gray-900 text-lg mt-3 leading-relaxed">
+              {alum.testimonial}
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    ))}
+  </div>
+)}
                 </div>
               </div>
             </div>
@@ -438,7 +429,7 @@ export default function SciencePage() {
                     ›
                   </button>
 
-                  <div className="w-20 h-20 bg-white rounded-full overflow-hidden flex items-center justify-center mx-auto mb-3 border-2 border-[#a3cae9] shadow">
+                  <div className="w-24 h-24 bg-white rounded-full  flex items-center justify-center mx-auto mb-3 ">
                     <img
                       src={notableAlumni[alumniIndex].image}
                       alt={notableAlumni[alumniIndex].name}

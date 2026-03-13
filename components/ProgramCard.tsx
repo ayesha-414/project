@@ -25,6 +25,7 @@ const imageMap: Record<string, string> = {
   fashion: "/image/fashion-design.png",
   computer: "/image/csd.png",
   science: "/image/science.png",   
+  math:"https://images.squarespace-cdn.com/content/v1/562bf658e4b0947cbf09e119/1459012977251-077VMETIXQ4G7JG5M51H/calculus+darker+smaller+file.jpg",
 };
 
 export default function ProgramCard({ title, subtitle, description, href, type, icon = "science" ,note}: ProgramCardProps) {
