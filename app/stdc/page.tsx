@@ -115,17 +115,147 @@ export default function STDCPage() {
       "List of Electives": ["Mathematical Analysis","Social Network Analysis","Computer Graphics","Random Graphs","Data Compression","Advanced Operating Systems","Probabilistic Graphical Models","Big Data And Modern Database Systems","Functional Analysis","Epidemic Models","Computational Complexity Theory","Network Science","Mathematical Modelling","Exact Algorithms For Hard Problems","Wireless Networks","Statistical Learning","Large Scale Machine Learning","Security Modelling And Analysis","Parallel and Distributed Computing","Deep Learning","Reinforcement Learning","Quantum Computing","Computational Geometry","Computational Finance","Natural Language Processing","Logic for Computer Science","Internet Of Things","Digital Topology","Computer Forensics","Virtual and Augmented Reality","Mobile Technology","Environmental Science And Green Computing","Accounting and Financial Management","Principles Of Management And Behavioral Sciences","Entrepreneurship"],
     },
     ds: {
-      "Semester 1": ["Calculus And Its Applications","Basics Of Computational Biology","Digital Electronics","Problem Solving & C Programming","English For Professional Skills","Mathematical Foundations Lab","C Programming Lab","Digital Electronics Lab","Personality And Character Development"],
-      "Semester 2": ["Discrete Structures","Abstract Algebra","Data Structures and Algorithms","Object Oriented Programming","Theory Of Probability","Object Computing Lab","Data Structures Lab","Python Programming Lab","Personality And Character Development"],
-      "Semester 3": ["Applied Statistics","Linear Algebra","Graph Theory","Advanced Data Structures","Computer Organization And Assembly Language Programming","Applied Statistics And R Programming Lab","Advanced Data Structures Lab","Scientific Computing Lab"],
-      "Semester 4": ["Optimization Techniques","Database Management System","Predictive Analytics","Operating Systems","Transforms And Its Applications","Data Analytics & Visualisation Lab","RDBMS Lab","Operating Systems Lab"],
-      "Semester 5": ["Design And Analysis Of Algorithms","Stochastic Models","Computer Networks","Machine Learning","Professional Elective-I","Design And Analysis Of Algorithms Lab","Machine Learning Lab","Java Programming Lab"],
-      "Semester 6": ["Cloud Computing","Deep Learning","Big Data & Modern Database Systems","Artificial Intelligence","Professional Elective –II","Cloud Computing Lab","Big Data & Modern Database Systems Lab","Deep Learning Lab"],
-      "Semester 7": ["Project Work I - Duration of 6 months"],
-      "Semester 8": ["Reinforcement Learning","Natural Language Processing","Deployable Aspects of Machine Learning","Professional Elective-III","Open Elective-I","Reinforcement Learning Lab","Deployable Aspects of Machine Learning Lab","Capstone Project"],
-      "Semester 9": ["Data Privacy And Security","Data Mining","Information Retrieval","Professional Elective – IV (Self Study)","Open Elective-II","Information Retrieval Lab","Data Privacy And Security Lab","Data Mining Lab"],
-      "Semester 10": ["Project Work II - Duration of 6 months"],
-      "List of Electives": ["Data Compression","Statistical Learning","Digital Image Processing and Computer Vision","Multimedia Analytics","Computational Neuroscience","Adversarial Machine Learning","Marketing Analytics","Computer Graphics","Algorithms For Bioinformatics","Mathematical Modelling","Software Engineering","Applied Graph Algorithms","Game Theory","Social Network Data Analytics","Network Science","Parallel and Distributed Computing","Large Scale Machine Learning","Wireless Networks","Survival Analytics","Randomized Algorithms","Probabilistic Graphical Models","Topological Data Analysis","Random Graphs","Computational Finance","Computational Geometry","Principles Of Management And Behavioural Sciences","Entrepreneurship","Information And Coding Theory","Accounting And Financial Management","Environmental Science And Green Computing","Functional Analysis","Advanced Optimization Techniques","Internet Of Things","Mobile Technology","Virtual and Augmented Reality","Ethical Hacking","Computer Forensics","Advanced Algorithms"],
+
+      "Semester 1": [
+        "Calculus and Its Applications",
+        "Basics of Computational Biology",
+        "Digital Electronics and Logic Design",
+        "Problem Solving & C Programming",
+        "Professional Communications",
+        "Mathematical Foundations Lab",
+        "C Programming Lab",
+        "Digital Electronics Lab",
+        "Personality and Character Development"
+      ],
+
+      "Semester 2": [
+        "Discrete Structures",
+        "Abstract Algebra",
+        "Data Structures and Algorithms",
+        "Object Oriented Programming",
+        "Theory of Probability",
+        "Object Computing Lab",
+        "Data Structures Lab",
+        "Python Programming Lab",
+        "Personality and Character Development"
+      ],
+
+      "Semester 3": [
+        "Applied Statistics",
+        "Linear Algebra",
+        "Graph Theory",
+        "Advanced Data Structures",
+        "Computer Organization and Assembly Language Programming",
+        "Applied Statistics and R Programming Lab",
+        "Advanced Data Structures Lab",
+        "Scientific Computing Lab"
+      ],
+
+      "Semester 4": [
+        "Optimization Techniques",
+        "Database Management System",
+        "Predictive Analytics",
+        "Operating Systems",
+        "Transforms and Its Applications",
+        "Data Analytics & Visualisation Lab",
+        "RDBMS Lab",
+        "Operating Systems Lab"
+      ],
+
+      "Semester 5": [
+        "Design and Analysis of Algorithms",
+        "Stochastic Models",
+        "Computer Networks",
+        "Machine Learning",
+        "Professional Elective I",
+        "Design and Analysis of Algorithms Lab",
+        "Machine Learning Lab",
+        "Java Programming Lab"
+      ],
+
+      "Semester 6": [
+        "Cloud Computing",
+        "Deep Learning",
+        "Big Data & Modern Database Systems",
+        "Artificial Intelligence",
+        "Professional Elective II",
+        "Cloud Computing Lab",
+        "Big Data & Modern Database Systems Lab",
+        "Deep Learning Lab"
+      ],
+
+      "Semester 7": [
+        "Project Work I"
+      ],
+
+      "Semester 8": [
+        "Reinforcement Learning",
+        "Natural Language Processing",
+        "Generative AI Models",
+        "Professional Elective III",
+        "Open Elective I",
+        "Reinforcement Learning Lab",
+        "Natural Language Processing Lab",
+        "Capstone Project"
+      ],
+
+      "Semester 9": [
+        "Data Privacy and Security",
+        "Responsible AI",
+        "Information Retrieval",
+        "Professional Elective IV",
+        "Open Elective II",
+        "Data Privacy and Security Lab",
+        "Responsible AI Lab",
+        "Information Retrieval Lab"
+      ],
+
+      "Semester 10": [
+        "Project Work II"
+      ],
+      "Professional Electives": [
+        "Data Compression",
+        "Digital Image Processing and Computer Vision",
+        "Multimedia Analytics",
+        "Computational Neuroscience",
+        "Adversarial Machine Learning",
+        "Marketing Analytics",
+        "Computer Graphics",
+        "Algorithms for Bioinformatics",
+        "Simulation and Mathematical Modeling",
+        "Software Engineering",
+        "Applied Graph Algorithms",
+        "Game Theory",
+        "Social Network Data Analytics",
+        "Network Science",
+        "Parallel and Distributed Computing",
+        "Large Scale Machine Learning",
+        "Wireless Networks",
+        "Survival Analytics",
+        "Randomized Algorithms",
+        "Probabilistic Graphical Models",
+        "Topological Data Analysis",
+        "Random Graphs",
+        "Data Mining",
+        "Data Engineering"
+      ],
+      "Open Electives": [
+        "Computational Finance",
+        "Computational Geometry",
+        "Principles of Management and Behavioural Sciences",
+        "Entrepreneurship",
+        "Information and Coding Theory",
+        "Accounting and Financial Management",
+        "Environmental Science and Green Computing",
+        "Functional Analysis",
+        "Advanced Integer Optimization",
+        "Internet of Things",
+        "Mobile Technology",
+        "Virtual and Augmented Reality",
+        "Ethical Hacking",
+        "Computer Forensics",
+        "Advanced Algorithms"
+      ]
     },
     cs: {
       "Semester 1": ["Calculus And Its Applications","Basics Of Computational Biology","Digital Electronics","Problem Solving & C Programming","English For Professional Skills","Mathematical Foundations Lab","C Programming Lab","Digital Electronics Lab","Personality And Character Development"],
@@ -141,8 +271,132 @@ export default function STDCPage() {
       "List of Electives": ["Information And Coding Theory","Quantum Computing","Post Quantum Cryptography","Active Defense Using Deception","Security Modeling And Analysis","Computer Graphics","Artificial Intelligence","Social Network Analysis","Applied Graph Theory","Multimedia Security","Identity And Access Management","Internet Of Things","Data Compression","Big Data And Modern Database Systems","Biometric Security","Game Theory","Deep Learning","Natural Language Processing","Reinforcement Learning","Distributed Computing","Software Patterns","Virtual And Augmented Reality","Essentials Of Cyber Physical System Security","Principles Of Management","Environmental Science And Green Computing","Computational Finance","Entrepreneurship","Statistical Learning","Mathematical Modelling","Adversarial Machine Learning","Network Science","Information Retrieval","Ethics and Cyber Law","Advanced Algorithms"],
     },
 
-    cf:{
-      "Semester 1": ["(eg)Calculus And Its Applications","Basics Of Computational Biology","Digital Electronics","Problem Solving & C Programming","English For Professional Skills","Mathematical Foundations Lab","C Programming Lab","Digital Electronics Lab","Personality And Character Development"],
+    cf: {
+      "Semester 1": [
+        "Business Economics",
+        "Discrete Mathematical Structures",
+        "Calculus",
+        "Problem Solving & C Programming",
+        "Professional Communication",
+        "Mathematical Foundations Lab",
+        "C Programming Lab",
+        "Economic Analysis Lab",
+        "Personality and Character Development"
+      ],
+
+      "Semester 2": [
+        "Financial and Management Accounting",
+        "Theory of Probability",
+        "Differential Equations",
+        "Data Structures and Algorithms",
+        "Object Oriented Programming",
+        "Object Computing Lab",
+        "Data Structures and Algorithms Lab",
+        "Python Programming Lab",
+        "Personality and Character Development"
+      ],
+      "Semester 3": [
+        "Corporate Finance & Capital Markets",
+        "Statistics",
+        "Linear Algebra",
+        "Design and Analysis of Algorithms",
+        "Digital System Architecture",
+        "Statistical Computing & R Programming Lab",
+        "Design and Analysis of Algorithms Lab",
+        "Numerical Computing Lab"
+      ],
+
+      "Semester 4": [
+        "Fundamentals of Mathematical Finance",
+        "Optimization Techniques",
+        "Stochastic Process for Finance",
+        "Operating Systems",
+        "Data Base Management Systems",
+        "Operating Systems Lab",
+        "RDBMS Lab",
+        "Java Programming Lab"
+      ],
+      "Semester 5": [
+        "Financial Derivatives",
+        "Time Series Analysis and Forecasting",
+        "Computer Networks & Information Security",
+        "Machine Learning",
+        "Professional Elective I",
+        "Time Series Analysis and Forecasting Lab",
+        "Machine Learning Lab",
+        "Computer Networks & Information Security Lab"
+      ],
+
+      "Semester 6": [
+        "Portfolio Theory and Management",
+        "Software Engineering and Agile Technologies",
+        "Artificial Intelligence",
+        "Big Data Management Systems",
+        "Professional Elective II",
+        "Portfolio Theory and Management Lab",
+        "Artificial Intelligence Lab",
+        "Big Data Management Lab"
+      ],
+      "Semester 7": [
+        "Project Work I"
+      ],
+      "Semester 8": [
+        "Natural Language Processing and Deep Learning",
+        "Stochastic Calculus for Finance",
+        "Cloud Computing",
+        "Professional Elective III",
+        "Open Elective I",
+        "Natural Language Processing and Deep Learning Lab",
+        "Simulation Techniques and Computing Lab",
+        "Capstone Project"
+      ],
+
+      "Semester 9": [
+        "Financial Risk Management",
+        "Market Microstructure & Algorithmic Trading",
+        "Financial Technology",
+        "Professional Elective IV",
+        "Open Elective II",
+        "Financial Risk Management Lab",
+        "Algorithmic Trading Lab",
+        "Block Chain Lab"
+      ],
+
+      "Semester 10": [
+        "Project Work II"
+      ],
+      "Professional Electives": [
+        "Real Analysis",
+        "Functional Analysis",
+        "Transform Techniques",
+        "Graph Theory",
+        "Game Theory",
+        "Advanced Algorithms",
+        "Reinforcement Learning",
+        "Responsible AI",
+        "Information Retrieval",
+        "Generative AI",
+        "Parallel and Distributed Computing",
+        "Quantum Computing",
+        "Data Engineering",
+        "Intermediate Microeconomics",
+        "Social Network Analysis"
+      ],
+      "Open Electives": [
+        "Big Data Analytics",
+        "Marketing Analytics",
+        "Entrepreneurship",
+        "Digital Image Processing and Computer Vision",
+        "Probabilistic Graphical Models",
+        "Multimedia Analytics",
+        "Survival Analytics",
+        "Data Privacy",
+        "Adversarial Machine Learning",
+        "Data Compression",
+        "Deep Generative Models",
+        "Principles of Management & Behavioral Sciences",
+        "Intermediate Macroeconomics"
+      ]
     }
   };
 

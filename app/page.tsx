@@ -198,12 +198,12 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
               <h2 className="section-title">About Us</h2>
-              <p className="text-gray-900 leading-relaxed text-xl">
+              <p className="text-gray-900 leading-relaxed text-xl text-justify">
                 PSG College of Technology, established in the year 1951 by PSG & Sons' Charities,
                 Coimbatore, is one of the premier institutions of the country and is an excellent centre
                 for advanced studies and research in several areas of Science and Engineering.
               </p>
-              <p className="text-gray-900 leading-relaxed text-xl">
+              <p className="text-gray-900 leading-relaxed text-xl text-justify">
                 The college has excellent infrastructure, well-equipped laboratories and highly qualified
                 and experienced faculty. The college has signed MoU with research organizations and
                 industries across the globe to promote technology development, training of students,
@@ -255,8 +255,8 @@ export default function Home() {
                 </div>
 
                 <div className="relative z-10">
-                  <h5 className="font-bold text-3xl mb-2 text-[#395A7F]">{card.title}</h5>
-                  <p className="text-black text-lg leading-relaxed">{card.body}</p>
+                  <h5 className="font-bold text-3xl mb-2 text-[#395A7F] text-justify">{card.title}</h5>
+                  <p className="text-black text-lg leading-relaxed text-justify">{card.body}</p>
                 </div>
               </div>
             ))}
@@ -269,7 +269,7 @@ export default function Home() {
       <section id="programmes" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
 
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 text-justify">
             <h2 className="section-title ">
               Applications are invited for the following Science Programmes
             </h2>
@@ -283,7 +283,7 @@ export default function Home() {
               </div>
               5 Year M.Sc Integrated Programmes
             </h3>
-            <div className="grid md:grid-cols-2 gap-35">
+            <div className="grid md:grid-cols-2 gap-35 text-justify">
             {integratedPrograms.map((p, i) => (
               <ProgramCard
                 key={i}
@@ -307,7 +307,7 @@ export default function Home() {
               </div>
               3 Year B.Sc Programmes
             </h3>
-            <div className="grid md:grid-cols-2 gap-35">
+            <div className="grid md:grid-cols-2 gap-35 text-justify">
               {bscPrograms.map((p, i) => (
                 <ProgramCard
                   key={i}
@@ -330,7 +330,7 @@ export default function Home() {
               </div>
               2 Year M.Sc Programme
             </h3>
-            <div className="grid md:grid-cols-2 gap-35">
+            <div className="grid md:grid-cols-2 gap-35 text-justify">
               <ProgramCard
                 title={mscProgram.title}
                 subtitle=""
@@ -350,13 +350,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
 
           <div className="text-center mb-12">
-            <h2 className="section-title">Scheduled Dates and Events</h2>
-            <p className="text-gray-900">
+            <h2 className="section-title text-justify">Scheduled Dates and Events</h2>
+            <p className="text-gray-900 text-justify">
               All dates and events are subject to change based on HSC exams results
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-5xl mx-auto ">
   {/* schedule.map starts here */}
          {schedules.map((s, i) => (
               <ScheduleCard
@@ -379,7 +379,7 @@ export default function Home() {
             <h2 className="section-title">Click here to Apply</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto ">
   {/* programmes.map starts here */}
     {applyPrograms.map((p, i) => (
               <Link
