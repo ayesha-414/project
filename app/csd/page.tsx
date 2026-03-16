@@ -501,7 +501,7 @@ export default function CSDPage() {
             </div>
       
               
-
+{/* //application// */}
               <div className="bg-white rounded-2xl card-shadow p-6">
                 <h4 className="text-2xl font-bold text-[#1c3879] mb-4">How to apply?</h4>
                 <p className="text-gray-900 text-lg leading-relaxed">
