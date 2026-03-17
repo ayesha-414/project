@@ -342,23 +342,21 @@ const objectives = [
                       <div>
                         <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Programme</h4>
                         <p className="text-xl text-gray-900 leading-relaxed mb-4 text-justify">
-                          The <strong>M.Sc Fashion Design & Merchandising</strong>is a five year integrated degree programme with a three-pronged approach to fashion education - <strong>design, production and management</strong>as core areas. Focusing on specific industry requirements in fashion, apparel, niche segments and craft sectors the curriculum progresses along distinct paths gradually from the foundation to the final year of the programme. The curriculum paves way to develop a strong foundation in fashion design and merchandising by offering six professional electives to strengthen the students' skills in core area of their interest. Employment enhancement courses like craft training and documentation, industrial visits, guest lectures and 2 six months internships in the curriculum enable the students to possess a sound knowledge in the industrial practices. Craft training provides a unique opportunity to experience the artistic craft making practices first hand by working with native rural artisans in craft clusters. Students also gain valuable insight into the wide spectrum of Indian fashion through internships and industry-based projects at leading export houses, retail brands and designer house. Design collection and portfolio based on a self-developed brief provides a platform to exhibit the creative skills of students, improve knowledge and overcome practical challenges thus making them a complete professional. The curriculum is set with the following Programme Educational Objectives:
-                           <div className="mt-10">
-       
+                          The <strong>M.Sc Fashion Design & Merchandising</strong> is a five year integrated degree programme with a three-pronged approach to fashion education - <strong>design, production and management</strong> as core areas. Focusing on specific industry requirements in fashion, apparel, niche segments and craft sectors the curriculum progresses along distinct paths gradually from the foundation to the final year of the programme. The curriculum paves way to develop a strong foundation in fashion design and merchandising by offering six professional electives to strengthen the students' skills in core area of their interest. Employment enhancement courses like craft training and documentation, industrial visits, guest lectures and 2 six months internships in the curriculum enable the students to possess a sound knowledge in the industrial practices. Craft training provides a unique opportunity to experience the artistic craft making practices first hand by working with native rural artisans in craft clusters. Students also gain valuable insight into the wide spectrum of Indian fashion through internships and industry-based projects at leading export houses, retail brands and designer house. Design collection and portfolio based on a self-developed brief provides a platform to exhibit the creative skills of students, improve knowledge and overcome practical challenges thus making them a complete professional. The curriculum is set with the following Programme.<br/> <br/><strong>Educational Objectives:<strong/></strong></p>
+                        <div className="mt-10">
                           <div className="grid gap-4">
                             {objectives.map((obj, index) => (
-                              <div key={index} className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors">
+                              <div
+                                key={index}
+                                className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors"
+                              >
                                 <CheckCircle className="w-6 h-6 text-[#1c3879] mt-1 flex-shrink-0" />
-                                <p className="text-gray-900">{obj}</p>
+                                <p className="text-gray-900 text-xl">{obj}</p>
                               </div>
                             ))}
                           </div>
-                        </div></p>
-                      </div>
-
-                      
-
-            
+                        </div>
+                      </div>            
                     </div>
                   )}
 
