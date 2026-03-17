@@ -45,19 +45,16 @@ export default function Header() {
 
   return (
     <>
-      <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-white/20 ${
-        isScrolled ? "bg-[#1c3879] shadow-lg py-3" : "bg-transparent py-5"
-      }`}
-      
-      >
+      <header className={`fixed top-0 left-0 right-0 z-50 h-[90px] transition-all duration-300 border-b border-white/20 ${
+          isScrolled ? "bg-[#1c3879] shadow-lg" : "bg-transparent"
+        }`}>
         <div className="max-w-full mx-auto px-6 lg:px-10">
           <div className="flex items-center justify-between">
             
-            {/* LEFT SECTION: Three Logos and Text */}
-            <Link href="/" className="flex items-center gap-3">
+            {/* LEFT SECTION:  Logos and Text */}
+            <Link href="/" className="flex items-center gap-2">
               <div className="flex items-center gap-1 shrink-0">
-                <div className="w-20 h-20  flex items-center justify-center overflow-hidden p-1 rounded-lg ">
+                <div className="w-25 h-23  flex items-center justify-center overflow-hidden p-1 rounded-lg ">
                   <Image src={LOGO_PSG} alt="PSG Logo" width={60} height={60} className="object-contain" />
                 </div>
                 {/* <div className="w-20 h-20  flex items-center justify-center overflow-hidden p-1 rounded-lg ">
