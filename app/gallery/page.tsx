@@ -8,7 +8,7 @@ const galleryImages = [
 
   { id: 1, src: "/image/campus-1.jpg", title: "Graduation Day" },
 
-  { id: 2, src: "/image/campus-2.jpg", title: "Lab" },
+  { id: 2, src: "/image/campus-2.jpg", title: "Infinity Event" },
 
   { id: 3, src: "/image/campus-3.jpg.jpeg", title: "Infinity Event" },
 
@@ -26,32 +26,32 @@ const galleryImages = [
 
   { id: 10, src: "/image/campus-10.jpg.JPEG", title: "Infinity Event" },
 
-  { id: 11, src: "/image/campus-11.jpg", title: "" },
+  { id: 11, src: "/image/campus-11.jpg", title: "Infinity Event" },
 
-  { id: 12, src: "/image/campus-12.jpg", title: "Campus Green Spaces" },
+  { id: 12, src: "/image/campus-12.jpg", title: "Infinity Event" },
 
-  { id: 13, src: "/image/campus-13.jpg", title: "Annual Event - Kriya" },
+  { id: 13, src: "/image/campus-13.jpg", title: "Infinity Event" },
 
-  { id: 14, src: "/image/campus-14.jpg", title: "Graduation Day" },
+  { id: 14, src: "/image/campus-14.jpg", title: "Infinity Event" },
 
-  { id: 15, src: "/image/1.JPG", title: "Graduation Day" },
+  { id: 15, src: "/image/1.JPG", title: "Alumini Meet" },
 
-  { id: 16, src: "/image/2.JPG", title: "Graduation Day" },
+  { id: 16, src: "/image/2.JPG", title: "Alumini Meet" },
 
-  { id: 17, src: "/image/3.JPG", title: "Graduation Day" },
-  { id: 18, src: "/image/4.JPG", title: "Graduation Day" },
-   { id: 19, src: "/image/7.JPG", title: "Graduation Day" },
- { id: 20, src: "/image/image.png", title: "Graduation Day" },
-  { id: 21, src: "/image/IMG_0670.JPG", title: "Graduation Day" },
- { id: 22, src: "/image/IMG_2312.JPG", title: "Graduation Day" },
- { id: 23, src: "/image/IMG_4372.png", title: "Graduation Day" },
- { id: 24, src: "/image/IMG_9555.JPG", title: "Graduation Day" },
- { id: 25, src: "/image/IMG_9833.JPG", title: "Graduation Day" },
- { id: 26, src: "/image/img3.jpeg", title: "Graduation Day" },
+  { id: 17, src: "/image/3.JPG", title: "Alumini Meet" },
+  { id: 18, src: "/image/4.JPG", title: "Alumini Meet" },
+   { id: 19, src: "/image/7.JPG", title: "Alumini Meet" },
+ { id: 20, src: "/image/image.png", title: "Alumini Meet" },
+  { id: 21, src: "/image/IMG_0670.JPG", title: "Alumini Meet" },
+ { id: 22, src: "/image/IMG_2312.JPG", title: "Guest Lecture" },
+ { id: 23, src: "/image/IMG_4372.png", title: "Login Event" },
+ { id: 24, src: "/image/IMG_9555.JPG", title: "Silver Jubilee Celebration" },
+ { id: 25, src: "/image/IMG_9833.JPG", title: "Silver Jubilee Celebration" },
+ { id: 26, src: "/image/img3.jpeg", title: "Lecture" },
 
- { id: 27, src: "/image/IMG_0680.JPG", title: "Graduation Day" },
- { id: 28, src: "/image/img6.jpeg", title: "Graduation Day" },
- { id: 29, src: "/image/img7.jpeg", title: "Graduation Day" },
+ { id: 27, src: "/image/IMG_0680.JPG", title: "Orientation Program" },
+ { id: 28, src: "/image/img6.jpeg", title: "Guest Lecture" },
+ { id: 29, src: "/image/img7.jpeg", title: "Guest Lecture" },
 ];
 
 export default function GalleryPage() {

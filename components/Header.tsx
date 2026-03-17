@@ -51,13 +51,13 @@ export default function Header() {
       }`}
       
       >
-        <div className="max-w-full mx-auto px-6 lg:px-10">
+        <div className="max-w-[1400px] mx-auto px-4 md:px-6 lg:px-10">
           <div className="flex items-center justify-between">
             
             {/* LEFT SECTION: Three Logos and Text */}
             <Link href="/" className="flex items-center gap-3">
-              <div className="flex items-center gap-1 shrink-0">
-                <div className="w-20 h-20  flex items-center justify-center overflow-hidden p-1 rounded-lg ">
+              <div className="text-[16px] xl:text-[18px] font-semibold text-white px-2 xl:px-3 py-2 hover:text-blue-200 transition">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20  flex items-center justify-center overflow-hidden p-1 rounded-lg ">
                   <Image src={LOGO_PSG} alt="PSG Logo" width={60} height={60} className="object-contain" />
                 </div>
                 {/* <div className="w-20 h-20  flex items-center justify-center overflow-hidden p-1 rounded-lg ">
@@ -68,15 +68,15 @@ export default function Header() {
                 </div> */}
               </div>
 
-              <div className="hidden xl:block border-l-2 border-white/40 pl-4">
-                <h6 className="text-white font-bold text-xl leading-tight tracking-tight uppercase">PSG College of Technology</h6>
+              <div className="hidden lg:block xl:block xl:block border-l-2 border-white/40 pl-4">
+                <h6 className="text-white font-bold text-lg sm:text-base md:text-lg whitespace-nowrap overflow-hidden text-ellipsis">PSG College of Technology</h6>
                 {/* <p className="text-white/90 text-sm font-medium uppercase tracking-wider">Government Aided Autonomous Institution</p>
                 <p className="text-white/90 text-sm font-medium uppercase tracking-wider">Affiliated to Anna University</p> */}
               </div>
             </Link>
 
             {/* Desktop Navigation - Increased Text Size and Clarity */}
-            <nav className="hidden lg:flex items-center gap-2 xl:gap-4">
+            <nav className="hidden lg:flex items-center gap-1 md:gap-2 xl:gap-4">
               <Link href="/" className="nav-link text-[21px] font-bold text-white px-4 py-2 hover:text-blue-200 transition-all drop-shadow-sm">Home</Link>
               <Link href="/#about" className="nav-link text-[21px] font-bold text-white px-4 py-2 hover:text-blue-200 transition-all drop-shadow-sm">About</Link>
               
@@ -87,7 +87,7 @@ export default function Header() {
                   <ChevronDown className="w-5 h-5 transition-transform group-hover:rotate-180" />
                 </button>
                 <div className="absolute top-full left-0 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                  <div className="bg-white rounded-xl shadow-2xl p-5 min-w-[520px] border border-gray-100 ring-1 ring-black/5 flex">
+                  <div className="bg-white rounded-xl shadow-2xl p-5 min-w-[420px] lg:min-w-[520px] border border-gray-100 ring-1 ring-black/5 flex">
 
                     {/* LEFT SIDE – HEADINGS */}
                     <div className="w-1/2 border-r pr-4">
@@ -194,7 +194,7 @@ export default function Header() {
                    </div>
                 </div>
                 <div>
-                  <h6 className="text-white font-bold text-base tracking-tight leading-tight">PSG COLLEGE OF TECHNOLOGY</h6>
+                  <h5 className="text-white font-bold text-sm sm:text-base md:text-lg whitespace-nowrap overflow-hidden text-ellipsis">PSG COLLEGE OF TECHNOLOGY</h5>
                   <p className="text-white/80 text-[10px] uppercase font-medium">Government Aided Autonomous</p>
                 </div>
               </Link>
@@ -233,7 +233,7 @@ export default function Header() {
               <Link href="/gallery" className="block text-white text-2xl font-bold border-b border-white/10 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Gallery</Link>
               <Link href="/#contact" className="block text-white text-2xl font-bold border-b border-white/10 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
 
-              <Link href="/apply" className="flex items-center justify-center gap-3 bg-white text-[#1c3879] w-full py-5 rounded-2xl font-black text-xl shadow-xl mt-8" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="/apply" className="px-4 md:px-6 lg:px-7 py-2 md:py-3 text-sm md:text-base flex items-center justify-center gap-3 bg-white text-[#1c3879] w-full py-5 rounded-2xl font-black text-xl shadow-xl mt-8" onClick={() => setIsMobileMenuOpen(false)}>
                 Apply Now <ArrowRight className="w-6 h-6" />
               </Link>
             </nav>
