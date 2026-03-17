@@ -15,12 +15,12 @@ const poppins = Poppins({
   variable: '--font-poppins'
 });
 
-export const metadata: Metadata = {
-  title: 'B.Sc & M.Sc Programmes Admission - PSG College of Technology',
-  description: 'PSG College of Technology - Science Programmes Admission 2025. Apply for B.Sc, M.Sc, and 5 Year Integrated M.Sc Programmes.',
-  generator: 'PSG Tech',
-  keywords: 'PSG Tech, PSG College of Technology, B.Sc, M.Sc, Admission 2025, Science Programmes, Coimbatore',
-}
+export const metadata = {
+  title: "B.Sc & M.Sc Programmes Admission - PSG College of Technology",
+  icons: {
+    icon: "/image/favicon.png",
+  },
+};
 
 export default function RootLayout({
   children,
@@ -36,3 +36,4 @@ export default function RootLayout({
     </html>
   )
 }
+

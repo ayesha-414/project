@@ -6,8 +6,8 @@ import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Youtube } from "lucid
 export default function Footer() {
   return (
     <footer className="footer-gradient text-white">
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="w-full pl-6 pr-4 py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 ">
           {/* About */}
           <div>
             <div className="flex items-center gap-3 mb-6">
@@ -19,19 +19,18 @@ export default function Footer() {
               className="rounded-full bg-white p-1"
             />
               <div>
-                <h6 className="font-semibold text-xl">PSG COLLEGE OF TECHNOLOGY</h6>
-                <p className="text-white/70 text-xs">Government Aided Autonomous Institution</p>
+                <h6 className="text-white font-bold text-xl leading-tight tracking-tight uppercase whitespace-nowrap overflow-hidden text-ellipsis ">PSG COLLEGE OF TECHNOLOGY</h6>
               </div>
             </div>
-            <p className="text-white/80 text-lg leading-relaxed">
+            <p className="text-white/80 text-lg leading-relaxed text-justify">
               PSG College of Technology, established in the year 1951 by PSG & Sons Charities, Coimbatore, 
               is one of the premier institutions of the country.
             </p>
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h5 className="text-2xl font-semibold mb-6">Quick Links</h5>
+          <div className="ml-14">
+            <h5 className="text-2xl font-semibold mb-6  ">Quick Links</h5>
             <ul className="space-y-3">
               <li>
                 <Link href="/" className="text-white/80 hover:text-white transition-colors text-lg">
