@@ -51,13 +51,13 @@ export default function Home() {
     {
       title: "M.Sc Cyber Security",
       description:
-        "The programme, the first of its kind in India, aims to prepare students with the technical knowledge and skills needed to protect and defend computer systems and networks.",
+        "M.Sc Cyber Security, the first of its kind in India aims to prepare students with the technical knowledge and skills needed to protect and defend computer systems and networks. It has a strong and wide technical base and internship programs which are the most critical aspects of a good cyber security education.",
       href: "/stdc",
       icon: "cyber",
     },
     {
-      title: "M.Sc Computational Finance.*",
-      description: "To equip students with advanced quantitative, analytical, and computational skills by integrating rigorous mathematical and statistical modelling with contemporary computational methods—such as empirical analysis, artificial intelligence, and automation for solving complex financial problems. It prepares graduates for careers or research in quantitative finance while promoting ethical, practical, and innovative applications in modern financial systems.",
+      title: "M.Sc Computational Finance *",
+      description: "M.Sc Computational Finance is proposed to be introduced this year, which aims to equip students with advanced quantitative, analytical, and computational skills by integrating rigorous mathematical and statistical modelling with contemporary computational methods—such as empirical analysis, artificial intelligence, and automation for solving complex financial problems. It prepares graduates for careers or research in quantitative finance while promoting ethical, practical, and innovative applications in modern financial systems.",
       href: "/stdc",
       icon: "finance",
       note: "Subject to approval"
@@ -351,7 +351,7 @@ export default function Home() {
 
           <div className="text-center mb-12">
             <h2 className="section-title text-justify">Scheduled Dates and Events</h2>
-            <p className="text-gray-900 text-justify">
+            <p className="text-gray-900 text-justify text-lg">
               All dates and events are subject to change based on HSC exams results
             </p>
           </div>
