@@ -70,8 +70,8 @@ export default function Header() {
 
               <div className="hidden xl:block border-l-2 border-white/40 pl-4">
                 <h6 className="text-white font-bold text-xl leading-tight tracking-tight uppercase">PSG College of Technology</h6>
-                <p className="text-white/90 text-sm font-medium uppercase tracking-wider">Government Aided Autonomous Institution</p>
-                <p className="text-white/90 text-sm font-medium uppercase tracking-wider">Affiliated to Anna University</p>
+                {/* <p className="text-white/90 text-sm font-medium uppercase tracking-wider">Government Aided Autonomous Institution</p>
+                <p className="text-white/90 text-sm font-medium uppercase tracking-wider">Affiliated to Anna University</p> */}
               </div>
             </Link>
 

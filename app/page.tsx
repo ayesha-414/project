@@ -51,13 +51,13 @@ export default function Home() {
     {
       title: "M.Sc Cyber Security",
       description:
-        "The programme, the first of its kind in India, aims to prepare students with the technical knowledge and skills needed to protect and defend computer systems and networks.",
+        "M.Sc Cyber Security, the first of its kind in India aims to prepare students with the technical knowledge and skills needed to protect and defend computer systems and networks. It has a strong and wide technical base and internship programs which are the most critical aspects of a good cyber security education.",
       href: "/stdc",
       icon: "cyber",
     },
     {
-      title: "M.Sc Computational Finance.*",
-      description: "To equip students with advanced quantitative, analytical, and computational skills by integrating rigorous mathematical and statistical modelling with contemporary computational methods—such as empirical analysis, artificial intelligence, and automation for solving complex financial problems. It prepares graduates for careers or research in quantitative finance while promoting ethical, practical, and innovative applications in modern financial systems.",
+      title: "M.Sc Computational Finance *",
+      description: "M.Sc Computational Finance is proposed to be introduced this year, which aims to equip students with advanced quantitative, analytical, and computational skills by integrating rigorous mathematical and statistical modelling with contemporary computational methods—such as empirical analysis, artificial intelligence, and automation for solving complex financial problems. It prepares graduates for careers or research in quantitative finance while promoting ethical, practical, and innovative applications in modern financial systems.",
       href: "/stdc",
       icon: "finance",
       note: "Subject to approval"
@@ -198,12 +198,12 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
               <h2 className="section-title">About Us</h2>
-              <p className="text-gray-900 leading-relaxed text-xl">
+              <p className="text-gray-900 leading-relaxed text-xl text-justify">
                 PSG College of Technology, established in the year 1951 by PSG & Sons' Charities,
                 Coimbatore, is one of the premier institutions of the country and is an excellent centre
                 for advanced studies and research in several areas of Science and Engineering.
               </p>
-              <p className="text-gray-900 leading-relaxed text-xl">
+              <p className="text-gray-900 leading-relaxed text-xl text-justify">
                 The college has excellent infrastructure, well-equipped laboratories and highly qualified
                 and experienced faculty. The college has signed MoU with research organizations and
                 industries across the globe to promote technology development, training of students,
@@ -255,8 +255,8 @@ export default function Home() {
                 </div>
 
                 <div className="relative z-10">
-                  <h5 className="font-bold text-3xl mb-2 text-[#395A7F]">{card.title}</h5>
-                  <p className="text-black text-lg leading-relaxed">{card.body}</p>
+                  <h5 className="font-bold text-3xl mb-2 text-[#395A7F] text-justify">{card.title}</h5>
+                  <p className="text-black text-lg leading-relaxed text-justify">{card.body}</p>
                 </div>
               </div>
             ))}
@@ -269,7 +269,7 @@ export default function Home() {
       <section id="programmes" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
 
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 text-justify">
             <h2 className="section-title ">
               Applications are invited for the following Science Programmes
             </h2>
@@ -283,7 +283,7 @@ export default function Home() {
               </div>
               5 Year M.Sc Integrated Programmes
             </h3>
-            <div className="grid md:grid-cols-2 gap-35">
+            <div className="grid md:grid-cols-2 gap-35 text-justify">
             {integratedPrograms.map((p, i) => (
               <ProgramCard
                 key={i}
@@ -307,7 +307,7 @@ export default function Home() {
               </div>
               3 Year B.Sc Programmes
             </h3>
-            <div className="grid md:grid-cols-2 gap-35">
+            <div className="grid md:grid-cols-2 gap-35 text-justify">
               {bscPrograms.map((p, i) => (
                 <ProgramCard
                   key={i}
@@ -330,7 +330,7 @@ export default function Home() {
               </div>
               2 Year M.Sc Programme
             </h3>
-            <div className="grid md:grid-cols-2 gap-35">
+            <div className="grid md:grid-cols-2 gap-35 text-justify">
               <ProgramCard
                 title={mscProgram.title}
                 subtitle=""
@@ -350,13 +350,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
 
           <div className="text-center mb-12">
-            <h2 className="section-title">Scheduled Dates and Events</h2>
-            <p className="text-gray-900">
+            <h2 className="section-title text-justify">Scheduled Dates and Events</h2>
+            <p className="text-gray-900 text-justify text-lg">
               All dates and events are subject to change based on HSC exams results
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-5xl mx-auto ">
   {/* schedule.map starts here */}
          {schedules.map((s, i) => (
               <ScheduleCard
@@ -379,7 +379,7 @@ export default function Home() {
             <h2 className="section-title">Click here to Apply</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto ">
   {/* programmes.map starts here */}
     {applyPrograms.map((p, i) => (
               <Link
