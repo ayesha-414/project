@@ -293,27 +293,27 @@ export default function SciencePage() {
                     <div className="space-y-6">
                       <div>
                         <h4 className="text-lg font-bold text-[#1c3879] mb-3">About the Department</h4>
-                        <p className="text-gray-900 leading-relaxed text-xl">
+                        <p className="text-gray-900 leading-relaxed text-xl text-justify">
                           The <strong>Department of Applied Science</strong> accomplishes its vision of “Producing alumni who will build and uphold the reputation of the department as a premier teaching and research establishment and attract young talents through their own endeavour” with the help of a team of dynamic and versatile faculty members. The department has been offering the BSc Applied Science programme since 1971, and PhD programmes since 1977. The innovative teaching methodologies adopted by the faculty members and the laboratory / research facilities provided by the department are aimed to make a positive impact on the students. The curriculum is built and updated based on National / Global scientific and technological growth. The department engages in interactions with other Institutes / Organizations and Industries through various outreach programs. The outcome of these interactions apparently infiltrates into the teaching learning process, thus providing quality higher education on par with International standards. This in turn helps our undergrads to certainly find a position in the national and international research Institutes and Industries as well. The various in house co-curricular and extracurricular activities helps our students to appreciate the spirit of team work and to build organizational and leadership qualities.
                         </p>
                       </div>
 
                       <div>
                         <h4 className="text-lg font-bold text-[#1c3879] mb-3">About the Programme</h4>
-                        <p className="text-gray-900 leading-relaxed mb-4 text-xl">
+                        <p className="text-gray-900 leading-relaxed mb-4 text-xl text-justify">
                           The B.Sc. Applied Science Programme which is currently a Government aided programme, commenced in the year 1971 and PSG College of Technology is the pioneer in running this programme. It has a unique structure in the sense that it gives the students a broad based science background. They may however specialize in one of the basic sciences namely Physics, Chemistry or Mathematics with adequate computer programming skills. This helps to prepare the students for any analytically oriented profession, while at the same time enabling them to take up post-graduate studies in Physical, Chemical, Mathematical and computational sciences. Subsequently they could pursue research in the leading institutions and national R & D laboratories. Besides the regular theory and laboratory subjects, students are offered elective subjects in emerging areas of study. They are also exposed to engineering practices and research methodologies by means of a project that has to be completed in the final semester. This would enable them to engage in life-long learning and thereby make them versatile practitioners or researchers in their chosen fields
                         </p>
                       </div>
 
                       <div>
                         <h4 className="text-lg font-bold text-[#1c3879] mb-3">Scope for Placement and Higher Studies</h4>
-                        <p className="text-gray-900 leading-relaxed mb-4 text-xl">
+                        <p className="text-gray-900 leading-relaxed mb-4 text-xl text-justify">
                           The curriculum and syllabi are updated once in three years to reflect the latest advancements in 
                           the field of Science, Engineering and Technology. This helps our students to get placed in reputed 
                           core industries such as Kenna Metals, Indian Molasses Company, Titan, MRF and software companies 
                           such as Tata Consultancy Services (TCS), Cognizant Technology Solutions (CTS), WIPRO etc.
                         </p>
-                        <p className="text-gray-900 leading-relaxed text-xl">
+                        <p className="text-gray-900 leading-relaxed text-xl text-justify">
                           A sizeable group of students aspire to do their post-graduation in Physics, Chemistry or Mathematics in reputed Institutions such as IITs, IISc, NITs, and Central Universities; Management or Computer Application programmes in Institutions such as IIMs, reputed B-Schools, Engineering Institutions and Universities by successfully clearing the appropriate entrance examinations. In addition to this, our students are eligible to do MBA, MCA, PG programmes in Physics, Chemistry, Mathematics, Materials Science, Applied Physics, Medical Physics, Applied Chemistry and Applied Mathematics.
                         </p>
                       </div>
@@ -351,7 +351,7 @@ export default function SciencePage() {
                     <div className="space-y-6">
                       <div className="bg-[#1c3879]/5 rounded-xl p-6">
                         <h4 className="text-xl font-bold text-[#1c3879] mb-3">Eligibility</h4>
-                        <p className="text-gray-900 leading-relaxed text-lg">
+                        <p className="text-gray-900 leading-relaxed text-lg text-justify">
                           A pass in Higher Secondary examination of the (10+2) curriculum prescribed by the appropriate 
                           authority of the Government of Tamil Nadu with Mathematics, Physics and Chemistry as the subjects 
                           of study or any other exam recognized as equivalent. Only Indian Nationals are eligible to apply.
@@ -360,7 +360,7 @@ export default function SciencePage() {
 
                       <div className="bg-[#1c3879]/5 rounded-xl p-6">
                         <h4 className="text-xl font-bold text-[#1c3879] mb-3">Selection Process</h4>
-                        <p className="text-gray-900 leading-relaxed text-lg">
+                        <p className="text-gray-900 leading-relaxed text-lg text-justify">
                           Based on ranking, as per the aggregate percentage of marks obtained in Mathematics, Physics and Chemistry of the plus two examinations, the candidate will be called for counselling cum admission and will be intimated through the applicants' registered e-mail.
                         </p>
                         <p className="text-gray-900 leading-relaxed text-lg">
@@ -378,7 +378,7 @@ export default function SciencePage() {
         <div className="flex items-start gap-6">
           
           {/* Image Wrapper - Removed the w-14 restriction to allow 90px size */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 ">
             <img
               src={alum.image}
               alt={alum.name}
@@ -388,7 +388,7 @@ export default function SciencePage() {
 
           {/* Text Content Container */}
           <div className="flex-1">
-            <h5 className="font-bold text-[#1a1a2e] text-2xl">
+            <h5 className="font-bold text-[#1a1a2e] text-2xl ">
               {alum.name}
             </h5>
             <p className="text-[#1c3879] text-base font-medium">
@@ -397,7 +397,7 @@ export default function SciencePage() {
             <p className="text-[#e8505b] text-base">
               {alum.batch}
             </p>
-            <p className="text-gray-900 text-lg mt-3 leading-relaxed">
+            <p className="text-gray-900 text-lg mt-3 leading-relaxed text-justify">
               {alum.testimonial}
             </p>
           </div>
@@ -461,21 +461,21 @@ export default function SciencePage() {
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-white/70 text-xl">Last date for application submission</p>
-                      <p className="text-white font-bold">15th May 2025</p>
+                      <p className="text-white font-bold">15th May 2026</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-white/70 text-xl">Notification of shortlisted candidates for Counselling cum Admission</p>
-                      <p className="text-white font-bold">17th May 2025</p>
+                      <p className="text-white font-bold">17th May 2026</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-white/70 text-xl">Counselling cum Admission</p>
-                      <p className="text-white font-bold">23rd May 2025</p>
+                      <p className="text-white font-bold">23rd May 2026</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">

@@ -319,7 +319,7 @@ export default function Hero() {
           className="flex flex-wrap gap-5 justify-center items-center mt-8 mb-12"
           style={{ animation: "h-up 0.8s 1.1s ease both" }}
         >
-          <Link href="/apply" className="h-btn-primary">
+          <Link href="" className="h-btn-primary">
             Apply Now
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7" />

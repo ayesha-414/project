@@ -293,7 +293,7 @@ const objectives = [
                         <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Department</h4>
                        <div className="space-y-6">
   {/* Block 1: The Intro Paragraph (This part is now safe) */}
-  <p className="text-xl text-gray-900 leading-relaxed">
+  <p className="text-xl text-gray-900 leading-relaxed text-justify">
     The <strong>Department of Apparel and Fashion Design </strong>offers a five year 
     integrated M.Sc. Fashion Design & Merchandising Programme, a first of its kind 
     at the university level. Over the past 10 years, it has sustained to build a 
@@ -325,7 +325,7 @@ const objectives = [
 
                       <div>
                         <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Programme</h4>
-                        <p className="text-xl text-gray-900 leading-relaxed mb-4">
+                        <p className="text-xl text-gray-900 leading-relaxed mb-4 text-justify">
                           The <strong>M.Sc Fashion Design & Merchandising</strong>is a five year integrated degree programme with a three-pronged approach to fashion education - <strong>design, production and management</strong>as core areas. Focusing on specific industry requirements in fashion, apparel, niche segments and craft sectors the curriculum progresses along distinct paths gradually from the foundation to the final year of the programme. The curriculum paves way to develop a strong foundation in fashion design and merchandising by offering six professional electives to strengthen the students' skills in core area of their interest. Employment enhancement courses like craft training and documentation, industrial visits, guest lectures and 2 six months internships in the curriculum enable the students to possess a sound knowledge in the industrial practices. Craft training provides a unique opportunity to experience the artistic craft making practices first hand by working with native rural artisans in craft clusters. Students also gain valuable insight into the wide spectrum of Indian fashion through internships and industry-based projects at leading export houses, retail brands and designer house. Design collection and portfolio based on a self-developed brief provides a platform to exhibit the creative skills of students, improve knowledge and overcome practical challenges thus making them a complete professional. The curriculum is set with the following Programme Educational Objectives:
                            <div className="mt-10">
        
@@ -355,7 +355,7 @@ const objectives = [
                             <ul className="space-y-2">
                               {subjects.map((subject, idx) => (
                                 <li key={idx} className="text-[#334155] text-lg flex items-start gap-2">
-                                  <span className="w-1.5 h-1.5 bg-[#0ea5e9] rounded-full mt-1.5 flex-shrink-0"></span>
+                                  <span className="w-1.5 h-1.5 bg-[#0ea5e9] rounded-full mt-1.5 flex-shrink-0 text-justify"></span>
                                   {subject}
                                 </li>
                               ))}
@@ -370,26 +370,26 @@ const objectives = [
                     <div className="space-y-6">
                       <div className="bg-white p-6 border rounded-xl shadow-sm">
                         <div className="space-y-6">
-                          <p className="text-gray-700 leading-relaxed text-xl">
+                          <p className="text-gray-900 leading-relaxed text-xl v text-justify">
                             A good academic record in Higher Secondary examination (any group) of the
                             (10+2) curriculum prescribed by the appropriate authority of the Government
                             of Tamil Nadu or any other exam recognised as equivalent. Only Indian Nationals
                             are eligible to apply.
                           </p>
 
-                          <p className="text-xl text-gray-700 leading-relaxed">
+                          <p className="text-xl text-gray-900 leading-relaxed text-justify">
                             Shortlisted candidates with good academic record in Higher Secondary
                             examination (based on HSC total marks) will be called for counselling cum
                             admission in college campus to identify the commitment of the applicant to
                             study at PSG College of Technology.
                           </p>
 
-                          <p className="text-xl text-gray-700 leading-relaxed">
+                          <p className="text-xl text-gray-900 leading-relaxed text-justify">
                             The schedule of the counselling will be intimated through the applicant's
                             registered email.
                           </p>
 
-                          <p className="text-xl text-gray-700 leading-relaxed">
+                          <p className="text-xl text-gray-900 leading-relaxed text-justify">
                             However, call for counselling does not confer any right of admission.
                           </p>
                         </div>
@@ -399,7 +399,7 @@ const objectives = [
                   {/* Integrated Facilities Section */}
                       <div className="pt-8 border-t border-gray-100">
                         <h4 className="text-2xl font-bold text-[#1c3879] mb-4">Facilities</h4>
-                        <p className="text-xl text-gray-900 leading-relaxed mb-6">
+                        <p className="text-xl text-gray-900 leading-relaxed mb-6 text-justify">
                           To give hands-on experience with industry-standards, the laboratories are equipped with the latest machinery and software.
                         </p>
                         <div className="mb-8 flex justify-center">
@@ -409,7 +409,7 @@ const objectives = [
                             className="w-full max-w-2xl h-auto rounded-xl shadow-md border border-gray-100"
                           />
                         </div>
-                        <p className="text-xl text-gray-900 leading-relaxed">
+                        <p className="text-xl text-gray-900 leading-relaxed text-justify">
                           Apart from the laboratories, the department has a well-established library with latest e-books, e-journals, text books, magazines and journals in the area of fashion design, art, craft, photography, production, and management.
                         </p>
                       </div>
@@ -419,13 +419,13 @@ const objectives = [
                         <div className="space-y-6">
                           <div className="flex items-start gap-4">
                             <CheckCircle className="w-6 h-6 text-[#1c3879] mt-1 flex-shrink-0" />
-                            <p className="text-xl text-gray-900 leading-relaxed">
+                            <p className="text-xl text-gray-900 leading-relaxed text-justify">
                               Students take part in various intra/inter college competitions such as product design development, illustration, logo designing, draping, paper presentations, painting, quiz and debate. They also take part in events organized by retailers and export industries. Apart from the co-curricular activities, students are also encouraged to participate in extracurricular activities in various clubs in college, sports, NCC and NSS to enhance their personality and character development.
                             </p>
                           </div>
                           <div className="flex items-start gap-4">
                             <CheckCircle className="w-6 h-6 text-[#1c3879] mt-1 flex-shrink-0" />
-                            <p className="text-xl text-gray-900 leading-relaxed">
+                            <p className="text-xl text-gray-900 leading-relaxed text-justify">
                               <strong>Apparel & Fashion Design Association (AFDA)</strong> is a students' forum, a crew of selected office bearers plans the event for the academic year and organizes design and technical events like seminars, workshops, symposia, exhibitions and the entire student members of AFDA participates in the proceedings. Eminent speakers from industry and academia deliver lectures on current trends in the apparel and fashion industry and this facilitates students' interaction with experts to develop a professional network.
                             </p>
                           </div>
@@ -449,7 +449,7 @@ const objectives = [
                                 <h5 className="text-2xl font-bold text-[#1a1a2e]">{alum.name}</h5>
                                 <p className="text-[#1c3879] text-base font-medium">{alum.position}</p>
                                 <p className="text-[#e8505b] text-sm">{alum.batch}</p>
-                                <p className="text-gray-900 text-lg mt-3 leading-relaxed">
+                                <p className="text-gray-900 text-lg mt-3 leading-relaxed text-justify">
                                   {alum.testimonial}
                                 </p>
                               </div>
@@ -512,7 +512,7 @@ const objectives = [
               {/* How to Apply */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6">
                 <h4 className="text-xl font-bold text-[#1c3879] mb-4">How to apply?</h4>
-                <p className="text-gray-900 text-lg leading-relaxed">
+                <p className="text-gray-900 text-lg leading-relaxed text-justify">
                   Application can be made only through online by entering all the particulars including marks along with online payment by Net banking/Credit card/Debit card/UPI. All dates are subject to change based on HSC examination results.
                 </p>
               </div>

@@ -200,7 +200,7 @@ export default function MathPage() {
     {
       name: "Sashidhar Bhat N",
       position: "Full Stack Developer, Logbase Technologies , Coimbatore",
-      batch: "M.Sc. AM (2023-2025)",
+      batch: "M.Sc. AM (2023-2026)",
       testimonial: "Applied Mathematics has been an enriching journey, offering vast opportunities in both research and IT fields, particularly in the intersection of mathematics and computer science. The strong foundation in mathematical modeling, data analysis, and algorithmic thinking has been instrumental in solving complex computational problems. With guidance from excellent faculty members, the learning experience has been both engaging and comforting, fostering a deep understanding of mathematical principles and their applications in areas like machine learning, cryptography, and optimization. The well-structured curriculum, combined with practical exposure, has significantly enhanced my analytical and problem- solving skills. One of the key highlights was the fourth-semester internship, which provided hands-on experience in applying mathematical techniques to real-world computing challenges. Additionally, the program offers summer internship opportunities, and I had the privilege of completing mine at RGIPT Institute, where I further explored the integration of mathematics with computational methods, reinforcing my passion for this interdisciplinary field.",
       image: "/math_alumni/sashidhar.jpg"
     },
@@ -303,14 +303,14 @@ export default function MathPage() {
                     <div className="space-y-6">
                       <div>
                         <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Department</h4>
-                        <p className="text-gray-900 leading-relaxed text-xl">
+                        <p className="text-gray-900 leading-relaxed text-xl text-justify">
                           The <strong>Department of Applied  Mathematics and Computational Sciences</strong> comprises of dedicated faculty members who are undoubtedly the assets worthy of mention. The department is known for its discipline and for the importance it gives to the overall development of students in grooming them towards becoming good software professionals, research scientists and data analysts. The department has its own library with latest books, national and international journals and magazines. The computer centre is well equipped with the most recent hardware and software. To keep in touch with the ever - growing technology, the faculty members participate regularly in refresher courses and symposia conducted by top notch Universities, Research Institutions and Professional Bodies like Association for Computing Machinery. The department organizes technical symposia at national and international levels at regular intervals. Apart from stressing on consistent and good academic performance, the department encourages participation in co-curricular and extracurricular activities to bring out the latent talents in its students. The students are provided with ample opportunities to improve their organizational skills and group dynamics.
                         </p>
                       </div>
 
                       <div>
                         <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Programme</h4>
-                        <p className="text-gray-900 leading-relaxed mb-4 text-xl">
+                        <p className="text-gray-900 leading-relaxed mb-4 text-xl text-justify">
                           The MSc Applied Mathematics programme was started in the year 1975. The objective of this programme is to acquaint the students with various principles of Mathematics and train them to build & administer mathematical models to the problems in science and technology. This programme is also designed to expose the students to the various development and the applications of software, catering to the needs of the industries and R&D sectors. The programme is a perfect blend of Pure and Applied Mathematics with supporting laboratory courses to strengthen the knowledge of the students Programme follows meticulously planned curriculum based on Choice Based Credit System, updated regularly to meet the challenging requirements of the industry. The programme comprises a mini-project and a major project. The mini - project is to be done during the summer vacation at the end of the second semester. A six month major project is taken in the final semester at research institutions or software industries, thereby enabling them to have an opportunity to work in challenging environment. MSc Applied Mathematics alumni are well placed in top-notch industries, reputed academic institutions and research labs.
                         </p>
                       </div>
@@ -345,8 +345,8 @@ export default function MathPage() {
                     <div className="space-y-6">
                       <div className="bg-[#1c3879]/5 rounded-xl p-6">
                         <h4 className="text-2xl font-bold text-[#1c3879] mb-3">Equivalent Certificate from Tamil Nadu Government</h4>
-                        <p className="text-gray-900 leading-relaxed text-xl">
-                          Candidates for admission to the M.Sc. Applied Mathematics are required to have a pass in B.Sc. (Mathematics / Mathematics with Computer Applications / Applied Science) or an examination of any other University or authority recognized by Anna University equivalent there to. Candidates, who have appeared for the final semester examination in May/June of the academic year 2024-2025, are also eligible to apply (However, such candidates if selected for admission will have to produce the final examination mark sheet and the proof of having passed the degree at the time of admission). Only Indian Nationals are eligible to apply.<br />
+                        <p className="text-gray-900 leading-relaxed text-xl text-justify">
+                          Candidates for admission to the M.Sc. Applied Mathematics are required to have a pass in B.Sc. (Mathematics / Mathematics with Computer Applications / Applied Science) or an examination of any other University or authority recognized by Anna University equivalent there to. Candidates, who have appeared for the final semester examination in May/June of the academic year 2024-2026, are also eligible to apply (However, such candidates if selected for admission will have to produce the final examination mark sheet and the proof of having passed the degree at the time of admission). Only Indian Nationals are eligible to apply.<br />
 
                           Shortlisted candidates with an excellent academic record in undergraduate examination will be called for counselling in college campus to identify the spark and the commitment of the applicant to study 2-year Master programme (M.Sc Applied Mathematics) at PSG College of Technology.<br />
 
@@ -389,7 +389,7 @@ export default function MathPage() {
             <p className="text-[#e8505b] text-base">
               {alum.batch}
             </p>
-            <p className="text-gray-900 text-lg mt-3 leading-relaxed">
+            <p className="text-gray-900 text-lg mt-3 leading-relaxed text-justify">
               {alum.testimonial}
             </p>
           </div>
@@ -488,7 +488,7 @@ export default function MathPage() {
               {/* How to Apply */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6">
                 <h4 className="text-xl font-bold text-[#1c3879] mb-4">How to apply?</h4>
-                <p className="text-gray-900 text-lg leading-relaxed">
+                <p className="text-gray-900 text-lg leading-relaxed text-justify">
                   Application can be made only through online by entering all the particulars including marks along with online payment by Net banking/Credit card/Debit card/UPI.
                 </p>
               </div>

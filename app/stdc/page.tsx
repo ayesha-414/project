@@ -70,7 +70,7 @@ export default function STDCPage() {
     image: "/notable_alumini_img/Laks_srini .jpeg",
   },
   {
-    name: "Raghavan Sivakumar S",
+    name: "Raghavan Sivakumar S (Veteran)",
     position: "Aviation Management",
     organization: "Indian Navy",
     image: "/notable_alumini_img/ragavan_sivakumar.jpeg",
@@ -479,9 +479,9 @@ export default function STDCPage() {
         "Network Science",
         "Information Retrieval",
         "Ethics and Cyber Law","Advanced Algorithms",
-      "Advanced Algorithms",
-    "Deep Generative Models",
-  "Responsible AI"],
+        "Advanced Algorithms",
+        "Deep Generative Models",
+        "Responsible AI"],
     },
 
     cf: {
@@ -623,7 +623,7 @@ export default function STDCPage() {
        img: "/stdc_alumni/Niranjana.jpg" },
     {
       name:"Ramanathan P",
-      role:"Vice President, Goldman Sachs",
+      role:"AI/ML Engineering  at Statestreet",
       program:"M.Sc Software Engineering (2012-2017)",
       comment:"The Msc Software Engineering program at PSG tech greatly helped me to lay a strong foundation in computer science. The key highlights of the course which help to stand out from others are the continuous adaption of curriculum catering to industry trend changes and 6-month internship providing unique early exposure to the industry. On top of all, the culture of pairing with cohorts for mini projects, organizing events, and developing a strong alumni network aids growth in all aspects and created memories that I will cherish forever.",
       img:"/stdc_alumni/ramanathan.jpeg",
@@ -728,21 +728,21 @@ export default function STDCPage() {
     },
     {
       name:"Asvika M",
-      role:"SDET Intern, PhonePe, Bengaluru",
+      role:"PhonePe, Bengaluru",
       program:"M.Sc Cyber Security (2020-2025)",
       comment:"The MSc Cybersecurity program at the Department of AMCS has been pivotal in developing both my technical skills and personal growth. The hands-on approach, with extensive lab sessions , projects and a 7th and 10th semester internship, bridges theory with real-world industry practices, preparing me for a successful career in cybersecurity. The faculty's guidance has been transformative, shaping me into a skilled cyber security professional and the individual I am today.",
       img:"/stdc_alumni/asvika.jpg",
     },
     {
       name:"Pugazhendhi M",
-      role:"Software Developer Intern, Unbound Security",
+      role:"Senior Software Developer, Unbound Security",
       program:"M.Sc Cyber Security (2020-2025)",
       comment:"Pursuing my MSc in Cybersecurity in the AMCS department, with its inspiring faculty, helped me foster my passion for cybersecurity. The hands-on learning and internships provided invaluable industry exposure.",
       img:"/stdc_alumni/PugazhendhiM.jpg",
     },
     {
       name:"Vishvabala C S",
-      role:"Intern, KLA Tencor India, Chennai",
+      role:"Associate Software Engineer, KLA Tencor India, Chennai",
       program:"M.Sc Cyber Security (2020-2025)",
       comment:"The MSc Cybersecurity program offers a dynamic blend of theory and hands-on experience, equipping students with the skills to navigate real-world security challenges. As Bruce Schneier aptly said, 'Security is a process, not a product', and this program fosters a mindset of continuous learning and adaptability. With cybersecurity at the heart of today’s digital landscape, this course serves as a strong foundation for careers across the tech spectrum—from software development to data science and beyond.",
       img:"/stdc_alumni/VishvabalaCS.jpg",
@@ -825,7 +825,7 @@ export default function STDCPage() {
       name:"Vaishali Surianarayanan",
       role:"Senior PhD candidate (Fully Funded) in Computer Science at UCSB",
       img:"/stdc_achievements/vaishali.jpeg",
-      category:"Higher Studies",
+      category:"PhD Holders",
     },
     {
       name:"Pavithra Elumalai",
@@ -841,25 +841,25 @@ export default function STDCPage() {
     },
     {
       name:"Naman Bhargava",
-      role:"MSc data science, Michigan university",
+      role:"MSc Data Science, Michigan university",
       img:"/stdc_achievements/naman.jpeg",
       category:"Higher Studies",
     },
     {
       name:"Ashwatha E S",
-      role:"MSc software engineering, Northeastern University, Boston",
+      role:"MSc Software Engineering, Northeastern University, Boston",
       img:"/stdc_achievements/ashwatha.png",
       category:"Higher Studies",
     },
     {
       name:"Charan K R",
-      role:"MSc computer science, New York university",
+      role:"MSc Computer Science, New York university",
       img:"/stdc_achievements/charan.png",
       category:"Higher Studies",
     },
     {
       name:"Gowtham R",
-      role:"MSc computer science, Trinity College, Ireland",
+      role:"MSc Computer Science, Trinity College, Ireland",
       img:"/stdc_achievements/gowtham.jpeg",
       category:"Higher Studies",
     },
@@ -871,7 +871,7 @@ export default function STDCPage() {
     },
     {
       name:"Saket Vempaty",
-      role:"Reasearch scholar at IIIT Hyderabad",
+      role:"Reasearch Scholar at IIIT Hyderabad",
       img:"/stdc_achievements/saket.jpeg",
       category:"Higher Studies",
     },
@@ -1037,7 +1037,7 @@ export default function STDCPage() {
     },
     {
       name:"Team Adengappa",
-      role:"Runner-up in DSPARK 2025, a National Level Hackathon under the theme “Accelerating Innovation with AI”",
+      role:"Runner-up in DSPARK 2026, a National Level Hackathon under the theme “Accelerating Innovation with AI”",
       img:"/stdc_achievements/adengappa.png",
       category:"Events",
     },
@@ -1208,14 +1208,14 @@ export default function STDCPage() {
                     <div className="space-y-6">
                       <div>
                         <h4 className="text-xl font-bold text-[#1e3a8a] mb-3">About the Department</h4>
-                        <p className="text-[#475569] leading-relaxed text-lg">
+                        <p className="text-grey-900 leading-relaxed text-lg text-justify ">
                           The Department of Applied Mathematics and Computational Sciences comprises of dedicated faculty members who are undoubtedly the assets worthy of mention. The department is known for its discipline and for the importance it gives to the overall development of students in grooming them towards becoming good software professionals, research scientists and data analysts. The department has its own library with the latest books, national and international journals and magazines. The computer centre is well equipped with the most recent hardware and software. The department has vibrant research culture to keep in touch with the ever-growing technologies.
                         </p>
                       </div>
 
                       <div>
                         <h4 className="text-xl font-bold text-[#1e3a8a] mb-3">About the Programmes</h4>
-                        <div className="space-y-4">
+                        <div className="space-y-4 text-justify">
                           {[
                             { color: "#1e3a8a", label: "M.Sc. Software Systems", desc: "was started in the year 1997 for the first time in the country and well received by leading software industries across the globe. The programme has been designed to meet the challenging needs of the industry. Renamed as Software Systems since 2014." },
                             { color: "#e8505b", label: "M.Sc. Theoretical Computer Science", desc: "is yet another innovative programme introduced in 2007. Designed to augment human resources for the R&D divisions of software industries, it merges Mathematics and Computer Science." },
@@ -1225,7 +1225,7 @@ export default function STDCPage() {
                           ].map((item, i) => (
                             <div key={i} className={innerBlock}>
                               <h5 className="text-xl font-bold mb-2" style={{ color: item.color }}>{item.label}</h5>
-                              <p className="text-lg text-[#475569]  leading-relaxed">{item.desc}</p>
+                              <p className="text-lg text-grey-900  text-justify leading-relaxed">{item.desc}</p>
                             </div>
                           ))}
                         </div>
@@ -1233,7 +1233,7 @@ export default function STDCPage() {
 
                       <div className={innerBlock}>
                         <h4 className="text-xl font-bold text-[#1e3a8a] mb-3">Programme Highlights</h4>
-                        <ul className="space-y-2 text-[#475569] text-lg">
+                        <ul className="space-y-2 text-grey-900 text-lg text-justify">
                           {[
                             "Two semesters (7th and 10th) rigorous internships in reputed industries and top-notch institutions",
                             "Unique feature for the success of the programmes",
@@ -1254,7 +1254,7 @@ export default function STDCPage() {
                     <div className="space-y-8">
                       <div className={innerBlock}>
                         <h4 className="text-xl font-bold text-[#1e3a8a] mb-2">Programme Structure</h4>
-                        <p className="text-[#475569] text-lg leading-relaxed">
+                        <p className="text-grey-900 text-lg leading-relaxed text-justify">
                           All four programmes follow a meticulously planned curriculum based on Choice Based Credit System, updated regularly to meet the challenging requirements of the industry.
                         </p>
                       </div>
@@ -1284,16 +1284,16 @@ export default function STDCPage() {
 
                   {/* ── SELECTION ── */}
                   {activeTab === "selection" && (
-                    <div className="space-y-6">
+                    <div className="space-y-6 text-justify">
                       {[
                         {
                           color: "#1e3a8a", title: "Eligibility",
-                          body: "An excellent academic record in Higher Secondary examination of the (10+2) curriculum with Mathematics and Physics as two of the subjects of study. Only Indian Nationals are eligible to apply.",
+                          body: "An excellent academic record in Higher Secondary examination of the (10+2) curriculum with Mathematics and Physics as two of the subjects of study.",
                           bullets: [],
                         },
                         {
                           color: "#e8505b", title: "Entrance Test",
-                          body: "Shortlisted candidates will be called for a computer based entrance examination at the College Campus on 4th June 2025.",
+                          body: "Shortlisted candidates will be called for a computer based entrance examination at the College Campus on 4th June 2026.",
                           bullets: ["Duration: ONE hour", "Multiple Choice Questions from Mathematics in +2 level", "Questions will be in English and Tamil"],
                         },
                         {
@@ -1304,11 +1304,11 @@ export default function STDCPage() {
                       ].map((block, i) => (
                         <div key={i} className={innerBlock}>
                           <h4 className="text-xl font-bold mb-3" style={{ color: block.color }}>{block.title}</h4>
-                          <p className="text-[#475569] text-lg leading-relaxed">{block.body}</p>
+                          <p className="text-grey-900 text-lg leading-relaxed">{block.body}</p>
                           {block.bullets.length > 0 && (
                             <ul className="mt-3 space-y-1.5">
                               {block.bullets.map((b, bi) => (
-                                <li key={bi} className="flex items-start gap-2 text-[#475569] text-lg">
+                                <li key={bi} className="flex items-start gap-2 text-grey-900 text-lg">
                                   <span className="w-1.5 h-1.5 bg-[#e8505b] rounded-full mt-1.5 flex-shrink-0" />
                                   {b}
                                 </li>
@@ -1321,30 +1321,53 @@ export default function STDCPage() {
                   )}
 
                   {/* ── ALUMNI SPEAKS ── */}
-                  {activeTab === "alumni" && (
-                    <div className="space-y-6">
-                      <h4 className="text-xl font-bold text-[#1e3a8a]">Alumni Speaks</h4>
-                      {alumniSpeaks.map((a, i) => (
-                        <div key={i} className={`${innerBlock} flex gap-4`}>
-                        <Image
-                        src={a.img}
-                        alt={a.name}
-                        width={90}
-                        height={90}
-                        className="w-[90px] h-[90px] object-cover rounded-md border-2 border-[#a3cae9]"
-                      />
+        {activeTab === "alumni" && (
+          <div className="space-y-6">
+            <h4 className="text-xl font-bold text-[#1e3a8a]">Alumni Speaks</h4>
 
+            {alumniSpeaks.map((a, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-2xl shadow-md border border-[#dce8f5] p-6 hover:shadow-lg transition-all duration-300"
+              >
+                {/* Flex Row */}
+                <div className="flex items-start gap-6">
 
-                          <div>
-                            <h5 className="text-2xl font-bold text-[#1e3a8a]">{a.name}</h5>
-                            <p className="text-base font-medium text-[#e8505b]">{a.role}</p>
-                            <p className="text-sm text-[#94a3b8] mb-2">{a.program}</p>
-                            <p className="text-lg text-[#475569] leading-relaxed">{a.comment}</p>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
+                  {/* Image */}
+                  <div className="flex-shrink-0">
+                    <Image
+                      src={a.img}
+                      alt={a.name}
+                      width={90}
+                      height={90}
+                      className="w-[90px] h-[90px] object-cover rounded-md border-2 border-[#a3cae9]"
+                    />
+                  </div>
+
+                  {/* Text */}
+                  <div className="flex-1 text-justify">
+                    <h5 className="font-bold text-[#1a1a2e] text-2xl">
+                      {a.name}
+                    </h5>
+
+                    <p className="text-[#1c3879] text-base font-medium">
+                      {a.role}
+                    </p>
+
+                    <p className="text-[#e8505b] text-base">
+                      {a.program}
+                    </p>
+
+                    <p className="text-gray-800 text-lg mt-3 leading-relaxed">
+                      {a.comment}
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
 
                   {/*  ── Achievements Section ────────────────────────────────────────────── */ }
 {activeTab === "achievements" && (
@@ -1390,7 +1413,7 @@ export default function STDCPage() {
           <h4 className="text-lg font-bold text-[#1e3a8a] leading-tight">
             {a.name}
           </h4>
-          <p className="text-sm text-[#475569] mt-2 leading-relaxed">
+          <p className="text-sm text-grey-900 mt-2 leading-relaxed">
             {a.role}
           </p>
         </div>
@@ -1407,15 +1430,19 @@ export default function STDCPage() {
             <div className="space-y-6">
 
               {/* Notable Alumni */}
+              {/* Notable Alumni */}
               <div className="bg-white rounded-2xl shadow-md border border-[#dce8f5] p-6 text-center">
                 <h4 className="text-2xl font-bold text-[#1e3a8a] mb-4">🎓 Notable Alumni</h4>
+
                 <div className="relative bg-[#f0f6ff] rounded-xl p-6">
+
                   <button
                     onClick={prevAlumni}
                     className="absolute left-2 top-1/2 -translate-y-1/2 bg-[#1e3a8a] text-white w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold hover:bg-[#395A7F] transition-colors"
                   >
                     ‹
                   </button>
+
                   <button
                     onClick={nextAlumni}
                     className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#1e3a8a] text-white w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold hover:bg-[#395A7F] transition-colors"
@@ -1423,16 +1450,37 @@ export default function STDCPage() {
                     ›
                   </button>
 
-                  <div className="w-24 h-24 bg-white rounded-full  flex items-center justify-center mx-auto mb-3 ">
+                  <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-3">
                     <img
                       src={notableAlumni[alumniIndex].image}
                       alt={notableAlumni[alumniIndex].name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover rounded-full"
                     />
                   </div>
-                  <h5 className="text-xl font-bold text-[#1e3a8a]">{notableAlumni[alumniIndex].name}</h5>
-                  <p className="text-base font-medium text-[#e8505b] mt-1">{notableAlumni[alumniIndex].position}</p>
-                  <p className="text-sm text-[#64748b] mt-0.5">{notableAlumni[alumniIndex].organization}</p>
+
+                  
+                  <h5 className="text-xl font-bold text-[#1e3a8a] leading-tight">
+                    {notableAlumni[alumniIndex].name.includes("(Veteran)") ? (
+                      <>
+                        {notableAlumni[alumniIndex].name.replace(" (Veteran)", "")}
+                        <br />
+                        <span className="  text-[#1e3a8a] font-bold">
+                          (Veteran)
+                        </span>
+                      </>
+                    ) : (
+                      notableAlumni[alumniIndex].name
+                    )}
+                  </h5>
+
+                  <p className="text-base font-medium text-[#e8505b] mt-1">
+                    {notableAlumni[alumniIndex].position}
+                  </p>
+
+                  <p className="text-sm text-[#64748b] mt-0.5">
+                    {notableAlumni[alumniIndex].organization}
+                  </p>
+
                 </div>
 
                 {/* Dots */}
@@ -1441,7 +1489,9 @@ export default function STDCPage() {
                     <button
                       key={i}
                       onClick={() => setAlumniIndex(i)}
-                      className={`w-2 h-2 rounded-full transition-all ${i === alumniIndex ? "bg-[#1e3a8a] w-4" : "bg-[#a3cae9]"}`}
+                      className={`w-2 h-2 rounded-full transition-all ${
+                        i === alumniIndex ? "bg-[#1e3a8a] w-4" : "bg-[#a3cae9]"
+                      }`}
                     />
                   ))}
                 </div>
@@ -1480,10 +1530,10 @@ export default function STDCPage() {
               {/* How to apply */}
               <div className="bg-white rounded-2xl shadow-md border border-[#dce8f5] p-6">
                 <h4 className="text-xl font-bold text-[#1e3a8a] mb-3">How to apply?</h4>
-                <p className="text-[#475569] text-lg leading-relaxed">
+                <p className="text-grey-900 text-lg leading-relaxed text-justify">
                   Application can be made only through online by entering all the particulars including marks along with
                   online payment by Net banking / Credit card / Debit card / UPI. One application is sufficient for all
-                  four programmes (SS / TCS / DS / CS / CF) and preference of courses can be selected. All dates are subject
+                  five programmes (SS / TCS / DS / CS / CF) and preference of courses can be selected. All dates are subject
                   to change based on HSC examination results.
                 </p>
               </div>
