@@ -39,7 +39,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[650px] md:min-h-screen  flex items-center justify-center overflow-hidden">
       <div className="absolute top-30 left-0 w-full z-40 bg-[#1c3879]/90 backdrop-blur-md border-b border-white/20 overflow-hidden">
           
         <div className="flex whitespace-nowrap animate-[ticker_20s_linear_infinite]">
