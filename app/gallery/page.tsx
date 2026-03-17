@@ -54,7 +54,7 @@ const galleryImages = [
  { id: 28, src: "/image/axios-w.png", title: "Axios Event"},
  { id: 29, src: "/image/axios-t.png", title: "Axios Event"},
  { id: 30, src: "/image/axios-s.png", title: "Axios Event"},
- { id: 30, src: "/image/axios-q.png", title: "Axios Event"},
+ { id: 31, src: "/image/axios-q.png", title: "Axios Event"},
  { id: 32, src: "/image/axios-m.png", title: "Axios Event"},
  { id: 33, src: "/image/axios-d.png", title: "Axios Event"},
  { id: 34, src: "/image/axios-b.png", title: "Axios Event"},
