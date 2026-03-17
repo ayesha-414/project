@@ -162,7 +162,7 @@ export default function Header() {
 
             {/* RIGHT SECTION: Apply Button */}
             <div className="flex items-center gap-4 shrink-0">
-              <Link href="/apply" className="btn-secondary hidden sm:flex items-center gap-2 bg-white text-[#1c3879] px-7 py-3 rounded-full font-black text-base shadow-lg hover:shadow-white/10 transition-all active:scale-95">
+              <Link href="" className="btn-secondary hidden sm:flex items-center gap-2 bg-white text-[#1c3879] px-7 py-3 rounded-full font-black text-base shadow-lg hover:shadow-white/10 transition-all active:scale-95">
                 Apply Now
                 <ArrowRight className="w-5 h-5" />
               </Link>
