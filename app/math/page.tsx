@@ -381,11 +381,11 @@ export default function MathPage() {
                           📄 View Equivalent Certificate
                         </a>
                         <p className="text-gray-900 leading-relaxed text-xl text-justify">
-                          Candidates for admission to the M.Sc. Applied Mathematics are required to have a pass in B.Sc. (Mathematics / Mathematics with Computer Applications / Applied Science) or an examination of any other University or authority recognized by Anna University equivalent there to. Candidates, who have appeared for the final semester examination in May/June of the academic year 2024-2026, are also eligible to apply (However, such candidates if selected for admission will have to produce the final examination mark sheet and the proof of having passed the degree at the time of admission). Only Indian Nationals are eligible to apply.<br />
+                          Candidates for admission to the M.Sc. Applied Mathematics are required to have a pass in B.Sc. (Mathematics / Mathematics with Computer Applications / Applied Science) or an examination of any other University or authority recognized by Anna University equivalent there to. Candidates, who have appeared for the final semester examination in May/June of the academic year 2024-2026, are also eligible to apply (However, such candidates if selected for admission will have to produce the final examination mark sheet and the proof of having passed the degree at the time of admission). Only Indian Nationals are eligible to apply.<br /><br />
 
-                          Shortlisted candidates with an excellent academic record in undergraduate examination will be called for counselling in college campus to identify the spark and the commitment of the applicant to study 2-year Master programme (M.Sc Applied Mathematics) at PSG College of Technology.<br />
+                          Shortlisted candidates with an excellent academic record in undergraduate examination will be called for counselling in college campus to identify the spark and the commitment of the applicant to study 2-year Master programme (M.Sc Applied Mathematics) at PSG College of Technology.The schedule of the counselling will be intimated through the applicant's registered email.<br />
 
-                          The schedule of the counselling will be intimated through the applicant's registered email.<br />
+                          <br />
 
                           However, call for counselling does not confer any right of admission.<br />
 

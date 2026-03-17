@@ -308,12 +308,12 @@ export default function Hero() {
         <div style={{ animation: "h-up 1s 0.75s ease both" }} className="relative my-3 select-none">
           {/* decorative ring behind number */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ zIndex: 0 }}>
-            <div style={{
+            {/* <div style={{
               width: "clamp(220px,36vw,340px)", height: "clamp(220px,36vw,340px)",
               borderRadius: "50%",
               border: "1px solid rgba(163,202,233,0.18)",
               boxShadow: "0 0 80px rgba(110,159,193,.15)",
-            }} />
+            }} /> */}
           </div>
           <span className="hero-year relative z-10">2026</span>
         </div>

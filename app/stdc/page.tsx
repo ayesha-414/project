@@ -1322,53 +1322,42 @@ export default function STDCPage() {
                   )}
 
                   {/* ── ALUMNI SPEAKS ── */}
-        {activeTab === "alumni" && (
-          <div className="space-y-6">
-            <h4 className="text-xl font-bold text-[#1e3a8a]">Alumni Speaks</h4>
-
-            {alumniSpeaks.map((a, i) => (
-              <div
-                key={i}
-                className="bg-white rounded-2xl shadow-md border border-[#dce8f5] p-6 hover:shadow-lg transition-all duration-300"
-              >
-                {/* Flex Row */}
-                <div className="flex items-start gap-6">
-
-                  {/* Image */}
-                  <div className="flex-shrink-0">
-                    <Image
-                      src={a.img}
-                      alt={a.name}
-                      width={90}
-                      height={90}
-                      className="w-[90px] h-[90px] object-cover rounded-md border-2 border-[#a3cae9]"
-                    />
-                  </div>
-
-                  {/* Text */}
-                  <div className="flex-1 text-justify">
-                    <h5 className="font-bold text-[#1a1a2e] text-2xl">
-                      {a.name}
-                    </h5>
-
-                    <p className="text-[#1c3879] text-base font-medium">
-                      {a.role}
-                    </p>
-
-                    <p className="text-[#e8505b] text-base">
-                      {a.program}
-                    </p>
-
-                    <p className="text-gray-800 text-lg mt-3 leading-relaxed">
-                      {a.comment}
-                    </p>
-                  </div>
-
-                </div>
-              </div>
-            ))}
+                  {activeTab === "alumni" && (
+  <div className="space-y-6">
+    {alumniSpeaks.map((a, i) => (
+      <div key={i} className="program-card">
+        {/* Flex container ensures image and text stay side-by-side */}
+        <div className="flex items-start gap-6">
+          
+          {/* Image Wrapper - Removed the w-14 restriction to allow 90px size */}
+          <div className="flex-shrink-0">
+            <img
+              src={a.img}
+              alt={a.name}
+              className="w-[90px] h-[90px] object-cover rounded-md border-2 border-[#a3cae9]"
+            />
           </div>
-        )}
+
+          {/* Text Content Container */}
+          <div className="flex-1">
+            <h5 className="font-bold text-[#1a1a2e] text-2xl">
+              {a.name}
+            </h5>
+            <p className="text-[#1c3879] text-base font-medium">
+              {a.role}
+            </p>
+            <p className="text-[#e8505b] text-base">
+              {a.program}
+            </p>
+            <p className="text-gray-900 text-lg mt-3 leading-relaxed text-justify">
+              {a.comment}
+            </p>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+)}
 
                   {/*  ── Achievements Section ────────────────────────────────────────────── */ }
 {activeTab === "achievements" && (
