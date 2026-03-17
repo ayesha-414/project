@@ -373,6 +373,13 @@ export default function MathPage() {
                     <div className="space-y-6">
                       <div className="bg-[#1c3879]/5 rounded-xl p-6">
                         <h4 className="text-2xl font-bold text-[#1c3879] mb-3">Equivalent Certificate from Tamil Nadu Government</h4>
+                        <a
+                          href="/brochure.pdf"
+                          target="_blank"
+                          className="inline-flex items-center gap-2 bg-[#1c3879] text-white px-6 py-3 rounded-lg font-bold shadow-lg hover:scale-105 hover:bg-[#2a4a9b] transition-all mb-4 "
+                        >
+                          📄 View Equivalent Certificate
+                        </a>
                         <p className="text-gray-900 leading-relaxed text-xl text-justify">
                           Candidates for admission to the M.Sc. Applied Mathematics are required to have a pass in B.Sc. (Mathematics / Mathematics with Computer Applications / Applied Science) or an examination of any other University or authority recognized by Anna University equivalent there to. Candidates, who have appeared for the final semester examination in May/June of the academic year 2024-2026, are also eligible to apply (However, such candidates if selected for admission will have to produce the final examination mark sheet and the proof of having passed the degree at the time of admission). Only Indian Nationals are eligible to apply.<br />
 
@@ -385,8 +392,6 @@ export default function MathPage() {
                           Candidates from other Universities will have to provide an Eligibility Certificate issued by Anna University, Chennai.
                         </p>
                       </div>
-
-                      
                     </div>
                   )}
 
