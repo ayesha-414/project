@@ -39,22 +39,27 @@ export default function Hero() {
   }, []);
 
   return (
+// <<<<<<< HEAD
+     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div className="absolute top-[90px] left-0 w-full z-40 bg-[#1c3879]/90 backdrop-blur-md border-b border-white/20 overflow-hidden">    
+{/* =======
     <section className="relative min-h-[650px] md:min-h-screen  flex items-center justify-center overflow-hidden">
       <div className="absolute top-30 left-0 w-full z-40 bg-[#1c3879]/90 backdrop-blur-md border-b border-white/20 overflow-hidden">
           
+>>>>>>> b30fe2884aaee91ad1a46b637a75200d1caf644d */}
         <div className="flex whitespace-nowrap animate-[ticker_20s_linear_infinite]">
             
-          <div className="flex items-center gap-12 py-2 px-6 text-white font-semibold text-lg tracking-wide">
-            <span>📢 Applications for B.Sc & M.Sc Programmes 2026 will close on <span className="text-[#A3CAE9] font-bold">30 June 2026</span> – Apply Soon!</span>
-            <span>📢 Applications for B.Sc & M.Sc Programmes 2026 will close on <span className="text-[#A3CAE9] font-bold">30 June 2026</span> – Apply Soon!</span>
-            <span>📢 Applications for B.Sc & M.Sc Programmes 2026 will close on <span className="text-[#A3CAE9] font-bold">30 June 2026</span> – Apply Soon!</span>
+          <div className="flex items-center gap-12 py-1 px-6 text-white font-semibold text-lg tracking-wide">
+            <span>📢 Applications for B.Sc & M.Sc Programmes 2026 will close on <span className="text-[#A3CAE9] font-bold">17 May 2026</span> – Apply Soon!</span>
+            <span>📢 Applications for B.Sc & M.Sc Programmes 2026 will close on <span className="text-[#A3CAE9] font-bold">17 May 2026</span> – Apply Soon!</span>
+            <span>📢 Applications for B.Sc & M.Sc Programmes 2026 will close on <span className="text-[#A3CAE9] font-bold">17 May 2026</span> – Apply Soon!</span>
           </div>
 
         </div>
 
       </div>
       {/* LEFT LOGO */}
-      <div className="absolute top-45 left-8 z-30 animate-[float_6s_ease-in-out_infinite]">
+      <div className="absolute top-[160px] left-8 z-30 animate-[float_6s_ease-in-out_infinite]">
         <Image
           src="/image/psg_75_logo.webp"
           alt="75 Years Logo"
@@ -65,7 +70,7 @@ export default function Hero() {
       </div>
 
       {/* RIGHT LOGO */}
-      <div className="absolute top-45 right-8 z-30 animate-[float_6s_ease-in-out_infinite]">
+      <div className="absolute top-[160px] right-8 z-30 animate-[float_6s_ease-in-out_infinite]">
         <div className="p-4 rounded-2xl bg-white border border-white/30 shadow-[0_0_30px_rgba(163,202,233,0.4)]">
           <Image
             src="/image/100_yr_logo.png"
@@ -261,7 +266,7 @@ export default function Hero() {
 
       {/* ── Main content ─────────────────────────────────────────────── */}
       <div
-        className="relative z-20 max-w-5xl mx-auto px-6 text-center top-22"
+        className="relative z-20 max-w-5xl mx-auto px-6 text-center top-22 "
         style={{ opacity: loaded ? 1 : 0, transition: "opacity 0.7s ease" }}
       >
 
@@ -319,7 +324,7 @@ export default function Hero() {
           className="flex flex-wrap gap-5 justify-center items-center mt-8 mb-12"
           style={{ animation: "h-up 0.8s 1.1s ease both" }}
         >
-          <Link href="/apply" className="h-btn-primary">
+          <Link href="" className="h-btn-primary">
             Apply Now
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7" />

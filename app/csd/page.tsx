@@ -267,17 +267,17 @@ export default function CSDPage() {
                     <div className="space-y-6">
                       <div>
                         <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Department</h4>
-                        <p className="text-gray-900 leading-relaxed mb-4 text-xl">
+                        <p className="text-gray-900 leading-relaxed mb-4 text-xl text-justify">
                           The <strong>Department of Applied Mathematics and Computational Sciences</strong> comprises of dedicated faculty members who are undoubtedly the assets worthy of mention. The department is known for its discipline and for the importance it gives to the overall development of students in grooming them towards becoming good software professionals, research scientists and data analysts. The department has its own library with latest books, national and international journals and magazines. The computer centre is well equipped with the most recent hardware and software. To keep in touch with the ever - growing technology, the faculty members participate regularly in refresher courses and symposia conducted by top notch Universities, Research Institutions and Professional Bodies like Association for Computing Machinery. The department organizes technical symposia at national and international levels at regular intervals. Apart from stressing on consistent and good academic performance, the department encourages participation in co-curricular and extracurricular activities to bring out the latent talents in its students. The students are provided with ample opportunities to improve their organizational skills and group dynamics.
                         </p>
                       </div>
 
                       <div>
                         <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Programme</h4>
-                        <p className="text-gray-900 leading-relaxed mb-4 text-xl">
+                        <p className="text-gray-900 leading-relaxed mb-4 text-xl text-justify">
                           BSc Computer Systems and Design (erstwhile Computer Technology) started in the year 1985, equips the students with necessary skills for a successful career in the field of computing as well as to continue further higher studies in computer related disciplines. This programme emphasizes development of programming skills, understanding system design tools and technologies for effective problem solving. 
                         </p>
-                        <p className="text-gray-900 leading-relaxed mt-4 text-xl">
+                        <p className="text-gray-900 leading-relaxed mt-4 text-xl text-justify">
                           The students will have the facilities for getting trained in well-equipped laboratories and on 
                           various sophisticated computer systems available in college.
                         </p>
@@ -342,7 +342,7 @@ export default function CSDPage() {
                     <div className="space-y-6">
                       <div className="bg-[#1c3879]/5 rounded-xl p-6">
                         <h4 className="text-2xl font-bold text-[#1c3879] mb-3">Eligibility</h4>
-                        <p className="text-gray-900 leading-relaxed text-xl">
+                        <p className="text-gray-900 leading-relaxed text-xl text-justify">
                           A good academic record in Higher Secondary examination of the (10+2) curriculum prescribed by the 
                           appropriate authority of the Government of Tamil Nadu or any other exam recognised as equivalent 
                           with Mathematics and Physics as two of the subjects of study. Only Indian Nationals are eligible to apply.
@@ -351,12 +351,12 @@ export default function CSDPage() {
 
                       <div className="bg-[#1c3879]/5 rounded-xl p-6">
                         <h4 className="text-2xl font-bold text-[#1c3879] mb-3">Selection Process</h4>
-                        <p className="text-gray-900 leading-relaxed text-xl">
+                        <p className="text-gray-900 leading-relaxed text-xl text-justify">
                           Shortlisted candidates with good academic record in Higher Secondary examination (based on Math and 
                           Physics HSC marks) will be called for counselling in the campus to identify the commitment of the 
                           applicant to study at PSG College of Technology.
                         </p>
-                        <p className="text-gray-900 leading-relaxed mt-3 text-xl">
+                        <p className="text-gray-900 leading-relaxed mt-3 text-xl text-justify">
                           The schedule of the counselling will be intimated through the applicant&apos;s registered email. 
                           However, call for counselling does not confer any right of admission.
                         </p>
@@ -391,7 +391,7 @@ export default function CSDPage() {
             <p className="text-[#e8505b] text-base">
               {alum.batch}
             </p>
-            <p className="text-gray-900 text-lg mt-3 leading-relaxed">
+            <p className="text-gray-900 text-lg mt-3 leading-relaxed text-justify">
               {alum.testimonial}
             </p>
           </div>
@@ -454,35 +454,35 @@ export default function CSDPage() {
                       <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                       <div>
                         <p className="text-white/70 text-base">Last date for application submission</p>
-                        <p className="text-white font-bold">23rd May 2025</p>
+                        <p className="text-white font-bold">23rd May 2026</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                       <div>
                         <p className="text-white/70 text-base">Notification of shortlisted candidates for Counselling in the campus</p>
-                        <p className="text-white font-bold">26th May 2025</p>
+                        <p className="text-white font-bold">26th May 2026</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                       <div>
                         <p className="text-white/70 text-base">Counselling in the campus</p>
-                        <p className="text-white font-bold">29th - 30th May 2025</p>
+                        <p className="text-white font-bold">29th - 30th May 2026</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                       <div>
                         <p className="text-white/70 text-base">Notification of final selected candidates for admission</p>
-                        <p className="text-white font-bold">3rd June 2025</p>
+                        <p className="text-white font-bold">3rd June 2026</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                       <div>
                         <p className="text-white/70 text-base">Last date for fee payment</p>
-                        <p className="text-white font-bold">10th June 2025</p>
+                        <p className="text-white font-bold">10th June 2026</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
@@ -504,7 +504,7 @@ export default function CSDPage() {
 {/* //application// */}
               <div className="bg-white rounded-2xl card-shadow p-6">
                 <h4 className="text-2xl font-bold text-[#1c3879] mb-4">How to apply?</h4>
-                <p className="text-gray-900 text-lg leading-relaxed">
+                <p className="text-gray-900 text-lg leading-relaxed text-justify">
                   Application can be made only through online by entering all the particulars including marks along with 
                   online payment by Net banking/Credit card/Debit card/UPI. All dates are subject to change based on HSC 
                   examination results.
