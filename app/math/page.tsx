@@ -113,6 +113,34 @@ export default function MathPage() {
 
   
   const alumni = [
+     {
+      name: "Midhuna Varshini R",
+      position: "Associate Consultant, Virtusa, Chennai",
+      batch: "Batch: 2023-2025",
+      testimonial: "My journey through the Master’s program in Applied Mathematics in the department of AMCS, PSG College of Technology, has been one of the most impactful chapters of my academic and professional journey. The program not only strengthened my foundation in Mathematical concepts but also taught me the power of analytical thinking, rigor, and structured problem solving skills that continue to guide me in every challenge I take up today. The department’s commitment to fostering curiosity, precision and innovation played a pivotal role in shaping my approach to real-world problems. Courses that once seemed abstract now form the backbone of the work I do across technology, research and decision making. Beyond academics, the support and mentorship from faculty, the collaborative spirit among peers, and the culture of continuous learning created an environment that truly prepared me for the future. Looking back, the memories of long problem solving sessions, lively discussions, seminars, and the joy of cracking difficult concepts remain some of my most cherished experiences. This program doesn&#39;t just give me a degree - it gave me confidence, resilience, and a long life appreciation for the beauty of Mathematics.",
+      image: "/math_alumni/midhuna_varshini.png"
+    },
+     {
+      name: "Ms. SRI VARSHINI D",
+      position: "Associate Data Scientist Societe Generale",
+      batch: "Batch: 2021–2023",
+      testimonial: "As an alumnus of the M.Sc. Applied Mathematics programme (2021–2023) at PSG College of Technology, I found the course to be a perfect blend of strong mathematical foundations and practical real world applications&#39; exposure. The curriculum helped me improve my logical thinking and problem-solving skills. The constant support from the faculties shaped my academic growth which in turn helped my professional growth. This programme not only strengthened my technical knowledge but also gave me the confidence to kickstart my career into the industry.",
+      image: "/math_alumni/sri_varshini.png"
+    },
+     {
+      name: "Ms. Subhiksha N",
+      position: "Opentext VIM consultant Company name: Capgemini technology services India Ltd, Chennai",
+      batch: "Batch: 2019-2021",
+      testimonial: "As a graduate of the M.Sc. Applied Mathematics program from PSG College of Technology, I gained a strong foundation in mathematical analysis. The course helped develop critical thinking and analytical skills that continue to support my professional work today. It helped me build analytical and problem-solving skills which I currently apply in my role as an OpenText VIM Consultant working on SAP-based invoice management solutions",
+      image: "/math_alumni/subhiksha.png"
+    },
+    {
+      name: "Ms. Kanishkaa S",
+      position: "Intern - Developer (Analytics) Walkerscott India Pvt. LtD",
+      batch: "Batch: 2024-2026",
+      testimonial: "I am proud to be an M.Sc. Applied Mathematics student. The department provides an excellent academic environment with a very supportive faculty members. The curriculum is designed to help us build strong analytical, computational and problem solving skills. Also, the department offers strong placement support. We are also encouraged to participate in research activities, projects and seminars which enhance our knowledge and confidence. Overall, it has been a truly enriching and career oriented experience that has strengthened both my academic foundation and professionalism.",
+      image: "/math_alumni/kanishka.png"
+    },
     {
       name: "S Gnanapandithan",
       position: "Senior Manager, Cognizant Technology Solutions,",

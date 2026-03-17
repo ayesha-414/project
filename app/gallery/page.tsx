@@ -43,15 +43,25 @@ const galleryImages = [
    { id: 19, src: "/image/7.JPG", title: "Alumini Meet" },
  { id: 20, src: "/image/image.png", title: "Alumini Meet" },
   { id: 21, src: "/image/IMG_0670.JPG", title: "Alumini Meet" },
- { id: 22, src: "/image/IMG_2312.JPG", title: "Guest Lecture" },
- { id: 23, src: "/image/IMG_4372.png", title: "Login Event" },
- { id: 24, src: "/image/IMG_9555.JPG", title: "Silver Jubilee Celebration" },
- { id: 25, src: "/image/IMG_9833.JPG", title: "Silver Jubilee Celebration" },
- { id: 26, src: "/image/img3.jpeg", title: "Lecture" },
+ 
+ { id: 22, src: "/image/IMG_4372.png", title: "Login Event" },
+ { id: 23, src: "/image/IMG_9555.JPG", title: "Silver Jubilee Celebration" },
+ { id: 24, src: "/image/IMG_9833.JPG", title: "Silver Jubilee Celebration" },
+ 
+ { id: 25, src: "/image/IMG_0680.JPG", title: "Orientation Program" },
+ { id: 26, src: "/image/axios.png", title: "Axios Event"},
+ { id: 27, src: "/image/axios-g.png", title: "Axios Event"},
+ { id: 28, src: "/image/axios-w.png", title: "Axios Event"},
+ { id: 29, src: "/image/axios-t.png", title: "Axios Event"},
+ { id: 30, src: "/image/axios-s.png", title: "Axios Event"},
+ { id: 31, src: "/image/axios-q.png", title: "Axios Event"},
+ { id: 32, src: "/image/axios-m.png", title: "Axios Event"},
+ { id: 33, src: "/image/axios-d.png", title: "Axios Event"},
+ { id: 34, src: "/image/axios-b.png", title: "Axios Event"},
+ { id: 35, src: "/image/axios-cl.png", title: "Axios Event"},
+ 
+ 
 
- { id: 27, src: "/image/IMG_0680.JPG", title: "Orientation Program" },
- { id: 28, src: "/image/img6.jpeg", title: "Guest Lecture" },
- { id: 29, src: "/image/img7.jpeg", title: "Guest Lecture" },
 ];
 
 export default function GalleryPage() {
