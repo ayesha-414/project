@@ -495,7 +495,7 @@ export default function SciencePage() {
               {/* How to Apply */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6">
                 <h4 className="text-xl font-bold text-[#1c3879] mb-4">How to apply?</h4>
-                <p className="text-gray-900 text-lg leading-relaxed">
+                <p className="text-gray-900 text-lg leading-relaxed text-justify">
                   Application can be made online by entering all the particulars including marks along with online 
                   payment through Net banking/Credit card/Debit card/UPI. All dates are subject to change based on 
                   HSC examination results.
