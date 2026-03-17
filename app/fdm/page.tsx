@@ -325,17 +325,17 @@ const objectives = [
   </div>
 </div>
   {/* Block 2: The Objectives (Moved OUTSIDE of the <p> tag) */}
-  <div className="mt-10">
+  {/* <div className="mt-10">
     <div className="grid gap-4">
       {objectives.map((obj, index) => (
         <div key={index} className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors">
           <CheckCircle className="w-6 h-6 text-[#1c3879] mt-1 flex-shrink-0" />
-          {/* Note: Use a <span> or another <p> here, but never a <div> if inside a <p> */}
+          
           <p className="text-gray-900">{obj}</p>
         </div>
       ))}
     </div>
-  </div>
+  </div> */}
 </div>
                       </div>
 
