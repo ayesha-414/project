@@ -167,21 +167,7 @@ export default function Footer() {
             </li>
             </ul>
 
-            {/* Social Links */}
-            <div className="flex items-center gap-4 mt-6">
-              <a href="#" className="w-10 h-10  bg-white/10 rounded-full flex items-center justify-center hover:bg-[#e8505b] transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#e8505b] transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#e8505b] transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#e8505b] transition-colors">
-                <Youtube className="w-5 h-5" />
-              </a>
-            </div>
+            
           </div>
         </div>
       </div>
