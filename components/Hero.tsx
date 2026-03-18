@@ -315,7 +315,7 @@ export default function Hero() {
               boxShadow: "0 0 80px rgba(110,159,193,.15)",
             }} /> */}
           </div>
-          <span className="hero-year relative z-10">2026</span>
+          <span className="hero-year relative z-10">2026-27</span>
         </div>
 
 
