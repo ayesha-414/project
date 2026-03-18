@@ -230,7 +230,7 @@ export default function Header() {
               <Link href="/gallery" className="block text-white text-2xl font-bold border-b border-white/10 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Gallery</Link>
               <Link href="/#contact" className="block text-white text-2xl font-bold border-b border-white/10 pb-2" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
 
-              <Link href="/apply" className="flex items-center justify-center gap-3 bg-white text-[#1c3879] w-full py-5 rounded-2xl font-black text-xl shadow-xl mt-8" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link href="" className="flex items-center justify-center gap-3 bg-white text-[#1c3879] w-full py-5 rounded-2xl font-black text-xl shadow-xl mt-8" onClick={() => setIsMobileMenuOpen(false)}>
                 Apply Now <ArrowRight className="w-6 h-6" />
               </Link>
             </nav>
