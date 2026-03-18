@@ -516,7 +516,7 @@ const objectives = [
                     </div>
                   </li>
                 </ul>
-                <Link href="/apply" className="btn-secondary w-full justify-center mt-6">
+                <Link href="" className="btn-secondary w-full justify-center mt-6">
                   Apply Now
                   <ArrowRight className="w-4 h-4" />
                 </Link>

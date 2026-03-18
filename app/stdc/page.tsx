@@ -1510,7 +1510,7 @@ export default function STDCPage() {
                   ))}
                 </ul>
                 <Link
-                  href="/apply"
+                  href=""
                   className="mt-6 flex items-center justify-center gap-2 bg-white text-[#1e3a8a] font-bold px-6 py-3 rounded-xl hover:bg-[#e8f4ff] transition-colors w-full"
                 >
                   Apply Now <ArrowRight className="w-4 h-4" />
