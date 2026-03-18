@@ -164,6 +164,7 @@ export default function GalleryPage() {
                 />
 
                 {/* ✅ Dark Overlay */}
+                {/* for blue :absolute inset-0 bg-blue-900/60 group-hover:bg-blue-800/70 transition*/}
                 <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition"></div>
 
                 {/* Text */}
