@@ -60,7 +60,7 @@ export default function Home() {
       description: "M.Sc Computational Finance is proposed to be introduced this year, which aims to equip students with advanced quantitative, analytical, and computational skills by integrating rigorous mathematical and statistical modelling with contemporary computational methods—such as empirical analysis, artificial intelligence, and automation for solving complex financial problems. It prepares graduates for careers or research in quantitative finance while promoting ethical, practical, and innovative applications in modern financial systems.",
       href: "/stdc",
       icon: "finance",
-      note: "Subject to approval"
+      note: "Subject to Affiliation"
     },
     {
       title: "M.Sc Fashion Design & Merchandising",
@@ -102,50 +102,50 @@ export default function Home() {
       title: "M.Sc (SS/TCS/DS/CS/CF)",
       subtitle: "5 Year Integrated Programmes",
       items: [
-        { title: "Application closing", date: "23 MAY 2026" },
-        { title: "Notification of shortlisted candidates for entrance test", date: "29 MAY 2026" },
-        { title: "Entrance test", date: "4 JUNE 2026" },
-        { title: "Counselling in college campus", date: "4 JUNE(AFTERNOON) - 7 JUNE 2026" },
-        { title: "Notification of final selected candidates for admission", date: "10 JUNE 2026" },
-        { title: "Last date for fee payment", date: "16 JUNE 2026" },
+        { title: "Application closing", date: "23rd MAY 2026 , Saturday" },
+        { title: "Notification of shortlisted candidates for entrance test", date: "29th MAY 2026 , Friday" },
+        { title: "Entrance test", date: "3rd JUNE 2026 , Wednesday" },
+        { title: "Counselling in college campus", date: "3rd JUNE , Wednesday (AFTERNOON) - 6th JUNE 2026 , Saturday" },
+        { title: "Notification of final selected candidates for admission", date: "9th JUNE 2026 , Tuesday" },
+        { title: "Last date for fee payment", date: "16th JUNE 2026 , Tuesday" },
       ],
     },
     {
       title: "M.Sc Fashion Design & Merchandising",
       subtitle: "5 Year Integrated Programme",
       items: [
-        { title: "Application closing", date: "19 MAY 2026" },
-        { title: "Notification of shortlisted candidates for counselling cum admission", date: "21 MAY 2026" },
-        { title: "Counselling cum Admission", date: "23 MAY 2026" },
+        { title: "Application closing", date: "19th MAY 2026 , Tuesday" },
+        { title: "Notification of shortlisted candidates for counselling cum admission", date: "21st MAY 2026 , Thursday" },
+        { title: "Counselling cum Admission", date: "23rd MAY 2026 , Saturday" },
       ],
     },
     {
       title: "B.Sc Applied Science",
       subtitle: "Undergraduate Programme",
       items: [
-        { title: "Application closing", date: "15 MAY 2026" },
-        { title: "Notification of shortlisted candidates for counselling cum admission", date: "17 MAY 2026" },
-        { title: "Counselling cum Admission", date: "23 MAY 2026" },
+        { title: "Application closing", date: "15th MAY 2026 , Friday" },
+        { title: "Notification of shortlisted candidates for counselling cum admission", date: "17th MAY 2026 , Sunday" },
+        { title: "Counselling cum Admission", date: "23rd MAY 2026 , Saturday" },
       ],
     },
     {
       title: "B.Sc Computer Systems & Design",
       subtitle: "Undergraduate Programme",
       items: [
-        { title: "Application closing", date: "23 MAY 2026" },
-        { title: "Notification of shortlisted candidates for counselling", date: "26 MAY 2026" },
-        { title: "Counselling in college campus", date: "29-30 MAY 2026" },
-        { title: "Notification of final selected candidates for admission", date: "3 JUNE 2026" },
-        { title: "Last date for fee payment", date: "10 JUNE 2026" },
+        { title: "Application closing", date: "23rd MAY 2026 , Saturday" },
+        { title: "Notification of shortlisted candidates for counselling", date: "26th MAY 2026 , Tuesday" },
+        { title: "Counselling in college campus", date: "29th (Friday) - 30th (Saturday) MAY 2026" },
+        { title: "Notification of final selected candidates for admission", date: "3rd JUNE 2026 , Wednesday" },
+        { title: "Last date for fee payment", date: "10th JUNE 2026 , Wednesday" },
       ],
     },
     {
       title: "M.Sc Applied Mathematics",
       subtitle: "Postgraduate Programme",
       items: [
-        { title: "Application closing", date: "28 MAY 2026" },
-        { title: "Counselling & admission in college campus", date: "2 JUNE 2026" },
-        { title: "Last date for fee payment", date: "9 JUNE 2026" },
+        { title: "Application closing", date: "28th MAY 2026 , Thursday" },
+        { title: "Counselling & admission in college campus", date: "2nd JUNE 2026 , Tuesday" },
+        { title: "Last date for fee payment", date: "9th JUNE 2026 , Tuesday" },
       ],
     },
   ];
@@ -278,9 +278,9 @@ export default function Home() {
           {/* 5-year */}
           <div className="mb-16">
             <h3 className="text-3xl font-bold text-[#395A7F] mb-8 flex items-center gap-3">
-              <div className="w-10 h-10 bg-[#395A7F] rounded-lg flex items-center justify-center">
+              {/* <div className="w-10 h-10 bg-[#395A7F] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold">5</span>
-              </div>
+              </div> */}
               5 Year M.Sc Integrated Programmes
             </h3>
             <div className="grid md:grid-cols-2 gap-35 text-justify">
@@ -302,9 +302,9 @@ export default function Home() {
           {/* 3-year */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-[#395A7F] mb-8 flex items-center gap-3">
-              <div className="w-10 h-10 bg-[#395A7F] rounded-lg flex items-center justify-center">
+              {/* <div className="w-10 h-10 bg-[#395A7F] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold">3</span>
-              </div>
+              </div> */}
               3 Year B.Sc Programmes
             </h3>
             <div className="grid md:grid-cols-2 gap-35 text-justify">

@@ -1304,11 +1304,11 @@ export default function STDCPage() {
                         {
                           color: "#e8505b", title: "Entrance Test",
                           body: "Shortlisted candidates will be called for a computer based entrance examination at the College Campus on 4th June 2026.",
-                          bullets: ["Duration: ONE hour", "Multiple Choice Questions from Mathematics in +2 level", "Questions will be in English and Tamil"],
+                          bullets: ["Duration: ONE hour.", "Multiple Choice Questions in +2 level Mathematics.", "Questions will be in English and Tamil.","There will be negative marking for the wrong answer.","Topics for Entrance examination will be"],
                         },
                         {
                           color: "#15803d", title: "Counselling",
-                          body: "Counselling will be held for shortlisted candidates from 4th June Afternoon onwards, at the college campus, to identify the SPARK and COMMITMENT of the applicant.",
+                          body: "Counselling will be held for shortlisted candidates from 4th June Afternoon onwards, at the college campus, to identify the SPARK and COMMITMENT of the applicant. Applicants can choose preference of programms at the time of counselling.",
                           bullets: [],
                         },
                       ].map((block, i) => (

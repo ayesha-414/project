@@ -390,7 +390,7 @@ export default function MathPage() {
 
                           However, call for counselling does not confer any right of admission.<br />
 
-                          Candidates from other Universities will have to provide an Eligibility Certificate issued by Anna University, Chennai.
+                          
                         </p>
                       </div>
                     </div>

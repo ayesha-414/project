@@ -742,8 +742,8 @@
 .gradient-overlay {
   background: linear-gradient(
     to right,
-    rgba(57, 90, 127, 0.82),
-    rgba(110, 159, 193, 0.65)
+    rgba(57, 90, 127),
+    rgba(110, 159, 193)
   );
 }
 
@@ -791,8 +791,8 @@
 
 .hero-overlay {
   background: linear-gradient(
-    rgba(57, 90, 127, 0.6),
-    rgba(163, 202, 233, 0.28)
+    rgba(57, 90, 127),
+    rgba(163, 202, 233)
   );
 }
 
