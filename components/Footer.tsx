@@ -10,15 +10,15 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 ">
           {/* About */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex items-center gap-4 mb-6">
               <img
               src="/image/logo.jpeg"
               alt="PSG Logo"
-              width={56}
-              height={56}
-              className="rounded-full bg-white p-1"
+              width={50}
+              height={50}
+              className="  p-1 mt-[-30]"
             />
-              <div>
+              <div >
                 <h6 className="text-white font-bold text-xl leading-tight tracking-tight uppercase whitespace-nowrap overflow-hidden text-ellipsis ">PSG COLLEGE OF TECHNOLOGY</h6>
               </div>
             </div>
