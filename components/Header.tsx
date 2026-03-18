@@ -102,7 +102,7 @@ export default function Header() {
                     </div>
                   ))}
                 </div>
-                {/* Right: Items */}
+                {/* Right: Itemss */}
                 <div className="w-1/2 pl-4">
                   <ul className="space-y-1">
                     {programmes[activeProgram].items.map((item, i) => (
