@@ -8,6 +8,8 @@ import { Home, ChevronRight, BookOpen, FileText, CheckCircle, Users, Calendar, C
 
 export default function FDMPage() {
   const [activeTab, setActiveTab] = useState("overview");
+
+  
   
   
 const objectives = [
@@ -421,8 +423,7 @@ const objectives = [
                           <p className="text-gray-900 leading-relaxed text-xl text-justify">
                             A good academic record in Higher Secondary examination (any group) of the
                             (10+2) curriculum prescribed by the appropriate authority of the Government
-                            of Tamil Nadu or any other exam recognised as equivalent. Only Indian Nationals
-                            are eligible to apply.
+                            of Tamil Nadu or any other exam recognised as equivalent.
                           </p>
 
                           <p className="text-xl text-gray-900 leading-relaxed text-justify">

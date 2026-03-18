@@ -62,7 +62,7 @@ export default function Header() {
 
             {/* Apply Now Button (Top Level) */}
             <div className="flex items-center gap-4">
-              <Link href="/apply" className="btn-secondary hidden sm:flex items-center gap-2 bg-white text-[#1c3879] px-8 py-2.5 rounded-full font-black text-lg md:text-base shadow-lg hover:bg-blue-50 transition-all active:scale-95">
+              <Link href="" className="btn-secondary hidden sm:flex items-center gap-2 bg-white text-[#1c3879] px-8 py-2.5 rounded-full font-black text-lg md:text-base shadow-lg hover:bg-blue-50 transition-all active:scale-95">
                 Apply Now
                 <ArrowRight className="w-4 h-4 md:w-5 h-5" />
               </Link>
@@ -169,7 +169,7 @@ export default function Header() {
                 ))}
               </div>
             )}
-            <Link href="/apply" className="flex items-center justify-center gap-3 bg-white text-[#1c3879] w-full py-4 rounded-xl font-black text-xl mt-8">
+            <Link href="" className="flex items-center justify-center gap-3 bg-white text-[#1c3879] w-full py-4 rounded-xl font-black text-xl mt-8">
               Apply Now <ArrowRight />
             </Link>
           </nav>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState,useEffect  } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -20,6 +20,15 @@ export default function SciencePage() {
       prev === 0 ? notableAlumni.length - 1 : prev - 1
     );
   };
+    useEffect(() => {
+        const interval = setInterval(() => {
+          setAlumniIndex((prev) =>
+            prev === notableAlumni.length - 1 ? 0 : prev + 1
+          );
+        }, 3000);
+    
+        return () => clearInterval(interval);
+      }, []);
   const notableAlumni = [
     { 
       name: "Sriram G", 
@@ -354,7 +363,7 @@ export default function SciencePage() {
                         <p className="text-gray-900 leading-relaxed text-lg text-justify">
                           A pass in Higher Secondary examination of the (10+2) curriculum prescribed by the appropriate 
                           authority of the Government of Tamil Nadu with Mathematics, Physics and Chemistry as the subjects 
-                          of study or any other exam recognized as equivalent. Only Indian Nationals are eligible to apply.
+                          of study or any other exam recognized as equivalent. 
                         </p>
                       </div>
 

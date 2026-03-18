@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -20,6 +20,16 @@ export default function CSDPage() {
       prev === 0 ? notableAlumni.length - 1 : prev - 1
     );
   };
+
+    useEffect(() => {
+    const interval = setInterval(() => {
+      setAlumniIndex((prev) =>
+        prev === notableAlumni.length - 1 ? 0 : prev + 1
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const curriculum = {
     "Semester 1": [
@@ -345,7 +355,7 @@ export default function CSDPage() {
                         <p className="text-gray-900 leading-relaxed text-xl text-justify">
                           A good academic record in Higher Secondary examination of the (10+2) curriculum prescribed by the 
                           appropriate authority of the Government of Tamil Nadu or any other exam recognised as equivalent 
-                          with Mathematics and Physics as two of the subjects of study. Only Indian Nationals are eligible to apply.
+                          with Mathematics and Physics as two of the subjects of study.
                         </p>
                       </div>
 

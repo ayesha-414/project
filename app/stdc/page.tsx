@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -22,6 +22,15 @@ export default function STDCPage() {
   const [activeAchievement, setActiveAchievement] = useState("All");
 
   /* ── Data ─────────────────────────────────────────────────────────────── */
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAlumniIndex((prev) =>
+        prev === notableAlumni.length - 1 ? 0 : prev + 1
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const programs: { id: ProgramKey; name: string }[] = [
     { id: "ss",  name: "Software Systems" },
