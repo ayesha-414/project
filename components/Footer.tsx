@@ -176,7 +176,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-white/70 text-lg">
-              © 2025 PSG College of Technology. All Rights Reserved.
+              © 2026 PSG College of Technology. All Rights Reserved.
             </p>
             <p className="text-white/70 text-lg">
               Designed & Developed by Department of Applied Mathematics and Computational Sciences
