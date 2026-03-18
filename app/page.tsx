@@ -151,15 +151,15 @@ export default function Home() {
   ];
 
   const applyPrograms = [
-    { title: "B.Sc Applied Science",                subtitle: "UNDERGRADUATE PROGRAMME",    href: "/apply" },
-    { title: "B.Sc Computer Systems & Design",      subtitle: "UNDERGRADUATE PROGRAMME",    href: "/apply" },
-    { title: "M.Sc Applied Mathematics",            subtitle: "POSTGRADUATE PROGRAMME",     href: "/apply" },
-    { title: "M.Sc Software Systems",               subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "/apply" },
-    { title: "M.Sc Theoretical Computer Science",   subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "/apply" },
-    { title: "M.Sc Data Science",                   subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "/apply" },
-    { title: "M.Sc Cyber Security",                 subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "/apply" },
-    { title: "M.Sc Computational Finance",          subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "/apply" },
-    { title: "M.Sc Fashion Design & Merchandising", subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "/apply" },
+    { title: "B.Sc Applied Science",                subtitle: "UNDERGRADUATE PROGRAMME",    href: "" },
+    { title: "B.Sc Computer Systems & Design",      subtitle: "UNDERGRADUATE PROGRAMME",    href: "" },
+    { title: "M.Sc Applied Mathematics",            subtitle: "POSTGRADUATE PROGRAMME",     href: "" },
+    { title: "M.Sc Software Systems",               subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "" },
+    { title: "M.Sc Theoretical Computer Science",   subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "" },
+    { title: "M.Sc Data Science",                   subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "" },
+    { title: "M.Sc Cyber Security",                 subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "" },
+    { title: "M.Sc Computational Finance",          subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "" },
+    { title: "M.Sc Fashion Design & Merchandising", subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "" },
   ];
 
   const featureCards = [

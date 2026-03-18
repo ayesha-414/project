@@ -53,7 +53,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/apply" className="text-white/80 hover:text-white transition-colors text-lg">
+                <Link href="" className="text-white/80 hover:text-white transition-colors text-lg">
                   Apply Now
                 </Link>
               </li>

@@ -8,7 +8,6 @@ import { Home, ChevronRight, BookOpen, FileText, CheckCircle, Users, Calendar, C
 
 export default function FDMPage() {
   const [activeTab, setActiveTab] = useState("overview");
-  const [alumniIndex, setAlumniIndex] = useState(0);
   
   
 const objectives = [
@@ -103,7 +102,7 @@ const objectives = [
     "Semester 10": [
       "Project Work II",
     ],
-  " Design Electives":
+  "Design Electives":
   [
     "Conceptual Design and Innovation",
     "Design Thinking",
@@ -342,77 +341,22 @@ const objectives = [
                       <div>
                         <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Programme</h4>
                         <p className="text-xl text-gray-900 leading-relaxed mb-4 text-justify">
-                          The <strong>M.Sc Fashion Design & Merchandising</strong>is a five year integrated degree programme with a three-pronged approach to fashion education - <strong>design, production and management</strong>as core areas. Focusing on specific industry requirements in fashion, apparel, niche segments and craft sectors the curriculum progresses along distinct paths gradually from the foundation to the final year of the programme. The curriculum paves way to develop a strong foundation in fashion design and merchandising by offering six professional electives to strengthen the students' skills in core area of their interest. Employment enhancement courses like craft training and documentation, industrial visits, guest lectures and 2 six months internships in the curriculum enable the students to possess a sound knowledge in the industrial practices. Craft training provides a unique opportunity to experience the artistic craft making practices first hand by working with native rural artisans in craft clusters. Students also gain valuable insight into the wide spectrum of Indian fashion through internships and industry-based projects at leading export houses, retail brands and designer house. Design collection and portfolio based on a self-developed brief provides a platform to exhibit the creative skills of students, improve knowledge and overcome practical challenges thus making them a complete professional. The curriculum is set with the following Programme Educational Objectives:
-                           <div className="mt-10">
-       
+                          The <strong>M.Sc Fashion Design & Merchandising</strong> is a five year integrated degree programme with a three-pronged approach to fashion education - <strong>design, production and management</strong> as core areas. Focusing on specific industry requirements in fashion, apparel, niche segments and craft sectors the curriculum progresses along distinct paths gradually from the foundation to the final year of the programme. The curriculum paves way to develop a strong foundation in fashion design and merchandising by offering six professional electives to strengthen the students' skills in core area of their interest. Employment enhancement courses like craft training and documentation, industrial visits, guest lectures and 2 six months internships in the curriculum enable the students to possess a sound knowledge in the industrial practices. Craft training provides a unique opportunity to experience the artistic craft making practices first hand by working with native rural artisans in craft clusters. Students also gain valuable insight into the wide spectrum of Indian fashion through internships and industry-based projects at leading export houses, retail brands and designer house. Design collection and portfolio based on a self-developed brief provides a platform to exhibit the creative skills of students, improve knowledge and overcome practical challenges thus making them a complete professional. The curriculum is set with the following Programme.<br/> <br/><strong>Educational Objectives:</strong></p>
+                        <div className="mt-10">
                           <div className="grid gap-4">
                             {objectives.map((obj, index) => (
-                              <div key={index} className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors">
+                              <div
+                                key={index}
+                                className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors"
+                              >
                                 <CheckCircle className="w-6 h-6 text-[#1c3879] mt-1 flex-shrink-0" />
-                                <p className="text-gray-900">{obj}</p>
+                                <p className="text-gray-900 text-xl">{obj}</p>
                               </div>
                             ))}
                           </div>
-                        </div></p>
-                      </div>
-
-                      
-
-            
-                    </div>
-                  )}
-
-                  {activeTab === "curriculum" && (
-                    <div className="space-y-8">
-                      <div className="grid md:grid-cols-2 gap-4">
-                        {Object.entries(curriculum).map(([semester, subjects]) => (
-                          <div key={semester} className="bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-5 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
-                            <h4 className="text-2xl font-bold text-lg mb-4">{semester}</h4>
-                            <ul className="space-y-2">
-                              {subjects.map((subject, idx) => (
-                                <li key={idx} className="text-[#334155] text-lg flex items-start gap-2">
-                                  <span className="w-1.5 h-1.5 bg-[#0ea5e9] rounded-full mt-1.5 flex-shrink-0 text-justify"></span>
-                                  {subject}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
-                  {activeTab === "selection" && (
-                    <div className="space-y-6">
-                      <div className="bg-white p-6 border rounded-xl shadow-sm">
-                        <div className="space-y-6">
-                          <p className="text-gray-900 leading-relaxed text-xl v text-justify">
-                            A good academic record in Higher Secondary examination (any group) of the
-                            (10+2) curriculum prescribed by the appropriate authority of the Government
-                            of Tamil Nadu or any other exam recognised as equivalent. Only Indian Nationals
-                            are eligible to apply.
-                          </p>
-
-                          <p className="text-xl text-gray-900 leading-relaxed text-justify">
-                            Shortlisted candidates with good academic record in Higher Secondary
-                            examination (based on HSC total marks) will be called for counselling cum
-                            admission in college campus to identify the commitment of the applicant to
-                            study at PSG College of Technology.
-                          </p>
-
-                          <p className="text-xl text-gray-900 leading-relaxed text-justify">
-                            The schedule of the counselling will be intimated through the applicant's
-                            registered email.
-                          </p>
-
-                          <p className="text-xl text-gray-900 leading-relaxed text-justify">
-                            However, call for counselling does not confer any right of admission.
-                          </p>
                         </div>
-                      </div>
-                    </div>
-                  )}
-                  {/* Integrated Facilities Section */}
+                      </div> 
+                      {/* Integrated Facilities Section */}
                       <div className="pt-8 border-t border-gray-100">
                         <h4 className="text-2xl font-bold text-[#1c3879] mb-4">Facilities</h4>
                         <p className="text-xl text-gray-900 leading-relaxed mb-6 text-justify">
@@ -446,19 +390,72 @@ const objectives = [
                             </p>
                           </div>
                         </div>
+                      </div>           
+                    </div>
+                  )}
+
+                  {activeTab === "curriculum" && (
+                    <div className="space-y-8">
+                      <div className="grid md:grid-cols-2 gap-4">
+                        {Object.entries(curriculum).map(([semester, subjects]) => (
+                          <div key={semester} className="bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-5 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+                            <h4 className="text-2xl font-bold text-lg mb-4">{semester}</h4>
+                            <ul className="space-y-2">
+                              {subjects.map((subject, idx) => (
+                                <li key={idx} className="text-[#334155] text-lg flex items-start gap-2">
+                                  <span className="w-1.5 h-1.5 bg-[#0ea5e9] rounded-full mt-1.5 flex-shrink-0 text-justify"></span>
+                                  {subject}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
                       </div>
-                  
+                    </div>
+                  )}
+
+                  {activeTab === "selection" && (
+                    <div className="space-y-6">
+                      <div className="bg-white p-6 border rounded-xl shadow-sm">
+                        <div className="space-y-6">
+                          <p className="text-gray-900 leading-relaxed text-xl text-justify">
+                            A good academic record in Higher Secondary examination (any group) of the
+                            (10+2) curriculum prescribed by the appropriate authority of the Government
+                            of Tamil Nadu or any other exam recognised as equivalent. Only Indian Nationals
+                            are eligible to apply.
+                          </p>
+
+                          <p className="text-xl text-gray-900 leading-relaxed text-justify">
+                            Shortlisted candidates with good academic record in Higher Secondary
+                            examination (based on HSC total marks) will be called for counselling cum
+                            admission in college campus to identify the commitment of the applicant to
+                            study at PSG College of Technology.
+                          </p>
+
+                          <p className="text-xl text-gray-900 leading-relaxed text-justify">
+                            The schedule of the counselling will be intimated through the applicant's
+                            registered email.
+                          </p>
+
+                          <p className="text-xl text-gray-900 leading-relaxed text-justify">
+                            However, call for counselling does not confer any right of admission.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                
                   {activeTab === "alumni" && (
                     <div className="space-y-6">
                       <div className="space-y-6">
                         {alumni.map((alum, idx) => (
                           <div key={idx} className="program-card">
                             <div className="flex items-start gap-4">
-                              <div className="w-24 h-34 bg-[#1c3879] rounded-full flex items-center justify-center flex-shrink-0">
+                              <div className="w-24 h-24 bg-[#1c3879] rounded-full flex items-center justify-center flex-shrink-0">
                                 <img
-                                    src={alum.image}
-                                    alt={alum.name}
-                                    className="w-full h-full object-cover"
+                                  src={alum.image}
+                                  alt={alum.name}
+                                  className="w-full h-full object-cover rounded-full"
                                 />
                               </div>
                               <div>
@@ -519,7 +516,7 @@ const objectives = [
                     </div>
                   </li>
                 </ul>
-                <Link href="/apply" className="btn-secondary w-full justify-center mt-6">
+                <Link href="" className="btn-secondary w-full justify-center mt-6">
                   Apply Now
                   <ArrowRight className="w-4 h-4" />
                 </Link>
