@@ -41,7 +41,7 @@ export default function Hero() {
   return (
 // <<<<<<< HEAD
      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute top-[90px] left-0 w-full z-40 bg-[#1c3879]/90 backdrop-blur-md border-b border-white/20 overflow-hidden">    
+      <div className="absolute top-[114px] left-0 w-full z-40 bg-[#1c3879]/90 backdrop-blur-md border-b border-white/20 overflow-hidden">    
 {/* =======
     <section className="relative min-h-[650px] md:min-h-screen  flex items-center justify-center overflow-hidden">
       <div className="absolute top-30 left-0 w-full z-40 bg-[#1c3879]/90 backdrop-blur-md border-b border-white/20 overflow-hidden">
@@ -49,7 +49,7 @@ export default function Hero() {
 >>>>>>> b30fe2884aaee91ad1a46b637a75200d1caf644d */}
         <div className="flex whitespace-nowrap animate-[ticker_20s_linear_infinite]">
             
-          <div className="flex items-center gap-12 py-1 px-6 text-white font-semibold text-lg tracking-wide">
+          <div className="flex items-center gap-12 py-1 px-8 text-white font-semibold text-lg tracking-wide">
             <span>📢 Applications for B.Sc & M.Sc Programmes 2026 will close on <span className="text-[#A3CAE9] font-bold">17 May 2026</span> – Apply Soon!</span>
             <span>📢 Applications for B.Sc & M.Sc Programmes 2026 will close on <span className="text-[#A3CAE9] font-bold">17 May 2026</span> – Apply Soon!</span>
             <span>📢 Applications for B.Sc & M.Sc Programmes 2026 will close on <span className="text-[#A3CAE9] font-bold">17 May 2026</span> – Apply Soon!</span>
@@ -63,8 +63,8 @@ export default function Hero() {
         <Image
           src="/image/psg_75_logo.webp"
           alt="75 Years Logo"
-          width={90}
-          height={90}
+          width={80}
+          height={60}
           className="object-contain drop-shadow-[0_0_20px_rgba(163,202,233,0.8)]"
         />
       </div>
@@ -75,8 +75,8 @@ export default function Hero() {
           <Image
             src="/image/100_yr_logo.png"
             alt="100 Years Logo"
-            width={100}
-            height={100}
+            width={90}
+            height={90}
             className="object-contain"
           />
         </div>
