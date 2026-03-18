@@ -169,6 +169,10 @@ export default function Header() {
                 ))}
               </div>
             )}
+            <Link href="/gallery" className="nav-link text-[17px] xl:text-2xl font-bold text-white px-4 py-1.5 hover:text-blue-200 transition-all">Gallery</Link>
+            <Link href="/#schedule" className="nav-link text-[17px] xl:text-2xl font-bold text-white px-4 py-1.5 hover:text-blue-200 transition-all">Schedule</Link>
+            <Link href="/#contact" className="nav-link text-[17px] xl:text-2xl font-bold text-white px-4 py-1.5 hover:text-blue-200 transition-all">Contact</Link>
+    
             <Link href="" className="flex items-center justify-center gap-3 bg-white text-[#1c3879] w-full py-4 rounded-xl font-black text-xl mt-8">
               Apply Now <ArrowRight />
             </Link>

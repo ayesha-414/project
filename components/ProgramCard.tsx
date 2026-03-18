@@ -36,7 +36,7 @@ export default function ProgramCard({ title, subtitle, description, href, type, 
   };
 
   const typeLabels = {
-    integrated: "5 YEAR INTEGRATED PROGRAMME",
+    integrated: "FIVE YEAR INTEGRATED PROGRAMME",
     undergraduate: "UNDERGRADUATE PROGRAMME",
     postgraduate: "POSTGRADUATE PROGRAMME",
   };

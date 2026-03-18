@@ -268,11 +268,9 @@ export default function MathPage() {
           {/* Left Content */}
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
-              M.Sc <span className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">Applied Mathematics{" "} <span className="text-[#7dd3fc]">Programmes</span></span>
-              
+              B.Sc <span className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">Applied Mathematics{" "} <br/> <span className="text-[#7dd3fc]">Programme</span></span>
             </h1>
-
-            <p className="text-white/80 text-2xl mb-6">
+            <p className="text-white/80 text-xl mb-6 ">
               Department of Applied Mathematics and Computational Sciences
             </p>
 
@@ -301,7 +299,7 @@ export default function MathPage() {
             <div className="lg:col-span-2">
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl overflow-hidden">
                 <div className="p-6 border-b">
-                  <h2 className="text-4xl font-bold text-[#1e3a8a]">M.Sc Applied Mathematics</h2>
+                  <h2 className="text-4xl font-bold text-[#1e3a8a] mb-2">M.Sc Applied Mathematics</h2>
                   <p className="text-xl font-bold text-[#1e3a8a]">Two Year Postgraduate Programme</p>
                 </div>
                 
@@ -360,7 +358,7 @@ export default function MathPage() {
                             <h4 className="text-2xl font-bold mb-4">{semester}</h4>
                             <ul className="space-y-2">
                               {subjects.map((subject, idx) => (
-                                <li key={idx} className="text-lg text-[#334155]  flex items-start gap-2">
+                                <li key={idx} className="text-xl text-[#334155]  flex items-start gap-2">
                                   <span className="w-1.5 h-1.5 bg-[#0ea5e9] rounded-full mt-1.5 flex-shrink-0"></span>
                                   {subject}
                                 </li>
@@ -419,13 +417,13 @@ export default function MathPage() {
             <h5 className="font-bold text-[#1a1a2e] text-2xl">
               {alum.name}
             </h5>
-            <p className="text-[#1c3879] text-base font-medium">
+            <p className="text-[#1c3879] text-lg font-medium">
               {alum.position}
             </p>
-            <p className="text-[#e8505b] text-base">
+            <p className="text-[#e8505b] text-lg">
               {alum.batch}
             </p>
-            <p className="text-gray-900 text-lg mt-3 leading-relaxed text-justify">
+            <p className="text-gray-900 text-xl mt-3 leading-relaxed text-justify">
               {alum.testimonial}
             </p>
           </div>
@@ -465,8 +463,8 @@ export default function MathPage() {
                     />
                   </div>
                   <h5 className="text-xl font-bold text-[#1e3a8a]">{notableAlumni[alumniIndex].name}</h5>
-                  <p className="text-base font-medium text-[#e8505b] mt-1">{notableAlumni[alumniIndex].position}</p>
-                  <p className="text-sm text-[#64748b] mt-0.5">{notableAlumni[alumniIndex].organization}</p>
+                  <p className="text-lg font-medium text-[#e8505b] mt-1">{notableAlumni[alumniIndex].position}</p>
+                  <p className="text-lg text-[#64748b] mt-0.5">{notableAlumni[alumniIndex].organization}</p>
                 </div>
 
                 {/* Dots */}
@@ -488,30 +486,30 @@ export default function MathPage() {
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-xl">Last date for application submission</p>
-                      <p className="text-white font-bold">28th May 2026</p>
+                      <p className="text-white/70 text-xl font-bold">Last date for application submission</p>
+                      <p className="text-white font-bold text-lg">28th May 2026</p>
                     </div>
                   </li>
                   
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-xl">Counselling & Admission in the campus</p>
-                      <p className="text-white font-bold">2nd June 2026</p>
+                      <p className="text-white/70 text-xl font-bold">Counselling & Admission in the campus</p>
+                      <p className="text-white font-bold text-lg">2nd June 2026</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-xl">Last date for fee payment</p>
-                      <p className="text-white font-bold">9th June 2026</p>
+                      <p className="text-white/70 text-xl font-bold">Last date for fee payment</p>
+                      <p className="text-white font-bold text-lg">9th June 2026</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <CreditCard className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-xl">Cost of application</p>
-                      <p className="text-white font-bold">500 INR</p>
+                      <p className="text-white/70 text-xl font-bold">Cost of application</p>
+                      <p className="text-white font-bold text-lg">500 INR</p>
                     </div>
                   </li>
                 </ul>
@@ -523,8 +521,8 @@ export default function MathPage() {
 
               {/* How to Apply */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6">
-                <h4 className="text-xl font-bold text-[#1c3879] mb-4">How to apply?</h4>
-                <p className="text-gray-900 text-lg leading-relaxed text-justify">
+                <h4 className="text-2xl font-bold text-[#1c3879] mb-4">How to apply?</h4>
+                <p className="text-gray-900 text-xl leading-relaxed text-justify">
                   Application can be made only through online by entering all the particulars including marks along with online payment by Net banking/Credit card/Debit card/UPI.
                 </p>
               </div>

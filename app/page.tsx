@@ -256,7 +256,7 @@ export default function Home() {
 
                 <div className="relative z-10">
                   <h5 className="font-bold text-3xl mb-2 text-[#395A7F] text-justify">{card.title}</h5>
-                  <p className="text-black text-lg leading-relaxed text-justify">{card.body}</p>
+                  <p className="text-black text-xl leading-relaxed text-justify">{card.body}</p>
                 </div>
               </div>
             ))}

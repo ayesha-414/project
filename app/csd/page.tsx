@@ -223,19 +223,24 @@ export default function CSDPage() {
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#0f172a] via-[#1e3a8a] to-[#0ea5e9] overflow-hidden">
         <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            B.Sc Computer Systems & Design
-          </h1>
-          <p className="text-white/90 text-2xl mb-6">Department of Applied Mathematics and Computational Sciences</p>
-          
-          <div className="flex items-center gap-2 mt-6 text-white/70">
-            <Link href="/" className="flex items-center gap-1 hover:text-white transition-colors">
-              <Home className="w-4 h-4" />
-              Home
-            </Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-white">Programme Details</span>
-          </div>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+              B.Sc <span className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">Computer Systems & Design{" "} <br/> <span className="text-[#7dd3fc]">Programme</span></span>
+            </h1>
+            <p className="text-white/80 text-2xl mb-6">
+              Department of Applied Mathematics and Computational Sciences
+            </p>
+
+            {/* Breadcrumb */}
+            <div className="flex items-center gap-2 text-white/70">
+              <Link href="/" className="flex items-center gap-1 hover:text-white transition-colors">
+                <Home className="w-4 h-4" />
+                Home
+              </Link>
+
+              <ChevronRight className="w-4 h-4" />
+
+              <span className="text-white">Programme Details</span>
+            </div>
         </div>
       </section>
 
@@ -246,7 +251,7 @@ export default function CSDPage() {
             <div className="lg:col-span-2">
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl overflow-hidden">
                 <div className="p-6 border-b">
-                  <h2 className="text-4xl font-bold text-[#1e3a8a]">B.Sc Computer Systems & Design</h2>
+                  <h2 className="text-4xl font-bold text-[#1e3a8a] mb-2">B.Sc Computer Systems & Design</h2>
                   <p className="text-xl font-bold text-[#1e3a8a]">Three Year Undergraduate Programme</p>
                 </div>
 
@@ -325,7 +330,7 @@ export default function CSDPage() {
                             <h4 className="font-bold text-2xl mb-4">{semester}</h4>
                             <ul className="space-y-2">
                               {subjects.map((subject, idx) => (
-                                <li key={idx} className="text-[#334155] text-lg flex items-start gap-2">
+                                <li key={idx} className="text-[#334155] text-xl flex items-start gap-2">
                                   <span className="w-1.5 h-1.5 bg-[#0ea5e9] rounded-full mt-1.5 flex-shrink-0"></span>
                                   {subject}
                                 </li>
@@ -395,13 +400,13 @@ export default function CSDPage() {
             <h5 className="font-bold text-[#1a1a2e] text-2xl">
               {alum.name}
             </h5>
-            <p className="text-[#1c3879] text-base font-medium">
+            <p className="text-[#1c3879] text-lg font-medium">
               {alum.position}
             </p>
-            <p className="text-[#e8505b] text-base">
+            <p className="text-[#e8505b] text-lg">
               {alum.batch}
             </p>
-            <p className="text-gray-900 text-lg mt-3 leading-relaxed text-justify">
+            <p className="text-gray-900 text-xl mt-3 leading-relaxed text-justify">
               {alum.testimonial}
             </p>
           </div>
@@ -441,8 +446,8 @@ export default function CSDPage() {
                     />
                   </div>
                   <h5 className="font-bold text-[#1e3a8a] text-xl ">{notableAlumni[alumniIndex].name}</h5>
-                  <p className="text-base font-medium text-[#e8505b] mt-1 ">{notableAlumni[alumniIndex].position}</p>
-                  <p className="text-sm text-[#64748b] mt-0.5">{notableAlumni[alumniIndex].organization}</p>
+                  <p className="text-lg font-medium text-[#e8505b] mt-1 ">{notableAlumni[alumniIndex].position}</p>
+                  <p className="text-lg text-[#64748b] mt-0.5">{notableAlumni[alumniIndex].organization}</p>
                 </div>
 
                 {/* Dots */}
@@ -460,46 +465,46 @@ export default function CSDPage() {
                 <div className="bg-gradient-to-br from-[#1e3a8a] to-[#0ea5e9] text-white  text-xl rounded-3xl p-6 shadow-xl">
                   <h4 className="text-xl font-bold mb-6">Important Dates</h4>
                   <ul className="space-y-4">
-                    <li className="flex items-start gap-3">
+                    <li className="flex items-start gap-3 text-justify">
                       <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="text-white/70 text-base">Last date for application submission</p>
-                        <p className="text-white font-bold">23rd May 2026</p>
+                        <p className="text-white/70 text-xl font-bold">Last date for application submission</p>
+                        <p className="text-white font-bold text-lg">23rd May 2026</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="text-white/70 text-base">Notification of shortlisted candidates for Counselling in the campus</p>
-                        <p className="text-white font-bold">26th May 2026</p>
+                        <p className="text-white/70 text-xl font-bold">Notification of shortlisted candidates for Counselling in the campus</p>
+                        <p className="text-white font-bold text-lg">26th May 2026</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="text-white/70 text-base">Counselling in the campus</p>
-                        <p className="text-white font-bold">29th - 30th May 2026</p>
+                        <p className="text-white/70 text-xl font-bold">Counselling in the campus</p>
+                        <p className="text-white font-bold text-lg">29th - 30th May 2026</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="text-white/70 text-base">Notification of final selected candidates for admission</p>
-                        <p className="text-white font-bold">3rd June 2026</p>
+                        <p className="text-white/70 text-xl font-bold">Notification of final selected candidates for admission</p>
+                        <p className="text-white font-bold text-lg">3rd June 2026</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="text-white/70 text-base">Last date for fee payment</p>
-                        <p className="text-white font-bold">10th June 2026</p>
+                        <p className="text-white/70 text-xl font-bold">Last date for fee payment</p>
+                        <p className="text-white font-bold text-lg">10th June 2026</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <CreditCard className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="text-white/70 text-base">Cost of application</p>
-                        <p className="text-white font-bold">500 INR</p>
+                        <p className="text-white/70 text-xl font-bold">Cost of application</p>
+                        <p className="text-white font-bold text-lg">500 INR</p>
                       </div>
                     </li>
                   </ul>
@@ -514,7 +519,7 @@ export default function CSDPage() {
 {/* //application// */}
               <div className="bg-white rounded-2xl card-shadow p-6">
                 <h4 className="text-2xl font-bold text-[#1c3879] mb-4">How to apply?</h4>
-                <p className="text-gray-900 text-lg leading-relaxed text-justify">
+                <p className="text-gray-900 text-xl leading-relaxed text-justify">
                   Application can be made only through online by entering all the particulars including marks along with 
                   online payment by Net banking/Credit card/Debit card/UPI. All dates are subject to change based on HSC 
                   examination results.

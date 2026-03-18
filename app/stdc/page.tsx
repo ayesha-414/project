@@ -1118,12 +1118,12 @@ export default function STDCPage() {
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
                 Five Year Integrated M.Sc{" "}
-                <span className="">Programmes</span>
+                <span className="text-[#7dd3fc]">Programmes</span>
               </h1>
-              <p className="text-white/80 text-2xl">
+              <p className="text-white/80 text-xl">
                 Department of Applied Mathematics and Computational Sciences
               </p>
-              <div className="flex items-center gap-2 mt-6 text-white/70 text-sm">
+              <div className="flex items-center gap-2 mt-6 text-white/70 text-base">
                 <Link href="/" className="flex items-center gap-1 hover:text-white transition-colors">
                   <Home className="w-4 h-4" /> Home
                 </Link>
@@ -1174,7 +1174,7 @@ export default function STDCPage() {
                       <button
                         key={p.id}
                         onClick={() => setActiveProgram(p.id)}
-                        className={`px-4 py-2 rounded-full text-base font-semibold transition-all ${
+                        className={`px-4 py-2 rounded-full text-xl font-semibold transition-all ${
                           activeProgram === p.id
                             ? "bg-gradient-to-r from-[#1e3a8a] to-[#0ea5e9] text-white shadow-md"
                             : "bg-white text-[#395A7F] border border-[#a3cae9] hover:bg-[#e8f4ff]"
@@ -1217,15 +1217,15 @@ export default function STDCPage() {
                   {activeTab === "overview" && (
                     <div className="space-y-6">
                       <div>
-                        <h4 className="text-xl font-bold text-[#1e3a8a] mb-3">About the Department</h4>
-                        <p className="text-grey-900 leading-relaxed text-lg text-justify ">
+                        <h4 className="text-2xl font-bold text-[#1e3a8a] mb-3">About the Department</h4>
+                        <p className="text-grey-900 leading-relaxed text-xl text-justify ">
                           The Department of Applied Mathematics and Computational Sciences comprises of dedicated faculty members who are undoubtedly the assets worthy of mention. The department is known for its discipline and for the importance it gives to the overall development of students in grooming them towards becoming good software professionals, research scientists and data analysts. The department has its own library with the latest books, national and international journals and magazines. The computer centre is well equipped with the most recent hardware and software. The department has vibrant research culture to keep in touch with the ever-growing technologies.
                         </p>
                       </div>
 
                       <div>
-                        <h4 className="text-xl font-bold text-[#1e3a8a] mb-3">About the Programmes</h4>
-                        <div className="space-y-4 text-justify">
+                        <h4 className="text-2xl font-bold text-[#1e3a8a] mb-3">About the Programmes</h4>
+                        <div className="space-y-4 text-justify ">
                           {[
                             { color: "#1e3a8a", label: "M.Sc. Software Systems", desc: "was started in the year 1997 for the first time in the country and well received by leading software industries across the globe. The programme has been designed to meet the challenging needs of the industry. Renamed as Software Systems since 2014." },
                             { color: "#e8505b", label: "M.Sc. Theoretical Computer Science", desc: "is yet another innovative programme introduced in 2007. Designed to augment human resources for the R&D divisions of software industries, it merges Mathematics and Computer Science." },
@@ -1235,15 +1235,15 @@ export default function STDCPage() {
                           ].map((item, i) => (
                             <div key={i} className={innerBlock}>
                               <h5 className="text-xl font-bold mb-2" style={{ color: item.color }}>{item.label}</h5>
-                              <p className="text-lg text-grey-900  text-justify leading-relaxed">{item.desc}</p>
+                              <p className="text-xl text-grey-900  text-justify leading-relaxed">{item.desc}</p>
                             </div>
                           ))}
                         </div>
                       </div>
 
                       <div className={innerBlock}>
-                        <h4 className="text-xl font-bold text-[#1e3a8a] mb-3">Programme Highlights</h4>
-                        <ul className="space-y-2 text-grey-900 text-lg text-justify">
+                        <h4 className="text-2xl font-bold text-[#1e3a8a] mb-3">Programme Highlights</h4>
+                        <ul className="space-y-2 text-grey-900 text-xl text-justify">
                           {[
                             "Two semesters (7th and 10th) rigorous internships in reputed industries and top-notch institutions",
                             "Unique feature for the success of the programmes",
@@ -1263,8 +1263,8 @@ export default function STDCPage() {
                   {activeTab === "curriculum" && (
                     <div className="space-y-8">
                       <div className={innerBlock}>
-                        <h4 className="text-xl font-bold text-[#1e3a8a] mb-2">Programme Structure</h4>
-                        <p className="text-grey-900 text-lg leading-relaxed text-justify">
+                        <h4 className="text-2xl font-bold text-[#1e3a8a] mb-2">Programme Structure</h4>
+                        <p className="text-grey-900 text-xl leading-relaxed text-justify">
                           All four programmes follow a meticulously planned curriculum based on Choice Based Credit System, updated regularly to meet the challenging requirements of the industry.
                         </p>
                       </div>
@@ -1276,10 +1276,10 @@ export default function STDCPage() {
                         <div className="grid md:grid-cols-2 gap-4">
                           {Object.entries(curriculum[activeProgram]).map(([semester, subjects]) => (
                             <div key={semester} className="bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-5 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
-                              <h5 className="text-xl font-bold text-[#1e3a8a] text-base mb-3">{semester}</h5>
+                              <h5 className="text-2xl font-bold text-[#1e3a8a]  mb-3">{semester}</h5>
                               <ul className="space-y-1.5">
                                 {subjects.map((subject, idx) => (
-                                  <li key={idx} className="text-[#334155] text-lg flex items-start gap-2">
+                                  <li key={idx} className="text-[#334155] text-xl flex items-start gap-2">
                                     <span className="w-1.5 h-1.5 bg-[#0ea5e9] rounded-full mt-1.5 flex-shrink-0" />
                                     {subject}
                                   </li>
@@ -1313,12 +1313,12 @@ export default function STDCPage() {
                         },
                       ].map((block, i) => (
                         <div key={i} className={innerBlock}>
-                          <h4 className="text-xl font-bold mb-3" style={{ color: block.color }}>{block.title}</h4>
-                          <p className="text-grey-900 text-lg leading-relaxed">{block.body}</p>
+                          <h4 className="text-2xl font-bold mb-3" style={{ color: block.color }}>{block.title}</h4>
+                          <p className="text-grey-900 text-xl leading-relaxed">{block.body}</p>
                           {block.bullets.length > 0 && (
                             <ul className="mt-3 space-y-1.5">
                               {block.bullets.map((b, bi) => (
-                                <li key={bi} className="flex items-start gap-2 text-grey-900 text-lg">
+                                <li key={bi} className="flex items-start gap-2 text-grey-900 text-xl ">
                                   <span className="w-1.5 h-1.5 bg-[#e8505b] rounded-full mt-1.5 flex-shrink-0" />
                                   {b}
                                 </li>
@@ -1352,13 +1352,13 @@ export default function STDCPage() {
             <h5 className="font-bold text-[#1a1a2e] text-2xl">
               {a.name}
             </h5>
-            <p className="text-[#1c3879] text-base font-medium">
+            <p className="text-[#1c3879] text-lg font-medium">
               {a.role}
             </p>
-            <p className="text-[#e8505b] text-base">
+            <p className="text-[#e8505b] text-lg">
               {a.program}
             </p>
-            <p className="text-gray-900 text-lg mt-3 leading-relaxed text-justify">
+            <p className="text-gray-900 text-xl mt-3 leading-relaxed text-justify">
               {a.comment}
             </p>
           </div>
@@ -1412,7 +1412,7 @@ export default function STDCPage() {
           <h4 className="text-lg font-bold text-[#1e3a8a] leading-tight">
             {a.name}
           </h4>
-          <p className="text-sm text-grey-900 mt-2 leading-relaxed">
+          <p className="text-base text-grey-900 mt-2 leading-relaxed">
             {a.role}
           </p>
         </div>
@@ -1472,11 +1472,11 @@ export default function STDCPage() {
                     )}
                   </h5>
 
-                  <p className="text-base font-medium text-[#e8505b] mt-1">
+                  <p className="text-lg font-medium text-[#e8505b] mt-1">
                     {notableAlumni[alumniIndex].position}
                   </p>
 
-                  <p className="text-sm text-[#64748b] mt-0.5">
+                  <p className="text-lg text-[#64748b] mt-0.5">
                     {notableAlumni[alumniIndex].organization}
                   </p>
 
@@ -1498,7 +1498,7 @@ export default function STDCPage() {
 
               {/* Important Dates */}
               <div className="bg-gradient-to-br from-[#1e3a8a] to-[#0ea5e9] text-white rounded-3xl p-6 shadow-xl">
-                <h4 className="text-xl font-bold mb-6">Important Dates</h4>
+                <h4 className="text-2xl font-bold mb-6">Important Dates</h4>
                 <ul className="space-y-4">
                   {[
                     { label: "Last date for application submission",              date: "23rd May 2026",                     icon: Calendar   },
@@ -1512,8 +1512,8 @@ export default function STDCPage() {
                     <li key={i} className="flex items-start gap-3">
                       <item.icon className="w-5 h-5 text-[#7dd3fc] flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="text-white/75 text-lg">{item.label}</p>
-                        <p className="text-white font-bold text-base">{item.date}</p>
+                        <p className="text-white/75 text-xl font-bold">{item.label}</p>
+                        <p className="text-white font-bold text-lg">{item.date}</p>
                       </div>
                     </li>
                   ))}
@@ -1528,11 +1528,11 @@ export default function STDCPage() {
 
               {/* How to apply */}
               <div className="bg-white rounded-2xl shadow-md border border-[#dce8f5] p-6">
-                <h4 className="text-xl font-bold text-[#1e3a8a] mb-3">How to apply?</h4>
-                <p className="text-grey-900 text-lg leading-relaxed text-justify">
+                <h4 className="text-2xl font-bold text-[#1e3a8a] mb-3">How to apply?</h4>
+                <p className="text-black text-xl leading-relaxed text-justify">
                   Application can be made only through online by entering all the particulars including marks along with
-                  online payment by Net banking / Credit card / Debit card / UPI. One application is sufficient for all
-                  five programmes (SS / TCS / DS / CS / CF) and preference of courses can be selected. All dates are subject
+                  online payment by Net banking / Credit card / Debit card / UPI. <strong>One application is sufficient for all
+                  five programmes (SS / TCS / DS / CS / CF)</strong> and preference of courses can be selected. All dates are subject
                   to change based on HSC examination results.
                 </p>
               </div>
