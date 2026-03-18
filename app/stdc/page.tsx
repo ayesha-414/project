@@ -729,7 +729,7 @@ export default function STDCPage() {
     },
     {
       name:"Asvika M",
-      role:"PhonePe, Bengaluru",
+      role:"Software Developer,PhonePe, Bengaluru",
       program:"M.Sc Cyber Security (2020-2025)",
       comment:"The MSc Cybersecurity program at the Department of AMCS has been pivotal in developing both my technical skills and personal growth. The hands-on approach, with extensive lab sessions , projects and a 7th and 10th semester internship, bridges theory with real-world industry practices, preparing me for a successful career in cybersecurity. The faculty's guidance has been transformative, shaping me into a skilled cyber security professional and the individual I am today.",
       img:"/stdc_alumni/asvika.jpg",

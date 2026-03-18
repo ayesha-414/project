@@ -176,13 +176,7 @@ export default function MathPage() {
       testimonial:"I have been extremely fortunate to have found a programme that gave the practical and theoretical knowledge needed for a career. It was a great learning place to mould myself with the advanced skill set required for the future.",
       image: "/math_alumni/Dhanu.jpg"
     },
-    {
-      name: "Subhiksha N",
-      position: "Opentext VIM Consultant, Avaali solutions Pvt Ltd",
-      batch: "M.Sc. AM (2019–2021)",
-      testimonial: "Applied mathematics paves a way to use the computational tools in various fields and aspects. The course gives a clear view on mathematics being used in data analytics, data science and many other fields. The emphasis is on mathematics, the development of new methods to meet the challenge of problems.",
-      image: "/math_alumni/Subhiksha.jpg"
-    },
+    
     {
       name: "Mrinalini S",
       position: "Doctoral Student at Charles University in Prague, Czech Republic",
