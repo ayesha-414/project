@@ -226,7 +226,7 @@ const objectives = [
           {/* Left Content */}
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
-              M.Sc <span className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">Fashion Design & Merchandising{" "} <span className="text-[#7dd3fc]">Programmes</span></span>
+              M.Sc <span className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">Fashion Design & Merchandising {" "} <span className="text-[#7dd3fc]">Programmes</span></span>
               
             </h1>
 
@@ -274,7 +274,7 @@ const objectives = [
                     <button
                       key={tab.id}
                       onClick={() => setActiveTab(tab.id)}
-                      className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
+                      className={`flex items-center gap-2 px-4 py-2 rounded-lg text-lg font-semibold transition-all ${
                         activeTab === tab.id
                           ? "bg-gradient-to-r from-[#1e3a8a] to-[#0ea5e9] text-white shadow-md"
                           : "bg-white text-[#395A7F] border border-[#a3cae9] hover:bg-[#e8f4ff]"
@@ -343,8 +343,8 @@ const objectives = [
                       <div>
                         <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Programme</h4>
                         <p className="text-xl text-gray-900 leading-relaxed mb-4 text-justify">
-                          The <strong>M.Sc Fashion Design & Merchandising</strong> is a five year integrated degree programme with a three-pronged approach to fashion education - <strong>design, production and management</strong> as core areas. Focusing on specific industry requirements in fashion, apparel, niche segments and craft sectors the curriculum progresses along distinct paths gradually from the foundation to the final year of the programme. The curriculum paves way to develop a strong foundation in fashion design and merchandising by offering six professional electives to strengthen the students' skills in core area of their interest. Employment enhancement courses like craft training and documentation, industrial visits, guest lectures and 2 six months internships in the curriculum enable the students to possess a sound knowledge in the industrial practices. Craft training provides a unique opportunity to experience the artistic craft making practices first hand by working with native rural artisans in craft clusters. Students also gain valuable insight into the wide spectrum of Indian fashion through internships and industry-based projects at leading export houses, retail brands and designer house. Design collection and portfolio based on a self-developed brief provides a platform to exhibit the creative skills of students, improve knowledge and overcome practical challenges thus making them a complete professional. The curriculum is set with the following Programme.<br/> <br/><strong>Educational Objectives:</strong></p>
-                        <div className="mt-10">
+                          The <strong>M.Sc Fashion Design & Merchandising</strong> is a five year integrated degree programme with a three-pronged approach to fashion education - <strong>design, production and management</strong> as core areas. Focusing on specific industry requirements in fashion, apparel, niche segments and craft sectors the curriculum progresses along distinct paths gradually from the foundation to the final year of the programme. The curriculum paves way to develop a strong foundation in fashion design and merchandising by offering six professional electives to strengthen the students' skills in core area of their interest. Employment enhancement courses like craft training and documentation, industrial visits, guest lectures and 2 six months internships in the curriculum enable the students to possess a sound knowledge in the industrial practices. Craft training provides a unique opportunity to experience the artistic craft making practices first hand by working with native rural artisans in craft clusters. Students also gain valuable insight into the wide spectrum of Indian fashion through internships and industry-based projects at leading export houses, retail brands and designer house. Design collection and portfolio based on a self-developed brief provides a platform to exhibit the creative skills of students, improve knowledge and overcome practical challenges thus making them a complete professional. The curriculum is set with the following Programme.<br/><br/> <span className="text-[#1e3a8a] text-2xl font-bold">Educational Objectives:</span></p>
+                        <div className="mt-8">
                           <div className="grid gap-4">
                             {objectives.map((obj, index) => (
                               <div
@@ -401,10 +401,10 @@ const objectives = [
                       <div className="grid md:grid-cols-2 gap-4">
                         {Object.entries(curriculum).map(([semester, subjects]) => (
                           <div key={semester} className="bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-5 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
-                            <h4 className="text-2xl font-bold text-lg mb-4">{semester}</h4>
+                            <h4 className="text-2xl font-bold  mb-4">{semester}</h4>
                             <ul className="space-y-2">
                               {subjects.map((subject, idx) => (
-                                <li key={idx} className="text-[#334155] text-lg flex items-start gap-2">
+                                <li key={idx} className="text-[#334155] text-xl flex items-start gap-2 mb-3">
                                   <span className="w-1.5 h-1.5 bg-[#0ea5e9] rounded-full mt-1.5 flex-shrink-0 text-justify"></span>
                                   {subject}
                                 </li>
@@ -461,9 +461,9 @@ const objectives = [
                               </div>
                               <div>
                                 <h5 className="text-2xl font-bold text-[#1a1a2e]">{alum.name}</h5>
-                                <p className="text-[#1c3879] text-base font-medium">{alum.position}</p>
-                                <p className="text-[#e8505b] text-sm">{alum.batch}</p>
-                                <p className="text-gray-900 text-lg mt-3 leading-relaxed text-justify">
+                                <p className="text-[#1c3879] text-lg font-medium">{alum.position}</p>
+                                <p className="text-[#e8505b] text-lg">{alum.batch}</p>
+                                <p className="text-gray-900 text-xl mt-3 leading-relaxed text-justify">
                                   {alum.testimonial}
                                 </p>
                               </div>
@@ -490,30 +490,30 @@ const objectives = [
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-xl">Last date for application submission</p>
-                      <p className="text-white font-bold">19th May 2026</p>
+                      <p className="text-white/70 text-xl font-bold">Last date for application submission</p>
+                      <p className="text-white font-bold text-lg">19th May 2026</p>
                     </div>
                   </li>
                   
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-xl">Notification of shortlisted candidates for Counselling cum Admission in the campus</p>
-                      <p className="text-white font-bold">21st May 2026</p>
+                      <p className="text-white/70 text-xl font-bold">Notification of shortlisted candidates for Counselling cum Admission in the campus</p>
+                      <p className="text-white font-bold text-lg">21st May 2026</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-xl">Last date for fee payment</p>
-                      <p className="text-white font-bold">23rd May  2026</p>
+                      <p className="text-white/70 text-xl font-bold">Last date for fee payment</p>
+                      <p className="text-white font-bold text-lg">23rd May  2026</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <CreditCard className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-xl">Cost of application</p>
-                      <p className="text-white font-bold">750 INR</p>
+                      <p className="text-white/70 text-xl font-bold">Cost of application</p>
+                      <p className="text-white font-bold text-lg">750 INR</p>
                     </div>
                   </li>
                 </ul>
@@ -525,8 +525,8 @@ const objectives = [
 
               {/* How to Apply */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6">
-                <h4 className="text-xl font-bold text-[#1c3879] mb-4">How to apply?</h4>
-                <p className="text-gray-900 text-lg leading-relaxed text-justify">
+                <h4 className="text-2xl font-bold text-[#1c3879] mb-4">How to apply?</h4>
+                <p className="text-gray-900 text-xl leading-relaxed text-justify">
                   Application can be made only through online by entering all the particulars including marks along with online payment by Net banking/Credit card/Debit card/UPI. All dates are subject to change based on HSC examination results.
                 </p>
               </div>
