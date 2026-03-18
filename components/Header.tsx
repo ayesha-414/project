@@ -89,7 +89,7 @@ export default function Header() {
             </button>
             <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
               <div className="bg-white rounded-2xl shadow-2xl p-6 min-w-[550px] border border-gray-100 flex">
-                {/* Left: Categories */}
+                {/* Left: Categoriess */}
                 <div className="w-1/2 border-r border-gray-100 pr-4">
                   {programmes.map((category, idx) => (
                     <div
