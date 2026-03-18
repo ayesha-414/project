@@ -3,9 +3,23 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronLeft, X, ChevronRight, ChevronLeft as ArrowLeft } from "lucide-react";
-const galleryImages = [
+import {
+  ChevronLeft,
+  X,
+  ChevronRight,
+  ChevronLeft as ArrowLeft,
+} from "lucide-react";
 
+/* ✅ Correct keys */
+const folderNames: any = {
+  amcs: "Department of Applied Mathematics and Computational Sciences",
+  fdm: "Department of Apparel and Fashion Design",
+  sci: "Department of Applied Science",
+};
+
+/* 🔹 Folder-wise images */
+const galleryFolders: any = {
+  amcs: [
   { id: 1, src: "/image/campus-1.jpg", title: "Graduation Day" },
 
   { id: 2, src: "/image/campus-2.jpg", title: "Infinity Event" },
@@ -59,31 +73,41 @@ const galleryImages = [
  { id: 33, src: "/image/axios-d.png", title: "Axios Event"},
  { id: 34, src: "/image/axios-b.png", title: "Axios Event"},
  { id: 35, src: "/image/axios-cl.png", title: "Axios Event"},
- 
- 
+  ],
 
-];
+  fdm: [],
+
+  sci: [],
+};
 
 export default function GalleryPage() {
+  const [selectedFolder, setSelectedFolder] = useState<string | null>(null);
   const [selectedImgIdx, setSelectedImgIdx] = useState<number | null>(null);
 
-  // Function to go to next image
+  const currentImages = selectedFolder
+    ? galleryFolders[selectedFolder]
+    : [];
+
+  /* 🔹 Next Image */
   const showNext = (e?: React.MouseEvent) => {
     e?.stopPropagation();
-    if (selectedImgIdx !== null) {
-      setSelectedImgIdx((selectedImgIdx + 1) % galleryImages.length);
+    if (selectedImgIdx !== null && currentImages.length > 0) {
+      setSelectedImgIdx((selectedImgIdx + 1) % currentImages.length);
     }
   };
 
-  // Function to go to previous image
+  /* 🔹 Previous Image */
   const showPrev = (e?: React.MouseEvent) => {
     e?.stopPropagation();
-    if (selectedImgIdx !== null) {
-      setSelectedImgIdx((selectedImgIdx - 1 + galleryImages.length) % galleryImages.length);
+    if (selectedImgIdx !== null && currentImages.length > 0) {
+      setSelectedImgIdx(
+        (selectedImgIdx - 1 + currentImages.length) %
+          currentImages.length
+      );
     }
   };
 
-  // Keyboard support (Arrow keys and Escape)
+  /* 🔹 Keyboard Controls */
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (selectedImgIdx === null) return;
@@ -91,92 +115,161 @@ export default function GalleryPage() {
       if (e.key === "ArrowLeft") showPrev();
       if (e.key === "Escape") setSelectedImgIdx(null);
     };
+
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [selectedImgIdx]);
+  }, [selectedImgIdx, currentImages]);
 
   return (
-    <main className="min-h-screen bg-[#f8f9fa] pt-24 pb-12 relative">
+    <main className="min-h-screen bg-[#f8f9fa] pt-24 pb-12">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Header */}
+
+        {/* 🔹 Header */}
         <div className="flex items-center gap-4 mb-8">
-          <Link href="/" className="p-2 rounded-full hover:bg-gray-200 transition-colors text-[#1c3879]">
+          <Link
+            href="/"
+            className="p-2 rounded-full hover:bg-gray-200 text-[#1c3879]"
+          >
             <ChevronLeft className="w-6 h-6" />
           </Link>
-          <h1 className="text-3xl font-bold text-[#1c3879]">Campus Gallery</h1>
+
+          <h1 className="text-3xl font-bold text-[#1c3879]">
+            {selectedFolder
+              ? folderNames[selectedFolder] || selectedFolder
+              : "Campus Gallery"}
+          </h1>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {galleryImages.map((image, index) => (
-            <div 
-              key={image.id} 
-              onClick={() => setSelectedImgIdx(index)}
-              className="group relative overflow-hidden rounded-xl shadow-lg bg-white aspect-[4/3] cursor-pointer"
-            >
-              <Image
-                src={image.src}
-                alt={image.title}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-end p-4">
-                <p className="text-white text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">Click to Expand</p>
+        {/* 🔹 Folder View */}
+        {!selectedFolder && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {Object.keys(galleryFolders).map((folder) => (
+              <div
+                key={folder}
+                onClick={() => setSelectedFolder(folder)}
+                className="cursor-pointer group relative h-56 rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition duration-300"
+              >
+                {/* Background Image */}
+                <Image
+                  src={
+                    folder === "amcs"
+                      ? "/image/campus-1.jpg"
+                      : folder === "fdm"
+                      ? "/image/campus-5.jpg.jpeg"
+                      : "/image/2.JPG"
+                  }
+                  alt="folder preview"
+                  fill
+                  className="object-cover group-hover:scale-110 transition duration-500"
+                />
+
+                {/* ✅ Dark Overlay */}
+                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition"></div>
+
+                {/* Text */}
+                <div className="absolute inset-0 flex flex-col justify-end p-4">
+                  <h2 className="text-white text-lg md:text-xl font-bold mb-1">
+                    {folderNames[folder] || folder}
+                  </h2>
+                  <p className="text-gray-200 text-sm">
+                    Click to explore →
+                  </p>
+                </div>
               </div>
+            ))}
+          </div>
+        )}
+
+        {/* 🔹 Image Grid */}
+        {selectedFolder && (
+          <>
+            <button
+              onClick={() => setSelectedFolder(null)}
+              className="mb-6 px-4 py-2 bg-[#1c3879] text-white rounded-lg"
+            >
+              ⬅ Back to Folders
+            </button>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {currentImages.map((image: any, index: number) => (
+                <div
+                  key={image.id}
+                  onClick={() => setSelectedImgIdx(index)}
+                  className="group relative overflow-hidden rounded-xl shadow-lg bg-white aspect-[4/3] cursor-pointer"
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </>
+        )}
       </div>
 
-      {/* --- Fullscreen Lightbox Modal --- */}
-      {selectedImgIdx !== null && (
-        <div 
-          className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 md:p-10 animate-in fade-in duration-300"
-          onClick={() => setSelectedImgIdx(null)}
-        >
-          {/* Close Button */}
-          <button 
-            className="absolute top-6 right-6 text-white hover:text-amber-400 z-[110]"
-            onClick={() => setSelectedImgIdx(null)}
-          >
-            <X className="w-10 h-10" />
-          </button>
+      {/* 🔹 Lightbox (only ONE version ✅) */}
+    
+{selectedImgIdx !== null && selectedFolder && (
+  <div
+    className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 md:p-10"
+    onClick={() => setSelectedImgIdx(null)}
+  >
+    {/* ❌ Close Button */}
+    <button
+      className="absolute top-6 right-6 text-white hover:text-red-400 z-[110]"
+      onClick={() => setSelectedImgIdx(null)}
+    >
+      <X className="w-10 h-10" />
+    </button>
 
-          {/* Previous Arrow */}
-          <button 
-            className="absolute left-4 md:left-10 text-white/50 hover:text-white transition-colors z-[110]"
-            onClick={showPrev}
-          >
-            <ArrowLeft className="w-12 h-12" />
-          </button>
+    {/* ⬅ Previous */}
+    <button
+      className="absolute left-4 md:left-10 text-white/50 hover:text-white z-[110]"
+      onClick={showPrev}
+    >
+      <ArrowLeft className="w-12 h-12" />
+    </button>
 
-          {/* Main Image Container */}
-          <div className="relative w-full h-full max-w-5xl max-h-[80vh] flex flex-col items-center">
-            <div className="relative w-full h-full">
-              <Image
-                src={galleryImages[selectedImgIdx].src}
-                alt="Fullscreen view"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-            {/* Image Title in Fullscreen */}
-            <div className="mt-4 text-center">
-              <h2 className="text-white text-xl font-semibold">{galleryImages[selectedImgIdx].title}</h2>
-              <p className="text-gray-400 text-sm">{selectedImgIdx + 1} / {galleryImages.length}</p>
-            </div>
-          </div>
+    {/* 🖼 Image Container */}
+    <div
+      className="relative w-full max-w-5xl max-h-[85vh] flex flex-col items-center"
+      onClick={(e) => e.stopPropagation()} // ✅ prevents closing when clicking image
+    >
+      {/* Image */}
+      <div className="relative w-full h-[70vh]">
+        <Image
+          src={currentImages[selectedImgIdx].src}
+          alt="Fullscreen"
+          fill
+          className="object-contain rounded-lg"
+          priority
+        />
+      </div>
 
-          {/* Next Arrow */}
-          <button 
-            className="absolute right-4 md:right-10 text-white/50 hover:text-white transition-colors z-[110]"
-            onClick={showNext}
-          >
-            <ChevronRight className="w-12 h-12" />
-          </button>
-        </div>
-      )}
+      {/* 📌 Title + Counter */}
+      <div className="mt-4 text-center">
+        <h2 className="text-white text-xl font-semibold">
+          {currentImages[selectedImgIdx].title}
+        </h2>
+        <p className="text-gray-400 text-sm">
+          {selectedImgIdx + 1} / {currentImages.length}
+        </p>
+      </div>
+    </div>
+
+    {/* ➡ Next */}
+    <button
+      className="absolute right-4 md:right-10 text-white/50 hover:text-white z-[110]"
+      onClick={showNext}
+    >
+      <ChevronRight className="w-12 h-12" />
+    </button>
+  </div>
+)}
+
     </main>
   );
 }

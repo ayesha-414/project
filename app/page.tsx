@@ -60,7 +60,7 @@ export default function Home() {
       description: "M.Sc Computational Finance is proposed to be introduced this year, which aims to equip students with advanced quantitative, analytical, and computational skills by integrating rigorous mathematical and statistical modelling with contemporary computational methods—such as empirical analysis, artificial intelligence, and automation for solving complex financial problems. It prepares graduates for careers or research in quantitative finance while promoting ethical, practical, and innovative applications in modern financial systems.",
       href: "/stdc",
       icon: "finance",
-      note: "Subject to approval"
+      note: "Subject to Affiliation"
     },
     {
       title: "M.Sc Fashion Design & Merchandising",
@@ -278,9 +278,9 @@ export default function Home() {
           {/* 5-year */}
           <div className="mb-16">
             <h3 className="text-3xl font-bold text-[#395A7F] mb-8 flex items-center gap-3">
-              <div className="w-10 h-10 bg-[#395A7F] rounded-lg flex items-center justify-center">
+              {/* <div className="w-10 h-10 bg-[#395A7F] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold">5</span>
-              </div>
+              </div> */}
               5 Year M.Sc Integrated Programmes
             </h3>
             <div className="grid md:grid-cols-2 gap-35 text-justify">
@@ -302,9 +302,9 @@ export default function Home() {
           {/* 3-year */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-[#395A7F] mb-8 flex items-center gap-3">
-              <div className="w-10 h-10 bg-[#395A7F] rounded-lg flex items-center justify-center">
+              {/* <div className="w-10 h-10 bg-[#395A7F] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold">3</span>
-              </div>
+              </div> */}
               3 Year B.Sc Programmes
             </h3>
             <div className="grid md:grid-cols-2 gap-35 text-justify">

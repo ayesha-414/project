@@ -50,9 +50,14 @@ export default function Hero() {
         <div className="flex whitespace-nowrap animate-[ticker_20s_linear_infinite]">
             
           <div className="flex items-center gap-12 py-1 px-8 text-white font-semibold text-lg tracking-wide">
-            <span>📢 Applications for B.Sc & M.Sc Programmes 2026 will close on <span className="text-[#A3CAE9] font-bold">17 May 2026</span> – Apply Soon!</span>
-            <span>📢 Applications for B.Sc & M.Sc Programmes 2026 will close on <span className="text-[#A3CAE9] font-bold">17 May 2026</span> – Apply Soon!</span>
-            <span>📢 Applications for B.Sc & M.Sc Programmes 2026 will close on <span className="text-[#A3CAE9] font-bold">17 May 2026</span> – Apply Soon!</span>
+            <span>📢 PSG College of Technology Celeberating 75th Years of Legacy</span>
+            <span>📢 PSG College of Technology Celeberating 75th Years of Legacy</span>
+            <span>📢 PSG College of Technology Celeberating 75th Years of Legacy</span>
+            <span>📢 PSG College of Technology Celeberating 75th Years of Legacy</span>
+            <span>📢 PSG College of Technology Celeberating 75th Years of Legacy</span>
+
+            {/* <span>📢 Applications for B.Sc & M.Sc Programmes 2026 will close on <span className="text-[#A3CAE9] font-bold">17 May 2026</span> – Apply Soon!</span>
+            <span>📢 Applications for B.Sc & M.Sc Programmes 2026 will close on <span className="text-[#A3CAE9] font-bold">17 May 2026</span> – Apply Soon!</span> */}
           </div>
 
         </div>
