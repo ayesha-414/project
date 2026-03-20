@@ -772,14 +772,14 @@ export default function STDCPage() {
       img:"/stdc_alumni/shruthi.jpeg",
     },
     {
-      name:"Ashish",
+      name:"Ashish K",
       role:"Senior Founding Engineer – Data & AI at DataGenie",
       program:"M.Sc Data Science (2019-2024)",
       comment:"The 5-year Integrated MSc in Data Science course played a pivotal role in shaping my career. It provided a strong learning environment with an exceptional peer group that constantly drove innovation, collaboration, and a shared passion to learn and build. The faculties were highly supportive and instrumental in strengthening my fundamentals. The department’s excellent placement network gave me opportunities to intern at companies like Goldman Sachs and PayPal, which significantly boosted my confidence and technical skills. This journey ultimately led me to my current role as Senior Founding Engineer – Data & AI at DataGenie, where I am involved in building a visionary product in the augmented analytics and AI space.",
       img:"/stdc_alumni/ashish.jpeg",
     },
     {
-      name:"Vetrivel.M.D",
+      name:"Vetrivel M D",
       role:"Cyber-Security Engineer at SLB",
       program:"MSc Cyber Security (2020-2025)",
       comment:"My MSc Cybersecurity journey at PSG College of Technology had a well-structured, industry-aligned syllabus that built a strong foundation. The faculty were highly supportive and focused on real understanding, not just theory. What stood out was the strong practical exposure - regular labs and hands-on projects actually prepared us for industry work. These experiences sharpened my real-world thinking and helped me approach problems with clarity and confidence. Most importantly, the alumni network is incredibly strong and supportive, always ready to guide, mentor, and open doors to opportunities.",
@@ -1522,12 +1522,12 @@ export default function STDCPage() {
                 <h4 className="text-2xl font-bold mb-6">Important Dates</h4>
                 <ul className="space-y-4">
                   {[
-                    { label: "Last date for application submission",              date: "23rd May 2026",                     icon: Calendar   },
-                    { label: "Notification of shortlisted candidates",            date: "29th May 2026",                     icon: Calendar   },
-                    { label: "Entrance test",                                     date: "4th June 2026",                     icon: Calendar   },
-                    { label: "Counselling in the campus",                         date: "4th June Afternoon – 7th June 2026", icon: Calendar  },
-                    { label: "Notification of final selected candidates",          date: "10th June 2026",                    icon: Calendar   },
-                    { label: "Last date for fee payment",                         date: "16th June 2026",                    icon: Calendar   },
+                    { label: "Last date for application submission",              date: "23rd May 2026 ,Saturday",                     icon: Calendar   },
+                    { label: "Notification of shortlisted candidates",            date: "29th May 2026,Friday",                     icon: Calendar   },
+                    { label: "Entrance test",                                     date: "4th June 2026,Wednesday",                     icon: Calendar   },
+                    { label: "Counselling in the campus",                         date: "3rd June Afternoon,Wednesday – 6th June 2026 ,Saturday", icon: Calendar  },
+                    { label: "Notification of final selected candidates",          date: "9th June 2026 ,Tuesday",                    icon: Calendar   },
+                    { label: "Last date for fee payment",                         date: "16th June 2026,Tuesday",                    icon: Calendar   },
                     { label: "Cost of application",                               date: "750 INR",                           icon: CreditCard },
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">

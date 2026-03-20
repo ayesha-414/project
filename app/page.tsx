@@ -68,7 +68,6 @@ export default function Home() {
         "The M.Sc. Fashion Design and Merchandising programme, established in 2015, is thoughtfully structured to cultivate creative talent and develop industry-ready professionals for the dynamic and ever-evolving fashion landscape. The curriculum seamlessly integrates design innovation, apparel manufacturing and merchandising strategies offering students a holistic understanding of the fashion ecosystem. With a strong emphasis on experiential learning and emerging industry trends, the programme equips graduates with the essential skills, in-depth knowledge, and professional confidence needed to excel in the fashion industry and adapt to its continuously changing demands.",
       href: "/fdm",
       icon: "fashion",
-
     },
   ];
 
@@ -105,7 +104,7 @@ export default function Home() {
         { title: "Application closing", date: "23rd MAY 2026 , Saturday" },
         { title: "Notification of shortlisted candidates for entrance test", date: "29th MAY 2026 , Friday" },
         { title: "Entrance test", date: "3rd JUNE 2026 , Wednesday" },
-        { title: "Counselling in college campus", date: "3rd JUNE , Wednesday (AFTERNOON) - 6th JUNE 2026 , Saturday" },
+        { title: "Counselling in college campus", date: "3rd JUNE 2026, Wednesday (AFTERNOON) - 6th JUNE 2026 , Saturday" },
         { title: "Notification of final selected candidates for admission", date: "9th JUNE 2026 , Tuesday" },
         { title: "Last date for fee payment", date: "16th JUNE 2026 , Tuesday" },
       ],
@@ -164,19 +163,19 @@ export default function Home() {
 
   const featureCards = [
     {
-      icon: <Award className="w-7 h-7 text-[#395A7F]" />,
+      icon: <Award className="w-6 h-6 sm:w-7 sm:h-7 text-[#395A7F]" />,
       title: "Leverage the Legacy",
       body: "Be a part of the great legacy of PSG & Sons\u2019 Charities Trust, who are the epitome of commitment and social cause serving the society and educating youth for almost 100 years, resonating the great words of its founder \u201CLet there be charity, so that others can share my family\u2019s prosperity\u201D.",
       delay: "0s",
     },
     {
-      icon: <BookOpen className="w-7 h-7 text-[#395A7F]" />,
+      icon: <BookOpen className="w-6 h-6 sm:w-7 sm:h-7 text-[#395A7F]" />,
       title: "Science Programmes",
       body: "Explore the field of Science and state-of-the-art topics along with revised curriculum to meet the latest corporate and research demands under the guidance of expert mentors and faculty.",
       delay: "0.15s",
     },
     {
-      icon: <GraduationCap className="w-7 h-7 text-[#395A7F]" />,
+      icon: <GraduationCap className="w-6 h-6 sm:w-7 sm:h-7 text-[#395A7F]" />,
       title: "Acquire Knowledge",
       body: "Learn and acquire knowledge from a collaborative and dynamic study environment that nurtures curiosity, critical thinking, and lifelong learning.",
       delay: "0.3s",
@@ -186,24 +185,24 @@ export default function Home() {
   /* ── JSX ──────────────────────────────────────────────────────────────── */
 
   return (
-    <main>
+    <main className="w-full overflow-x-hidden">
       <Header />
       <Hero />
 
       {/* ── About ──────────────────────────────────────────────────────────── */}
-      <section id="about" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
+      <section id="about" className="py-12 sm:py-16 lg:py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* text + video row */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            <div className="space-y-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-10 sm:mb-14 lg:mb-16">
+            <div className="space-y-4 sm:space-y-6">
               <h2 className="section-title">About Us</h2>
-              <p className="text-gray-900 leading-relaxed text-xl text-justify">
+              <p className="text-gray-900 leading-relaxed text-base sm:text-lg lg:text-xl text-justify">
                 PSG College of Technology, established in the year 1951 by PSG & Sons' Charities,
                 Coimbatore, is one of the premier institutions of the country and is an excellent centre
                 for advanced studies and research in several areas of Science and Engineering.
               </p>
-              <p className="text-gray-900 leading-relaxed text-xl text-justify">
+              <p className="text-gray-900 leading-relaxed text-base sm:text-lg lg:text-xl text-justify">
                 The college has excellent infrastructure, well-equipped laboratories and highly qualified
                 and experienced faculty. The college has signed MoU with research organizations and
                 industries across the globe to promote technology development, training of students,
@@ -223,10 +222,10 @@ export default function Home() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 flex items-center justify-center bg-black/30">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-full flex items-center justify-center shadow-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-red-600"
+                    className="h-6 w-6 sm:h-8 sm:w-8 text-red-600"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -238,11 +237,11 @@ export default function Home() {
           </div>
 
           {/* feature cards row */}
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             {featureCards.map((card, i) => (
               <div
                 key={i}
-                className="glass-feat-card p-6 flex items-start gap-4"
+                className="glass-feat-card p-4 sm:p-6 flex items-start gap-3 sm:gap-4"
                 style={{ animationDelay: card.delay }}
               >
                 <span className="feat-line feat-line-top" />
@@ -250,13 +249,13 @@ export default function Home() {
                 <span className="feat-line feat-line-left" />
                 <span className="feat-line feat-line-right" />
 
-                <div className="feat-icon-orb w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 relative z-10">
+                <div className="feat-icon-orb w-11 h-11 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center flex-shrink-0 relative z-10">
                   {card.icon}
                 </div>
 
                 <div className="relative z-10">
-                  <h5 className="font-bold text-3xl mb-2 text-[#395A7F] text-justify">{card.title}</h5>
-                  <p className="text-black text-xl leading-relaxed text-justify">{card.body}</p>
+                  <h5 className="font-bold text-xl sm:text-2xl lg:text-3xl mb-2 text-[#395A7F] text-justify">{card.title}</h5>
+                  <p className="text-black text-base sm:text-lg lg:text-xl leading-relaxed text-justify">{card.body}</p>
                 </div>
               </div>
             ))}
@@ -266,48 +265,42 @@ export default function Home() {
       </section>
 
       {/* ── Programmes ─────────────────────────────────────────────────────── */}
-      <section id="programmes" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
+      <section id="programmes" className="py-12 sm:py-16 lg:py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <div className="text-center mb-12 text-justify">
-            <h2 className="section-title ">
+          <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+            <h2 className="section-title">
               Applications are invited for the following Science Programmes
             </h2>
           </div>
 
           {/* 5-year */}
-          <div className="mb-16">
-            <h3 className="text-3xl font-bold text-[#395A7F] mb-8 flex items-center gap-3">
-              {/* <div className="w-10 h-10 bg-[#395A7F] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">5</span>
-              </div> */}
+          <div className="mb-10 sm:mb-14 lg:mb-16">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#395A7F] mb-6 sm:mb-8 flex items-center gap-3">
               5 Year M.Sc Integrated Programmes
             </h3>
-            <div className="grid md:grid-cols-2 gap-35 text-justify">
-            {integratedPrograms.map((p, i) => (
-              <ProgramCard
-                key={i}
-                title={p.title}
-                subtitle=""
-                description={p.description}
-                href={p.href}
-                type="integrated"
-                icon={p.icon}
-                note={p.note}
-              />
-            ))}
-          </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 text-justify">
+              {integratedPrograms.map((p, i) => (
+                <ProgramCard
+                  key={i}
+                  title={p.title}
+                  subtitle=""
+                  description={p.description}
+                  href={p.href}
+                  type="integrated"
+                  icon={p.icon}
+                  note={p.note}
+                />
+              ))}
+            </div>
           </div>
 
           {/* 3-year */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-[#395A7F] mb-8 flex items-center gap-3">
-              {/* <div className="w-10 h-10 bg-[#395A7F] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">3</span>
-              </div> */}
+          <div className="mb-10 sm:mb-14 lg:mb-16">
+            <h3 className="text-xl sm:text-2xl font-bold text-[#395A7F] mb-6 sm:mb-8 flex items-center gap-3">
               3 Year B.Sc Programmes
             </h3>
-            <div className="grid md:grid-cols-2 gap-35 text-justify">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 text-justify">
               {bscPrograms.map((p, i) => (
                 <ProgramCard
                   key={i}
@@ -324,11 +317,10 @@ export default function Home() {
 
           {/* 2-year */}
           <div>
-            <h3 className="text-2xl font-bold text-[#395A7F] mb-8 flex items-center gap-3">
-              
+            <h3 className="text-xl sm:text-2xl font-bold text-[#395A7F] mb-6 sm:mb-8 flex items-center gap-3">
               2 Year M.Sc Programme
             </h3>
-            <div className="grid md:grid-cols-2 gap-35 text-justify">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 text-justify">
               <ProgramCard
                 title={mscProgram.title}
                 subtitle=""
@@ -344,19 +336,18 @@ export default function Home() {
       </section>
 
       {/* ── Schedule ───────────────────────────────────────────────────────── */}
-      <section id="schedule" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+      <section id="schedule" className="py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 sm:mb-10 lg:mb-12">
             <h2 className="section-title text-justify">Scheduled Dates and Events</h2>
-            <p className="text-gray-900 text-justify text-lg">
+            <p className="text-gray-900 text-justify text-base sm:text-lg">
               All dates and events are subject to change based on HSC exams results
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-5xl mx-auto ">
-  {/* schedule.map starts here */}
-         {schedules.map((s, i) => (
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 max-w-5xl mx-auto">
+            {schedules.map((s, i) => (
               <ScheduleCard
                 key={i}
                 title={s.title}
@@ -370,29 +361,28 @@ export default function Home() {
       </section>
 
       {/* ── Apply ──────────────────────────────────────────────────────────── */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 sm:mb-10 lg:mb-12">
             <h2 className="section-title">Click here to Apply</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto ">
-  {/* programmes.map starts here */}
-    {applyPrograms.map((p, i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6 max-w-6xl mx-auto">
+            {applyPrograms.map((p, i) => (
               <Link
                 key={i}
                 href={p.href}
-                className="bg-white rounded-xl p-6 card-shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
+                className="bg-white rounded-xl p-4 sm:p-5 lg:p-6 card-shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
               >
-                <div className="w-14 h-14 bg-[#395A7F]/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#395A7F] transition-colors">
-                  <GraduationCap className="w-7 h-7 text-[#395A7F] group-hover:text-white transition-colors" />
+                <div className="w-11 h-11 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-[#395A7F]/10 rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-[#395A7F] transition-colors">
+                  <GraduationCap className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-[#395A7F] group-hover:text-white transition-colors" />
                 </div>
-                <h5 className="font-bold text-[#1a1a2e] mb-2 group-hover:text-[#395A7F] transition-colors text-xl">
+                <h5 className="font-bold text-[#1a1a2e] mb-1 sm:mb-2 group-hover:text-[#395A7F] transition-colors text-base sm:text-lg lg:text-xl">
                   {p.title}
                 </h5>
-                <p className="text-[#6E9FC1] text-base font-semibold mb-4">{p.subtitle}</p>
-                <div className="flex items-center gap-2 text-[#395A7F] font-semibold text-lg">
+                <p className="text-[#6E9FC1] text-sm sm:text-base font-semibold mb-3 sm:mb-4">{p.subtitle}</p>
+                <div className="flex items-center gap-2 text-[#395A7F] font-semibold text-base sm:text-lg">
                   Apply Now
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -457,7 +447,7 @@ export function Contact() {
     setIsSubmitting(true);
 
     try {
-        const response = await fetch("http://127.0.0.1:5000/api/contact", { 
+      const response = await fetch("http://127.0.0.1:5000/api/contact", { 
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -480,36 +470,53 @@ export function Contact() {
   if (!mounted) return null;
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-muted/30 to-background">
-      <div className="max-w-4xl mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
-           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+    <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-muted/30 to-background">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Contact Us</h2>
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             Have questions? Send us a message and we'll get back to you soon
           </p>
         </div>
 
-        <div className="mb-12">
-          <Card className="p-6 md:p-8">
+        <div className="mb-8 sm:mb-10 lg:mb-12">
+          <Card className="p-4 sm:p-6 md:p-8">
             {isSuccess && <p className="text-green-500 mb-4">Message sent successfully!</p>}
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <label className="block text-sm font-medium mb-2">Your Name *</label>
-                  <input name="name" value={formData.name} onChange={handleChange} className="w-full px-4 py-3 border rounded-lg" placeholder="John Doe" />
+                  <input
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border rounded-lg text-sm sm:text-base"
+                    placeholder="John Doe"
+                  />
                   {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-2">Your Email *</label>
-                  <input name="email" value={formData.email} onChange={handleChange} className="w-full px-4 py-3 border rounded-lg" placeholder="email@example.com" />
+                  <input
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border rounded-lg text-sm sm:text-base"
+                    placeholder="email@example.com"
+                  />
                   {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
                 </div>
               </div>
 
-              {/* NEW COURSE SELECTION DROPDOWN */}
+              {/* COURSE SELECTION DROPDOWN */}
               <div>
                 <label className="block text-sm font-medium mb-2">Select Course *</label>
-                <select name="course" value={formData.course} onChange={handleChange} className="w-full px-4 py-3 border rounded-lg bg-background">
+                <select
+                  name="course"
+                  value={formData.course}
+                  onChange={handleChange}
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border rounded-lg bg-background text-sm sm:text-base"
+                >
                   <option value="">-- Choose a Course --</option>
                   <option value="B.Sc Applied Science">B.Sc Applied Science</option>
                   <option value="B.Sc Computer Systems & Design">B.Sc Computer Systems & Design</option>
@@ -526,11 +533,22 @@ export function Contact() {
 
               <div>
                 <label className="block text-sm font-medium mb-2">Your Message *</label>
-                <textarea name="message" value={formData.message} onChange={handleChange} rows={5} className="w-full px-4 py-3 border rounded-lg resize-none" placeholder="How can we help?" />
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  rows={5}
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border rounded-lg resize-none text-sm sm:text-base"
+                  placeholder="How can we help?"
+                />
                 {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
               </div>
 
-              <button type="submit" disabled={isSubmitting} className="w-full py-3 bg-primary text-white rounded-lg font-semibold">
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full py-2.5 sm:py-3 bg-primary text-white rounded-lg font-semibold text-sm sm:text-base"
+              >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </form>
