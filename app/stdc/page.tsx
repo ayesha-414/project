@@ -764,6 +764,27 @@ export default function STDCPage() {
       comment:"The MSc Integrated Data Science program has been an incredible journey, exceeding my expectations at every step. The department’s proactive approach, expert faculty, and hands-on labs have helped me build a strong foundation in both theory and practice. My internship experience further provided invaluable exposure to the corporate world, reinforcing the real-world relevance of the curriculum and equipping me with both technical expertise and essential soft skills. This program has truly boosted my confidence and prepared me for a future in Data Science.",
       img:"/stdc_alumni/meenakshi.jpeg",
     },
+    {
+      name:"Shruthi S",
+      role:"Senior ML Scientist at GoDaddy",
+      program:"M.Sc Data Science (2015-2020)",
+      comment:"The program offers a well-balanced blend of strong theoretical foundations and practical applications, effectively preparing students to tackle real-world challenges in AI, machine learning, and big data analytics. Its industry-aligned curriculum, combined with hands-on projects, ensures that students not only understand core concepts but also know how to apply them in real-world scenarios.The exposure to modern tools, collaborative learning environments, and problem-solving approaches further enhances the learning experience. In my current role, this program has significantly helped me approach problems more systematically, leverage data-driven insights, and build more efficient and scalable solutions. It has strengthened my ability to evaluate models critically, apply the right techniques for different use cases, and make informed technical decisions.Overall, the program equips students with the critical thinking, technical expertise, and adaptability required to excel in today’s data-driven and rapidly evolving technology landscape.",
+      img:"/stdc_alumni/shruthi.jpeg",
+    },
+    {
+      name:"Ashish",
+      role:"Senior Founding Engineer – Data & AI at DataGenie",
+      program:"M.Sc Data Science (2019-2024)",
+      comment:"The 5-year Integrated MSc in Data Science course played a pivotal role in shaping my career. It provided a strong learning environment with an exceptional peer group that constantly drove innovation, collaboration, and a shared passion to learn and build. The faculties were highly supportive and instrumental in strengthening my fundamentals. The department’s excellent placement network gave me opportunities to intern at companies like Goldman Sachs and PayPal, which significantly boosted my confidence and technical skills. This journey ultimately led me to my current role as Senior Founding Engineer – Data & AI at DataGenie, where I am involved in building a visionary product in the augmented analytics and AI space.",
+      img:"/stdc_alumni/ashish.jpeg",
+    },
+    {
+      name:"Vetrivel.M.D",
+      role:"Cyber-Security Engineer at SLB",
+      program:"MSc Cyber Security (2020-2025)",
+      comment:"My MSc Cybersecurity journey at PSG College of Technology had a well-structured, industry-aligned syllabus that built a strong foundation. The faculty were highly supportive and focused on real understanding, not just theory. What stood out was the strong practical exposure - regular labs and hands-on projects actually prepared us for industry work. These experiences sharpened my real-world thinking and helped me approach problems with clarity and confidence. Most importantly, the alumni network is incredibly strong and supportive, always ready to guide, mentor, and open doors to opportunities.",
+      img:"/stdc_alumni/vetrivel.jpeg",
+    },
   ];
 
   const achievementCategories = ["All","Entrepreneurs","PhD Holders","Higher Studies","Events","Sports & Culturals"];
