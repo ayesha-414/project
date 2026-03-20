@@ -9,6 +9,7 @@ import { Home, ChevronRight, BookOpen, FileText, CheckCircle, Users, Calendar, C
 export default function MathPage() {
   const [activeTab, setActiveTab] = useState("overview");
   const [alumniIndex, setAlumniIndex] = useState(0);
+
   const nextAlumni = () => {
     setAlumniIndex((prev) =>
       prev === notableAlumni.length - 1 ? 0 : prev + 1
@@ -20,15 +21,16 @@ export default function MathPage() {
       prev === 0 ? notableAlumni.length - 1 : prev - 1
     );
   };
+
   useEffect(() => {
     const interval = setInterval(() => {
       setAlumniIndex((prev) =>
         prev === notableAlumni.length - 1 ? 0 : prev + 1
       );
     }, 3000);
-
     return () => clearInterval(interval);
   }, []);
+
   const notableAlumni = [
     { 
       name: "Dr.Natarajan Venkatachalam", 
@@ -251,60 +253,60 @@ export default function MathPage() {
     },
 
   ];
-
- 
-
   return (
     <main className="bg-[#f4f7fb] min-h-screen">
       <Header />
 
       {/* Hero Section */}
-
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#0f172a] via-[#1e3a8a] to-[#0ea5e9] overflow-hidden">
+      <section className="relative pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 bg-gradient-to-br from-[#0f172a] via-[#1e3a8a] to-[#0ea5e9] overflow-hidden">
         <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
-
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* Left Content */}
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
-              B.Sc <span className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">Applied Mathematics{" "} <br/> <span className="text-[#7dd3fc]">Programme</span></span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight">
+              B.Sc{" "}
+              <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+                Applied Mathematics{" "}
+                <br className="hidden sm:block" />
+                <span className="text-[#7dd3fc]">Programme</span>
+              </span>
             </h1>
-            <p className="text-white/80 text-xl mb-6 ">
+            <p className="text-white/80 text-lg sm:text-xl mb-4 sm:mb-6">
               Department of Applied Mathematics and Computational Sciences
             </p>
-
             {/* Breadcrumb */}
-            <div className="flex items-center gap-2 text-white/70">
+            <div className="flex items-center gap-2 text-white/70 text-sm sm:text-base">
               <Link href="/" className="flex items-center gap-1 hover:text-white transition-colors">
                 <Home className="w-4 h-4" />
                 Home
               </Link>
-
               <ChevronRight className="w-4 h-4" />
-
               <span className="text-white">Programme Details</span>
             </div>
           </div>
-          
-
         </div>
       </section>
 
       {/* Main Content */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Main Content */}
+      <section className="py-10 sm:py-14 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+
+            {/* Main Panel */}
             <div className="lg:col-span-2">
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl overflow-hidden">
-                <div className="p-6 border-b">
-                  <h2 className="text-4xl font-bold text-[#1e3a8a] mb-2">M.Sc Applied Mathematics</h2>
-                  <p className="text-xl font-bold text-[#1e3a8a]">Two Year Postgraduate Programme</p>
+                <div className="p-4 sm:p-6 border-b">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1e3a8a] mb-2">
+                    M.Sc Applied Mathematics
+                  </h2>
+                  <p className="text-base sm:text-lg md:text-xl font-bold text-[#1e3a8a]">
+                    Two Year Postgraduate Programme
+                  </p>
                 </div>
-                
+
                 {/* Tabs */}
-                <div className="flex flex-wrap gap-2 p-4 bg-[#f7faff] border-b border-[#dce8f5]">
+                <div className="flex flex-wrap gap-2 p-3 sm:p-4 bg-[#f7faff] border-b border-[#dce8f5]">
                   {[
                     { id: "overview", label: "Overview", icon: BookOpen },
                     { id: "curriculum", label: "Curriculum", icon: FileText },
@@ -314,51 +316,53 @@ export default function MathPage() {
                     <button
                       key={tab.id}
                       onClick={() => setActiveTab(tab.id)}
-                      className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xl font-semibold transition-all ${
+                      className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-sm sm:text-base md:text-xl font-semibold transition-all ${
                         activeTab === tab.id
                           ? "bg-gradient-to-r from-[#1e3a8a] to-[#0ea5e9] text-white shadow-md"
                           : "bg-white text-[#395A7F] border border-[#a3cae9] hover:bg-[#e8f4ff]"
                       }`}
                     >
-                      <tab.icon className="w-4 h-4" />
+                      <tab.icon className="w-4 h-4 flex-shrink-0" />
                       {tab.label}
                     </button>
                   ))}
                 </div>
 
                 {/* Tab Content */}
-                <div className="p-6">
+                <div className="p-4 sm:p-6">
                   {activeTab === "overview" && (
                     <div className="space-y-6">
                       <div>
-                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Department</h4>
-                        <p className="text-gray-900 leading-relaxed text-xl text-justify">
-                          The <strong>Department of Applied  Mathematics and Computational Sciences</strong> comprises of dedicated faculty members who are undoubtedly the assets worthy of mention. The department is known for its discipline and for the importance it gives to the overall development of students in grooming them towards becoming good software professionals, research scientists and data analysts. The department has its own library with latest books, national and international journals and magazines. The computer centre is well equipped with the most recent hardware and software. To keep in touch with the ever - growing technology, the faculty members participate regularly in refresher courses and symposia conducted by top notch Universities, Research Institutions and Professional Bodies like Association for Computing Machinery. The department organizes technical symposia at national and international levels at regular intervals. Apart from stressing on consistent and good academic performance, the department encourages participation in co-curricular and extracurricular activities to bring out the latent talents in its students. The students are provided with ample opportunities to improve their organizational skills and group dynamics.
+                        <h4 className="text-xl sm:text-2xl font-bold text-[#1c3879] mb-3">About the Department</h4>
+                        <p className="text-gray-900 leading-relaxed text-base sm:text-lg md:text-xl text-justify">
+                          The <strong>Department of Applied Mathematics and Computational Sciences</strong> comprises of dedicated faculty members who are undoubtedly the assets worthy of mention. The department is known for its discipline and for the importance it gives to the overall development of students in grooming them towards becoming good software professionals, research scientists and data analysts. The department has its own library with latest books, national and international journals and magazines. The computer centre is well equipped with the most recent hardware and software. To keep in touch with the ever - growing technology, the faculty members participate regularly in refresher courses and symposia conducted by top notch Universities, Research Institutions and Professional Bodies like Association for Computing Machinery. The department organizes technical symposia at national and international levels at regular intervals. Apart from stressing on consistent and good academic performance, the department encourages participation in co-curricular and extracurricular activities to bring out the latent talents in its students. The students are provided with ample opportunities to improve their organizational skills and group dynamics.
                         </p>
                       </div>
 
                       <div>
-                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Programme</h4>
-                        <p className="text-gray-900 leading-relaxed mb-4 text-xl text-justify">
+                        <h4 className="text-xl sm:text-2xl font-bold text-[#1c3879] mb-3">About the Programme</h4>
+                        <p className="text-gray-900 leading-relaxed mb-4 text-base sm:text-lg md:text-xl text-justify">
                           The MSc Applied Mathematics programme was started in the year 1975. The objective of this programme is to acquaint the students with various principles of Mathematics and train them to build & administer mathematical models to the problems in science and technology. This programme is also designed to expose the students to the various development and the applications of software, catering to the needs of the industries and R&D sectors. The programme is a perfect blend of Pure and Applied Mathematics with supporting laboratory courses to strengthen the knowledge of the students Programme follows meticulously planned curriculum based on Choice Based Credit System, updated regularly to meet the challenging requirements of the industry. The programme comprises a mini-project and a major project. The mini - project is to be done during the summer vacation at the end of the second semester. A six month major project is taken in the final semester at research institutions or software industries, thereby enabling them to have an opportunity to work in challenging environment. MSc Applied Mathematics alumni are well placed in top-notch industries, reputed academic institutions and research labs.
                         </p>
                       </div>
-
-                      
-
-            
                     </div>
                   )}
 
                   {activeTab === "curriculum" && (
                     <div className="space-y-8">
-                      <div className="grid md:grid-cols-2 gap-4">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {Object.entries(curriculum).map(([semester, subjects]) => (
-                          <div key={semester} className=" text-2xl bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-5 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
-                            <h4 className="text-2xl font-bold mb-4">{semester}</h4>
+                          <div
+                            key={semester}
+                            className="bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-4 sm:p-5 hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+                          >
+                            <h4 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">{semester}</h4>
                             <ul className="space-y-2">
                               {subjects.map((subject, idx) => (
-                                <li key={idx} className="text-xl text-[#334155]  flex items-start gap-2">
+                                <li
+                                  key={idx}
+                                  className="text-base sm:text-lg md:text-xl text-[#334155] flex items-start gap-2"
+                                >
                                   <span className="w-1.5 h-1.5 bg-[#0ea5e9] rounded-full mt-1.5 flex-shrink-0"></span>
                                   {subject}
                                 </li>
@@ -372,16 +376,18 @@ export default function MathPage() {
 
                   {activeTab === "selection" && (
                     <div className="space-y-6">
-                      <div className="bg-[#1c3879]/5 rounded-xl p-6">
-                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">Equivalent Certificate from Tamil Nadu Government</h4>
+                      <div className="bg-[#1c3879]/5 rounded-xl p-4 sm:p-6">
+                        <h4 className="text-xl sm:text-2xl font-bold text-[#1c3879] mb-3">
+                          Equivalent Certificate from Tamil Nadu Government
+                        </h4>
                         <a
                           href="/brochure.pdf"
                           target="_blank"
-                          className="inline-flex items-center gap-2 bg-[#1c3879] text-white px-6 py-3 rounded-lg font-bold shadow-lg hover:scale-105 hover:bg-[#2a4a9b] transition-all mb-4 "
+                          className="inline-flex items-center gap-2 bg-[#1c3879] text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-bold shadow-lg hover:scale-105 hover:bg-[#2a4a9b] transition-all mb-4 text-sm sm:text-base"
                         >
                           📄 View Equivalent Certificate
                         </a>
-                        <p className="text-gray-900 leading-relaxed text-xl text-justify">
+                        <p className="text-gray-900 leading-relaxed text-base sm:text-lg md:text-xl text-justify">
                           Candidates for admission to the M.Sc. Applied Mathematics are required to have a pass in B.Sc. (Mathematics / Mathematics with Computer Applications / Applied Science) or an examination of any other University or authority recognized by Anna University equivalent there to. Candidates, who have appeared for the final semester examination in May/June of the academic year 2024-2026, are also eligible to apply (However, such candidates if selected for admission will have to produce the final examination mark sheet and the proof of having passed the degree at the time of admission).<br /><br />
 
                           Shortlisted candidates with an excellent academic record in undergraduate examination will be called for counselling in college campus to identify the spark and the commitment of the applicant to study 2-year Master programme (M.Sc Applied Mathematics) at PSG College of Technology.The schedule of the counselling will be intimated through the applicant's registered email.<br />
@@ -389,82 +395,81 @@ export default function MathPage() {
                           <br />
 
                           However, call for counselling does not confer any right of admission.<br />
-
-                          
                         </p>
                       </div>
                     </div>
                   )}
 
                   {activeTab === "alumni" && (
-  <div className="space-y-6">
-    {alumni.map((alum, idx) => (
-      <div key={idx} className="program-card">
-        {/* Flex container ensures image and text stay side-by-side */}
-        <div className="flex items-start gap-6">
-          
-          {/* Image Wrapper - Removed the w-14 restriction to allow 90px size */}
-          <div className="flex-shrink-0">
-            <img
-              src={alum.image}
-              alt={alum.name}
-              className="w-[90px] h-[90px] object-cover rounded-md border-2 border-[#a3cae9]"
-            />
-          </div>
-
-          {/* Text Content Container */}
-          <div className="flex-1">
-            <h5 className="font-bold text-[#1a1a2e] text-2xl">
-              {alum.name}
-            </h5>
-            <p className="text-[#1c3879] text-lg font-medium">
-              {alum.position}
-            </p>
-            <p className="text-[#e8505b] text-lg">
-              {alum.batch}
-            </p>
-            <p className="text-gray-900 text-xl mt-3 leading-relaxed text-justify">
-              {alum.testimonial}
-            </p>
-          </div>
-          
-        </div>
-      </div>
-    ))}
-  </div>
-)}
+                    <div className="space-y-6">
+                      {alumni.map((alum, idx) => (
+                        <div key={idx} className="program-card">
+                          <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+                            <div className="flex-shrink-0">
+                              <img
+                                src={alum.image}
+                                alt={alum.name}
+                                className="w-16 h-16 sm:w-[90px] sm:h-[90px] object-cover rounded-md border-2 border-[#a3cae9]"
+                              />
+                            </div>
+                            <div className="flex-1">
+                              <h5 className="font-bold text-[#1a1a2e] text-xl sm:text-2xl">
+                                {alum.name}
+                              </h5>
+                              <p className="text-[#1c3879] text-base sm:text-lg font-medium">
+                                {alum.position}
+                              </p>
+                              <p className="text-[#e8505b] text-base sm:text-lg">
+                                {alum.batch}
+                              </p>
+                              <p className="text-gray-900 text-base sm:text-lg md:text-xl mt-3 leading-relaxed text-justify">
+                                {alum.testimonial}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
 
             {/* Sidebar */}
             <div className="space-y-6">
-              <div className="bg-white rounded-2xl shadow-md border border-[#dce8f5] p-6 text-center">
-                <h4 className="text-2xl font-bold text-[#1e3a8a] mb-4">🎓 Notable Alumni</h4>
-                <div className="relative bg-[#f0f6ff] rounded-xl p-6">
+              {/* Notable Alumni */}
+              <div className="bg-white rounded-2xl shadow-md border border-[#dce8f5] p-4 sm:p-6 text-center">
+                <h4 className="text-xl sm:text-2xl font-bold text-[#1e3a8a] mb-4">🎓 Notable Alumni</h4>
+                <div className="relative bg-[#f0f6ff] rounded-xl p-5 sm:p-6">
                   <button
                     onClick={prevAlumni}
-                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-[#1e3a8a] text-white w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold hover:bg-[#395A7F] transition-colors"
+                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-[#1e3a8a] text-white w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-lg font-bold hover:bg-[#395A7F] transition-colors"
                   >
                     ‹
                   </button>
                   <button
                     onClick={nextAlumni}
-                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#1e3a8a] text-white w-8 h-8 rounded-full flex items-center justify-center text-xl font-bold hover:bg-[#395A7F] transition-colors"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#1e3a8a] text-white w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-xl font-bold hover:bg-[#395A7F] transition-colors"
                   >
                     ›
                   </button>
 
-                  <div className="w-24 h-24 bg-white rounded-full  flex items-center justify-center mx-auto mb-3 ">
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-3 overflow-hidden">
                     <img
                       src={notableAlumni[alumniIndex].image}
                       alt={notableAlumni[alumniIndex].name}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h5 className="text-xl font-bold text-[#1e3a8a]">{notableAlumni[alumniIndex].name}</h5>
-                  <p className="text-lg font-medium text-[#e8505b] mt-1">{notableAlumni[alumniIndex].position}</p>
-                  <p className="text-lg text-[#64748b] mt-0.5">{notableAlumni[alumniIndex].organization}</p>
+                  <h5 className="text-lg sm:text-xl font-bold text-[#1e3a8a]">
+                    {notableAlumni[alumniIndex].name}
+                  </h5>
+                  <p className="text-base sm:text-lg font-medium text-[#e8505b] mt-1">
+                    {notableAlumni[alumniIndex].position}
+                  </p>
+                  <p className="text-base sm:text-lg text-[#64748b] mt-0.5">
+                    {notableAlumni[alumniIndex].organization}
+                  </p>
                 </div>
 
                 {/* Dots */}
@@ -473,43 +478,44 @@ export default function MathPage() {
                     <button
                       key={i}
                       onClick={() => setAlumniIndex(i)}
-                      className={`w-2 h-2 rounded-full transition-all ${i === alumniIndex ? "bg-[#1e3a8a] w-4" : "bg-[#a3cae9]"}`}
+                      className={`w-2 h-2 rounded-full transition-all ${
+                        i === alumniIndex ? "bg-[#1e3a8a] w-4" : "bg-[#a3cae9]"
+                      }`}
                     />
                   ))}
                 </div>
               </div>
-              
+
               {/* Important Dates */}
-              <div className="bg-gradient-to-br from-[#1e3a8a] to-[#0ea5e9] text-white rounded-3xl p-6 shadow-xl">
-                <h4 className="text-2xl font-bold mb-6">Important Dates</h4>
+              <div className="bg-gradient-to-br from-[#1e3a8a] to-[#0ea5e9] text-white rounded-3xl p-4 sm:p-6 shadow-xl">
+                <h4 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Important Dates</h4>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-xl font-bold">Last date for application submission</p>
-                      <p className="text-white font-bold text-lg">28th May 2026</p>
-                    </div>
-                  </li>
-                  
-                  <li className="flex items-start gap-3">
-                    <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="text-white/70 text-xl font-bold">Counselling & Admission in the campus</p>
-                      <p className="text-white font-bold text-lg">2nd June 2026</p>
+                      <p className="text-white/70 text-base sm:text-xl font-bold">Last date for application submission</p>
+                      <p className="text-white font-bold text-sm sm:text-lg">28th May 2026</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-xl font-bold">Last date for fee payment</p>
-                      <p className="text-white font-bold text-lg">9th June 2026</p>
+                      <p className="text-white/70 text-base sm:text-xl font-bold">Counselling & Admission in the campus</p>
+                      <p className="text-white font-bold text-sm sm:text-lg">2nd June 2026</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-white/70 text-base sm:text-xl font-bold">Last date for fee payment</p>
+                      <p className="text-white font-bold text-sm sm:text-lg">9th June 2026</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <CreditCard className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-xl font-bold">Cost of application</p>
-                      <p className="text-white font-bold text-lg">500 INR</p>
+                      <p className="text-white/70 text-base sm:text-xl font-bold">Cost of application</p>
+                      <p className="text-white font-bold text-sm sm:text-lg">500 INR</p>
                     </div>
                   </li>
                 </ul>
@@ -520,13 +526,14 @@ export default function MathPage() {
               </div>
 
               {/* How to Apply */}
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6">
-                <h4 className="text-2xl font-bold text-[#1c3879] mb-4">How to apply?</h4>
-                <p className="text-gray-900 text-xl leading-relaxed text-justify">
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-4 sm:p-6">
+                <h4 className="text-xl sm:text-2xl font-bold text-[#1c3879] mb-4">How to apply?</h4>
+                <p className="text-gray-900 text-base sm:text-lg md:text-xl leading-relaxed text-justify">
                   Application can be made only through online by entering all the particulars including marks along with online payment by Net banking/Credit card/Debit card/UPI.
                 </p>
               </div>
             </div>
+
           </div>
         </div>
       </section>

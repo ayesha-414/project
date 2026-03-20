@@ -9,26 +9,21 @@ import {
   Home, ChevronRight, BookOpen, FileText, CheckCircle,
   Users, Award, Calendar, CreditCard, ArrowRight, Play,
 } from "lucide-react";
-import { text } from "stream/consumers";
 
-
-type ProgramKey = "ss" | "tcs" | "ds" | "cs"|"cf";
-
+type ProgramKey = "ss" | "tcs" | "ds" | "cs" | "cf";
 
 export default function STDCPage() {
-  const [activeTab, setActiveTab]         = useState("overview");
+  const [activeTab, setActiveTab] = useState("overview");
   const [activeProgram, setActiveProgram] = useState<ProgramKey>("ss");
-  const [alumniIndex, setAlumniIndex]     = useState(0);
+  const [alumniIndex, setAlumniIndex] = useState(0);
   const [activeAchievement, setActiveAchievement] = useState("All");
 
-  /* ── Data ─────────────────────────────────────────────────────────────── */
   useEffect(() => {
     const interval = setInterval(() => {
       setAlumniIndex((prev) =>
         prev === notableAlumni.length - 1 ? 0 : prev + 1
       );
     }, 3000);
-
     return () => clearInterval(interval);
   }, []);
 
@@ -37,8 +32,7 @@ export default function STDCPage() {
     { id: "tcs", name: "Theoretical Computer Science" },
     { id: "ds",  name: "Data Science" },
     { id: "cs",  name: "Cyber Security" },
-    { id: "cf"  ,  name: "Computational Finanace"}
-
+    { id: "cf",  name: "Computational Finanace" },
   ];
 
   const notableAlumni = [
@@ -1119,43 +1113,36 @@ export default function STDCPage() {
       category:"Sports & Culturals",
     },
   ];
-
-  /* ── Helpers ──────────────────────────────────────────────────────────── */
-
-  /* Subtle inner block used inside content area */
-  const innerBlock = "bg-[#f0f5fb] border border-[#d0e2f0] rounded-xl p-5";
+  const innerBlock = "bg-[#f0f5fb] border border-[#d0e2f0] rounded-xl p-4 sm:p-5";
 
   return (
     <main className="bg-[#f4f7fb] min-h-screen">
       <Header />
 
-      {/* ── Hero ───────────────────────────────────────────────────────────── */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#0f172a] via-[#1e3a8a] to-[#0ea5e9] overflow-hidden">
+      {/* ── Hero ── */}
+      <section className="relative pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 bg-gradient-to-br from-[#0f172a] via-[#1e3a8a] to-[#0ea5e9] overflow-hidden">
         <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]" />
-
-        <div className="relative z-10 max-w-7xl mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight">
                 Five Year Integrated M.Sc{" "}
                 <span className="text-[#7dd3fc]">Programmes</span>
               </h1>
-              <p className="text-white/80 text-xl">
+              <p className="text-white/80 text-base sm:text-lg md:text-xl">
                 Department of Applied Mathematics and Computational Sciences
               </p>
-              <div className="flex items-center gap-2 mt-6 text-white/70 text-base">
+              <div className="flex items-center gap-2 mt-4 sm:mt-6 text-white/70 text-sm sm:text-base">
                 <Link href="/" className="flex items-center gap-1 hover:text-white transition-colors">
                   <Home className="w-4 h-4" /> Home
                 </Link>
                 <ChevronRight className="w-4 h-4" />
                 <span className="text-white">Programme Details</span>
               </div>
-              
             </div>
 
-            <div className="relative">
-              <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl overflow-hidden p-3 hover:scale-105 transition-all duration-500">
+            <div className="relative mt-6 lg:mt-0">
+              <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl overflow-hidden p-2 sm:p-3 hover:scale-105 transition-all duration-500">
                 <div className="aspect-video rounded-2xl overflow-hidden">
                   <iframe
                     className="w-full h-full"
@@ -1169,25 +1156,22 @@ export default function STDCPage() {
               </div>
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-cyan-400 blur-3xl opacity-20 -z-10" />
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* ── Main Content ───────────────────────────────────────────────────── */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid lg:grid-cols-3 gap-8">
+      {/* ── Main Content ── */}
+      <section className="py-10 sm:py-14 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
 
-            {/* ── Left: Main card ── */}
+            {/* ── Main card ── */}
             <div className="lg:col-span-2 space-y-0">
-
-              {/* Card shell */}
               <div className="bg-white rounded-3xl shadow-lg overflow-hidden border border-[#dce8f5]">
 
-                {/* Programme selector header */}
-                <div className="p-6 border-b border-[#dce8f5] bg-[#f0f6ff]">
-                  <h2 className="text-4xl font-bold text-[#1e3a8a]">
+                {/* Programme selector */}
+                <div className="p-4 sm:p-6 border-b border-[#dce8f5] bg-[#f0f6ff]">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1e3a8a]">
                     Five Year Integrated M.Sc Programmes
                   </h2>
                   <div className="flex flex-wrap gap-2 mt-4">
@@ -1195,7 +1179,7 @@ export default function STDCPage() {
                       <button
                         key={p.id}
                         onClick={() => setActiveProgram(p.id)}
-                        className={`px-4 py-2 rounded-full text-xl font-semibold transition-all ${
+                        className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-sm sm:text-base md:text-xl font-semibold transition-all ${
                           activeProgram === p.id
                             ? "bg-gradient-to-r from-[#1e3a8a] to-[#0ea5e9] text-white shadow-md"
                             : "bg-white text-[#395A7F] border border-[#a3cae9] hover:bg-[#e8f4ff]"
@@ -1208,7 +1192,7 @@ export default function STDCPage() {
                 </div>
 
                 {/* Tab nav */}
-                <div className="flex flex-wrap gap-2 p-4 bg-[#f7faff] border-b border-[#dce8f5]">
+                <div className="flex flex-wrap gap-2 p-3 sm:p-4 bg-[#f7faff] border-b border-[#dce8f5]">
                   {[
                     { id: "overview",     label: "Overview",          icon: BookOpen    },
                     { id: "curriculum",   label: "Curriculum",        icon: FileText    },
@@ -1219,34 +1203,34 @@ export default function STDCPage() {
                     <button
                       key={tab.id}
                       onClick={() => setActiveTab(tab.id)}
-                      className={`flex items-center gap-2 px-4 py-2 rounded-lg text-base font-semibold transition-all ${
+                      className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm md:text-base font-semibold transition-all ${
                         activeTab === tab.id
                           ? "bg-gradient-to-r from-[#1e3a8a] to-[#0ea5e9] text-white shadow-md"
                           : "bg-white text-[#395A7F] border border-[#a3cae9] hover:bg-[#e8f4ff]"
                       }`}
                     >
-                      <tab.icon className="w-4 h-4" />
+                      <tab.icon className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" />
                       {tab.label}
                     </button>
                   ))}
                 </div>
 
                 {/* Tab content */}
-                <div className="p-6 text-[#1e293b]">
+                <div className="p-4 sm:p-6 text-[#1e293b]">
 
-                  {/* ── OVERVIEW ── */}
+                  {/* OVERVIEW */}
                   {activeTab === "overview" && (
                     <div className="space-y-6">
                       <div>
-                        <h4 className="text-2xl font-bold text-[#1e3a8a] mb-3">About the Department</h4>
-                        <p className="text-grey-900 leading-relaxed text-xl text-justify ">
+                        <h4 className="text-xl sm:text-2xl font-bold text-[#1e3a8a] mb-3">About the Department</h4>
+                        <p className="text-grey-900 leading-relaxed text-base sm:text-lg md:text-xl text-justify">
                           The Department of Applied Mathematics and Computational Sciences comprises of dedicated faculty members who are undoubtedly the assets worthy of mention. The department is known for its discipline and for the importance it gives to the overall development of students in grooming them towards becoming good software professionals, research scientists and data analysts. The department has its own library with the latest books, national and international journals and magazines. The computer centre is well equipped with the most recent hardware and software. The department has vibrant research culture to keep in touch with the ever-growing technologies.
                         </p>
                       </div>
 
                       <div>
-                        <h4 className="text-2xl font-bold text-[#1e3a8a] mb-3">About the Programmes</h4>
-                        <div className="space-y-4 text-justify ">
+                        <h4 className="text-xl sm:text-2xl font-bold text-[#1e3a8a] mb-3">About the Programmes</h4>
+                        <div className="space-y-4 text-justify">
                           {[
                             { color: "#1e3a8a", label: "M.Sc. Software Systems", desc: "was started in the year 1997 for the first time in the country and well received by leading software industries across the globe. The programme has been designed to meet the challenging needs of the industry. Renamed as Software Systems since 2014." },
                             { color: "#e8505b", label: "M.Sc. Theoretical Computer Science", desc: "is yet another innovative programme introduced in 2007. Designed to augment human resources for the R&D divisions of software industries, it merges Mathematics and Computer Science." },
@@ -1255,16 +1239,16 @@ export default function STDCPage() {
                             { color: "#391b63", label: "M.Sc. Computational Finance", desc: "Focuses on quantitative methods, financial modeling, and data-driven decision-making in modern finance.Equips students with skills in risk analysis, algorithmic trading, and financial analytics." },
                           ].map((item, i) => (
                             <div key={i} className={innerBlock}>
-                              <h5 className="text-xl font-bold mb-2" style={{ color: item.color }}>{item.label}</h5>
-                              <p className="text-xl text-grey-900  text-justify leading-relaxed">{item.desc}</p>
+                              <h5 className="text-base sm:text-lg md:text-xl font-bold mb-2" style={{ color: item.color }}>{item.label}</h5>
+                              <p className="text-base sm:text-lg md:text-xl text-grey-900 text-justify leading-relaxed">{item.desc}</p>
                             </div>
                           ))}
                         </div>
                       </div>
 
                       <div className={innerBlock}>
-                        <h4 className="text-2xl font-bold text-[#1e3a8a] mb-3">Programme Highlights</h4>
-                        <ul className="space-y-2 text-grey-900 text-xl text-justify">
+                        <h4 className="text-xl sm:text-2xl font-bold text-[#1e3a8a] mb-3">Programme Highlights</h4>
+                        <ul className="space-y-2 text-grey-900 text-base sm:text-lg md:text-xl text-justify">
                           {[
                             "Two semesters (7th and 10th) rigorous internships in reputed industries and top-notch institutions",
                             "Unique feature for the success of the programmes",
@@ -1280,27 +1264,27 @@ export default function STDCPage() {
                     </div>
                   )}
 
-                  {/* ── CURRICULUM ── */}
+                  {/* CURRICULUM */}
                   {activeTab === "curriculum" && (
                     <div className="space-y-8">
                       <div className={innerBlock}>
-                        <h4 className="text-2xl font-bold text-[#1e3a8a] mb-2">Programme Structure</h4>
-                        <p className="text-grey-900 text-xl leading-relaxed text-justify">
+                        <h4 className="text-xl sm:text-2xl font-bold text-[#1e3a8a] mb-2">Programme Structure</h4>
+                        <p className="text-grey-900 text-base sm:text-lg md:text-xl leading-relaxed text-justify">
                           All four programmes follow a meticulously planned curriculum based on Choice Based Credit System, updated regularly to meet the challenging requirements of the industry.
                         </p>
                       </div>
 
                       <div>
-                        <h4 className="text-2xl font-bold text-[#1e3a8a] mb-4">
+                        <h4 className="text-xl sm:text-2xl font-bold text-[#1e3a8a] mb-4">
                           {programs.find((p) => p.id === activeProgram)?.name} – Semester Wise Curriculum
                         </h4>
-                        <div className="grid md:grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                           {Object.entries(curriculum[activeProgram]).map(([semester, subjects]) => (
-                            <div key={semester} className="bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-5 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
-                              <h5 className="text-2xl font-bold text-[#1e3a8a]  mb-3">{semester}</h5>
+                            <div key={semester} className="bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-4 sm:p-5 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+                              <h5 className="text-lg sm:text-xl md:text-2xl font-bold text-[#1e3a8a] mb-3">{semester}</h5>
                               <ul className="space-y-1.5">
                                 {subjects.map((subject, idx) => (
-                                  <li key={idx} className="text-[#334155] text-xl flex items-start gap-2">
+                                  <li key={idx} className="text-[#334155] text-base sm:text-lg md:text-xl flex items-start gap-2">
                                     <span className="w-1.5 h-1.5 bg-[#0ea5e9] rounded-full mt-1.5 flex-shrink-0" />
                                     {subject}
                                   </li>
@@ -1313,33 +1297,21 @@ export default function STDCPage() {
                     </div>
                   )}
 
-                  {/* ── SELECTION ── */}
+                  {/* SELECTION */}
                   {activeTab === "selection" && (
                     <div className="space-y-6 text-justify">
                       {[
-                        {
-                          color: "#1e3a8a", title: "Eligibility",
-                          body: "An excellent academic record in Higher Secondary examination of the (10+2) curriculum with Mathematics and Physics as two of the subjects of study.",
-                          bullets: [],
-                        },
-                        {
-                          color: "#e8505b", title: "Entrance Test",
-                          body: "Shortlisted candidates will be called for a computer based entrance examination at the College Campus on 4th June 2026.",
-                          bullets: ["Duration: ONE hour.", "Multiple Choice Questions in +2 level Mathematics.", "Questions will be in English and Tamil.","There will be negative marking for the wrong answer.","Topics for Entrance examination will be"],
-                        },
-                        {
-                          color: "#15803d", title: "Counselling",
-                          body: "Counselling will be held for shortlisted candidates from 4th June Afternoon onwards, at the college campus, to identify the SPARK and COMMITMENT of the applicant. Applicants can choose preference of programms at the time of counselling.",
-                          bullets: [],
-                        },
+                        { color: "#1e3a8a", title: "Eligibility", body: "An excellent academic record in Higher Secondary examination of the (10+2) curriculum with Mathematics and Physics as two of the subjects of study.", bullets: [] },
+                        { color: "#e8505b", title: "Entrance Test", body: "Shortlisted candidates will be called for a computer based entrance examination at the College Campus on 4th June 2026.", bullets: ["Duration: ONE hour.", "Multiple Choice Questions in +2 level Mathematics.", "Questions will be in English and Tamil.", "There will be negative marking for the wrong answer.", "Topics for Entrance examination will be"] },
+                        { color: "#15803d", title: "Counselling", body: "Counselling will be held for shortlisted candidates from 4th June Afternoon onwards, at the college campus, to identify the SPARK and COMMITMENT of the applicant. Applicants can choose preference of programms at the time of counselling.", bullets: [] },
                       ].map((block, i) => (
                         <div key={i} className={innerBlock}>
-                          <h4 className="text-2xl font-bold mb-3" style={{ color: block.color }}>{block.title}</h4>
-                          <p className="text-grey-900 text-xl leading-relaxed">{block.body}</p>
+                          <h4 className="text-xl sm:text-2xl font-bold mb-3" style={{ color: block.color }}>{block.title}</h4>
+                          <p className="text-grey-900 text-base sm:text-lg md:text-xl leading-relaxed">{block.body}</p>
                           {block.bullets.length > 0 && (
                             <ul className="mt-3 space-y-1.5">
                               {block.bullets.map((b, bi) => (
-                                <li key={bi} className="flex items-start gap-2 text-grey-900 text-xl ">
+                                <li key={bi} className="flex items-start gap-2 text-grey-900 text-base sm:text-lg md:text-xl">
                                   <span className="w-1.5 h-1.5 bg-[#e8505b] rounded-full mt-1.5 flex-shrink-0" />
                                   {b}
                                 </li>
@@ -1351,96 +1323,72 @@ export default function STDCPage() {
                     </div>
                   )}
 
-                  {/* ── ALUMNI SPEAKS ── */}
+                  {/* ALUMNI SPEAKS */}
                   {activeTab === "alumni" && (
-  <div className="space-y-6">
-    {alumniSpeaks.map((a, i) => (
-      <div key={i} className="program-card">
-        {/* Flex container ensures image and text stay side-by-side */}
-        <div className="flex items-start gap-6">
-          
-          {/* Image Wrapper - Removed the w-14 restriction to allow 90px size */}
-          <div className="flex-shrink-0">
-            <img
-              src={a.img}
-              alt={a.name}
-              className="w-[90px] h-[90px] object-cover rounded-md border-2 border-[#a3cae9]"
-            />
-          </div>
+                    <div className="space-y-6">
+                      {alumniSpeaks.map((a, i) => (
+                        <div key={i} className="program-card">
+                          <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+                            <div className="flex-shrink-0">
+                              <img
+                                src={a.img}
+                                alt={a.name}
+                                className="w-16 h-16 sm:w-[90px] sm:h-[90px] object-cover rounded-md border-2 border-[#a3cae9]"
+                              />
+                            </div>
+                            <div className="flex-1">
+                              <h5 className="font-bold text-[#1a1a2e] text-xl sm:text-2xl">{a.name}</h5>
+                              <p className="text-[#1c3879] text-base sm:text-lg font-medium">{a.role}</p>
+                              <p className="text-[#e8505b] text-base sm:text-lg">{a.program}</p>
+                              <p className="text-gray-900 text-base sm:text-lg md:text-xl mt-3 leading-relaxed text-justify">{a.comment}</p>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
 
-          {/* Text Content Container */}
-          <div className="flex-1">
-            <h5 className="font-bold text-[#1a1a2e] text-2xl">
-              {a.name}
-            </h5>
-            <p className="text-[#1c3879] text-lg font-medium">
-              {a.role}
-            </p>
-            <p className="text-[#e8505b] text-lg">
-              {a.program}
-            </p>
-            <p className="text-gray-900 text-xl mt-3 leading-relaxed text-justify">
-              {a.comment}
-            </p>
-          </div>
-        </div>
-      </div>
-    ))}
-  </div>
-)}
+                  {/* ACHIEVEMENTS */}
+                  {activeTab === "achievements" && (
+                    <div className="space-y-6">
+                      <div className="flex flex-wrap gap-2 justify-center">
+                        {achievementCategories.map((cat, i) => (
+                          <button
+                            key={i}
+                            onClick={() => setActiveAchievement(cat)}
+                            className={`px-3 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold border transition-all ${
+                              activeAchievement === cat
+                                ? "bg-[#1e3a8a] text-white border-[#1e3a8a]"
+                                : "bg-white text-[#395A7F] border-[#a3cae9] hover:bg-[#e8f4ff]"
+                            }`}
+                          >
+                            {cat}
+                          </button>
+                        ))}
+                      </div>
 
-                  {/*  ── Achievements Section ────────────────────────────────────────────── */ }
-{activeTab === "achievements" && (
-  <div className="space-y-6">
-    {/* Category Filter Buttons */}
-    <div className="flex flex-wrap gap-2 justify-center">
-      {achievementCategories.map((cat, i) => (
-        <button
-          key={i}
-          onClick={() => setActiveAchievement(cat)}
-          className={`px-5 py-2 rounded-full text-sm font-semibold border transition-all ${
-            activeAchievement === cat
-              ? "bg-[#1e3a8a] text-white border-[#1e3a8a]"
-              : "bg-white text-[#395A7F] border-[#a3cae9] hover:bg-[#e8f4ff]"
-          }`}
-        >
-          {cat}
-        </button>
-      ))}
-    </div>
-
-    {/* Achievements Grid */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      {(activeAchievement === "All"
-        ? achievements
-        : achievements.filter((a) => a.category === activeAchievement)
-      ).map((a, i) => (
-        <div 
-          key={i} 
-          className="bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-6 text-center hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col items-center"
-        >
-          {/* FIXED SIZE IMAGE CONTAINER */}
-          <div className="relative w-32 h-32 mb-4">
-            <Image
-              src={a.img}
-              alt={a.name}
-              fill
-              sizes="128px"
-              className="object-cover rounded-full border-2 border-[#a3cae9]"
-            />
-          </div>
-
-          <h4 className="text-lg font-bold text-[#1e3a8a] leading-tight">
-            {a.name}
-          </h4>
-          <p className="text-base text-grey-900 mt-2 leading-relaxed">
-            {a.role}
-          </p>
-        </div>
-      ))}
-    </div>
-  </div>
-)}
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+                        {(activeAchievement === "All"
+                          ? achievements
+                          : achievements.filter((a) => a.category === activeAchievement)
+                        ).map((a, i) => (
+                          <div key={i} className="bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-4 sm:p-6 text-center hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col items-center">
+                            <div className="relative w-24 h-24 sm:w-32 sm:h-32 mb-3 sm:mb-4">
+                              <Image
+                                src={a.img}
+                                alt={a.name}
+                                fill
+                                sizes="128px"
+                                className="object-cover rounded-full border-2 border-[#a3cae9]"
+                              />
+                            </div>
+                            <h4 className="text-base sm:text-lg font-bold text-[#1e3a8a] leading-tight">{a.name}</h4>
+                            <p className="text-sm sm:text-base text-grey-900 mt-2 leading-relaxed">{a.role}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
 
                 </div>
               </div>
@@ -1448,179 +1396,119 @@ export default function STDCPage() {
 
             {/* ── Sidebar ── */}
             <div className="space-y-6">
-
               {/* Notable Alumni */}
-              {/* Notable Alumni */}
-              <div className="bg-white rounded-2xl shadow-md border border-[#dce8f5] p-6 text-center">
-                <h4 className="text-2xl font-bold text-[#1e3a8a] mb-4">🎓 Notable Alumni</h4>
+              <div className="bg-white rounded-2xl shadow-md border border-[#dce8f5] p-4 sm:p-6 text-center">
+                <h4 className="text-xl sm:text-2xl font-bold text-[#1e3a8a] mb-4">🎓 Notable Alumni</h4>
+                <div className="relative bg-[#f0f6ff] rounded-xl p-5 sm:p-6">
+                  <button onClick={prevAlumni} className="absolute left-2 top-1/2 -translate-y-1/2 bg-[#1e3a8a] text-white w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-lg font-bold hover:bg-[#395A7F] transition-colors">‹</button>
+                  <button onClick={nextAlumni} className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#1e3a8a] text-white w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-lg font-bold hover:bg-[#395A7F] transition-colors">›</button>
 
-                <div className="relative bg-[#f0f6ff] rounded-xl p-6">
-
-                  <button
-                    onClick={prevAlumni}
-                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-[#1e3a8a] text-white w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold hover:bg-[#395A7F] transition-colors"
-                  >
-                    ‹
-                  </button>
-
-                  <button
-                    onClick={nextAlumni}
-                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#1e3a8a] text-white w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold hover:bg-[#395A7F] transition-colors"
-                  >
-                    ›
-                  </button>
-
-                  <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-3">
-                    <img
-                      src={notableAlumni[alumniIndex].image}
-                      alt={notableAlumni[alumniIndex].name}
-                      className="w-full h-full object-cover rounded-full"
-                    />
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-3 overflow-hidden">
+                    <img src={notableAlumni[alumniIndex].image} alt={notableAlumni[alumniIndex].name} className="w-full h-full object-cover rounded-full" />
                   </div>
 
-                  
-                  <h5 className="text-xl font-bold text-[#1e3a8a] leading-tight">
+                  <h5 className="text-lg sm:text-xl font-bold text-[#1e3a8a] leading-tight">
                     {notableAlumni[alumniIndex].name.includes("(Veteran)") ? (
                       <>
                         {notableAlumni[alumniIndex].name.replace(" (Veteran)", "")}
                         <br />
-                        <span className="  text-[#1e3a8a] font-bold">
-                          (Veteran)
-                        </span>
+                        <span className="text-[#1e3a8a] font-bold">(Veteran)</span>
                       </>
                     ) : (
                       notableAlumni[alumniIndex].name
                     )}
                   </h5>
-
-                  <p className="text-lg font-medium text-[#e8505b] mt-1">
-                    {notableAlumni[alumniIndex].position}
-                  </p>
-
-                  <p className="text-lg text-[#64748b] mt-0.5">
-                    {notableAlumni[alumniIndex].organization}
-                  </p>
-
+                  <p className="text-base sm:text-lg font-medium text-[#e8505b] mt-1">{notableAlumni[alumniIndex].position}</p>
+                  <p className="text-base sm:text-lg text-[#64748b] mt-0.5">{notableAlumni[alumniIndex].organization}</p>
                 </div>
 
-                {/* Dots */}
                 <div className="flex justify-center gap-1.5 mt-3">
                   {notableAlumni.map((_, i) => (
-                    <button
-                      key={i}
-                      onClick={() => setAlumniIndex(i)}
-                      className={`w-2 h-2 rounded-full transition-all ${
-                        i === alumniIndex ? "bg-[#1e3a8a] w-4" : "bg-[#a3cae9]"
-                      }`}
-                    />
+                    <button key={i} onClick={() => setAlumniIndex(i)} className={`w-2 h-2 rounded-full transition-all ${i === alumniIndex ? "bg-[#1e3a8a] w-4" : "bg-[#a3cae9]"}`} />
                   ))}
                 </div>
               </div>
 
               {/* Important Dates */}
-              <div className="bg-gradient-to-br from-[#1e3a8a] to-[#0ea5e9] text-white rounded-3xl p-6 shadow-xl">
-                <h4 className="text-2xl font-bold mb-6">Important Dates</h4>
+              <div className="bg-gradient-to-br from-[#1e3a8a] to-[#0ea5e9] text-white rounded-3xl p-4 sm:p-6 shadow-xl">
+                <h4 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Important Dates</h4>
                 <ul className="space-y-4">
                   {[
-                    { label: "Last date for application submission",              date: "23rd May 2026 ,Saturday",                     icon: Calendar   },
-                    { label: "Notification of shortlisted candidates",            date: "29th May 2026,Friday",                     icon: Calendar   },
-                    { label: "Entrance test",                                     date: "4th June 2026,Wednesday",                     icon: Calendar   },
-                    { label: "Counselling in the campus",                         date: "3rd June Afternoon,Wednesday – 6th June 2026 ,Saturday", icon: Calendar  },
-                    { label: "Notification of final selected candidates",          date: "9th June 2026 ,Tuesday",                    icon: Calendar   },
-                    { label: "Last date for fee payment",                         date: "16th June 2026,Tuesday",                    icon: Calendar   },
-                    { label: "Cost of application",                               date: "750 INR",                           icon: CreditCard },
+                    { label: "Last date for application submission", date: "23rd May 2026 ,Saturday", icon: Calendar },
+                    { label: "Notification of shortlisted candidates", date: "29th May 2026,Friday", icon: Calendar },
+                    { label: "Entrance test", date: "3rd June 2026,Wednesday", icon: Calendar },
+                    { label: "Counselling in the campus", date: "3rd June Afternoon,Wednesday – 6th June 2026 ,Saturday", icon: Calendar },
+                    { label: "Notification of final selected candidates", date: "9th June 2026 ,Tuesday", icon: Calendar },
+                    { label: "Last date for fee payment", date: "16th June 2026,Tuesday", icon: Calendar },
+                    { label: "Cost of application", date: "750 INR", icon: CreditCard },
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <item.icon className="w-5 h-5 text-[#7dd3fc] flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="text-white/75 text-xl font-bold">{item.label}</p>
-                        <p className="text-white font-bold text-lg">{item.date}</p>
+                        <p className="text-white/75 text-base sm:text-xl font-bold">{item.label}</p>
+                        <p className="text-white font-bold text-sm sm:text-lg">{item.date}</p>
                       </div>
                     </li>
                   ))}
                 </ul>
-                <Link
-                  href=""
-                  className="mt-6 flex items-center justify-center gap-2 bg-white text-[#1e3a8a] font-bold px-6 py-3 rounded-xl hover:bg-[#e8f4ff] transition-colors w-full"
-                >
+                <Link href="" className="mt-6 flex items-center justify-center gap-2 bg-white text-[#1e3a8a] font-bold px-6 py-3 rounded-xl hover:bg-[#e8f4ff] transition-colors w-full">
                   Apply Now <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
 
               {/* How to apply */}
-              <div className="bg-white rounded-2xl shadow-md border border-[#dce8f5] p-6">
-                <h4 className="text-2xl font-bold text-[#1e3a8a] mb-3">How to apply?</h4>
-                <p className="text-black text-xl leading-relaxed text-justify">
-                  Application can be made only through online by entering all the particulars including marks along with
-                  online payment by Net banking / Credit card / Debit card / UPI. <strong>One application is sufficient for all
-                  five programmes (SS / TCS / DS / CS / CF)</strong> and preference of programme can be expressed at the time of counselling .All dates are subject
-                  to change based on HSC examination results.
+              <div className="bg-white rounded-2xl shadow-md border border-[#dce8f5] p-4 sm:p-6">
+                <h4 className="text-xl sm:text-2xl font-bold text-[#1e3a8a] mb-3">How to apply?</h4>
+                <p className="text-black text-base sm:text-lg md:text-xl leading-relaxed text-justify">
+                  Application can be made only through online by entering all the particulars including marks along with online payment by Net banking / Credit card / Debit card / UPI. <strong>One application is sufficient for all five programmes (SS / TCS / DS / CS / CF)</strong> and preference of programme can be expressed at the time of counselling. All dates are subject to change based on HSC examination results.
                 </p>
               </div>
-              
             </div>
+
           </div>
-          
         </div>
-        <div className="max-w-full mx-auto px-6 lg:px-10 mt-12">
-          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100">
-            <div className="mb-8">
-              <h2 className="text-[#1c3879] text-3xl md:text-4xl font-black uppercase tracking-tight">
-                Top Recruiters
-              </h2>
-              {/* Optional: Small accent line seen in many college layouts */}
+
+        {/* Top Recruiters */}
+        <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-10 mt-10 sm:mt-12">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 md:p-12 shadow-sm border border-gray-100">
+            <div className="mb-6 sm:mb-8">
+              <h2 className="text-[#1c3879] text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight">Top Recruiters</h2>
               <div className="w-20 h-1.5 bg-[#1c3879] mt-2 rounded-full"></div>
             </div>
-
-            {/* This is where your image_8b7548.jpg goes */}
-           <div className="w-full flex justify-center items-center py-8">
-            <div className="max-w-[1000px] w-full px-4"> {/* Optional: Limits max width so it's not huge */}
-              <img 
-                src="/toprecruiters.png" 
-                alt="Top Recruiters" 
-                className="mx-auto h-auto object-contain"
-              />
+            <div className="w-full flex justify-center items-center py-4 sm:py-8">
+              <div className="max-w-[1000px] w-full px-4">
+                <img src="/toprecruiters.png" alt="Top Recruiters" className="mx-auto h-auto object-contain" />
+              </div>
             </div>
           </div>
-          </div>
-        </div>
-        <section className="max-w-full mx-auto px-6 lg:px-10 mt-12 mb-16">
-      
-      {/* The White Card */}
-      <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100">
-        
-        {/* Title matches Top Recruiters exactly */}
-        <div className="mb-8">
-          <h2 className="text-[#1c3879] text-3xl md:text-4xl font-black uppercase tracking-tight">
-            Facilities
-          </h2>
-          <div className="w-20 h-1.5 bg-[#1c3879] mt-2 rounded-full"></div>
         </div>
 
-        {/* CENTRAL FIX: 
-          1. Added 'max-w-4xl' and 'mx-auto' to shrink the video width.
-          2. This forces the height to decrease while staying centered.
-        */}
-        <div className="max-w-5xl mx-auto">
-          <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-md border border-gray-100">
-            <iframe
-              src="https://www.youtube.com/embed/34uCuXp51I0?autoplay=0&rel=0"
-              title="Facilities Video"
-              className="absolute top-0 left-0 w-full h-full border-0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
+        {/* Facilities */}
+        <section className="max-w-full mx-auto px-4 sm:px-6 lg:px-10 mt-8 sm:mt-12 mb-12 sm:mb-16">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 md:p-12 shadow-sm border border-gray-100">
+            <div className="mb-6 sm:mb-8">
+              <h2 className="text-[#1c3879] text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight">Facilities</h2>
+              <div className="w-20 h-1.5 bg-[#1c3879] mt-2 rounded-full"></div>
+            </div>
+            <div className="max-w-5xl mx-auto">
+              <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-md border border-gray-100">
+                <iframe
+                  src="https://www.youtube.com/embed/34uCuXp51I0?autoplay=0&rel=0"
+                  title="Facilities Video"
+                  className="absolute top-0 left-0 w-full h-full border-0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+            <p className="text-gray-900 mt-4 sm:mt-6 font-medium italic text-center text-sm sm:text-base">
+              Applied Mathematics and Computational Sciences Laboratories
+            </p>
           </div>
-        </div>
-
-        <p className="text-gray-900 mt-6 font-medium italic text-center">
-          Applied Mathematics and Computational Sciences Laboratories
-        </p>
-      </div>
-    </section>
+        </section>
 
       </section>
-      
+
       <Footer />
     </main>
   );

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState,useEffect  } from "react";
+import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -9,6 +9,7 @@ import { Home, ChevronRight, BookOpen, FileText, CheckCircle, Users, Calendar, C
 export default function SciencePage() {
   const [activeTab, setActiveTab] = useState("overview");
   const [alumniIndex, setAlumniIndex] = useState(0);
+
   const nextAlumni = () => {
     setAlumniIndex((prev) =>
       prev === notableAlumni.length - 1 ? 0 : prev + 1
@@ -20,15 +21,16 @@ export default function SciencePage() {
       prev === 0 ? notableAlumni.length - 1 : prev - 1
     );
   };
-    useEffect(() => {
-        const interval = setInterval(() => {
-          setAlumniIndex((prev) =>
-            prev === notableAlumni.length - 1 ? 0 : prev + 1
-          );
-        }, 3000);
-    
-        return () => clearInterval(interval);
-      }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAlumniIndex((prev) =>
+        prev === notableAlumni.length - 1 ? 0 : prev + 1
+      );
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   const notableAlumni = [
     { 
       name: "Sriram G", 
@@ -220,60 +222,59 @@ export default function SciencePage() {
     },
   ];
 
- 
-
   return (
     <main className="bg-[#f4f7fb] min-h-screen">
       <Header />
 
       {/* Hero Section */}
-
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-[#0f172a] via-[#1e3a8a] to-[#0ea5e9] overflow-hidden">
+      <section className="relative pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 bg-gradient-to-br from-[#0f172a] via-[#1e3a8a] to-[#0ea5e9] overflow-hidden">
         <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
-
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* Left Content */}
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
-              B.Sc <span className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">Applied Science{" "} <span className="text-[#7dd3fc]">Programme</span></span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight">
+              B.Sc{" "}
+              <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+                Applied Science{" "}
+                <span className="text-[#7dd3fc]">Programme</span>
+              </span>
             </h1>
-
-            <p className="text-white/80 text-2xl mb-6">
+            <p className="text-white/80 text-lg sm:text-xl md:text-2xl mb-4 sm:mb-6">
               Department of Applied Science
             </p>
-
             {/* Breadcrumb */}
-            <div className="flex items-center gap-2 text-white/70">
+            <div className="flex items-center gap-2 text-white/70 text-sm sm:text-base">
               <Link href="/" className="flex items-center gap-1 hover:text-white transition-colors">
                 <Home className="w-4 h-4" />
                 Home
               </Link>
-
               <ChevronRight className="w-4 h-4" />
-
               <span className="text-white">Programme Details</span>
             </div>
           </div>
-
-
         </div>
       </section>
 
       {/* Main Content */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Main Content */}
+      <section className="py-10 sm:py-14 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+
+            {/* Main Panel */}
             <div className="lg:col-span-2">
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl overflow-hidden">
-                <div className="p-6 border-b">
-                  <h2 className="text-4xl font-bold text-[#1e3a8a] mb-3">B.Sc Applied Science</h2>
-                  <p className="text-xl font-bold text-[#1e3a8a]">Three Year Undergraduate Programme - Government Aided Programme</p>
+                <div className="p-4 sm:p-6 border-b">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1e3a8a] mb-2 sm:mb-3">
+                    B.Sc Applied Science
+                  </h2>
+                  <p className="text-base sm:text-lg md:text-xl font-bold text-[#1e3a8a]">
+                    Three Year Undergraduate Programme - Government Aided Programme
+                  </p>
                 </div>
-                
+
                 {/* Tabs */}
-                <div className="flex flex-wrap gap-2 p-4 bg-[#f7faff] border-b border-[#dce8f5]">
+                <div className="flex flex-wrap gap-2 p-3 sm:p-4 bg-[#f7faff] border-b border-[#dce8f5]">
                   {[
                     { id: "overview", label: "Overview", icon: BookOpen },
                     { id: "curriculum", label: "Curriculum", icon: FileText },
@@ -283,52 +284,52 @@ export default function SciencePage() {
                     <button
                       key={tab.id}
                       onClick={() => setActiveTab(tab.id)}
-                      className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xl font-semibold transition-all ${
+                      className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-sm sm:text-base md:text-xl font-semibold transition-all ${
                         activeTab === tab.id
                           ? "bg-gradient-to-r from-[#1e3a8a] to-[#0ea5e9] text-white shadow-md"
                           : "bg-white text-[#395A7F] border border-[#a3cae9] hover:bg-[#e8f4ff]"
                       }`}
                     >
-                      <tab.icon className="w-4 h-4" />
+                      <tab.icon className="w-4 h-4 flex-shrink-0" />
                       {tab.label}
                     </button>
                   ))}
                 </div>
 
                 {/* Tab Content */}
-                <div className="p-6">
+                <div className="p-4 sm:p-6">
                   {activeTab === "overview" && (
                     <div className="space-y-6">
                       <div>
-                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Department</h4>
-                        <p className="text-gray-900 leading-relaxed text-xl text-justify">
-                          The <strong>Department of Applied Science</strong> accomplishes its vision of “Producing alumni who will build and uphold the reputation of the department as a premier teaching and research establishment and attract young talents through their own endeavour” with the help of a team of dynamic and versatile faculty members. The department has been offering the BSc Applied Science programme since 1971, and PhD programmes since 1977. The innovative teaching methodologies adopted by the faculty members and the laboratory / research facilities provided by the department are aimed to make a positive impact on the students. The curriculum is built and updated based on National / Global scientific and technological growth. The department engages in interactions with other Institutes / Organizations and Industries through various outreach programs. The outcome of these interactions apparently infiltrates into the teaching learning process, thus providing quality higher education on par with International standards. This in turn helps our undergrads to certainly find a position in the national and international research Institutes and Industries as well. The various in house co-curricular and extracurricular activities helps our students to appreciate the spirit of team work and to build organizational and leadership qualities.
+                        <h4 className="text-xl sm:text-2xl font-bold text-[#1c3879] mb-3">About the Department</h4>
+                        <p className="text-gray-900 leading-relaxed text-base sm:text-lg md:text-xl text-justify">
+                          The <strong>Department of Applied Science</strong> accomplishes its vision of "Producing alumni who will build and uphold the reputation of the department as a premier teaching and research establishment and attract young talents through their own endeavour" with the help of a team of dynamic and versatile faculty members. The department has been offering the BSc Applied Science programme since 1971, and PhD programmes since 1977. The innovative teaching methodologies adopted by the faculty members and the laboratory / research facilities provided by the department are aimed to make a positive impact on the students. The curriculum is built and updated based on National / Global scientific and technological growth. The department engages in interactions with other Institutes / Organizations and Industries through various outreach programs. The outcome of these interactions apparently infiltrates into the teaching learning process, thus providing quality higher education on par with International standards. This in turn helps our undergrads to certainly find a position in the national and international research Institutes and Industries as well. The various in house co-curricular and extracurricular activities helps our students to appreciate the spirit of team work and to build organizational and leadership qualities.
                         </p>
                       </div>
 
                       <div>
-                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">About the Programme</h4>
-                        <p className="text-gray-900 leading-relaxed mb-4 text-xl text-justify">
+                        <h4 className="text-xl sm:text-2xl font-bold text-[#1c3879] mb-3">About the Programme</h4>
+                        <p className="text-gray-900 leading-relaxed mb-4 text-base sm:text-lg md:text-xl text-justify">
                           The B.Sc. Applied Science Programme which is currently a Government aided programme, commenced in the year 1971 and PSG College of Technology is the pioneer in running this programme. It has a unique structure in the sense that it gives the students a broad based science background. They may however specialize in one of the basic sciences namely Physics, Chemistry or Mathematics with adequate computer programming skills. This helps to prepare the students for any analytically oriented profession, while at the same time enabling them to take up post-graduate studies in Physical, Chemical, Mathematical and Computational Sciences. Subsequently they could pursue research in the leading institutions and national R & D laboratories. Besides the regular theory and laboratory subjects, students are offered elective subjects in emerging areas of study. They are also exposed to engineering practices and research methodologies by means of a project that has to be completed in the final semester. This would enable them to engage in life-long learning and thereby make them versatile practitioners or researchers in their chosen fields
                         </p>
                       </div>
 
                       <div>
-                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">Scope for Placement and Higher Studies</h4>
-                        <p className="text-gray-900 leading-relaxed mb-4 text-xl text-justify">
-                          The curriculum and syllabi are updated once in three years to reflect the latest advancements in 
-                          the field of Science, Engineering and Technology. This helps our students to get placed in reputed 
-                          core industries such as Kenna Metals, Indian Molasses Company, Titan, MRF and software companies 
+                        <h4 className="text-xl sm:text-2xl font-bold text-[#1c3879] mb-3">Scope for Placement and Higher Studies</h4>
+                        <p className="text-gray-900 leading-relaxed mb-4 text-base sm:text-lg md:text-xl text-justify">
+                          The curriculum and syllabi are updated once in three years to reflect the latest advancements in
+                          the field of Science, Engineering and Technology. This helps our students to get placed in reputed
+                          core industries such as Kenna Metals, Indian Molasses Company, Titan, MRF and software companies
                           such as Tata Consultancy Services (TCS), Cognizant Technology Solutions (CTS), WIPRO etc.
                         </p>
-                        <p className="text-gray-900 leading-relaxed text-xl text-justify">
+                        <p className="text-gray-900 leading-relaxed text-base sm:text-lg md:text-xl text-justify">
                           A sizeable group of students aspire to do their post-graduation in Physics, Chemistry or Mathematics in reputed Institutions such as IITs, IISc, NITs, and Central Universities; Management or Computer Application programmes in Institutions such as IIMs, reputed B-Schools, Engineering Institutions and Universities by successfully clearing the appropriate entrance examinations. In addition to this, our students are eligible to do MBA, MCA, PG programmes in Physics, Chemistry, Mathematics, Materials Science, Applied Physics, Medical Physics, Applied Chemistry and Applied Mathematics.
                         </p>
                       </div>
 
-                      <div className="bg-[#1c3879]/5 rounded-xl p-6">
-                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">Fees Structure</h4>
-                        <p className="text-gray-900 text-xl">
+                      <div className="bg-[#1c3879]/5 rounded-xl p-4 sm:p-6">
+                        <h4 className="text-xl sm:text-2xl font-bold text-[#1c3879] mb-3">Fees Structure</h4>
+                        <p className="text-gray-900 text-base sm:text-lg md:text-xl">
                           Approximately <strong className="text-[#e8505b]">Rs. 20,000</strong> (Twenty thousand) per annum
                         </p>
                       </div>
@@ -337,13 +338,19 @@ export default function SciencePage() {
 
                   {activeTab === "curriculum" && (
                     <div className="space-y-8">
-                      <div className="grid md:grid-cols-2 gap-4">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {Object.entries(curriculum).map(([semester, subjects]) => (
-                          <div key={semester} className="text-2xl bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-5 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
-                            <h4 className="font-bold text-2xl mb-4">{semester}</h4>
+                          <div
+                            key={semester}
+                            className="bg-[#f0f6ff] border border-[#c3ddf5] rounded-2xl p-4 sm:p-5 hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+                          >
+                            <h4 className="font-bold text-xl sm:text-2xl mb-3 sm:mb-4">{semester}</h4>
                             <ul className="space-y-2">
                               {subjects.map((subject, idx) => (
-                                <li key={idx} className="text-[#334155] text-xl flex items-start gap-2 text-left ">
+                                <li
+                                  key={idx}
+                                  className="text-[#334155] text-base sm:text-lg md:text-xl flex items-start gap-2 text-left"
+                                >
                                   <span className="w-1.5 h-1.5 bg-[#0ea5e9] rounded-full mt-1.5 flex-shrink-0"></span>
                                   {subject}
                                 </li>
@@ -357,21 +364,21 @@ export default function SciencePage() {
 
                   {activeTab === "selection" && (
                     <div className="space-y-6">
-                      <div className="bg-[#1c3879]/5 rounded-xl p-6">
-                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">Eligibility</h4>
-                        <p className="text-gray-900 leading-relaxed text-xl text-justify">
-                          A pass in Higher Secondary examination of the (10+2) curriculum prescribed by the appropriate 
-                          authority of the Government of Tamil Nadu with Mathematics, Physics and Chemistry as the subjects 
-                          of study or any other exam recognized as equivalent. 
+                      <div className="bg-[#1c3879]/5 rounded-xl p-4 sm:p-6">
+                        <h4 className="text-xl sm:text-2xl font-bold text-[#1c3879] mb-3">Eligibility</h4>
+                        <p className="text-gray-900 leading-relaxed text-base sm:text-lg md:text-xl text-justify">
+                          A pass in Higher Secondary examination of the (10+2) curriculum prescribed by the appropriate
+                          authority of the Government of Tamil Nadu with Mathematics, Physics and Chemistry as the subjects
+                          of study or any other exam recognized as equivalent.
                         </p>
                       </div>
 
-                      <div className="bg-[#1c3879]/5 rounded-xl p-6">
-                        <h4 className="text-2xl font-bold text-[#1c3879] mb-3">Selection Process</h4>
-                        <p className="text-gray-900 leading-relaxed text-xl text-justify">
+                      <div className="bg-[#1c3879]/5 rounded-xl p-4 sm:p-6">
+                        <h4 className="text-xl sm:text-2xl font-bold text-[#1c3879] mb-3">Selection Process</h4>
+                        <p className="text-gray-900 leading-relaxed text-base sm:text-lg md:text-xl text-justify">
                           Based on ranking, as per the aggregate percentage of marks obtained in Mathematics, Physics and Chemistry of the plus two examinations, the candidate will be called for counselling cum admission and will be intimated through the applicants' registered e-mail.
                         </p>
-                        <p className="text-gray-900 leading-relaxed text-xl">
+                        <p className="text-gray-900 leading-relaxed text-base sm:text-lg md:text-xl">
                           However, call for counselling does not confer any right of admission.
                         </p>
                       </div>
@@ -382,34 +389,28 @@ export default function SciencePage() {
                     <div className="space-y-6">
                       {alumni.map((alum, idx) => (
                         <div key={idx} className="program-card">
-                          {/* Flex container ensures image and text stay side-by-side */}
-                          <div className="flex items-start gap-6">
-                            
-                            {/* Image Wrapper - Removed the w-14 restriction to allow 90px size */}
-                            <div className="flex-shrink-0 ">
+                          <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+                            <div className="flex-shrink-0">
                               <img
                                 src={alum.image}
                                 alt={alum.name}
-                                className="w-[90px] h-[90px] object-cover rounded-md border-2 border-[#a3cae9]"
+                                className="w-16 h-16 sm:w-[90px] sm:h-[90px] object-cover rounded-md border-2 border-[#a3cae9]"
                               />
                             </div>
-
-                            {/* Text Content Container */}
-                            <div className="flex-1 ">
-                              <h5 className="font-bold text-[#1a1a2e] text-2xl ">
+                            <div className="flex-1">
+                              <h5 className="font-bold text-[#1a1a2e] text-xl sm:text-2xl">
                                 {alum.name}
                               </h5>
-                              <p className="text-[#1c3879] text-lg font-medium mb-2">
+                              <p className="text-[#1c3879] text-base sm:text-lg font-medium mb-2">
                                 {alum.position}
                               </p>
-                              <p className="text-[#e8505b] text-lg">
+                              <p className="text-[#e8505b] text-base sm:text-lg">
                                 {alum.batch}
                               </p>
-                              <p className="text-gray-900 text-xl mt-3 leading-relaxed text-justify">
+                              <p className="text-gray-900 text-base sm:text-lg md:text-xl mt-3 leading-relaxed text-justify">
                                 {alum.testimonial}
                               </p>
                             </div>
-                            
                           </div>
                         </div>
                       ))}
@@ -421,32 +422,39 @@ export default function SciencePage() {
 
             {/* Sidebar */}
             <div className="space-y-6">
-              <div className="bg-white rounded-2xl shadow-md border border-[#dce8f5] p-6 text-center">
-                <h4 className="text-2xl font-bold text-[#1e3a8a] mb-4">🎓 Notable Alumni</h4>
-                <div className="relative bg-[#f0f6ff] rounded-xl p-6">
+              {/* Notable Alumni */}
+              <div className="bg-white rounded-2xl shadow-md border border-[#dce8f5] p-4 sm:p-6 text-center">
+                <h4 className="text-xl sm:text-2xl font-bold text-[#1e3a8a] mb-4">🎓 Notable Alumni</h4>
+                <div className="relative bg-[#f0f6ff] rounded-xl p-5 sm:p-6">
                   <button
                     onClick={prevAlumni}
-                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-[#1e3a8a] text-white w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold hover:bg-[#395A7F] transition-colors"
+                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-[#1e3a8a] text-white w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-lg font-bold hover:bg-[#395A7F] transition-colors"
                   >
                     ‹
                   </button>
                   <button
                     onClick={nextAlumni}
-                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#1e3a8a] text-white w-8 h-8 rounded-full flex items-center justify-center text-lg font-bold hover:bg-[#395A7F] transition-colors"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#1e3a8a] text-white w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-lg font-bold hover:bg-[#395A7F] transition-colors"
                   >
                     ›
                   </button>
 
-                  <div className="w-24 h-24 bg-white rounded-full  flex items-center justify-center mx-auto mb-3 ">
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-3 overflow-hidden">
                     <img
                       src={notableAlumni[alumniIndex].image}
                       alt={notableAlumni[alumniIndex].name}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h5 className="text-xl font-bold text-[#1e3a8a]">{notableAlumni[alumniIndex].name}</h5>
-                  <p className="text-lg font-medium text-[#e8505b] mt-1">{notableAlumni[alumniIndex].position}</p>
-                  <p className="text-lg text-[#64748b] mt-0.5">{notableAlumni[alumniIndex].organization}</p>
+                  <h5 className="text-lg sm:text-xl font-bold text-[#1e3a8a]">
+                    {notableAlumni[alumniIndex].name}
+                  </h5>
+                  <p className="text-base sm:text-lg font-medium text-[#e8505b] mt-1">
+                    {notableAlumni[alumniIndex].position}
+                  </p>
+                  <p className="text-base sm:text-lg text-[#64748b] mt-0.5">
+                    {notableAlumni[alumniIndex].organization}
+                  </p>
                 </div>
 
                 {/* Dots */}
@@ -455,42 +463,44 @@ export default function SciencePage() {
                     <button
                       key={i}
                       onClick={() => setAlumniIndex(i)}
-                      className={`w-2 h-2 rounded-full transition-all ${i === alumniIndex ? "bg-[#1e3a8a] w-4" : "bg-[#a3cae9]"}`}
+                      className={`w-2 h-2 rounded-full transition-all ${
+                        i === alumniIndex ? "bg-[#1e3a8a] w-4" : "bg-[#a3cae9]"
+                      }`}
                     />
                   ))}
                 </div>
               </div>
-              
+
               {/* Important Dates */}
-              <div className="bg-gradient-to-br from-[#1e3a8a] to-[#0ea5e9] text-white rounded-3xl p-6 shadow-xl">
-                <h4 className="text-2xl font-bold mb-6">Important Dates</h4>
+              <div className="bg-gradient-to-br from-[#1e3a8a] to-[#0ea5e9] text-white rounded-3xl p-4 sm:p-6 shadow-xl">
+                <h4 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Important Dates</h4>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-xl font-bold ">Last date for application submission</p>
-                      <p className="text-white font-bold text-lg ">15th May 2026</p>
+                      <p className="text-white/70 text-base sm:text-xl font-bold">Last date for application submission</p>
+                      <p className="text-white font-bold text-sm sm:text-lg">15th May 2026</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-xl font-bold">Notification of shortlisted candidates for Counselling cum Admission</p>
-                      <p className="text-white font-bold text-lg">17th May 2026</p>
+                      <p className="text-white/70 text-base sm:text-xl font-bold">Notification of shortlisted candidates for Counselling cum Admission</p>
+                      <p className="text-white font-bold text-sm sm:text-lg">17th May 2026</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-xl font-bold">Counselling cum Admission</p>
-                      <p className="text-white font-bold text-lg">23rd May 2026</p>
+                      <p className="text-white/70 text-base sm:text-xl font-bold">Counselling cum Admission</p>
+                      <p className="text-white font-bold text-sm sm:text-lg">23rd May 2026</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <CreditCard className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-white/70 text-xl font-bold">Cost of application</p>
-                      <p className="text-white font-bold text-lg">150 INR</p>
+                      <p className="text-white/70 text-base sm:text-xl font-bold">Cost of application</p>
+                      <p className="text-white font-bold text-sm sm:text-lg">150 INR</p>
                     </div>
                   </li>
                 </ul>
@@ -501,15 +511,16 @@ export default function SciencePage() {
               </div>
 
               {/* How to Apply */}
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6">
-                <h4 className="text-2xl font-bold text-[#1c3879] mb-4">How to apply?</h4>
-                <p className="text-gray-900 text-xl leading-relaxed text-justify">
-                  Application can be made online by entering all the particulars including marks along with online 
-                  payment through Net banking/Credit card/Debit card/UPI. All dates are subject to change based on 
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-4 sm:p-6">
+                <h4 className="text-xl sm:text-2xl font-bold text-[#1c3879] mb-4">How to apply?</h4>
+                <p className="text-gray-900 text-base sm:text-lg md:text-xl leading-relaxed text-justify">
+                  Application can be made online by entering all the particulars including marks along with online
+                  payment through Net banking/Credit card/Debit card/UPI. All dates are subject to change based on
                   HSC examination results.
                 </p>
               </div>
             </div>
+
           </div>
         </div>
       </section>
