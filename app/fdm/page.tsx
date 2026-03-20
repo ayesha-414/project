@@ -242,7 +242,7 @@ export default function FDMPage() {
             </div>
           </div>
 
-          {/* Video */}
+          {/* Video... */}
           <div className="relative mt-6 lg:mt-0">
             <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl overflow-hidden p-2 sm:p-3 hover:scale-105 transition-all duration-500">
               <div className="aspect-video rounded-2xl overflow-hidden">
