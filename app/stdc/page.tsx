@@ -1532,7 +1532,7 @@ export default function STDCPage() {
                 <p className="text-black text-xl leading-relaxed text-justify">
                   Application can be made only through online by entering all the particulars including marks along with
                   online payment by Net banking / Credit card / Debit card / UPI. <strong>One application is sufficient for all
-                  five programmes (SS / TCS / DS / CS / CF)</strong> and preference of courses can be selected. All dates are subject
+                  five programmes (SS / TCS / DS / CS / CF)</strong> and preference of programme can be expressed at the time of counselling .All dates are subject
                   to change based on HSC examination results.
                 </p>
               </div>

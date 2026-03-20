@@ -65,7 +65,7 @@ export default function Home() {
     {
       title: "M.Sc Fashion Design & Merchandising",
       description:
-        "M.Sc Fashion Design & Merchandising was started in the year 2015. The curriculum is designed to prepare graduates with a solid understanding and expertise required to enter professional practice in the challenging fashion industry.",
+        "The M.Sc. Fashion Design and Merchandising programme, established in 2015, is thoughtfully structured to cultivate creative talent and develop industry-ready professionals for the dynamic and ever-evolving fashion landscape. The curriculum seamlessly integrates design innovation, apparel manufacturing and merchandising strategies offering students a holistic understanding of the fashion ecosystem. With a strong emphasis on experiential learning and emerging industry trends, the programme equips graduates with the essential skills, in-depth knowledge, and professional confidence needed to excel in the fashion industry and adapt to its continuously changing demands.",
       href: "/fdm",
       icon: "fashion",
 

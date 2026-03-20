@@ -54,7 +54,8 @@ export default function Header() {
                 <Image src={LOGO_PSG} alt="PSG Logo" width={35} height={45}  />
               </div>
               <div className="border-l-2 border/30 pl-4">
-                <h1 className="text-white font-black text-2xl md:text-2xl leading-tight tracking-tight uppercase">
+                <h1 className="text-white font-black text-2xl md:text-2xl uppercase tracking-wide"
+                    style={{ wordSpacing: "6px" }}>
                   PSG College of Technology
                 </h1>
               </div>
@@ -78,12 +79,12 @@ export default function Header() {
 
         {/* --- BOTTOM TIER: NAVIGATION LINKS --- */}
         <nav className="hidden lg:flex items-center justify-center gap-1 xl:gap-8 py-0  ">
-          <Link href="/" className="nav-link text-[17px] xl:text-2xl font-bold text-white px-4 py-1.5 hover:text-blue-200 transition-all">Home</Link>
-          <Link href="/#about" className="nav-link text-[17px] xl:text-2xl font-bold text-white px-4 py-1.5 hover:text-blue-200 transition-all">About</Link>
+          <Link href="/" className="nav-link text-[17px] xl:text-2xl font-bold text-white px-4 py-1.5 hover:text-blue-200 transition-all uppercase">Home</Link>
+          <Link href="/#about" className="nav-link text-[17px] xl:text-2xl font-bold text-white px-4 py-1.5 hover:text-blue-200 transition-all uppercase">About</Link>
           
           {/* Programmes Dropdown */}
           <div className="relative group">
-            <button className="nav-link flex items-center gap-1 text-[17px] xl:text-2xl font-bold text-white px-4 py-1.5 hover:text-blue-200 transition-all">
+            <button className="nav-link flex items-center gap-1 text-[17px] xl:text-2xl font-bold text-white px-4 py-1.5 hover:text-blue-200 transition-all uppercase">
               Programmes
               <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
             </button>
@@ -95,7 +96,7 @@ export default function Header() {
                     <div
                       key={idx}
                       onMouseEnter={() => setActiveProgram(idx)}
-                      className="group flex items-center justify-between px-4 py-3 rounded-xl cursor-pointer font-black uppercase tracking-widest text-sm text-gray-600 hover:bg-blue-50 hover:text-[#1c3879] transition-all"
+                      className="group flex items-center justify-between px-4 py-3 rounded-xl cursor-pointer font-black uppercase tracking-widest text-sm text-gray-600 hover:bg-blue-50 hover:text-[#1c3879] transition-all uppercase"
                     >
                       <span>{category.name}</span>
                       <ArrowRight className="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
@@ -128,9 +129,9 @@ export default function Header() {
             </div>
           </div>
 
-          <Link href="/gallery" className="nav-link text-[17px] xl:text-2xl font-bold text-white px-4 py-1.5 hover:text-blue-200 transition-all">Gallery</Link>
-          <Link href="/#schedule" className="nav-link text-[17px] xl:text-2xl font-bold text-white px-4 py-1.5 hover:text-blue-200 transition-all">Schedule</Link>
-          <Link href="/#contact" className="nav-link text-[17px] xl:text-2xl font-bold text-white px-4 py-1.5 hover:text-blue-200 transition-all">Contact</Link>
+          <Link href="/gallery" className="nav-link text-[17px] xl:text-2xl font-bold text-white px-4 py-1.5 hover:text-blue-200 transition-all uppercase">Gallery</Link>
+          <Link href="/#schedule" className="nav-link text-[17px] xl:text-2xl font-bold text-white px-4 py-1.5 hover:text-blue-200 transition-all uppercase">Schedule</Link>
+          <Link href="/#contact" className="nav-link text-[17px] xl:text-2xl font-bold text-white px-4 py-1.5 hover:text-blue-200 transition-all uppercase">Contact</Link>
         </nav>
 
         {/* Bottom Accent Gradient */}

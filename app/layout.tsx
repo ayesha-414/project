@@ -1,21 +1,24 @@
 import React from "react"
 import type { Metadata } from 'next'
-import { Inter, Poppins } from 'next/font/google'
+import { Poppins, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const inter = Inter({ 
-  subsets: ["latin"],
-  variable: '--font-inter'
-});
-
+// Body font (clean & readable)
 const poppins = Poppins({ 
   subsets: ["latin"],
   weight: ['300', '400', '500', '600', '700', '800'],
   variable: '--font-poppins'
 });
 
-export const metadata = {
+// Heading font (professional / elegant)
+const headingFont = Playfair_Display({
+  subsets: ["latin"],
+  weight: ['400', '600', '700'],
+  variable: '--font-heading'
+});
+
+export const metadata: Metadata = {
   title: "B.Sc & M.Sc Programmes Admission - PSG College of Technology",
   icons: {
     icon: "/image/favicon.png",
@@ -24,16 +27,21 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${poppins.variable} font-sans antialiased`}>
+      <body
+        className={`
+          ${poppins.variable} 
+          ${headingFont.variable} 
+          font-sans antialiased
+        `}
+      >
         {children}
         <Analytics />
       </body>
     </html>
   )
 }
-

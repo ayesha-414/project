@@ -251,7 +251,7 @@ const objectives = [
                 <div className="aspect-video rounded-2xl overflow-hidden">
                   <iframe
                     className="w-full h-full"
-                    src="https://youtu.be/_wSz_NovBZw?si=p0QFgxboD-BHYswr"
+                    src="https://www.youtube.com/embed/_wSz_NovBZw?si=j1bBTEyiczpnqv33"
                     title="PSG Program Video"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
