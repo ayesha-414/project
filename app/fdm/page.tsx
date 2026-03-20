@@ -246,7 +246,21 @@ const objectives = [
               <span className="text-white">Programme Details</span>
             </div>
           </div>
-
+            <div className="relative">
+              <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl overflow-hidden p-3 hover:scale-105 transition-all duration-500">
+                <div className="aspect-video rounded-2xl overflow-hidden">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://youtu.be/_wSz_NovBZw?si=p0QFgxboD-BHYswr"
+                    title="PSG Program Video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-cyan-400 blur-3xl opacity-20 -z-10" />
+            </div>
 
         </div>
       </section>

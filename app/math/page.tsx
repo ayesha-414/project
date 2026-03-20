@@ -286,7 +286,7 @@ export default function MathPage() {
               <span className="text-white">Programme Details</span>
             </div>
           </div>
-
+          
 
         </div>
       </section>
