@@ -307,7 +307,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 3-year */}
+          {/* 3-yearr */}
           <div className="mb-10 sm:mb-14 lg:mb-16">
             <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold text-[#395A7F] mb-6 sm:mb-8 flex items-baseline gap-2">
   
