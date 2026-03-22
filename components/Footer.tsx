@@ -103,7 +103,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contactt */}
           <div id="contact">
             <h5 className="text-xl sm:text-2xl font-semibold mb-6">Contact Us</h5>
             <ul className="space-y-4">
