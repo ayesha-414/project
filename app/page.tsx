@@ -277,14 +277,12 @@ export default function Home() {
           {/* 5-year */}
           <div className="mb-10 sm:mb-14 lg:mb-16">
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#395A7F] mb-6 sm:mb-8 flex items-center gap-3">
- <span
-  className="flex items-center justify-center w-10 h-10 bg-white text-[#395A7F] rounded-md text-xl sm:text-2xl font-bold border border-[#395A7F]"
-  style={{ fontFamily: "Orbitron, sans-serif" }}
+<span
+  className="text-3xl sm:text-4xl lg:text-5xl font-semibold text--[#395A7F]"
+  style={{ fontFamily: "Poppins, sans-serif" }}
 >
   5
 </span>
-
-
 
                Year M.Sc Integrated Programmes
             </h3>
@@ -308,11 +306,11 @@ export default function Home() {
           <div className="mb-10 sm:mb-14 lg:mb-16">
             <h3 className="text-xl sm:text-2xl font-bold text-[#395A7F] mb-6 sm:mb-8 flex items-center gap-3">
               <span
-              className="flex items-center justify-center w-10 h-10 bg-white text-[#395A7F] rounded-md text-xl sm:text-2xl font-bold border border-[#395A7F]"
-              style={{ fontFamily: "Orbitron, sans-serif" }}
-            >
-              3
-            </span>
+  className="text-3xl sm:text-4xl lg:text-5xl font-semibold text--[#395A7F]"
+  style={{ fontFamily: "Poppins, sans-serif" }}
+>
+  3
+</span>
                Year B.Sc Programmes
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 text-justify">
@@ -334,11 +332,11 @@ export default function Home() {
           <div>
             <h3 className="text-xl sm:text-2xl font-bold text-[#395A7F] mb-6 sm:mb-8 flex items-center gap-3">
               <span
-              className="flex items-center justify-center w-10 h-10 bg-white text-[#395A7F] rounded-md text-xl sm:text-2xl font-bold border border-[#395A7F]"
-              style={{ fontFamily: "Orbitron, sans-serif" }}
-            >
-              2
-            </span>
+  className="text-3xl sm:text-4xl lg:text-5xl font-semibold text--[#395A7F]"
+  style={{ fontFamily: "Poppins, sans-serif" }}
+>
+  2
+</span>
                Year M.Sc Programme
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 text-justify">
