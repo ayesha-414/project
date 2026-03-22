@@ -278,7 +278,7 @@ export default function Home() {
           <div className="mb-10 sm:mb-14 lg:mb-16">
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#395A7F] mb-6 sm:mb-8 flex items-center gap-3">
 <span
-  className="text-3xl sm:text-4xl lg:text-5xl font-semibold text--[#395A7F]"
+  className="text-2xl sm:text-5xl lg:text-4xl font-semibold text--[#395A7F] mt-1"
   style={{ fontFamily: "Poppins, sans-serif" }}
 >
   5
@@ -304,9 +304,9 @@ export default function Home() {
 
           {/* 3-year */}
           <div className="mb-10 sm:mb-14 lg:mb-16">
-            <h3 className="text-xl sm:text-2xl font-bold text-[#395A7F] mb-6 sm:mb-8 flex items-center gap-3">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#395A7F] mb-6 sm:mb-8 flex items-center gap-3">
               <span
-  className="text-3xl sm:text-4xl lg:text-5xl font-semibold text--[#395A7F]"
+  className="text-2xl sm:text-5xl lg:text-4xl font-semibold text--[#395A7F] mt-1"
   style={{ fontFamily: "Poppins, sans-serif" }}
 >
   3
@@ -330,9 +330,9 @@ export default function Home() {
 
           {/* 2-year */}
           <div>
-            <h3 className="text-xl sm:text-2xl font-bold text-[#395A7F] mb-6 sm:mb-8 flex items-center gap-3">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#395A7F] mb-6 sm:mb-8 flex items-center gap-3">
               <span
-  className="text-3xl sm:text-4xl lg:text-5xl font-semibold text--[#395A7F]"
+  className="text-2xl sm:text-5xl lg:text-4xl font-semibold text--[#395A7F] mt-1"
   style={{ fontFamily: "Poppins, sans-serif" }}
 >
   2
