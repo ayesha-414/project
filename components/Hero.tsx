@@ -213,14 +213,14 @@ export default function Hero() {
           {[...Array(6)].map((_, i) => (
             <span
               key={i}
-              className="inline-flex items-center gap-12 py-1.5 px-8 text-white font-semibold tracking-wide text-xs sm:text-sm"
+              className="inline-flex items-center gap-12 py-1 px-8 text-white font-semibold tracking-wide text-xs sm:text-lg"
             >
               📢 PSG College of Technology is Celebrating 75 Years of Academic Excellence
             </span>
           ))}
         </div>
       </div>
-
+      
       {/* ── Logos row (sits BELOW ticker, above main content) ── */}
       <div className="relative z-30 flex justify-between items-start px-3 sm:px-5 md:px-8 pt-3 sm:pt-4 shrink-0 pointer-events-none">
         {/* Left logo */}
