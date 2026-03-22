@@ -4,6 +4,12 @@ import Link from "next/link";
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
 
 export default function Footer() {
+  const scrollToApply = () => {
+  const section = document.getElementById("apply");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <footer className="footer-gradient text-white">
       <div className="w-full px-4 sm:px-6 py-10 sm:py-16">
@@ -55,9 +61,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="" className="text-white/80 hover:text-white transition-colors text-base sm:text-lg">
+                <button
+                  onClick={scrollToApply}
+                  className="text-white/80 hover:text-white transition-colors text-base sm:text-lg"
+                >
                   Apply Now
-                </Link>
+                </button>
               </li>
             </ul>
           </div>

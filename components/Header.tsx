@@ -25,6 +25,13 @@ export default function Header() {
     return () => { document.body.style.overflow = ""; };
   }, [isMobileMenuOpen]);
 
+  const scrollToApply = () => {
+    const section = document.getElementById("apply");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const programmes = [
     {
       name: "3 Year B.Sc",
@@ -92,18 +99,18 @@ export default function Header() {
 
             {/* Right side: Apply Now + Hamburger */}
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 shrink-0">
-              <Link
-                href=""
-                className="hidden sm:flex items-center gap-1.5 bg-white text-[#1c3879]
-                           px-4 sm:px-5 lg:px-8
-                           py-1.5 sm:py-2 lg:py-2.5
-                           rounded-full font-black
-                           text-sm sm:text-sm lg:text-base
-                           shadow-lg hover:bg-blue-50 transition-all active:scale-95"
-              >
-                Apply Now
-                <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-              </Link>
+              <button
+                  onClick={scrollToApply}
+                  className="hidden sm:flex items-center gap-1.5 bg-white text-[#1c3879]
+                            px-4 sm:px-5 lg:px-8
+                            py-1.5 sm:py-2 lg:py-2.5
+                            rounded-full font-black
+                            text-sm sm:text-sm lg:text-base
+                            shadow-lg hover:bg-blue-50 transition-all active:scale-95"
+                >
+                  Apply Now
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                </button>
 
               <button
                 className="lg:hidden text-white p-1.5 sm:p-2 hover:bg-white/10 rounded-lg transition-colors"
@@ -296,15 +303,19 @@ export default function Header() {
             Contact
           </Link>
 
-          {/* Apply Now CTA */}
-          <Link
-            href=""
-            onClick={() => setIsMobileMenuOpen(false)}
+          <button
+            onClick={() => {
+              setIsMobileMenuOpen(false); // close menu
+
+              const section = document.getElementById("apply");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
             className="flex items-center justify-center gap-3 bg-white text-[#1c3879] w-full py-3.5 sm:py-4 rounded-xl font-black text-lg sm:text-xl mt-6 hover:bg-blue-50 transition-colors active:scale-95"
           >
             Apply Now <ArrowRight className="w-5 h-5" />
-          </Link>
-
+          </button>
         </nav>
       </div>
     </>

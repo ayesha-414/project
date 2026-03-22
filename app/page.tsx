@@ -397,7 +397,7 @@ export default function Home() {
       </section>
 
       {/* ── Apply ──────────────────────────────────────────────────────────── */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
+      <section id="apply" className="py-12 sm:py-16 lg:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="text-center mb-8 sm:mb-10 lg:mb-12">

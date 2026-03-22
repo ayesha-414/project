@@ -43,6 +43,19 @@ export default function Hero() {
       }))
     );
   }, []);
+  const scrollToApply = () => {
+    const section = document.getElementById("apply");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToProgrammes = () => {
+    const section = document.getElementById("programmes");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden">
@@ -289,12 +302,12 @@ export default function Hero() {
           className="flex flex-row flex-wrap gap-3 sm:gap-4 justify-center items-center mt-5 sm:mt-6 mb-6 sm:mb-8"
           style={{ animation: "h-up 0.8s 1.1s ease both" }}
         >
-          <Link href="" className="h-btn-primary">
+          <button onClick={scrollToApply} className="h-btn-primary">
             Apply Now
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
-          </Link>
+          </button>
 
           <Link href="/#programmes" className="h-btn-outline">
             Explore Programmes
