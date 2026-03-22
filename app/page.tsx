@@ -376,7 +376,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="text-center mb-8 sm:mb-10 lg:mb-12">
-            <h2 className="section-title text-justify">Scheduled Dates and Events</h2>
+            <h2 className="section-title text-left">Scheduled Dates and Events</h2>
             <p className="text-gray-900 text-justify text-base sm:text-lg">
               All dates and events are subject to change based on HSC exams results
             </p>
