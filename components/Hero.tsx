@@ -221,7 +221,7 @@ export default function Hero() {
       <div className="h-[72px] sm:h-[90px] md:h-[104px] lg:h-[114px] shrink-0 z-20" />
 
       {/* ── Ticker ── */}
-      <div className="relative z-30 w-full bg-[#1c3879]/90 backdrop-blur-md border-b border-white/20 overflow-hidden shrink-0 top-[-5]">
+      <div className="relative z-30 w-full bg-[#1c3879]/90 backdrop-blur-md border-b border-white/20 overflow-hidden shrink-0 top-[-2]">
         <div className="flex whitespace-nowrap" style={{ animation: "ticker 20s linear infinite" }}>
           {[...Array(6)].map((_, i) => (
             <span
