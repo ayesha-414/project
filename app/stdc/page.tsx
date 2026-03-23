@@ -779,6 +779,20 @@ export default function STDCPage() {
       comment:"My MSc Cybersecurity journey at PSG College of Technology had a well-structured, industry-aligned syllabus that built a strong foundation. The faculty were highly supportive and focused on real understanding, not just theory. What stood out was the strong practical exposure - regular labs and hands-on projects actually prepared us for industry work. These experiences sharpened my real-world thinking and helped me approach problems with clarity and confidence. Most importantly, the alumni network is incredibly strong and supportive, always ready to guide, mentor, and open doors to opportunities.",
       img:"/stdc_alumni/vetrivel.jpeg",
     },
+    {
+      name:"Prethika G S",
+      role:"Data and AI Consultant at Thorogood Associates.",
+      program:"M.Sc Data Science",
+      comment:"I am working as a Data and AI Consultant at Thorogood Associates.Below is what I feel the course helped me with, do let me know if there are any changes!Looking back, what makes the M.Sc Data Science program truly special is how it built us from the ground up. Before we specialised, the curriculum ensured we had a strong foundation, focusing on understanding the “why” behind every algorithm and technique, not just the “how.”The program was also incredibly hands-on. Projects were woven into every stage, and the complexity grew in a way that felt purposeful. By the time we reached advanced topics, we had the confidence and the tools to take them on.The internships were where everything clicked. Being exposed to real industry problems gave me a perspective that transformed how I approached my work. It became the perfect bridge between academic learning and professional practice.Beyond teaching me the concepts and tools of data science, the program shaped the way I think, helping me develop a problem-solving mindset, approach challenges from multiple angles, and think critically under pressure, skills I carry into everything I do.",
+      img:"/stdc_alumni/prethika.jpeg",
+    },
+    {
+      name:"Barath K",
+      role:"Associate Cyber Security Engineer, Visa",
+      program:"M.Sc. in Cyber Security",
+      comment:"My M.Sc. in Cyber Security at PSG Tech provided a strong foundation in both theoretical and practical aspects of information security. The curriculum covered key domains such as network security, cryptography, ethical hacking, secure system design, and hands-on exposure to SIEM tools, which helped me understand real-time threat detection and monitoring.The program focused on practical learning through projects and case studies, which improved my ability to examine security incidents and create effective solutions. This approach significantly strengthened my analytical and problem-solving skills.The knowledge and experience I gained during the course helped me secure an internship at Visa as a Cybersecurity Intern, where I worked on real-time security operations. Based on my performance, I was subsequently offered a full-time role as an Associate Cyber Security Engineer.The curriculum at PSG Tech played a crucial role in preparing me for industry challenges and shaping my career in cybersecurity.",
+      img:"/stdc_alumni/barathk.jpeg",
+    }
   ];
 
   const achievementCategories = ["All","Entrepreneurs","PhD Holders","Higher Studies","Events","Sports & Culturals"];
