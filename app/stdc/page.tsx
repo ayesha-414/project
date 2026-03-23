@@ -734,7 +734,7 @@ export default function STDCPage() {
       name:"Asvika M",
       role:"Software Developer,PhonePe, Bengaluru",
       program:"M.Sc Cyber Security (2020-2025)",
-      comment:"The MSc Cybersecurity program at the Department of AMCS has been pivotal in developing both my technical skills and personal growth. The hands-on approach, with extensive lab sessions , projects and a 7th and 10th semester internship, bridges theory with real-world industry practices, preparing me for a successful career in cybersecurity. The faculty's guidance has been transformative, shaping me into a skilled cyber security professional and the individual I am today.",
+      comment:"The MSc Cybersecurity program at the Department of AMCS has been pivotal in developing both my technical skills and personal growth. The hands-on approach, with extensive lab sessions and projects , bridges theory with real-world industry practices, preparing me for a successful career in cybersecurity. The faculty's guidance has been transformative, shaping me into a skilled cyber security professional and the individual I am today.",
       img:"/stdc_alumni/asvika.jpg",
     },
     {
@@ -1316,8 +1316,8 @@ export default function STDCPage() {
                     <div className="space-y-6 text-justify">
                       {[
                         { color: "#1e3a8a", title: "Eligibility", body: "An excellent academic record in Higher Secondary examination of the (10+2) curriculum with Mathematics and Physics as two of the subjects of study.", bullets: [] },
-                        { color: "#e8505b", title: "Entrance Test", body: "Shortlisted candidates will be called for a computer based entrance examination at the College Campus on 4th June 2026.", bullets: ["Duration: ONE hour.", "Multiple Choice Questions in +2 level Mathematics.", "Questions will be in English and Tamil.", "There will be negative marking for the wrong answer.", "Topics for Entrance examination will be Matrices and Determinants, Functions and Graphs, Algebra,Trigonometry, Differential Calculus, Integral Calculus, Differential Equations, Analytical Geometry, Vector Algebra and Probability"] },
-                        { color: "#15803d", title: "Counselling", body: "Counselling will be held for shortlisted candidates from 4th June Afternoon onwards, at the college campus, to identify the SPARK and COMMITMENT of the applicant. Applicants can choose preference of programms at the time of counselling.", bullets: [] },
+                        { color: "#e8505b", title: "Entrance Test", body: "Shortlisted candidates will be called for a computer based entrance examination at the College Campus on 3rd June 2026 , Wednesday.", bullets: ["Duration: ONE hour.", "Multiple Choice Questions in +2 level Mathematics.", "Questions will be in English and Tamil.", "There will be negative marking for the wrong answer.", "Topics for Entrance examination will be Matrices and Determinants, Functions and Graphs, Algebra,Trigonometry, Differential Calculus, Integral Calculus, Differential Equations, Analytical Geometry, Vector Algebra and Probability"] },
+                        { color: "#15803d", title: "Counselling", body: "Counselling will be held for shortlisted candidates from 3rd June 2026 , Wednesday Afternoon onwards, at the college campus, to identify the SPARK and COMMITMENT of the applicant. Applicants can choose preference of programms at the time of counselling.", bullets: [] },
                       ].map((block, i) => (
                         <div key={i} className={innerBlock}>
                           <h4 className="text-xl sm:text-2xl font-bold mb-3" style={{ color: block.color }}>{block.title}</h4>

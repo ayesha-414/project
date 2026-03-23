@@ -134,7 +134,7 @@ export default function Home() {
         { title: "Application closing", date: "23rd MAY 2026 , Saturday" },
         { title: "Notification of shortlisted candidates for counselling", date: "26th MAY 2026 , Tuesday" },
         { title: "Counselling in college campus", date: "29th (Friday) - 30th (Saturday) MAY 2026" },
-        { title: "Notification of final selected candidates for admission", date: "3rd JUNE 2026 , Wednesday" },
+        { title: "Notification of final selected candidates for admission", date: "2nd JUNE 2026 , Tuesday" },
         { title: "Last date for fee payment", date: "10th JUNE 2026 , Wednesday" },
       ],
     },
