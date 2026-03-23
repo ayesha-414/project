@@ -665,7 +665,7 @@ export default function STDCPage() {
       role:"Senior System Software Engineer, Nvidia, Bengaluru",
       program:"M.Sc Theoretical Computer Science (2015-2020)",
       comment:"The MSc TCS program is an excellent blend of mathematical and applied fundamentals, equipping students with the essential skills for a career in Computer Science. I am truly grateful for having pursued this course, as it provided me with the knowledge necessary for my current role. One of the standout features of the program is the 7th-semester internship, which offers students practical experience, allowing them to apply their learning and step out of their comfort zones.",
-      img:"/stdc_alumni/PradeepKumar.jpg",
+      img:"project\public\stdc_alumni\Pradeepkumar.jpg",
     },
     {
       name:"Aravindan Elango",
@@ -917,7 +917,7 @@ export default function STDCPage() {
     {
       name:"N. Krishna",
       role:"Pursuing M.Sc Mathematics, Simon Fraser University, Canada",
-      img:"/stdc_achievements/krishnaN.jpg",
+      img:"project\public\stdc_achievements\KrishnaN.jpg",
       category:"Higher Studies",
     },
     //added
