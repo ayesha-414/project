@@ -17,7 +17,7 @@ export default function FDMPage() {
   
  
   const curriculum = {
-    "Semester 1": [
+    "Semester I": [
       "Applied Sciences",
       "Fibre to Fabric",
       "Elements and Principles of Design",
@@ -28,7 +28,7 @@ export default function FDMPage() {
       "Industrial Visit and Presentation I",
       "Personality and Character Development",
     ],
-    "Semester 2": [
+    "Semester II": [
       "Fashion Business",
       "Creative Thinking",
       "Process Flow in Apparel Manufacturing",
@@ -39,7 +39,7 @@ export default function FDMPage() {
       "Colour and Fabric Rendering Laboratory",
       "Personality and Character Development",
     ],
-    "Semester 3": [
+    "Semester III": [
       "Textile and Apparel Quality Evaluation",
       "Circular Design and Sustainability",
       "Trend Forecasting and Fashion Design Process",
@@ -49,7 +49,7 @@ export default function FDMPage() {
       "Flat Pattern Designing and Construction Laboratory",
       "Industrial Visit and Lecture II",
     ],
-    "Semester 4": [
+    "Semester IV": [
       "Apparel Marketing",
       "Fashion Communication",
       "Indian Traditional Textiles and Craft",
@@ -59,7 +59,7 @@ export default function FDMPage() {
       "Apparel Production Laboratory I",
       "Communication Design Laboratory",
     ],
-    "Semester 5": [
+    "Semester V": [
       "Knitwear Design and Manufacture",
       "Apparel Production Planning and Control",
       "Fashion Retail Management",
@@ -69,7 +69,7 @@ export default function FDMPage() {
       "Apparel Production Laboratory II",
       "Craft Training and Documentation",
     ],
-    "Semester 6": [
+    "Semester VI": [
       "Fashion Research Methods",
       "Apparel Buying and Merchandising",
       "Visual Merchandising and Store Planning",
@@ -79,10 +79,10 @@ export default function FDMPage() {
       "Fashion Draping Laboratory",
       "Industrial Visit and Presentation III",
     ],
-    "Semester 7": [
+    "Semester VII": [
       "Project Work I",
     ],
-    "Semester 8": [
+    "Semester VIII": [
       "Ergonomics in Clothing Design",
       "Professional Elective III",
       "Professional Elective IV",
@@ -91,14 +91,14 @@ export default function FDMPage() {
       "Fashion Accessories Laboratory",
       "Fashion Innovation and Product Development",
     ],
-    "Semester 9": [
+    "Semester IX": [
       "Entrepreneurship",
       "Professional Elective V",
       "Professional Elective VI",
       "Open Elective II",
       "Design Development and Portfolio Presentation",
     ],
-    "Semester 10": [
+    "Semester X": [
       "Project Work II",
     ],
   "Design Electives":

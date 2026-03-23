@@ -64,7 +64,7 @@ export default function SciencePage() {
     }
   ];
   const curriculum = {
-    "Semester 1": [
+    "Semester I": [
       "Calculus and its Applications",
       "Differential Equations",
       "Properties of Matter and Acoustics",
@@ -75,7 +75,7 @@ export default function SciencePage() {
       "Chemistry Laboratory",
       "Personality and Character Development",
     ],
-    "Semester 2": [
+    "Semester II": [
       "Linear Algebra",
       "C Programming",
       "Mathematical Physics",
@@ -87,7 +87,7 @@ export default function SciencePage() {
       "C Programming Laboratory",
       "Personality and Character Development",
     ],
-    "Semester 3": [
+    "Semester III": [
       "Probability and Statistics",
       "Data Structures",
       "Atomic and Nuclear Physics",
@@ -98,7 +98,7 @@ export default function SciencePage() {
       "Inorganic Chemistry Laboratory",
       "Data Structures Laboratory",
     ],
-    "Semester 4": [
+    "Semester IV": [
       "Real Analysis",
       "Analog and Digital Electronics",
       "Mechanics and Theory of Relativity",
@@ -108,7 +108,7 @@ export default function SciencePage() {
       "Organic Chemistry Laboratory",
       "Open Elective",
     ],
-    "Semester 5": [
+    "Semester V": [
       "Complex Variables and Transforms",
       "Abstract Algebra",
       "Solid State Physics",
@@ -118,7 +118,7 @@ export default function SciencePage() {
       "Solid State Physics Laboratory",
       "Applied Chemistry Laboratory",
     ],
-    "Semester 6": [
+    "Semester VI": [
       "Operations Research",
       "Professional Elective I",
       "Professional Elective II",
