@@ -25,16 +25,15 @@ def contact_form():
             return jsonify({"message": "All fields are required"}), 400
         
         # Routing Logic
-        common_mail1 = 'subhaharinip@gmail.com'
-        common_mail2 = 'ayeshuayesha414@gmail.com'
-        common_mail3 = 'supreetagopal19@gmail.com'
+        common_mail1 = 'admission.amcs@psgtech.ac.in'
+
         
         if selected_course == "B.Sc Applied Science":
-            target_mail = '24pw35@psgtech.ac.in'
+            target_mail = 'admission.apsc@psgtech.ac.in'
         elif selected_course == "M.Sc Fashion Design & Merchandising":
-            target_mail = '24pw33@psgtech.ac.in'
+            target_mail = 'admission.afd@psgtech.ac.in'
         else:
-            target_mail = '24pw07@psgtech.ac.in'
+            target_mail = 'admission.amcs@psgtech.ac.in'
 
         recipients = [target_mail, common_mail1 ,common_mail2, common_mail3]
         
