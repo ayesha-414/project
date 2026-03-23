@@ -176,7 +176,7 @@ export default function SciencePage() {
       position: "Cloud Protection Control Engineer, ANZ, Bangalore",
       batch: "B.Sc. AS (2019-2022)",
       testimonial: "The programme BSc Applied Science helped me to lay a strong foundation and made me what I’m today! Throughout my three year journey, I gained a lot of skills by working on several presentations, participating in team activities and competitions, organizing events and volunteering in Association as well as in our trademark event “SCIENTIA”. The staff members are highly motivating that would help and guide us through the path of success. This course really helped me to shape myself both personally and professionally. The curriculum paved the way to the practical knowledge as well as to make us be prepared for entrance exams like IIT JAM, TANCET, and CAT etc. I’m currently working (got placed from this course - 12LPA) in an Australian multinational banking and financial services company, Bangalore. As an undergraduate student, this is the best thing I would ever ask for! I will be forever grateful to all the teachers for their constant guidance and support!",
-      image: "/as_alumni/veera.png"
+      image: "/as_alumni/Veera.png"
     },
     {
       name: "Shree Mirra R",
