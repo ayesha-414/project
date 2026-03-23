@@ -494,21 +494,21 @@ export default function MathPage() {
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-white/70 text-base sm:text-xl font-bold">Last date for application submission</p>
-                      <p className="text-white font-bold text-sm sm:text-lg">28th May 2026</p>
+                      <p className="text-white font-bold text-sm sm:text-lg">28th May 2026 , Thursday</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-white/70 text-base sm:text-xl font-bold">Counselling & Admission in the campus</p>
-                      <p className="text-white font-bold text-sm sm:text-lg">2nd June 2026</p>
+                      <p className="text-white font-bold text-sm sm:text-lg">2nd June 2026 , Tuesday</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-white/70 text-base sm:text-xl font-bold">Last date for fee payment</p>
-                      <p className="text-white font-bold text-sm sm:text-lg">9th June 2026</p>
+                      <p className="text-white font-bold text-sm sm:text-lg">9th June 2026 , Tuesday</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">

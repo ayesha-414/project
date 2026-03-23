@@ -474,35 +474,35 @@ export default function CSDPage() {
                       <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                       <div>
                         <p className="text-white/70 text-base sm:text-xl font-bold">Last date for application submission</p>
-                        <p className="text-white font-bold text-sm sm:text-lg">23rd May 2026</p>
+                        <p className="text-white font-bold text-sm sm:text-lg">23rd May 2026 , Saturday</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                       <div>
                         <p className="text-white/70 text-base sm:text-xl font-bold">Notification of shortlisted candidates for Counselling in the campus</p>
-                        <p className="text-white font-bold text-sm sm:text-lg">26th May 2026</p>
+                        <p className="text-white font-bold text-sm sm:text-lg">26th May 2026 , Tuesday</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                       <div>
                         <p className="text-white/70 text-base sm:text-xl font-bold">Counselling in the campus</p>
-                        <p className="text-white font-bold text-sm sm:text-lg">29th - 30th May 2026</p>
+                        <p className="text-white font-bold text-sm sm:text-lg">29th (Friday) - 30th May (Saturday) 2026</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                       <div>
                         <p className="text-white/70 text-base sm:text-xl font-bold">Notification of final selected candidates for admission</p>
-                        <p className="text-white font-bold text-sm sm:text-lg">2nd June 2026</p>
+                        <p className="text-white font-bold text-sm sm:text-lg">2nd June 2026 , Tuesday</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
                       <div>
                         <p className="text-white/70 text-base sm:text-xl font-bold">Last date for fee payment</p>
-                        <p className="text-white font-bold text-sm sm:text-lg">10th June 2026</p>
+                        <p className="text-white font-bold text-sm sm:text-lg">10th June 2026 , Wednesday</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">

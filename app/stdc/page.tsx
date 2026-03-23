@@ -1448,12 +1448,12 @@ export default function STDCPage() {
                 <h4 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Important Dates</h4>
                 <ul className="space-y-4">
                   {[
-                    { label: "Last date for application submission", date: "23rd May 2026 ,Saturday", icon: Calendar },
-                    { label: "Notification of shortlisted candidates", date: "29th May 2026,Friday", icon: Calendar },
-                    { label: "Entrance test", date: "3rd June 2026,Wednesday", icon: Calendar },
-                    { label: "Counselling in the campus", date: "3rd June Afternoon,Wednesday – 6th June 2026 ,Saturday", icon: Calendar },
-                    { label: "Notification of final selected candidates", date: "9th June 2026 ,Tuesday", icon: Calendar },
-                    { label: "Last date for fee payment", date: "16th June 2026,Tuesday", icon: Calendar },
+                    { label: "Last date for application submission", date: "23rd May 2026 , Saturday", icon: Calendar },
+                    { label: "Notification of shortlisted candidates", date: "29th May 2026 , Friday", icon: Calendar },
+                    { label: "Entrance test", date: "3rd June 2026 , Wednesday", icon: Calendar },
+                    { label: "Counselling in the campus", date: "3rd June Afternoon,Wednesday – 6th June 2026 , Saturday", icon: Calendar },
+                    { label: "Notification of final selected candidates", date: "9th June 2026 , Tuesday", icon: Calendar },
+                    { label: "Last date for fee payment", date: "16th June 2026 , Tuesday", icon: Calendar },
                     { label: "Cost of application", date: "750 INR", icon: CreditCard },
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
