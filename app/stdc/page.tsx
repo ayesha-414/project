@@ -92,21 +92,21 @@ export default function STDCPage() {
 
   const curriculum: Record<ProgramKey, Record<string, string[]>> = {
     ss: {
-      "Semester 1": ["Calculus","Professional Communication","Applied Physics","Digital Electronics and Logic Design","C Programming","Mathematical Foundations Lab","C Programming Lab","Applied Physics and Digital Electronics Lab","Personality And Character Development"],
-      "Semester 2": ["Discrete Mathematics","Linear Algebra","Data Structures and Algorithms","Object Oriented Programming","Computer Organization and Assembly Language Programming","Data Structures Lab","Object Computing Lab","Python Programming Lab","Personality And Character Development"],
-      "Semester 3": ["Probability and Statistics","Database Management System","Transform Techniques","Design and Analysis of Algorithms","Operating Systems","Design and Analysis of Algorithms Lab","UNIX/LINUX System Programming Lab","RDBMS Lab"],
-      "Semester 4": ["Accounting and Financial Management","Computer Networks","Optimization Techniques","Theory Of Computing","Software Engineering and Agile Methodologies","Computer Networks Lab","Scientific Computing Lab","Full-Stack Development Lab"],
-      "Semester 5": ["Big Data Management Systems","Java Programming","Machine Learning","Principles Of Compiler Design","Professional Elective I","Big Data Management Systems Lab","Java Programming Lab","Machine Learning Lab"],
-      "Semester 6": ["Cloud Computing","Artificial Intelligence","Distributed Computing","Data Mining and Visulization","Professional Elective II","Disrtibuted Computing Lab","Artificial Intelligence Lab","Mobile Application Development Lab"],
-      "Semester 7": ["Project Work I"],
-      "Semester 8": ["Software Architecture and Design","Natural Language Processing and Deep Learning","Software Security","Professional Elective III","Open Elective I","Software Security Lab","Natural Language Processing and Deep Learning Lab","Capstone Project Lab"],
-      "Semester 9": ["Digital Image Processing and Computer Vision","Software Product Management","Generative AI","Professional Elective IV","Open Elective II","Digital Image Processing and Computer Vision Lab","Embedded and IOT Lab","Generative AI Lab"],
-      "Semester 10": ["Project Work II"],
+      "Semester I": ["Calculus","Professional Communication","Applied Physics","Digital Electronics and Logic Design","C Programming","Mathematical Foundations Lab","C Programming Lab","Applied Physics and Digital Electronics Lab","Personality And Character Development"],
+      "Semester II": ["Discrete Mathematics","Linear Algebra","Data Structures and Algorithms","Object Oriented Programming","Computer Organization and Assembly Language Programming","Data Structures Lab","Object Computing Lab","Python Programming Lab","Personality And Character Development"],
+      "Semester III": ["Probability and Statistics","Database Management System","Transform Techniques","Design and Analysis of Algorithms","Operating Systems","Design and Analysis of Algorithms Lab","UNIX/LINUX System Programming Lab","RDBMS Lab"],
+      "Semester IV": ["Accounting and Financial Management","Computer Networks","Optimization Techniques","Theory Of Computing","Software Engineering and Agile Methodologies","Computer Networks Lab","Scientific Computing Lab","Full-Stack Development Lab"],
+      "Semester V": ["Big Data Management Systems","Java Programming","Machine Learning","Principles Of Compiler Design","Professional Elective I","Big Data Management Systems Lab","Java Programming Lab","Machine Learning Lab"],
+      "Semester VI": ["Cloud Computing","Artificial Intelligence","Distributed Computing","Data Mining and Visulization","Professional Elective II","Disrtibuted Computing Lab","Artificial Intelligence Lab","Mobile Application Development Lab"],
+      "Semester VII": ["Project Work I"],
+      "Semester VIII": ["Software Architecture and Design","Natural Language Processing and Deep Learning","Software Security","Professional Elective III","Open Elective I","Software Security Lab","Natural Language Processing and Deep Learning Lab","Capstone Project Lab"],
+      "Semester IX": ["Digital Image Processing and Computer Vision","Software Product Management","Generative AI","Professional Elective IV","Open Elective II","Digital Image Processing and Computer Vision Lab","Embedded and IOT Lab","Generative AI Lab"],
+      "Semester X": ["Project Work II"],
       "List of Electives": ["Big Data Analytics","Simulation and Modelling Techniques","Principles of Programming Languages","Data Engineering","Social Network Analysis","Graph Machine Learning","Advanced Systems Programming","Parallel Programming","Applied Graph Theory","Wireless Networks","UI/UX Design and Human-Computer Interaction","Reinforcement Learning","Quantum Computing","Software Quality Management","Blockchain and its Applications","Responsive AI"],
       "List of Open Electives": ["Principles of Management and Behavioural Science","Experiencing Entrepreneurship","Environmental Science and Green Computing","Game Theory","Computational Finance","Ethical Hacking","Machine Learning Operations","Computer Forensics","Advanced Algorithms","Constraint Logic Programming","Number Theorey and Cryptography","Open Source Intelligence","Stochastic Models","Data Compression","Data Privacy and Security","GPU Architecture and Programming"],
     },
     tcs: {
-      "Semester 1": [
+      "Semester I": [
         "Calculus and Its Applications",
         "English for Professional Skills",
         "Applied Physics",
@@ -116,7 +116,7 @@ export default function STDCPage() {
         "C Programming Lab",
         "Mathematics Laboratory",
         "Personality And Character Development"],
-      "Semester 2": [
+      "Semester II": [
         "Discrete Structures",
         "Abstract Algebra",
         "Data Structures and Algorithms",
@@ -127,7 +127,7 @@ export default function STDCPage() {
         "Python Programming Lab",
         "Personality And Character Development"],
 
-      "Semester 3": [
+      "Semester III": [
         "Probability And Statistics",
         "Linear Algebra",
         "Graph Theory",
@@ -136,7 +136,7 @@ export default function STDCPage() {
         "Statistical Computing And R Programming Lab",
         "Advanced Data Structures Lab",
         "Scientific Computing Lab"],
-      "Semester 4": [
+      "Semester IV": [
         "Stochastic Processes",
         "Computational Number Theory and Cryptography",
         "Optimization Techniques",
@@ -145,7 +145,7 @@ export default function STDCPage() {
         "Java programming Lab",
         "Operating Systems Lab",
         "RDBMS Lab"],
-      "Semester 5": [
+      "Semester V": [
         "Theory Of Computing",
         "Computational Networks",
         "Machine Learning",
@@ -155,7 +155,7 @@ export default function STDCPage() {
         "Machine Learning Lab",
         "Design And Analysis Of Algorithms Lab",
         ],
-      "Semester 6": [
+      "Semester VI": [
         "Principles of Compiler Design",
         "Artificial Intelligence",
         "Software Engineering",
@@ -164,9 +164,9 @@ export default function STDCPage() {
         "Compiler Design Lab",
         "Deep Learning",
         "Software Patterns Lab"],
-      "Semester 7": [
+      "Semester VII": [
         "Project Work 1 – Industry / Research Project"],
-      "Semester 8": [
+      "Semester VIII": [
         "Reinforcement Learning",
         "Advanced Algorithms",
         "Distributed Systems",
@@ -176,7 +176,7 @@ export default function STDCPage() {
         "Distributed Systems Lab",
         "Research Specialization Lab"
       ],
-      "Semester 9": [
+      "Semester IX": [
         "Game theory", 
         "Information Retrieval",
         "Simulation and Mathematical Modelling",
@@ -186,7 +186,7 @@ export default function STDCPage() {
         "Simulation and Mathematical Modelling Lab",
         "Research Specialization Lab"
       ],
-      "Semester 10": ["Project Work 1 – Industry / Research Project "],
+      "Semester X": ["Project Work 1 – Industry / Research Project "],
       "List of Electives": ["Mathematical Analysis",
         "Social Network Analysis", 
         "Computer Graphics and Visualization",
@@ -236,7 +236,7 @@ export default function STDCPage() {
     },
     ds: {
 
-      "Semester 1": [
+      "Semester I": [
         "Calculus and Its Applications",
         "Basics of Computational Biology",
         "Digital Electronics and Logic Design",
@@ -248,7 +248,7 @@ export default function STDCPage() {
         "Personality and Character Development"
       ],
 
-      "Semester 2": [
+      "Semester II": [
         "Discrete Structures",
         "Abstract Algebra",
         "Data Structures and Algorithms",
@@ -260,7 +260,7 @@ export default function STDCPage() {
         "Personality and Character Development"
       ],
 
-      "Semester 3": [
+      "Semester III": [
         "Applied Statistics",
         "Linear Algebra",
         "Graph Theory",
@@ -271,7 +271,7 @@ export default function STDCPage() {
         "Scientific Computing Lab"
       ],
 
-      "Semester 4": [
+      "Semester IV": [
         "Optimization Techniques",
         "Database Management System",
         "Predictive Analytics",
@@ -282,7 +282,7 @@ export default function STDCPage() {
         "Operating Systems Lab"
       ],
 
-      "Semester 5": [
+      "Semester V": [
         "Design and Analysis of Algorithms",
         "Stochastic Models",
         "Computer Networks",
@@ -293,7 +293,7 @@ export default function STDCPage() {
         "Java Programming Lab"
       ],
 
-      "Semester 6": [
+      "Semester VI": [
         "Cloud Computing",
         "Deep Learning",
         "Big Data & Modern Database Systems",
@@ -304,11 +304,11 @@ export default function STDCPage() {
         "Deep Learning Lab"
       ],
 
-      "Semester 7": [
+      "Semester VII": [
         "Project Work I"
       ],
 
-      "Semester 8": [
+      "Semester VIII": [
         "Reinforcement Learning",
         "Natural Language Processing",
         "Generative AI Models",
@@ -319,7 +319,7 @@ export default function STDCPage() {
         "Capstone Project"
       ],
 
-      "Semester 9": [
+      "Semester IX": [
         "Data Privacy and Security",
         "Responsible AI",
         "Information Retrieval",
@@ -330,7 +330,7 @@ export default function STDCPage() {
         "Information Retrieval Lab"
       ],
 
-      "Semester 10": [
+      "Semester X": [
         "Project Work II"
       ],
       "Professional Electives": [
@@ -378,7 +378,7 @@ export default function STDCPage() {
       ]
     },
     cs: {
-      "Semester 1": ["Calculus And Its Applications",
+      "Semester I": ["Calculus And Its Applications",
         "Professional Communication",
         "Applied Physics",
         "Digital Electronics and Logic Design",
@@ -387,7 +387,7 @@ export default function STDCPage() {
         "C Programming Lab",
         "Applied Physics and Digital Electronics Laboratory",
         "Personality And Character Development"],
-      "Semester 2": [
+      "Semester II": [
         "Discrete Mathematics",
         "Algebra And Number Theory",
         "Data Structures",
@@ -397,7 +397,7 @@ export default function STDCPage() {
         "Object Computing Laboratory",
         "Python Programming Laboratory",
         "Personality And Character Development"],
-      "Semester 3": [
+      "Semester III": [
         "Probability and Statistics",
         "Linear Algebra",
         "Microcontrollers And Embedded Systems",
@@ -406,7 +406,7 @@ export default function STDCPage() {
         "Embedded Systems Laboratory",
         "Design And Analysis Of Algorithms Laboratory",
         "RDBMS Laboratory"],
-      "Semester 4": ["Optimization Techniques",
+      "Semester IV": ["Optimization Techniques",
         "Computer Networks",
         "Foundations Of Cryptography",
         "Operating Systems",
@@ -414,7 +414,7 @@ export default function STDCPage() {
         "Computer Networks Laboratory",
         "Java Programming Laboratory",
         "Operating Systems Laboratory"],
-      "Semester 5": ["Network Security",
+      "Semester V": ["Network Security",
         "Secure Software Development and Refactor",
         "Machine Learning",
         "Applied Cryptography",
@@ -422,7 +422,7 @@ export default function STDCPage() {
         "Secure Software Development Laboratory",
         "Machine Learning Laboratory",
         "Ethical Hacking & Malware Analysis Laboratory"],
-      "Semester 6": ["Cloud Security",
+      "Semester VI": ["Cloud Security",
         "Principles Of Compiler Design",
         "Data Mining",
         "Software Security and Exploitation",
@@ -430,8 +430,8 @@ export default function STDCPage() {
         "Data Mining Laboratory",
         "Mobile Application Development Laboratory",
       "Web Engineering Laboratory"],
-      "Semester 7": ["Project Work I"],
-      "Semester 8": ["Natural Language Processing and Deep Learning",
+      "Semester VII": ["Project Work I"],
+      "Semester VIII": ["Natural Language Processing and Deep Learning",
         "Mobile Security",
         "Data Privacy",
         "Professional Elective III",
@@ -439,7 +439,7 @@ export default function STDCPage() {
         "NLP and Deep learning Laboratory",
         "Mobile Security Laboratory",
         "Security Capstone Laboratory"],
-      "Semester 9": ["Threat Hunting",
+      "Semester IX": ["Threat Hunting",
         "Generative AI",
         "Blockchain Technology",
         "Professional Elective IV",
@@ -447,7 +447,7 @@ export default function STDCPage() {
         "Threat Hunting Laboratory",
         "Network and memory Froensics Laboratory",
         "Generative AI Laboratory"],
-      "Semester 10": ["Project Work II "],
+      "Semester X": ["Project Work II "],
       "List of Professional Electives": [
         "Information And Coding Theory",
         "Quantum Computing",
@@ -489,7 +489,7 @@ export default function STDCPage() {
     },
 
     cf: {
-      "Semester 1": [
+      "Semester I": [
         "Business Economics",
         "Discrete Mathematical Structures",
         "Calculus",
@@ -501,7 +501,7 @@ export default function STDCPage() {
         "Personality and Character Development"
       ],
 
-      "Semester 2": [
+      "Semester II": [
         "Financial and Management Accounting",
         "Theory of Probability",
         "Differential Equations",
@@ -512,7 +512,7 @@ export default function STDCPage() {
         "Python Programming Lab",
         "Personality and Character Development"
       ],
-      "Semester 3": [
+      "Semester III": [
         "Corporate Finance & Capital Markets",
         "Statistics",
         "Linear Algebra",
@@ -523,7 +523,7 @@ export default function STDCPage() {
         "Numerical Computing Lab"
       ],
 
-      "Semester 4": [
+      "Semester IV": [
         "Fundamentals of Mathematical Finance",
         "Optimization Techniques",
         "Stochastic Process for Finance",
@@ -533,7 +533,7 @@ export default function STDCPage() {
         "RDBMS Lab",
         "Java Programming Lab"
       ],
-      "Semester 5": [
+      "Semester V": [
         "Financial Derivatives",
         "Time Series Analysis and Forecasting",
         "Computer Networks & Information Security",
@@ -544,7 +544,7 @@ export default function STDCPage() {
         "Computer Networks & Information Security Lab"
       ],
 
-      "Semester 6": [
+      "Semester VI": [
         "Portfolio Theory and Management",
         "Software Engineering and Agile Technologies",
         "Artificial Intelligence",
@@ -554,10 +554,10 @@ export default function STDCPage() {
         "Artificial Intelligence Lab",
         "Big Data Management Lab"
       ],
-      "Semester 7": [
+      "Semester VII": [
         "Project Work I"
       ],
-      "Semester 8": [
+      "Semester VIII": [
         "Natural Language Processing and Deep Learning",
         "Stochastic Calculus for Finance",
         "Cloud Computing",
@@ -568,7 +568,7 @@ export default function STDCPage() {
         "Capstone Project"
       ],
 
-      "Semester 9": [
+      "Semester IX": [
         "Financial Risk Management",
         "Market Microstructure & Algorithmic Trading",
         "Financial Technology",
@@ -579,7 +579,7 @@ export default function STDCPage() {
         "Block Chain Lab"
       ],
 
-      "Semester 10": [
+      "Semester X": [
         "Project Work II"
       ],
       "Professional Electives": [
