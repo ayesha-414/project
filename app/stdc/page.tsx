@@ -1284,7 +1284,7 @@ export default function STDCPage() {
                       <div className={innerBlock}>
                         <h4 className="text-xl sm:text-2xl font-bold text-[#1e3a8a] mb-2">Programme Structure</h4>
                         <p className="text-grey-900 text-base sm:text-lg md:text-xl leading-relaxed text-justify">
-                          All four programmes follow a meticulously planned curriculum based on Choice Based Credit System, updated regularly to meet the challenging requirements of the industry.
+                          All five programmes follow a meticulously planned curriculum based on Choice Based Credit System, updated regularly to meet the challenging requirements of the industry.
                         </p>
                       </div>
 

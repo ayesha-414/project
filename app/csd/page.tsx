@@ -32,7 +32,7 @@ export default function CSDPage() {
   }, []);
 
   const curriculum = {
-    "Semester 1": [
+    "Semester I": [
       "Calculus And Its Applications",
       "Discrete Mathematics",
       "C Programming",
@@ -43,7 +43,7 @@ export default function CSDPage() {
       "Digital Electronics Laboratory",
       "Personality And Character Development",
     ],
-    "Semester 2": [
+    "Semester II": [
       "Linear Algebra",
       "Probability Theory",
       "Computer Architechture",
@@ -54,7 +54,7 @@ export default function CSDPage() {
       "Object Oriented Programming With C++ Laboratory",
       "Personality and Character Development",
     ],
-    "Semester 3": [
+    "Semester III": [
       "Statistical Methods",
       "Database Management Systems",
       "Microprocessors And Microcontrollers",
@@ -64,7 +64,7 @@ export default function CSDPage() {
       "Operating Systems Laboratory(Linux)",
       "Design and Analysis of Algorithms Laboratory",
     ],
-    "Semester 4": [
+    "Semester IV": [
       "Computer Networks",
       "Java Programming",
       "Software Engineering",
@@ -74,7 +74,7 @@ export default function CSDPage() {
       "Computer Networks Laboratory",
       "Java Programming Laboratory",
     ],
-    "Semester 5": [
+    "Semester V": [
       "Distributed Enterprise Computing",
       "Computer Graphics",
       "Machine Learning",
@@ -84,7 +84,7 @@ export default function CSDPage() {
       "Computer Graphics Laboratory",
       "Machine Learning Laboratory",
     ],
-    "Semester 6": [
+    "Semester VI": [
       "Cloud Computing",
       "Software Testing",
       "Professional Elective III",

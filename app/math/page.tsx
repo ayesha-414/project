@@ -58,7 +58,7 @@ export default function MathPage() {
     },
   ];
   const curriculum = {
-    "Semester 1": [
+    "Semester I": [
       "Contemporary Algebra",
       "Real Analysis",
       "Differential Equations",
@@ -68,7 +68,7 @@ export default function MathPage() {
       "Professional Communication",
       "C - Programming Lab",
     ],
-    "Semester 2": [
+    "Semester II": [
       "Topology and Functional Analysis",
       "Applied Linear Algebra",
       "Object Oriented Programming",
@@ -79,7 +79,7 @@ export default function MathPage() {
       "Physical Chemistry Laboratory",
       "Python Programming Lab",
     ],
-    "Semester 3": [
+    "Semester III": [
       "Applied Graph Theory",
       "Optimization Techniques",
       "Complex Analysis",
@@ -89,7 +89,7 @@ export default function MathPage() {
       "Scientific Computing Lab",
       "Mini- Project & Seminar",
     ],
-    "Semester 4": [
+    "Semester IV": [
       "Project Work",
     ],
     
