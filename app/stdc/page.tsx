@@ -917,7 +917,7 @@ export default function STDCPage() {
     {
       name:"N. Krishna",
       role:"Pursuing M.Sc Mathematics, Simon Fraser University, Canada",
-      img:"project\public\stdc_achievements\KrishnaN.jpg",
+      img:"/stdc_achievements/KrishnaN.jpg",
       category:"Higher Studies",
     },
     //added
