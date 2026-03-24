@@ -207,7 +207,7 @@ export default function Header() {
             href="/#schedule" className="nav-link text-[15px] xl:text-[17px] 2xl:text-xl font-bold text-white px-3 xl:px-4 py-1.5 hover:text-blue-200 transition-all uppercase whitespace-nowrap"
             onClick={(e) => {
               if (window.location.pathname === "/" && window.location.hash === "#schedule") {
-                e.preventDefault(); // stop default
+                e.preventDefault(); // stop defaulttt
                 const section = document.getElementById("schedule");
                 if (section) {
                   section.scrollIntoView({ behavior: "smooth" });
