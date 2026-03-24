@@ -268,7 +268,7 @@ export default function Header() {
           </Link>
 
           <Link
-            href="/#about"
+            href="/#about"  className="flex items-center justify-between w-full text-white text-lg sm:text-xl font-bold py-3 hover:text-blue-200 transition-colors"
             onClick={(e) => {
               if (window.location.pathname === "/" && window.location.hash === "#about") {
                 e.preventDefault();
