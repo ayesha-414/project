@@ -117,8 +117,8 @@ const galleryFolders: any = {
     { id: 14, src: "/as_gallery/15.jpg",title: "" },
     { id: 15, src: "/as_gallery/16.jpg" ,title: ""},
     { id: 16, src: "/as_gallery/17.jpg",title: "" },
-    { id: 17, src: "/as_gallery/PSG_8077.jpg",title: "" },
-    { id: 18, src: "/as_gallery/PSG_8116.jpg",title: "" },
+    { id: 17, src: "/as_gallery/PSG_8077.JPG",title: "" },
+    { id: 18, src: "/as_gallery/PSG_8116.JPG",title: "" },
   ],
 };
 
@@ -198,7 +198,7 @@ export default function GalleryPage() {
                       ? "/image/campus-1.jpg"
                       : folder === "fdm"
                       ? "/fdm_gallery/IMG-20260318-WA0018.jpg"
-                      : "/as_gallery/PSG_8116.jpg"
+                      : "/as_gallery/PSG_8116.JPG"
                   }
                   alt="folder preview"
                   fill
