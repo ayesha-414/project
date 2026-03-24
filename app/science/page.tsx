@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -220,6 +219,49 @@ export default function SciencePage() {
       testimonial: "Applied science is a wonderful course which gives us a strong foundation in Maths, Physics and Chemistry. It is fascinating to study all the three major subjects under one roof, even though it has its own difficulties and challenges and it’s all part of the package. Thanks to the department that my journey here's been marvelous. Other than studies, it gives a lot of exposure through PSG Tech campus. Starting from sports, various clubs and programs like NSS and NCC help us in identifying our hidden talents and improve our communication skills thereby moulding ourselves. Applied science is the best course for students who have interest in science.",
       image: "/as_alumni/Oviya.png"
     },
+    {
+      name: "Muthulakshmi M",
+      position: "pursuing M.Sc. Chemistry, NIT – Trichy",
+      batch: "B.Sc. AS (2022-2025)",
+      testimonial: "My BSc in Applied Science has really helped me building a strong foundation in science. Studying Physics, Chemistry, and Mathematics together has given me a solid base, and I am doing my Master’s in Chemistry, I never feel intimidated by interdisciplinary topics. Whether it is Physics or Mathematics, I am confident in approaching and developing concepts just as I do in Chemistry. Managing three major subjects at the same time along with IIT-JAM preparation have taught me how to handle my time better and stay organized. I feel it is a great course, especially if you are interested in going into research. One thing, I truly appreciate is the alumni network; I still get a lot of support and guidance from them.",
+      image: "/as_alumni/muthulakshmi.png"
+    },
+    {
+      name: "Rithish Raja",
+      position: "doing M.Sc. in Polymer Chemistry, CIPET",
+      batch: "B.Sc. AS (2022-2025)",
+      testimonial: "The B.Sc. Applied Science degree&#39;s project-oriented curriculum supports transitions to research labs. The curriculum blended core sciences (Physics, Chemistry, and Mathematics) with the application- oriented electives such as Materials Science, Electronics, and Computational tools are well structured to progress from basics to a capstone project. This framework has emphasized real-world problem-solving over rote- learning and prepared us directly for Industry or M.Sc. transitions like Polymer Science. It has felt modern and flexible, with interdisciplinary options that sparked my interest in Polymer Science early on",
+      image: "/as_alumni/rathish_raja.png"
+    },
+    {
+      name: "Oviyan Sriram G",
+      position: "doing M.Sc. in Oceanography, CUSAT",
+      batch: "B.Sc. AS (2022-2025)",
+      testimonial: "My BSc in Applied Science gave me a solid foundation in Physics, Chemistry, Maths and Computer Science covering almost every aspect of science. Instead of being specialized too early, the course equipped me with a universal toolkit to solve problems across diverse domains. This broad background gave me the confidence to handle any technical field I encounter. Today, I apply that diverse knowledge base to my MSc in Oceanography, helping me navigate the ocean's physical and chemical nature. Ultimately, the course did not just teach me facts; it gave me the logical framework I need to excel in any scientific path I choose",
+      image: "/as_alumni/oviyan_sriram.png"
+    },
+    {
+      name: "Sai Shailajaa R",
+      position: "CTS, Coimbatore",
+      batch: "B.Sc. AS (2022-2025)",
+      testimonial: "My B.Sc. Applied Science has equipped me with strong analytical thinking and a structured problem- solving approach. It enhanced my ability to interpret data and understand real-world applications of concepts. In my current role as an Analyst Trainee, I utilize these skills for data validation, testing, and working with datasets. The course has also improved my attention to detail and logical reasoning. This foundation continues to support my professional growth and adaptability",
+      image: "/as_alumni/sai_shailajaa.png"
+    },
+    {
+      name: "Harshini G",
+      position: "pursuing M.S. Drug Chemistry, New Castle University, UK",
+      batch: "B.Sc. AS (2022-2025)",
+      testimonial: "My B.Sc. Applied Science has given me a solid grounding in the basics of the sciences, especially in the field of Chemistry. It has also helped me build the necessary skills in terms of thinking, analyzing, and problem-solving in an organized fashion. The experience that I gained during my undergraduate course has also prepared me well for the kind of experiments that I am doing in my Master’s in Drug Chemistry at Newcastle University. My undergraduate course has, therefore, played an important role in helping me progress in terms of academics as well as research",
+      image: "/as_alumni/harshini.png"
+    },
+    {
+      name: "Sandhiya B",
+      position: "doing M.Sc. Material Science, Anna University, Chennai",
+      batch: "B.Sc. AS (2022-2025)",
+      testimonial: "My B.Sc. Applied Science has been a transformative journey for me. Though it was initially challenging, I gradually adapted and discovered its true value. Today, it gives me a strong inter-disciplinary advantage in my postgraduate studies. The constant support and dedication of the faculty made my learning meaningful and inspiring. I truly cherish the foundation it has given me",
+      image: "/as_alumni/sandhiya.png"
+    },
+
   ];
 
   return (
