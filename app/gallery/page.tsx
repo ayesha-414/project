@@ -100,7 +100,26 @@ const galleryFolders: any = {
     { id: 22, src: "/fdm_gallery/PSG_8148.JPG", title: ""},
       ],
 
-  sci: [],
+  sci: [
+     { id: 1, src: "/as_gallery/1.jpg",title: ""},
+      { id: 2, src: "/as_gallery/2.jpg",title: "" },
+     { id: 3, src: "/as_gallery/3.jpg",title: "" },
+    { id: 4, src: "/as_gallery/4.jpg",title: "" },
+    { id: 5, src: "/as_gallery/5.jpg",title: "" },
+    { id: 6, src: "/as_gallery/7.jpg",title: "" },
+    { id: 7, src: "/as_gallery/8.jpg",title: "" },
+    { id: 8, src: "/as_gallery/9.jpg",title: "" },
+    { id: 9, src: "/as_gallery/10.jpg",title: "" },
+    { id: 10, src: "/as_gallery/11.jpg",title: "" },
+    { id: 11, src: "/as_gallery/12.jpg",title: "" },
+    { id: 12, src: "/as_gallery/13.jpg",title: "" },
+    { id: 13, src: "/as_gallery/14.jpg",title: "" },
+    { id: 14, src: "/as_gallery/15.jpg",title: "" },
+    { id: 15, src: "/as_gallery/16.jpg" ,title: ""},
+    { id: 16, src: "/as_gallery/17.jpg",title: "" },
+    { id: 17, src: "/as_gallery/PSG_8077.jpg",title: "" },
+    { id: 18, src: "/as_gallery/PSG_8116.jpg",title: "" },
+  ],
 };
 
 export default function GalleryPage() {
@@ -178,8 +197,8 @@ export default function GalleryPage() {
                     folder === "amcs"
                       ? "/image/campus-1.jpg"
                       : folder === "fdm"
-                      ? "/image/campus-5.jpg.jpeg"
-                      : "/image/2.JPG"
+                      ? "/fdm_gallery/IMG-20260318-WA0018.jpg"
+                      : "/as_gallery/PSG_8116.jpg"
                   }
                   alt="folder preview"
                   fill
@@ -234,7 +253,7 @@ export default function GalleryPage() {
         )}
       </div>
 
-      {/* 🔹 Lightbox (only ONE version ✅) */}
+      {/*  Lightbox (only ONE version ) */}
     
 {selectedImgIdx !== null && selectedFolder && (
   <div
@@ -260,7 +279,7 @@ export default function GalleryPage() {
     {/* 🖼 Image Container */}
     <div
       className="relative w-full max-w-5xl max-h-[85vh] flex flex-col items-center"
-      onClick={(e) => e.stopPropagation()} // ✅ prevents closing when clicking image
+      onClick={(e) => e.stopPropagation()} //  prevents closing when clicking image
     >
       {/* Image */}
       <div className="relative w-full h-[70vh]">
