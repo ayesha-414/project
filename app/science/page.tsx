@@ -514,39 +514,104 @@ export default function SciencePage() {
               </div>
 
               {/* Important Dates */}
-              <div className="bg-gradient-to-br from-[#1e3a8a] to-[#0ea5e9] text-white rounded-3xl p-4 sm:p-6 shadow-xl">
-                <h4 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Important Dates</h4>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="text-white/70 text-base sm:text-xl font-bold">Last date for application submission</p>
-                      <p className="text-white font-bold text-sm sm:text-lg">15th May 2026</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="text-white/70 text-base sm:text-xl font-bold">Notification of shortlisted candidates for Counselling cum Admission</p>
-                      <p className="text-white font-bold text-sm sm:text-lg">17th May 2026</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="text-white/70 text-base sm:text-xl font-bold">Counselling cum Admission</p>
-                      <p className="text-white font-bold text-sm sm:text-lg">23rd May 2026</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CreditCard className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="text-white/70 text-base sm:text-xl font-bold">Cost of application</p>
-                      <p className="text-white font-bold text-sm sm:text-lg">150 INR</p>
-                    </div>
-                  </li>
-                </ul>
-                <Link href="https://application.psgtech.ac.in/AppliedScience/" className="btn-secondary w-full justify-center mt-6">
+              <div className="bg-gradient-to-br from-[#1e3a8a] to-[#0ea5e9] text-white rounded-3xl p-5 sm:p-8 shadow-xl">
+                <h4 className="text-xl sm:text-2xl font-bold mb-6">Key Admission Timeline</h4>
+
+                {/* TNHSE Board Section */}
+                <div className="mb-6">
+                  <h5 className="text-base sm:text-lg font-black text-white border-b border-white/20 pb-2 mb-4 uppercase tracking-wide">
+                    TNHSE Board
+                  </h5>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-3">
+                      <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-white/80 text-base sm:text-lg md:text-xl leading-relaxed  font-bold">Last date for application submission</p>
+                        <p className="text-white font-medium text-base sm:text-lg md:text-xl leading-relaxed text-justify">
+                          <span className="font-bold">Fourth day</span> from the publication of the 12th results (until 11:59 pm).<br />
+                          <span className="text-white/80 text-base sm:text-lg md:text-xl leading-relaxed ">Any document submitted thereafter will be marked as "late application".</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-white/80 text-base sm:text-lg md:text-xl leading-relaxed  font-bold">Announcement of shortlisted candidates</p>
+                        <p className="text-white font-medium text-base sm:text-lg md:text-xl leading-relaxed  mt-1">
+                          <span className="font-bold">Fifth day</span> from the publication of the 12th results
+                        </p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-white/80 text-base sm:text-lg md:text-xl leading-relaxed  font-bold">Counselling cum admission</p>
+                        <p className="text-white text-base sm:text-lg md:text-xl leading-relaxed mt-1">
+                          <span className="font-bold">Seventh day</span> from the publication of the 12th results
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* CBSE & Other Boards Section */}
+                <div className="mb-6">
+                  <h5 className="text-base sm:text-lg font-black text-white border-b border-white/20 pb-2 mb-4 uppercase tracking-wide mt-8">
+                    CBSE & Other Boards
+                  </h5>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-3">
+                      <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-white/80 text-base sm:text-lg md:text-xl leading-relaxed  font-bold">Last date for application submission</p>
+                        <p className="text-white  text-base sm:text-lg md:text-xl leading-relaxed">
+                          <span className="font-bold">Fourth day</span> from the publication of the 12th results (until 11:59 pm).<br />
+                          <span className="text-white/80  text-base sm:text-lg md:text-xl leading-relaxed">Any document submitted thereafter will be marked as "late application".</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-white/80  text-base sm:text-lg md:text-xl leading-relaxed font-bold">Announcement of shortlisted candidates</p>
+                        <p className="text-white  text-base sm:text-lg md:text-xl leading-relaxed mt-1">
+                          <span className="font-bold">Fifth day</span> from the publication of the 12th results
+                        </p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Calendar className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-white/80  text-base sm:text-lg md:text-xl leading-relaxed font-bold">Counselling cum admission</p>
+                        <p className="text-white  text-base sm:text-lg md:text-xl leading-relaxed mt-1">
+                          <span className="font-bold">Seventh day</span> from the publication of the 12th results
+                        </p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-[#e8505b] flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-white/80  text-base sm:text-lg md:text-xl leading-relaxed font-bold">Other Boards</p>
+                        <p className="text-white  text-base sm:text-lg md:text-xl leading-relaxed">
+                          Will be merged with CBSE counselling if the results release at the same time.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Important Note Box */}
+                <div className="bg-white/10 rounded-xl p-4 sm:p-5 mt-6 border border-white/10">
+                  <h6 className="font-bold text-white mb-2 flex items-center gap-2">
+                    <FileText className="w-4 h-4 text-[#e8505b]" />
+                    PLEASE NOTE:
+                  </h6>
+                  <p className="text-white/80  text-base sm:text-lg md:text-xl leading-relaxed">
+                    Upon completion of counselling-cum-admission process, candidates from TNHSE/CBSE/other boards in <span className="font-bold text-white">waiting list</span> will be invited for counselling-cum-admission through admission web portal & registered email, subject to the availability of remaining seats based on the merit and norms.
+                  </p>
+                </div>
+
+                <Link href="https://application.psgtech.ac.in/MSCFDM/" className="btn-secondary flex items-center justify-center gap-2 w-full mt-6">
                   Apply Now
                   <ArrowRight className="w-4 h-4" />
                 </Link>

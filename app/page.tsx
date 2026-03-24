@@ -15,7 +15,9 @@ import {
   ArrowRight,
   Send, 
   Loader2, 
-  CheckCircle2 
+  CheckCircle2,
+  Users,
+  Calendar
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
@@ -194,6 +196,54 @@ export default function Home() {
       delay: "0.3s",
     },
   ];
+  const specialScheduleContent = [
+  {
+    title: "M.Sc Fashion Design & Merchandising",
+    subtitle: "5 Year Integrated Programme",
+    sections: [
+      {
+        heading: "TNHSE Board",
+        items: [
+          { title: "Last date for application submission", date: "Fourth day from the publication of the 12th results (until 11:59 pm). Any document submitted thereafter will be marked as \"late application\"." },
+          { title: "Announcement of shortlisted candidates", date: "Fifth day from the publication of the 12th results" },
+          { title: "Counselling cum admission", date: "Seventh day from the publication of the 12th results" },
+        ],
+      },
+      {
+        heading: "CBSE & Other Boards",
+        items: [
+          { title: "Last date for application submission", date: "Fourth day from the publication of the 12th results (until 11:59 pm). Any document submitted thereafter will be marked as \"late application\"." },
+          { title: "Announcement of shortlisted candidates", date: "Fifth day from the publication of the 12th results" },
+          { title: "Counselling cum admission", date: "Seventh day from the publication of the 12th results" },
+          { title: "Note", date: "Other boards will be merged with CBSE counselling if the results release at the same time." },
+        ],
+      },
+    ],
+  },
+  {
+    title: "B.Sc Applied Science",
+    subtitle: "Undergraduate Programme",
+    sections: [
+      {
+        heading: "TNHSE Board",
+        items: [
+          { title: "Last date for application submission", date: "Fourth day from the publication of the 12th results (until 11:59 pm). Any document submitted thereafter will be marked as \"late application\"." },
+          { title: "Announcement of shortlisted candidates", date: "Fifth day from the publication of the 12th results" },
+          { title: "Counselling cum admission", date: "Seventh day from the publication of the 12th results" },
+        ],
+      },
+      {
+        heading: "CBSE & Other Boards",
+        items: [
+          { title: "Last date for application submission", date: "Fourth day from the publication of the 12th results (until 11:59 pm). Any document submitted thereafter will be marked as \"late application\"." },
+          { title: "Announcement of shortlisted candidates", date: "Fifth day from the publication of the 12th results" },
+          { title: "Counselling cum admission", date: "Seventh day from the publication of the 12th results" },
+          { title: "Note", date: "Other boards will be merged with CBSE counselling if the results release at the same time." },
+        ],
+      },
+    ],
+  },
+];
 
   /* ── JSX ──────────────────────────────────────────────────────────────── */
 
@@ -385,27 +435,99 @@ export default function Home() {
 
       {/* ── Schedule ───────────────────────────────────────────────────────── */}
       <section id="schedule" className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div className="max-w-5xl mx-auto space-y-10">
+          <div className="mb-10 sm:mb-12">
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#003366] mb-2">
+        Scheduled Dates and Events
+      </h2>
+      <div className="w-20 h-1 bg-blue-300 mb-6"></div> {/* The blue underline from screenshot */}
+      <p className="text-gray-700 text-lg sm:text-xl">
+        All dates and events are subject to change based on HSC exams results
+      </p>
+    </div>
 
-          <div className="text-center mb-8 sm:mb-10 lg:mb-12">
-            <h2 className="section-title text-left">Scheduled Dates and Events</h2>
-            <p className="text-gray-900 text-justify text-base sm:text-lg">
-              All dates and events are subject to change based on HSC exams results
-            </p>
+  {/* 🔹 M.Sc SS/TCS/DS/CS/CF + B.Sc CSD — top grid */}
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    {schedules
+      .filter(
+        (s) =>
+          s.title !== "M.Sc Fashion Design & Merchandising" &&
+          s.title !== "B.Sc Applied Science" &&
+          s.title !== "M.Sc Applied Mathematics"
+      )
+      .map((s, i) => (
+        <ScheduleCard
+          key={i}
+          title={s.title}
+          subtitle={s.subtitle}
+          items={s.items}
+        />
+      ))}
+  </div>
+
+  {/* 🔹 Special Schedule Cards — FDM & Applied Science */}
+  <div className="grid grid-cols-1 gap-6">
+    {specialScheduleContent.map((card, index) => (
+      <div key={index} className="schedule-card h-full">
+
+        <div className="flex items-start gap-3 sm:gap-4 mb-5 sm:mb-6">
+          <div className="w-11 h-11 sm:w-14 sm:h-14 bg-[#1c3879]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+            <Users className="w-5 h-5 sm:w-7 sm:h-7 text-[#1c3879]" />
           </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 max-w-5xl mx-auto">
-            {schedules.map((s, i) => (
-              <ScheduleCard
-                key={i}
-                title={s.title}
-                subtitle={s.subtitle}
-                items={s.items}
-              />
-            ))}
+          <div>
+            <h4 className="text-xl sm:text-2xl font-bold text-[#1a1a2e] leading-snug">{card.title}</h4>
+            <p className="text-[#e8505b] text-base sm:text-lg font-medium">{card.subtitle}</p>
           </div>
-
         </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {card.sections.map((section, si) => (
+            <div key={si}>
+              <p className="text-xl font-bold uppercase tracking-wider text-[#1c3879] border-b border-gray-100 pb-2 mb-3">
+                {section.heading}
+              </p>
+              <ul className="space-y-3 sm:space-y-4">
+                {section.items.map((item, ii) => (
+                  <li
+                    key={ii}
+                    className="flex items-start gap-3 pb-3 sm:pb-4 border-b border-gray-100 last:border-0 last:pb-0"
+                  >
+                    <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-[#1c3879] flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h6 className="text-base sm:text-[21px] font-medium text-gray-900 leading-tight">
+                        {item.title}
+                      </h6>
+                      <p className="text-[#e8505b] font-semibold text-base sm:text-lg mt-1">
+                        {item.date}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    ))}
+  </div>
+
+  {/* 🔹 M.Sc Applied Mathematics — bottom */}
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    {schedules
+      .filter((s) => s.title === "M.Sc Applied Mathematics")
+      .map((s, i) => (
+        <ScheduleCard
+          key={i}
+          title={s.title}
+          subtitle={s.subtitle}
+          items={s.items}
+        />
+      ))}
+  </div>
+
+</div>
       </section>
 
       {/* ── Apply ──────────────────────────────────────────────────────────── */}
