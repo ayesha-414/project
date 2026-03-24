@@ -503,7 +503,7 @@ export default function FDMPage() {
                     </div>
                   </li>
                 </ul>
-                <Link href="" className="btn-secondary w-full justify-center mt-6">
+                <Link href="https://application.psgtech.ac.in/MSCFDM/" className="btn-secondary w-full justify-center mt-6">
                   Apply Now
                   <ArrowRight className="w-4 h-4" />
                 </Link>

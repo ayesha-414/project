@@ -163,7 +163,7 @@ export default function Home() {
   ];
 
   const applyPrograms = [
-    { title: "B.Sc Applied Science",                subtitle: "UNDERGRADUATE PROGRAMME",    href: "" },
+    { title: "B.Sc Applied Science",                subtitle: "UNDERGRADUATE PROGRAMME",    href: "https://application.psgtech.ac.in/AppliedScience/" },
     { title: "B.Sc Computer Systems & Design",      subtitle: "UNDERGRADUATE PROGRAMME",    href: "" },
     { title: "M.Sc Applied Mathematics",            subtitle: "POSTGRADUATE PROGRAMME",     href: "" },
     { title: "M.Sc Software Systems",               subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "" },
@@ -171,7 +171,7 @@ export default function Home() {
     { title: "M.Sc Data Science",                   subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "" },
     { title: "M.Sc Cyber Security",                 subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "" },
     { title: "M.Sc Computational Finance",          subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "" },
-    { title: "M.Sc Fashion Design & Merchandising", subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "" },
+    { title: "M.Sc Fashion Design & Merchandising", subtitle: "5 YEAR INTEGRATED PROGRAMME", href: "https://application.psgtech.ac.in/MSCFDM/" },
   ];
 
   const featureCards = [
