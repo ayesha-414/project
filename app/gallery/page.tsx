@@ -130,7 +130,7 @@ export default function GalleryPage() {
     ? galleryFolders[selectedFolder]
     : [];
 
-  /* 🔹 Next Image */
+  /* 🔹 Next Imageee */
   const showNext = (e?: React.MouseEvent) => {
     e?.stopPropagation();
     if (selectedImgIdx !== null && currentImages.length > 0) {
