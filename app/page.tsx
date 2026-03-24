@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import ProgramCard from "@/components/ProgramCard";
 import ScheduleCard from "@/components/ScheduleCard";
 import Link from "next/link";
+import { usePathname, useSearchParams } from "next/navigation";
 import { 
   Award, 
   BookOpen, 
@@ -23,7 +24,19 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 //import { getAuthCookie, getTeamLeaderName } from "@/lib/auth";
 
 export default function Home() {
-
+  useEffect(() => {
+  // If URL has #home → scroll to hero
+  if (window.location.hash === "#home") {
+    const section = document.getElementById("home");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  } else {
+    // Otherwise always go to top
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+}, []);
+  
   /* ── Data ─────────────────────────────────────────────────────────────── */
 
   const integratedPrograms = [
@@ -321,7 +334,6 @@ export default function Home() {
   <span>
     Year B.Sc Programmes
   </span>
-
 </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 text-justify">

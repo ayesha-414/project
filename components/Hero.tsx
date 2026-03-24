@@ -58,7 +58,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex flex-col overflow-hidden">
+    <section id="home" className="relative min-h-screen flex flex-col overflow-hidden">
 
       <style>{`
         @keyframes kb        { 0%{transform:scale(1)} 100%{transform:scale(1.09)} }

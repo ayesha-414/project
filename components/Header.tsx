@@ -31,6 +31,9 @@ export default function Header() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+  useEffect(() => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}, []);
 
   const programmes = [
     {
@@ -125,10 +128,29 @@ export default function Header() {
 
         {/* ── BOTTOM TIER: Desktop Nav ────────────────────────────────── */}
         <nav className="hidden lg:flex items-center justify-center gap-0 xl:gap-6 py-0">
-
-          <Link href="/"          className="nav-link text-[15px] xl:text-[17px] 2xl:text-xl font-bold text-white px-3 xl:px-4 py-1.5 hover:text-blue-200 transition-all uppercase whitespace-nowrap">Home</Link>
-          <Link href="/#about"    className="nav-link text-[15px] xl:text-[17px] 2xl:text-xl font-bold text-white px-3 xl:px-4 py-1.5 hover:text-blue-200 transition-all uppercase whitespace-nowrap">About</Link>
-
+          <Link
+            href="/" className="nav-link text-[15px] xl:text-[17px] 2xl:text-xl font-bold text-white px-3 xl:px-4 py-1.5 hover:text-blue-200 transition-all uppercase whitespace-nowrap"
+            onClick={(e) => {
+              // If already on homepage → prevent navigation
+              if (window.location.pathname === "/") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+          >
+            Home
+          </Link>
+          <Link
+            href="/#about" className="nav-link text-[15px] xl:text-[17px] 2xl:text-xl font-bold text-white px-3 xl:px-4 py-1.5 hover:text-blue-200 transition-all uppercase whitespace-nowrap"
+            onClick={(e) => {
+              if (window.location.pathname === "/" && window.location.hash === "#about") {
+                e.preventDefault();
+                document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            About
+          </Link>
           {/* Programmes Dropdown */}
           <div className="relative group">
             <button className="nav-link flex items-center gap-1 text-[15px] xl:text-[17px] 2xl:text-xl font-bold text-white px-3 xl:px-4 py-1.5 hover:text-blue-200 transition-all uppercase whitespace-nowrap">
@@ -181,7 +203,20 @@ export default function Header() {
           </div>
 
           <Link href="/gallery"    className="nav-link text-[15px] xl:text-[17px] 2xl:text-xl font-bold text-white px-3 xl:px-4 py-1.5 hover:text-blue-200 transition-all uppercase whitespace-nowrap">Gallery</Link>
-          <Link href="/#schedule"  className="nav-link text-[15px] xl:text-[17px] 2xl:text-xl font-bold text-white px-3 xl:px-4 py-1.5 hover:text-blue-200 transition-all uppercase whitespace-nowrap">Schedule</Link>
+          <Link
+            href="/#schedule" className="nav-link text-[15px] xl:text-[17px] 2xl:text-xl font-bold text-white px-3 xl:px-4 py-1.5 hover:text-blue-200 transition-all uppercase whitespace-nowrap"
+            onClick={(e) => {
+              if (window.location.pathname === "/" && window.location.hash === "#schedule") {
+                e.preventDefault(); // stop default
+                const section = document.getElementById("schedule");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }
+            }}
+          >
+            Schedule
+          </Link>
           <Link href="/#contact"   className="nav-link text-[15px] xl:text-[17px] 2xl:text-xl font-bold text-white px-3 xl:px-4 py-1.5 hover:text-blue-200 transition-all uppercase whitespace-nowrap">Contact</Link>
         </nav>
 
@@ -234,8 +269,12 @@ export default function Header() {
 
           <Link
             href="/#about"
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="flex items-center text-white text-lg sm:text-xl font-bold border-b border-white/10 py-3 hover:text-blue-200 transition-colors"
+            onClick={(e) => {
+              if (window.location.pathname === "/" && window.location.hash === "#about") {
+                e.preventDefault();
+                document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
           >
             About
           </Link>
@@ -286,19 +325,29 @@ export default function Header() {
           >
             Gallery
           </Link>
-
           <Link
-            href="/#schedule"
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="flex items-center text-white text-lg sm:text-xl font-bold border-b border-white/10 py-3 hover:text-blue-200 transition-colors"
+            href="/#schedule" className="flex items-center text-white text-lg sm:text-xl font-bold border-b border-white/10 py-3 hover:text-blue-200 transition-colors"
+            onClick={(e) => {
+              if (window.location.pathname === "/" && window.location.hash === "#schedule") {
+                e.preventDefault(); // stop default
+                const section = document.getElementById("schedule");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }
+            }}
           >
             Schedule
           </Link>
 
           <Link
-            href="/#contact"
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="flex items-center text-white text-lg sm:text-xl font-bold border-b border-white/10 py-3 hover:text-blue-200 transition-colors"
+            href="/#contact" className="flex items-center text-white text-lg sm:text-xl font-bold border-b border-white/10 py-3 hover:text-blue-200 transition-colors"
+            onClick={(e) => {
+              if (window.location.pathname === "/" && window.location.hash === "#contact") {
+                e.preventDefault();
+                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
           >
             Contact
           </Link>
