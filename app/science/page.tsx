@@ -611,7 +611,7 @@ export default function SciencePage() {
                   </p>
                 </div>
 
-                <Link href="https://application.psgtech.ac.in/MSCFDM/" className="btn-secondary flex items-center justify-center gap-2 w-full mt-6">
+                <Link href="https://application.psgtech.ac.in/AppliedScience/" className="btn-secondary flex items-center justify-center gap-2 w-full mt-6">
                   Apply Now
                   <ArrowRight className="w-4 h-4" />
                 </Link>
