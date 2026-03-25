@@ -102,7 +102,7 @@ export default function Header() {
 
             {/* Right side: Apply Now + Hamburger */}
             <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 shrink-0">
-              <button
+              {/* <button
                   onClick={scrollToApply}
                   className="hidden sm:flex items-center gap-1.5 bg-white text-[#1c3879]
                             px-4 sm:px-5 lg:px-8
@@ -113,7 +113,7 @@ export default function Header() {
                 >
                   Apply Now
                   <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                </button>
+                </button> */}
 
               <button
                 className="lg:hidden text-white p-1.5 sm:p-2 hover:bg-white/10 rounded-lg transition-colors"
