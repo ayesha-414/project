@@ -1160,7 +1160,7 @@ export default function STDCPage() {
                 <div className="aspect-video rounded-2xl overflow-hidden">
                   <iframe
                     className="w-full h-full"
-                    src="https://youtu.be/dFhvu7SJxXA"
+                    src="https://www.youtube.com/embed/dFhvu7SJxXA?si=wOcY79mHwnuWnw7Z"
                     title="PSG Program Video"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
