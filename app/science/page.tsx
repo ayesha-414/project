@@ -600,7 +600,7 @@ export default function SciencePage() {
                   </ul>
                 </div>
 
-                {/* Important Note Box */}
+                {/* Important Note Box
                 <div className="bg-white/10 rounded-xl p-4 sm:p-5 mt-6 border border-white/10">
                   <h6 className="font-bold text-white mb-2 flex items-center gap-2">
                     <FileText className="w-4 h-4 text-[#e8505b]" />
@@ -609,7 +609,7 @@ export default function SciencePage() {
                   <p className="text-white/80  text-base sm:text-lg md:text-xl leading-relaxed">
                     Upon completion of counselling-cum-admission process, candidates from TNHSE/CBSE/other boards in <span className="font-bold text-white">waiting list</span> will be invited for counselling-cum-admission through admission web portal & registered email, subject to the availability of remaining seats based on the merit and norms.
                   </p>
-                </div>
+                </div> */}
 
                 <Link href="https://application.psgtech.ac.in/AppliedScience/" className="btn-secondary flex items-center justify-center gap-2 w-full mt-6">
                   Apply Now
